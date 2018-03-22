@@ -1,0 +1,22 @@
+﻿{
+    "appearances": {
+
+        // button with 16x16 icons
+        "button-16x16": {
+            "inherit": "button",
+            "components": {
+                "icon": {
+                    "states": {
+                        "default": {
+                            "properties": {
+                                "scale": true,
+                                "width": 16,
+                                "height": 16
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

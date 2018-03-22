@@ -1,0 +1,24 @@
+﻿{
+	"appearances": {
+		"theme-button": {
+			"inherit": "button",
+			"states": {
+				"default": {
+					"styles": {
+						"backgroundColor": "rgba(0,0,0,.5)",
+						"radius": 0
+					},
+					"properties": {
+						"textColor":  "white"
+					}
+				},
+				"checked": {
+					"styles": {
+						"backgroundColor": "black"
+					}
+				}
+			}
+		}
+	}
+
+}

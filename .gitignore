@@ -1,0 +1,10 @@
+.svn
+.vs
+
+*.suo
+
+*.user
+bin
+obj
+packages
+/UploadFiles/UploadFiles/Properties/PublishProfiles/*.pubxml

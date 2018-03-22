@@ -1,0 +1,31 @@
+﻿//
+// Application Configuration:
+//
+// All settings are optional.
+//
+// startup:                 Full name of the startup method. i.e. "MyApp.Program.Main, MyApp".
+// mainWindow:              Full name of a window created automatically at startup. i.e. "MyApp.PrimaryForm, MyApp".
+// theme:                   Name of the theme, without the extension, to load at startup.
+// url:                     Destination URL. If null, the request must match a web page.
+// culture:                 The default culture of the application. Default: "auto" (detects the culture from the browser.)
+// sessionTimeout:          Timeout of the session in seconds. Default: 120.
+// responseTimeout:         Timeout of the Wisej requests in seconds. Default: 120.
+//                          Increase this value if you expect your application to process long running requests.
+// cookieless:              Enables support for cookieless sessions. Default: false.
+// secure:                  Forces the client to use ssl. Default: false.
+// showLoader:              Loads the wisej ajax loader. Default: true.
+// loaderTimeout:           Timeout before the appearance of the Ajax loader in milliseconds. Default: 2000.
+// browserCheck:            Custom expression to validate the browser, i.e. "navigator.platform == 'Win32'".
+// notSupportedUrl:         URL of the not-supported page. Wisej will redirect here when the browser is not supported. Default: 'resource.wx/Wisej.Core/NotSupported.html'
+// notAvailableUrl:         URL of the not-available page. Wisej will redirect here when the server cannot accept any more sessions. Default: 'resource.wx/Wisej.Core/NotAvailable.html'
+// debug:                   Enables logging on the client browser console. Default: false.
+// enableWebSocket:         Enables the user of WebSocket if available. Default: true.
+// maxSessions:             Maximum number of active sessions (users) before redirecting to notAvailableUrl. Default: -1 (unlimited).
+// maxModalStack:           Maximum number of nested modal dialogs. Default: 10.
+// options:                 Map of platform options. i.e. {debug: true}
+// settings:               	Map of custom application settings. i.e. {jquery: "http://cdn...", rootPath: "c:\\users\\...", ...}.
+//                          Custom settings are available using Application.Configuration.Settings.
+{
+    "url": "Default.html",
+    "startup": "FormApplication.Program.Main, FormApplication"
+}

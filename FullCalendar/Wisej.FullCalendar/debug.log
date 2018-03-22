@@ -1,0 +1,15 @@
+[0616/142535:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/142536:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/142538:ERROR:browser_host_impl.cc(1545)] Invalid URL passed to CefBrowserHostImpl::LoadURL: ?standalone=true
+[0616/142616:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/142616:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/142616:ERROR:browser_host_impl.cc(1545)] Invalid URL passed to CefBrowserHostImpl::LoadURL: ?standalone=true
+[0616/153805:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/153805:ERROR:browser_host_impl.cc(1545)] Invalid URL passed to CefBrowserHostImpl::LoadURL: ?standalone=true
+[0616/153806:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/153856:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/153856:ERROR:browser_host_impl.cc(1545)] Invalid URL passed to CefBrowserHostImpl::LoadURL: ?standalone=true
+[0616/153856:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/154326:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/154326:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak
+[0616/154326:ERROR:main_delegate.cc(736)] Could not load cef_extensions.pak

@@ -1,0 +1,25 @@
+﻿{
+	"colors": {
+
+	},
+	"appearances": {
+		"options-panel": {
+			"states": {
+				"default": {
+					"properties": {
+						"cursor": "default",
+						"backgroundColor": "blue",
+						"textColor": "red"
+					}
+				},
+				"hovered": {
+					"properties": {
+						"cursor": "hand",
+						"backgroundColor": "green",
+						"textColor": "yellow"
+					}
+				}
+			}
+		}
+	}
+}
