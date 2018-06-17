@@ -88,9 +88,8 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Wisej.Core" />
-    <Reference Include="Wisej.Ext.ModernUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\WiseJ\Development\Wisej\bin\Wisej.Ext.ModernUI.dll</HintPath>
+    <Reference Include="Wisej.Ext.ModernUI">
+      <HintPath>..\..\bin\Wisej.Ext.ModernUI.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Web.Ext.FullCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
