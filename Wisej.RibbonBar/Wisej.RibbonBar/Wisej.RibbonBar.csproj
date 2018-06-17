@@ -97,13 +97,13 @@
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Ext.FontAwesome">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Ext.FontAwesome.dll</HintPath>
+      <HintPath>..\..\wisej-extensions\Wisej.Ext.FontAwesome.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Ext.MaterialDesign">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\..\wisej-extensions\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.RibbonBar">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\QX\Extensions\Wisej.Web.Ext.RibbonBar\bin\Debug\Wisej.Web.Ext.RibbonBar.dll</HintPath>
+      <HintPath>..\..\wisej-extensions\Wisej.Web.Ext.RibbonBar.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +113,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemePicker.resx">
       <DependentUpon>ThemePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window1.af.resx">
+      <DependentUpon>Window1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window1.de-DE.resx">
+      <DependentUpon>Window1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window1.de.resx">
+      <DependentUpon>Window1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window1.en-US.resx">
+      <DependentUpon>Window1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Window1.resx">
       <DependentUpon>Window1.cs</DependentUpon>

@@ -20,11 +20,12 @@ namespace Wisej.RibbonBar
 			};
 			this.ribbonBarItemComboBox1.Value = "One";
 			this.ribbonBarItemTextBox2.Value = "Text2";
+
 		}
 
-		private void RibbonBar_MenuButtonItemClick(object sender, MenuButtonItemClickedEventArgs e)
+		private void RibbonBar_MenuButtonItemClick(object sender, RibbonBarMenuItemEventArgs e)
 		{
-			var button = e.Item.GetRibbonBarItem();
+			var button = e.Item;
 			AlertBox.Show(button.ToString() + " => " + e.Item.ToString());
 		}
 

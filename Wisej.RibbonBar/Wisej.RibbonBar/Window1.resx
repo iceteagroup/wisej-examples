@@ -117,4 +117,511 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;ribbonBarItemComboBox1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBar.AppButton.ImageSource" xml:space="preserve">
+    <value>icon-preview?color=#3FBEBF</value>
+  </data>
+  <data name="ribbonBarItemButton18.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/arrow-circle-o-left.svg</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarPage1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarPage, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemTextBox2.Text" xml:space="preserve">
+    <value>Unique ID</value>
+  </data>
+  <data name="ribbonBarItemCheckBox1.Text" xml:space="preserve">
+    <value>Overwrite</value>
+  <comment>Überschreiben</comment></data>
+  <data name="&gt;&gt;ribbonBarItemSeparator1.Name" xml:space="preserve">
+    <value>ribbonBarItemSeparator1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton11.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup3.Name" xml:space="preserve">
+    <value>ribbonBarGroup3</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton8.Name" xml:space="preserve">
+    <value>ribbonBarItemButton8</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton19.Name" xml:space="preserve">
+    <value>ribbonBarItemButton19</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemControl1.Name" xml:space="preserve">
+    <value>ribbonBarItemControl1</value>
+  </data>
+  <data name="ribbonBarPage1.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemControl1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemControl, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton1.Name" xml:space="preserve">
+    <value>ribbonBarItemButton1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButtonGroup1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton12.Name" xml:space="preserve">
+    <value>ribbonBarItemButton12</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup5.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarGroup, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;menuItem4.Name" xml:space="preserve">
+    <value>menuItem4</value>
+  </data>
+  <data name="ribbonBarItemButton17.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/arrow-circle-o-down.svg</value>
+  </data>
+  <data name="ribbonBarItemButton19.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/arrow-circle-o-right.svg</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup2.Name" xml:space="preserve">
+    <value>ribbonBarGroup2</value>
+  </data>
+  <data name="ribbonBarItemButton7.ImageSource" xml:space="preserve">
+    <value>ribbon-add-folder</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton13.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton4.Name" xml:space="preserve">
+    <value>ribbonBarItemButton4</value>
+  </data>
+  <data name="ribbonBarItemButton3.ImageSource" xml:space="preserve">
+    <value>ribbon-paste</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ribbonBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ribbonBarItemButton12.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/align-center.svg</value>
+  </data>
+  <data name="ribbonBarItemButton5.Text" xml:space="preserve">
+    <value>Copy special...</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemTextBox1.Name" xml:space="preserve">
+    <value>ribbonBarItemTextBox1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemCheckBox2.Name" xml:space="preserve">
+    <value>ribbonBarItemCheckBox2</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemComboBox1.Name" xml:space="preserve">
+    <value>ribbonBarItemComboBox1</value>
+  </data>
+  <data name="menuItem3.IconSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/archive.svg?color=#FF8F00</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton21.Name" xml:space="preserve">
+    <value>ribbonBarItemButton21</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton10.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemTextBox2.ImageSource" xml:space="preserve">
+    <value>icon-settings?color=#3FBF47</value>
+  </data>
+  <data name="ribbonBarItemButton4.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton10.Name" xml:space="preserve">
+    <value>ribbonBarItemButton10</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="&gt;&gt;themePicker1.Type" xml:space="preserve">
+    <value>Wisej.RibbonBar.ThemePicker, Wisej.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="themePicker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 163</value>
+  </data>
+  <data name="ribbonBarItemSplitButton1.ImageSource" xml:space="preserve">
+    <value>ribbon-add-file</value>
+  </data>
+  <data name="ribbonBarItemButton16.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/code.svg</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup3.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarGroup, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton5.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton8.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton13.Name" xml:space="preserve">
+    <value>ribbonBarItemButton13</value>
+  </data>
+  <data name="&gt;&gt;menuItem4.Type" xml:space="preserve">
+    <value>Wisej.Web.MenuItem, Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton20.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBar.AppButton.Text" xml:space="preserve">
+    <value>FIle</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup2.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarGroup, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemButton1.ImageSource" xml:space="preserve">
+    <value>ribbon-pin</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup4.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarGroup, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton7.Name" xml:space="preserve">
+    <value>ribbonBarItemButton7</value>
+  </data>
+  <data name="ribbonBarItemButton11.ToolTipText" xml:space="preserve">
+    <value>Attach</value>
+  </data>
+  <data name="ribbonBarItemButton21.Text" xml:space="preserve">
+    <value>Wizard</value>
+  <comment>Wizard</comment></data>
+  <data name="&gt;&gt;ribbonBarItemButton9.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemTextBox2.Name" xml:space="preserve">
+    <value>ribbonBarItemTextBox2</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="themePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ribbonBarItemComboBox1.Text" xml:space="preserve">
+    <value>User Level</value>
+  </data>
+  <data name="ribbonBarItemCheckBox2.Text" xml:space="preserve">
+    <value>Save to cloud</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton7.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton14.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Window1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton19.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButtonGroup1.Name" xml:space="preserve">
+    <value>ribbonBarItemButtonGroup1</value>
+  </data>
+  <data name="menuItem1.Text" xml:space="preserve">
+    <value>Only text</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarPage3.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarPage, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemSplitButton1.Name" xml:space="preserve">
+    <value>ribbonBarItemSplitButton1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton3.Name" xml:space="preserve">
+    <value>ribbonBarItemButton3</value>
+  </data>
+  <data name="ribbonBar.AppButton.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ribbonBarPage2.Text" xml:space="preserve">
+    <value>&amp;Options</value>
+  </data>
+  <data name="ribbonBarItemButton13.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/align-justify.svg</value>
+  </data>
+  <data name="ribbonBarItemButton6.ImageSource" xml:space="preserve">
+    <value>ribbon-paste</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton16.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemCheckBox2.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemButton11.ImageSource" xml:space="preserve">
+    <value>ribbon-attach</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemCheckBox1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarGroup2.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="componentTool2.ImageSource" xml:space="preserve">
+    <value>icon-settings?color=#FF1700</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton20.Name" xml:space="preserve">
+    <value>ribbonBarItemButton20</value>
+  </data>
+  <data name="&gt;&gt;menuItem1.Type" xml:space="preserve">
+    <value>Wisej.Web.MenuItem, Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton6.Name" xml:space="preserve">
+    <value>ribbonBarItemButton6</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemCheckBox1.Name" xml:space="preserve">
+    <value>ribbonBarItemCheckBox1</value>
+  </data>
+  <data name="ribbonBarItemSplitButton1.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton12.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemButton14.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/anchor.svg</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton4.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton15.Name" xml:space="preserve">
+    <value>ribbonBarItemButton15</value>
+  </data>
+  <data name="ribbonBarItemButton7.Text" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="ribbonBarItemButton15.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/arrows-alt.svg</value>
+  </data>
+  <data name="ribbonBarItemButton16.Text" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="ribbonBarItemButton2.ImageSource" xml:space="preserve">
+    <value>ribbon-copy</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarPage3.Name" xml:space="preserve">
+    <value>ribbonBarPage3</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Window1</value>
+  </data>
+  <data name="&gt;&gt;menuItem2.Type" xml:space="preserve">
+    <value>Wisej.Web.MenuItem, Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton2.Name" xml:space="preserve">
+    <value>ribbonBarItemButton2</value>
+  </data>
+  <data name="ribbonBarGroup4.Text" xml:space="preserve">
+    <value>Themes</value>
+  <comment>Themes</comment></data>
+  <data name="ribbonBarGroup5.Text" xml:space="preserve">
+    <value>Formatting</value>
+  </data>
+  <data name="ribbonBarItemButton1.ToolTipText" xml:space="preserve">
+    <value>Adds the item to the quick access panel.</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemTextBox1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemButton9.ImageSource" xml:space="preserve">
+    <value>icon-question</value>
+  </data>
+  <data name="ribbonBar.AppButton.ImageIndex" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="ribbonBarItemButton5.ImageSource" xml:space="preserve">
+    <value>ribbon-copy</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton21.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton6.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemButton4.ImageSource" xml:space="preserve">
+    <value>ribbon-cut</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup1.Name" xml:space="preserve">
+    <value>ribbonBarGroup1</value>
+  </data>
+  <data name="componentTool1.ImageSource" xml:space="preserve">
+    <value>messagebox-question?color=#3600FF</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton3.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;themePicker1.Name" xml:space="preserve">
+    <value>themePicker1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButtonGroup2.Name" xml:space="preserve">
+    <value>ribbonBarItemButtonGroup2</value>
+  </data>
+  <assembly alias="Wisej.Web" name="Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171" />
+  <data name="ribbonBar.Dock" type="Wisej.Web.DockStyle, Wisej.Web">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton16.Name" xml:space="preserve">
+    <value>ribbonBarItemButton16</value>
+  </data>
+  <data name="&gt;&gt;menuItem3.Name" xml:space="preserve">
+    <value>menuItem3</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Wisej.Web.Form, Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton18.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarPage3.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ribbonBarItemButton10.ImageSource" xml:space="preserve">
+    <value>icon-warning</value>
+  </data>
+  <data name="ribbonBarItemTextBox1.Text" xml:space="preserve">
+    <value>Profile Name</value>
+  </data>
+  <data name="ribbonBarItemTextBox1.ImageSource" xml:space="preserve">
+    <value>icon-settings?color=#3FBF47</value>
+  </data>
+  <data name="ribbonBarGroup1.Text" xml:space="preserve">
+    <value>Clipboard</value>
+  <comment>Zwischenablage</comment></data>
+  <data name="&gt;&gt;ribbonBarItemButton15.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="menuItem4.Text" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarPage1.Name" xml:space="preserve">
+    <value>ribbonBarPage1</value>
+  </data>
+  <data name="ribbonBarItemButton1.Text" xml:space="preserve">
+    <value>Pin to quick panel</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton11.Name" xml:space="preserve">
+    <value>ribbonBarItemButton11</value>
+  </data>
+  <data name="&gt;&gt;menuItem2.Name" xml:space="preserve">
+    <value>menuItem2</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemSeparator1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarPage2.Name" xml:space="preserve">
+    <value>ribbonBarPage2</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar.Name" xml:space="preserve">
+    <value>ribbonBar</value>
+  </data>
+  <data name="ribbonBarItemButton20.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/arrow-circle-o-up.svg</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton14.Name" xml:space="preserve">
+    <value>ribbonBarItemButton14</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBar, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton18.Name" xml:space="preserve">
+    <value>ribbonBarItemButton18</value>
+  </data>
+  <data name="ribbonBarGroup3.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ribbonBarItemButton8.ImageSource" xml:space="preserve">
+    <value>icon-comment?color=#BF633F</value>
+  </data>
+  <data name="menuItem4.IconSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/bar-chart.svg?color=#00FF00</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarGroup, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>896, 467</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemSplitButton1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemSplitButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;menuItem1.Name" xml:space="preserve">
+    <value>menuItem1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton17.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton9.Name" xml:space="preserve">
+    <value>ribbonBarItemButton9</value>
+  </data>
+  <data name="menuItem2.Text" xml:space="preserve">
+    <value>Preserve formatting</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton1.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemButton21.ImageSource" xml:space="preserve">
+    <value>resource.wx/Wisej.Ext.FontAwesome/android.svg?color=#FF7700</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup5.Name" xml:space="preserve">
+    <value>ribbonBarGroup5</value>
+  </data>
+  <data name="ribbonBarItemButton6.Text" xml:space="preserve">
+    <value>Paste special</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButtonGroup2.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemButton3.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton17.Name" xml:space="preserve">
+    <value>ribbonBarItemButton17</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemTextBox2.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="ribbonBarItemComboBox1.ImageSource" xml:space="preserve">
+    <value>menu-overflow?color=#DF00FF</value>
+  </data>
+  <data name="menuItem3.Text" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="ribbonBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>896, 145</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton2.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarPage2.Type" xml:space="preserve">
+    <value>Wisej.Web.Ext.RibbonBar.RibbonBarPage, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarGroup4.Name" xml:space="preserve">
+    <value>ribbonBarGroup4</value>
+  </data>
+  <data name="ribbonBarItemButton2.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="&gt;&gt;ribbonBarItemButton5.Name" xml:space="preserve">
+    <value>ribbonBarItemButton5</value>
+  </data>
+  <data name="ribbonBarItemControl1.Text" xml:space="preserve">
+    <value>ribbonBarItemControl1</value>
+  </data>
+  <data name="themePicker1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 70</value>
+  </data>
+  <data name="&gt;&gt;menuItem3.Type" xml:space="preserve">
+    <value>Wisej.Web.MenuItem, Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
+  </metadata>
 </root>

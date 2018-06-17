@@ -30,6 +30,7 @@ namespace Wisej.RibbonBar
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Window1));
 			Wisej.Web.ComponentTool componentTool1 = new Wisej.Web.ComponentTool();
 			Wisej.Web.ComponentTool componentTool2 = new Wisej.Web.ComponentTool();
 			this.ribbonBar = new Wisej.Web.Ext.RibbonBar.RibbonBar();
@@ -77,23 +78,24 @@ namespace Wisej.RibbonBar
 			// 
 			// ribbonBar
 			// 
+			resources.ApplyResources(this.ribbonBar, "ribbonBar");
 			// 
 			// 
 			// 
-			this.ribbonBar.AppButton.ImageSource = "icon-preview?color=#3FBEBF";
-			this.ribbonBar.AppButton.Text = "FIle";
-			this.ribbonBar.AppButton.Visible = true;
-			this.ribbonBar.Dock = Wisej.Web.DockStyle.Top;
-			this.ribbonBar.Location = new System.Drawing.Point(0, 0);
+			this.ribbonBar.AppButton.ImageIndex = ((int)(resources.GetObject("ribbonBar.AppButton.ImageIndex")));
+			this.ribbonBar.AppButton.ImageKey = resources.GetString("ribbonBar.AppButton.ImageKey");
+			this.ribbonBar.AppButton.ImageSource = resources.GetString("ribbonBar.AppButton.ImageSource");
+			this.ribbonBar.AppButton.Text = resources.GetString("ribbonBar.AppButton.Text");
+			this.ribbonBar.AppButton.ToolTipText = resources.GetString("ribbonBar.AppButton.ToolTipText");
+			this.ribbonBar.AppButton.Visible = ((bool)(resources.GetObject("ribbonBar.AppButton.Visible")));
 			this.ribbonBar.Name = "ribbonBar";
 			this.ribbonBar.Pages.Add(this.ribbonBarPage1);
 			this.ribbonBar.Pages.Add(this.ribbonBarPage2);
 			this.ribbonBar.Pages.Add(this.ribbonBarPage3);
-			this.ribbonBar.Size = new System.Drawing.Size(896, 145);
-			componentTool1.ImageSource = "messagebox-question?color=#3600FF";
+			resources.ApplyResources(componentTool1, "componentTool1");
 			componentTool1.Name = "Help";
 			componentTool1.Position = Wisej.Web.LeftRightAlignment.Left;
-			componentTool2.ImageSource = "icon-settings?color=#FF1700";
+			resources.ApplyResources(componentTool2, "componentTool2");
 			componentTool2.Name = "Settings";
 			this.ribbonBar.Tools.AddRange(new Wisej.Web.ComponentTool[] {
             componentTool1,
@@ -105,12 +107,13 @@ namespace Wisej.RibbonBar
 			// 
 			// ribbonBarPage1
 			// 
+			resources.ApplyResources(this.ribbonBarPage1, "ribbonBarPage1");
 			this.ribbonBarPage1.Groups.Add(this.ribbonBarGroup1);
 			this.ribbonBarPage1.Groups.Add(this.ribbonBarGroup2);
-			this.ribbonBarPage1.Text = "Home";
 			// 
 			// ribbonBarGroup1
 			// 
+			resources.ApplyResources(this.ribbonBarGroup1, "ribbonBarGroup1");
 			this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton1);
 			this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton2);
 			this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton3);
@@ -118,166 +121,153 @@ namespace Wisej.RibbonBar
 			this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton4);
 			this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton5);
 			this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton6);
-			this.ribbonBarGroup1.Text = "Clipboard";
 			// 
 			// ribbonBarItemButton1
 			// 
 			this.ribbonBarItemButton1.ColumnBreak = true;
-			this.ribbonBarItemButton1.ImageSource = "ribbon-pin";
-			this.ribbonBarItemButton1.Text = "Pin to quick panel";
-			this.ribbonBarItemButton1.ToolTipText = "Adds the item to the quick access panel.";
+			resources.ApplyResources(this.ribbonBarItemButton1, "ribbonBarItemButton1");
 			// 
 			// ribbonBarItemButton2
 			// 
 			this.ribbonBarItemButton2.ColumnBreak = true;
-			this.ribbonBarItemButton2.ImageSource = "ribbon-copy";
-			this.ribbonBarItemButton2.Text = "Copy";
+			resources.ApplyResources(this.ribbonBarItemButton2, "ribbonBarItemButton2");
 			// 
 			// ribbonBarItemButton3
 			// 
 			this.ribbonBarItemButton3.ColumnBreak = true;
-			this.ribbonBarItemButton3.ImageSource = "ribbon-paste";
-			this.ribbonBarItemButton3.Text = "Paste";
+			resources.ApplyResources(this.ribbonBarItemButton3, "ribbonBarItemButton3");
+			// 
+			// ribbonBarItemSeparator1
+			// 
+			resources.ApplyResources(this.ribbonBarItemSeparator1, "ribbonBarItemSeparator1");
 			// 
 			// ribbonBarItemButton4
 			// 
-			this.ribbonBarItemButton4.ImageSource = "ribbon-cut";
+			resources.ApplyResources(this.ribbonBarItemButton4, "ribbonBarItemButton4");
 			this.ribbonBarItemButton4.Orientation = Wisej.Web.Orientation.Horizontal;
-			this.ribbonBarItemButton4.Text = "Cut";
 			// 
 			// ribbonBarItemButton5
 			// 
-			this.ribbonBarItemButton5.ImageSource = "ribbon-copy";
+			resources.ApplyResources(this.ribbonBarItemButton5, "ribbonBarItemButton5");
 			this.ribbonBarItemButton5.Orientation = Wisej.Web.Orientation.Horizontal;
-			this.ribbonBarItemButton5.Text = "Copy special...";
 			// 
 			// ribbonBarItemButton6
 			// 
-			this.ribbonBarItemButton6.ImageSource = "ribbon-paste";
+			resources.ApplyResources(this.ribbonBarItemButton6, "ribbonBarItemButton6");
 			this.ribbonBarItemButton6.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem1,
             this.menuItem2});
 			this.ribbonBarItemButton6.Orientation = Wisej.Web.Orientation.Horizontal;
-			this.ribbonBarItemButton6.Text = "Paste special";
 			// 
 			// menuItem1
 			// 
+			resources.ApplyResources(this.menuItem1, "menuItem1");
 			this.menuItem1.Index = 0;
 			this.menuItem1.Name = "menuItem1";
-			this.menuItem1.Text = "Only text";
 			// 
 			// menuItem2
 			// 
+			resources.ApplyResources(this.menuItem2, "menuItem2");
 			this.menuItem2.Index = 1;
 			this.menuItem2.Name = "menuItem2";
-			this.menuItem2.Text = "Preserve formatting";
 			// 
 			// ribbonBarGroup2
 			// 
+			resources.ApplyResources(this.ribbonBarGroup2, "ribbonBarGroup2");
 			this.ribbonBarGroup2.Items.Add(this.ribbonBarItemSplitButton1);
 			this.ribbonBarGroup2.Items.Add(this.ribbonBarItemButton7);
 			this.ribbonBarGroup2.Items.Add(this.ribbonBarItemCheckBox1);
 			this.ribbonBarGroup2.Items.Add(this.ribbonBarItemCheckBox2);
 			this.ribbonBarGroup2.ShowButton = true;
-			this.ribbonBarGroup2.Text = "New";
 			// 
 			// ribbonBarItemSplitButton1
 			// 
 			this.ribbonBarItemSplitButton1.ColumnBreak = true;
-			this.ribbonBarItemSplitButton1.ImageSource = "ribbon-add-file";
+			resources.ApplyResources(this.ribbonBarItemSplitButton1, "ribbonBarItemSplitButton1");
 			this.ribbonBarItemSplitButton1.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
             this.menuItem3,
             this.menuItem4});
-			this.ribbonBarItemSplitButton1.Text = "File";
 			// 
 			// menuItem3
 			// 
-			this.menuItem3.IconSource = "resource.wx/Wisej.Ext.FontAwesome/archive.svg?color=#FF8F00";
+			resources.ApplyResources(this.menuItem3, "menuItem3");
 			this.menuItem3.Index = 0;
 			this.menuItem3.Name = "menuItem3";
-			this.menuItem3.Text = "Archive";
 			// 
 			// menuItem4
 			// 
-			this.menuItem4.IconSource = "resource.wx/Wisej.Ext.FontAwesome/bar-chart.svg?color=#00FF00";
+			resources.ApplyResources(this.menuItem4, "menuItem4");
 			this.menuItem4.Index = 1;
 			this.menuItem4.Name = "menuItem4";
-			this.menuItem4.Text = "Chart";
 			// 
 			// ribbonBarItemButton7
 			// 
 			this.ribbonBarItemButton7.ColumnBreak = true;
-			this.ribbonBarItemButton7.ImageSource = "ribbon-add-folder";
-			this.ribbonBarItemButton7.Text = "Folder";
+			resources.ApplyResources(this.ribbonBarItemButton7, "ribbonBarItemButton7");
 			// 
 			// ribbonBarItemCheckBox1
 			// 
-			this.ribbonBarItemCheckBox1.Text = "Overwrite";
+			resources.ApplyResources(this.ribbonBarItemCheckBox1, "ribbonBarItemCheckBox1");
 			// 
 			// ribbonBarItemCheckBox2
 			// 
-			this.ribbonBarItemCheckBox2.Text = "Save to cloud";
+			resources.ApplyResources(this.ribbonBarItemCheckBox2, "ribbonBarItemCheckBox2");
 			// 
 			// ribbonBarPage2
 			// 
+			resources.ApplyResources(this.ribbonBarPage2, "ribbonBarPage2");
 			this.ribbonBarPage2.Groups.Add(this.ribbonBarGroup3);
 			this.ribbonBarPage2.Groups.Add(this.ribbonBarGroup4);
-			this.ribbonBarPage2.Text = "&Options";
 			// 
 			// ribbonBarGroup3
 			// 
+			resources.ApplyResources(this.ribbonBarGroup3, "ribbonBarGroup3");
 			this.ribbonBarGroup3.Items.Add(this.ribbonBarItemTextBox1);
 			this.ribbonBarGroup3.Items.Add(this.ribbonBarItemTextBox2);
 			this.ribbonBarGroup3.Items.Add(this.ribbonBarItemComboBox1);
-			this.ribbonBarGroup3.Text = "Settings";
 			// 
 			// ribbonBarItemTextBox1
 			// 
-			this.ribbonBarItemTextBox1.ImageSource = "icon-settings?color=#3FBF47";
-			this.ribbonBarItemTextBox1.Text = "Profile Name";
+			resources.ApplyResources(this.ribbonBarItemTextBox1, "ribbonBarItemTextBox1");
 			// 
 			// ribbonBarItemTextBox2
 			// 
-			this.ribbonBarItemTextBox2.ImageSource = "icon-settings?color=#3FBF47";
-			this.ribbonBarItemTextBox2.Text = "Unique ID";
+			resources.ApplyResources(this.ribbonBarItemTextBox2, "ribbonBarItemTextBox2");
 			// 
 			// ribbonBarItemComboBox1
 			// 
-			this.ribbonBarItemComboBox1.ImageSource = "menu-overflow?color=#DF00FF";
-			this.ribbonBarItemComboBox1.Text = "User Level";
+			resources.ApplyResources(this.ribbonBarItemComboBox1, "ribbonBarItemComboBox1");
 			// 
 			// ribbonBarGroup4
 			// 
+			resources.ApplyResources(this.ribbonBarGroup4, "ribbonBarGroup4");
 			this.ribbonBarGroup4.Items.Add(this.ribbonBarItemControl1);
-			this.ribbonBarGroup4.Text = "Themes";
 			// 
 			// ribbonBarItemControl1
 			// 
 			this.ribbonBarItemControl1.ColumnBreak = true;
 			this.ribbonBarItemControl1.Control = this.themePicker1;
-			this.ribbonBarItemControl1.Text = "ribbonBarItemControl1";
+			resources.ApplyResources(this.ribbonBarItemControl1, "ribbonBarItemControl1");
 			// 
 			// themePicker1
 			// 
+			resources.ApplyResources(this.themePicker1, "themePicker1");
 			this.themePicker1.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.themePicker1.Location = new System.Drawing.Point(14, 163);
 			this.themePicker1.Name = "themePicker1";
-			this.themePicker1.Size = new System.Drawing.Size(340, 70);
-			this.themePicker1.TabIndex = 1;
 			this.themePicker1.ThemeClicked += new System.EventHandler(this.themePicker1_ThemeClicked);
 			// 
 			// ribbonBarPage3
 			// 
+			resources.ApplyResources(this.ribbonBarPage3, "ribbonBarPage3");
 			this.ribbonBarPage3.Groups.Add(this.ribbonBarGroup5);
 			this.ribbonBarPage3.TabBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(191)))), ((int)(((byte)(63)))));
 			this.ribbonBarPage3.TabForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-			this.ribbonBarPage3.Text = "Edit";
 			// 
 			// ribbonBarGroup5
 			// 
+			resources.ApplyResources(this.ribbonBarGroup5, "ribbonBarGroup5");
 			this.ribbonBarGroup5.Items.Add(this.ribbonBarItemButtonGroup1);
 			this.ribbonBarGroup5.Items.Add(this.ribbonBarItemButtonGroup2);
-			this.ribbonBarGroup5.Text = "Formatting";
 			// 
 			// ribbonBarItemButtonGroup1
 			// 
@@ -286,32 +276,32 @@ namespace Wisej.RibbonBar
 			this.ribbonBarItemButtonGroup1.Buttons.Add(this.ribbonBarItemButton14);
 			this.ribbonBarItemButtonGroup1.Buttons.Add(this.ribbonBarItemButton15);
 			this.ribbonBarItemButtonGroup1.Buttons.Add(this.ribbonBarItemButton16);
+			resources.ApplyResources(this.ribbonBarItemButtonGroup1, "ribbonBarItemButtonGroup1");
 			// 
 			// ribbonBarItemButton12
 			// 
-			this.ribbonBarItemButton12.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/align-center.svg";
+			resources.ApplyResources(this.ribbonBarItemButton12, "ribbonBarItemButton12");
 			this.ribbonBarItemButton12.Orientation = Wisej.Web.Orientation.Horizontal;
 			// 
 			// ribbonBarItemButton13
 			// 
-			this.ribbonBarItemButton13.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/align-justify.svg";
+			resources.ApplyResources(this.ribbonBarItemButton13, "ribbonBarItemButton13");
 			this.ribbonBarItemButton13.Orientation = Wisej.Web.Orientation.Horizontal;
 			// 
 			// ribbonBarItemButton14
 			// 
-			this.ribbonBarItemButton14.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/anchor.svg";
+			resources.ApplyResources(this.ribbonBarItemButton14, "ribbonBarItemButton14");
 			this.ribbonBarItemButton14.Orientation = Wisej.Web.Orientation.Horizontal;
 			// 
 			// ribbonBarItemButton15
 			// 
-			this.ribbonBarItemButton15.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/arrows-alt.svg";
+			resources.ApplyResources(this.ribbonBarItemButton15, "ribbonBarItemButton15");
 			this.ribbonBarItemButton15.Orientation = Wisej.Web.Orientation.Horizontal;
 			// 
 			// ribbonBarItemButton16
 			// 
-			this.ribbonBarItemButton16.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/code.svg";
+			resources.ApplyResources(this.ribbonBarItemButton16, "ribbonBarItemButton16");
 			this.ribbonBarItemButton16.Orientation = Wisej.Web.Orientation.Horizontal;
-			this.ribbonBarItemButton16.Text = "Source";
 			// 
 			// ribbonBarItemButtonGroup2
 			// 
@@ -320,41 +310,39 @@ namespace Wisej.RibbonBar
 			this.ribbonBarItemButtonGroup2.Buttons.Add(this.ribbonBarItemButton19);
 			this.ribbonBarItemButtonGroup2.Buttons.Add(this.ribbonBarItemButton20);
 			this.ribbonBarItemButtonGroup2.Buttons.Add(this.ribbonBarItemButton21);
+			resources.ApplyResources(this.ribbonBarItemButtonGroup2, "ribbonBarItemButtonGroup2");
 			// 
 			// ribbonBarItemButton17
 			// 
-			this.ribbonBarItemButton17.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/arrow-circle-o-down.svg";
+			resources.ApplyResources(this.ribbonBarItemButton17, "ribbonBarItemButton17");
 			this.ribbonBarItemButton17.Orientation = Wisej.Web.Orientation.Horizontal;
 			// 
 			// ribbonBarItemButton18
 			// 
-			this.ribbonBarItemButton18.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/arrow-circle-o-left.svg";
+			resources.ApplyResources(this.ribbonBarItemButton18, "ribbonBarItemButton18");
 			this.ribbonBarItemButton18.Orientation = Wisej.Web.Orientation.Horizontal;
 			// 
 			// ribbonBarItemButton19
 			// 
-			this.ribbonBarItemButton19.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/arrow-circle-o-right.svg";
+			resources.ApplyResources(this.ribbonBarItemButton19, "ribbonBarItemButton19");
 			this.ribbonBarItemButton19.Orientation = Wisej.Web.Orientation.Horizontal;
 			// 
 			// ribbonBarItemButton20
 			// 
-			this.ribbonBarItemButton20.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/arrow-circle-o-up.svg";
+			resources.ApplyResources(this.ribbonBarItemButton20, "ribbonBarItemButton20");
 			this.ribbonBarItemButton20.Orientation = Wisej.Web.Orientation.Horizontal;
 			// 
 			// ribbonBarItemButton21
 			// 
-			this.ribbonBarItemButton21.ImageSource = "resource.wx/Wisej.Ext.FontAwesome/android.svg?color=#FF7700";
+			resources.ApplyResources(this.ribbonBarItemButton21, "ribbonBarItemButton21");
 			this.ribbonBarItemButton21.Orientation = Wisej.Web.Orientation.Horizontal;
-			this.ribbonBarItemButton21.Text = "Wizard";
 			// 
 			// Window1
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(896, 467);
 			this.Controls.Add(this.ribbonBar);
 			this.Name = "Window1";
-			this.Text = "Window1";
 			this.ResumeLayout(false);
 
 		}
