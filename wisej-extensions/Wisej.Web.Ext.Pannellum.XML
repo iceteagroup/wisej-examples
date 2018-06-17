@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wisej.Web.Ext.Pannellum</name>
+    </assembly>
+    <members>
+        <member name="T:Wisej.Web.Ext.Pannellum.Pannellum">
+            <summary>
+            Pannellum is a lightweight, free, and open source panorama viewer for the web.
+            Built using HTML5, CSS3, JavaScript, and WebGL. See https://pannellum.org/.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.Pannellum.Pannellum.InitScript">
+            <summary>
+            Overridden to create our initialization script.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.Pannellum.Pannellum.Packages">
+            <summary>
+            Overridden to return our list of script resources.
+            </summary>
+        </member>
+    </members>
+</doc>

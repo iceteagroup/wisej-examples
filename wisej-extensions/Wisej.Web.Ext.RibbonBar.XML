@@ -1,0 +1,1510 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wisej.Web.Ext.RibbonBar</name>
+    </assembly>
+    <members>
+        <member name="T:Wisej.Web.Ext.RibbonBar.NamespaceDoc">
+            <summary>
+            <para>
+            RibbonBar component. 
+            The RibbonBar organizes the features of an application into a series of tabs.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBar">
+            <summary>
+            The RibbonBar organizes the features of an application into a series of tabs.
+            </summary>
+            <remarks>
+            <para>
+            The RibbonBar is a command bar that organizes the features of an application into a series of tabs at the top of the application main page or window.
+            </para><para>
+            The RibbonBar user interface (UI) increases discoverability of features and functions, enables 
+            quicker learning of the application, and makes users feel more in control of their experience with the application.
+            </para><para>
+            The RibbonBar replaces the traditional menu bar and toolbars.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBar"/> control.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.AutoSizeChanged">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ContextMenuChanged">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.BackgroundImageChanged">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.BackgroundImageLayoutChanged">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ImeModeChanged">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.TextChanged">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.TabIndexChanged">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.TabStopChanged">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.Enter">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.Leave">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.Validated">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.Validating">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ControlAdded">
+            <summary>
+            This event is not relevant to this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ControlRemoved">
+            <summary>
+            This event is not relevant to this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.PaddingChanged">
+            <summary>
+            This event is not relevant to this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.AppButtonClick">
+            <summary>
+            Fired when the <see cref="!:ApplicationButton"/> is clicked.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnAppButtonClick(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBar.AppButtonClick" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.SelectedPageChanged">
+            <summary>
+            Fired when the value of the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBar.SelectedPage"/> property changes.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnSelectedPageChanged(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBar.SelectedPageChanged" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ItemClick">
+            <summary>
+            Fired when the user clicks on a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnItemClick(Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ItemClick"/> event.
+            </summary>
+            <param name="e">A <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.MenuButtonItemClick">
+            <summary>
+            Fired when the user clicks one of the drop down menu items
+            of a 
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> or 
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemSplitButton"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnMenuButtonItemClick(Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBar.MenuButtonItemClick" /> event.
+            </summary>
+            <param name="e">A <see cref="T:Wisej.Web.MenuButtonItemClickedEventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.GroupClick">
+            <summary>
+            Fired when the user clicks on a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> button.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnGroupClick(Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBar.GroupClick"/> event.
+            </summary>
+            <param name="e">A <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ItemValueChanged">
+            <summary>
+            Fired when the user changes the value of a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnItemValueChanged(Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ItemValueChanged"/> event.
+            </summary>
+            <param name="e">A <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBar.ToolClick">
+             <summary>
+             Fired when a <see cref="T:Wisej.Web.ComponentTool" /> is clicked.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnToolClick(Wisej.Web.ToolClickEventArgs)">
+             <summary>
+             Fires the ToolClick event.
+            </summary>
+             <param name="e">A <see cref="T:Wisej.Web.ToolClickEventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.Padding">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.BackgroundImage">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.BackgroundImageSource">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.BackgroundImageLayout">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+            <returns>An <see cref="T:Wisej.Web.ImageLayout" />.</returns>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.TabStop">
+            <summary>
+            This property is not relevant to this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.Focusable">
+            <summary>
+            This property is not relevant to this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.TabIndex">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.Text">
+            <summary>
+            This property is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.ContextMenu">
+            <summary>
+            This member is not meaningful for this control.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.CausesValidation">
+            <summary>
+            Returns or sets whether clicking RibbonBar items causes validation to be performed on
+            the active control.
+            </summary>
+            <returns>true if clicking RibbonBar items causes validation to be performed 
+            on the active control; otherwise, false. The default is false.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.DefaultSize">
+            <returns>
+            The default <see cref="T:System.Drawing.Size" /> of the control.
+            </returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.AppButton">
+            <summary>
+            Represents the application button displayed before the first
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Wisej.Web.Ext.RibbonBar.RibbonBar.Tools" -->
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.SelectedPage">
+            <summary>
+            Returns or sets the currently active <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.SelectedPageIndex">
+            <summary>
+            Returns the index of the currently selected <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.Pages">
+            <summary>
+            Returns the collection of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> pages in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBar"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.ImageList">
+             <summary>
+             Returns or sets the collection of images available to the RibbonBar items.
+            </summary>
+             <returns>An <see cref="T:Wisej.Web.ImageList" /> that contains images available to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" /> controls. The default is null.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.ImageSettings">
+            <summary>
+            Creates the property manager for the Image properties on first use.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.ValidateActiveControl">
+            <summary>
+            Validates the current control.
+            </summary>
+            <returns>true if the active control is validated.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.Dispose(System.Boolean)">
+            <summary>
+            Disposes of the resources (other than memory) used by the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBar" />.
+            </summary>
+            <param name="disposing">true when this method is called by the application rather than a finalizer.</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBar.Wisej#Core#IWisejControl#AppearanceKey">
+            <summary>
+            Returns the theme appearance key for this control.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnAddReferences(System.Collections.IList)">
+             <summary>
+             Returns a collection of referenced components or collection of components.
+             </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.Wisej#Core#Design#IWisejDesignTarget#DesignerWndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Processes Windows mouse messages forwarded by the designer.
+            </summary>
+            <param name="m">The <see cref="!:WinForms.Message"/> forwarded by the designer.</param>
+            <returns>Returns true to prevent the base class from processing the message.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.Wisej#Core#IWisejControl#SetDesignMetrics(System.Object)">
+            <summary>
+            Sets the design-time metrics used by the designer to adapt the
+            control on the screen to the HTML metrics used by the renderer.
+            </summary>
+            <param name="metrics">Design metrics from the renderer.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2">
+            <summary>
+            Base implementation of the component collections managed in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBar"/> control.
+            </summary>
+            <typeparam name="TOwner"></typeparam>
+            <typeparam name="TElement"></typeparam>
+            <exclude/>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.CollectionChanged">
+            <summary>
+            Fired when the collection changes.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Owner">
+            <summary>
+            Returns the <see cref="!:TOwner"/> object.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.IsDirty">
+            <summary>
+            Returns or sets the dirty state for the list.
+            
+            When true, the list of items must be sent back to the client.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.IsNew">
+            <summary>
+            Returns or sets the new state for the list.
+            
+            When true, the entire list is cleared and reloaded on the client.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Item(System.Int32)">
+            <summary>
+            Returns the <see cref="!:TElement"/> at the specified location.
+            </summary>
+            <param name="index">The index of the <see cref="!:TElement"/> to retrieve.</param>
+            <returns>The <see cref="!:TElement"/> at the specified index.</returns>
+            <exception cref="T:System.NotSupportedException">Cannot assign a <see cref="!:TElement"/> item.</exception>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Count">
+            <summary>
+            Returns the number of <see cref="!:TElement"/> items in the collection.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.CollectionChanged" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Add(`1)">
+            <summary>
+            Adds the specified <para>item</para> to the collection.
+            </summary>
+            <param name="item">The <see cref="!:TElement"/> to add to the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Clear">
+            <summary>
+            Removes all the items from the collection.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Clear(System.Boolean)">
+            <summary>
+            Removes and optionally disposes all the items from the collection.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Contains(`1)">
+            <summary>
+            Checks whether the specified <para>item</para> exists in the collection.
+            </summary>
+            <param name="item">The <see cref="!:TElement"/> to find in the collection.</param>
+            <returns>True if the specified <para>item</para> exists in the collection, otherwise false.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.CopyTo(`1[],System.Int32)">
+            <summary>
+            Copies all the items in the collection to the specified <para>array</para> starting at the
+            specified <para>index</para>.
+            </summary>
+            <param name="array">The target array.</param>
+            <param name="index">The starting index in the target array.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.GetEnumerator">
+            <summary>
+            Returns an <see cref="T:System.Collections.IEnumerator"/> to iterated the items in the collection.
+            </summary>
+            <returns>An instance of <see cref="T:System.Collections.Generic.IEnumerator`1"/>.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.IndexOf(`1)">
+            <summary>
+            Returns the position of the specified <para>item</para> in the collection.
+            </summary>
+            <param name="item">The <see cref="!:TElement"/> to find in the collection.</param>
+            <returns>The index of the <para>item</para> or -1 if not found.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Insert(System.Int32,`1)">
+            <summary>
+            Inserts the specified <para>item</para> in the collection at the
+            specified <para>index</para>.
+            </summary>
+            <param name="index">The position to insert the specified <see cref="!:TElement"/> at.</param>
+            <param name="item">The <see cref="!:TElement"/> to insert in the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Remove(`1)">
+            <summary>
+            Removes the specified <see cref="!:TElement"/> from the collection.
+            </summary>
+            <param name="item">The <see cref="!:TElement"/> to remove from the collection.</param>
+            <returns>True if the specified <para>item</para> has been removed from the collection.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.RemoveAt(System.Int32)">
+            <summary>
+            Returns the <see cref="!:TElement"/> at the specified position.
+            </summary>
+            <param name="index">The index of the <see cref="!:TElement"/> to removed from the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarCollectionBase`2.Render">
+            <summary>
+            Renders the list to the json definition for the client.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup">
+            <summary>
+            Represents a group of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Click">
+            <summary>
+            Fired when the user clicks the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> button next to the label.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.OnClick(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Click" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Parent">
+            <summary>
+            Returns the 
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> that owns this
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.RibbonBar">
+            <summary>
+            Returns the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.RibbonBar"/> that contains this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>;
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Enabled">
+            <summary>
+            Returns or sets whether the items in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> can respond to user interaction.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Visible">
+            <summary>
+            Returns or sets whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> is visible or hidden.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Items">
+            <summary>
+            Returns the collection of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> children.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.ShowButton">
+            <summary>
+            Returns or sets whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> shows the expand
+            button next to the group's title.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Text">
+             <summary>
+             Returns or sets the title of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+             <returns>The text displayed at the bottom of the group.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Dispose(System.Boolean)">
+            <summary>
+            Disposes of the resources (other than memory) used by the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup" />.
+            </summary>
+            <param name="disposing">true when this method is called by the application rather than a finalizer.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.Update">
+            <summary>
+            Updates the component on the client.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.ToString">
+            <summary>
+            Returns a string that represents the current object.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current object.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.OnAddReferences(System.Collections.IList)">
+             <summary>
+             Returns a collection of referenced components or collection of components.
+             </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroup.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroupCollection">
+            <summary>
+            Represents a collection of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroupCollection.Add(Wisej.Web.Ext.RibbonBar.RibbonBarGroup)">
+            <summary>
+            Adds the specified <para>item</para> to the collection.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> to add to the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroupCollection.Insert(System.Int32,Wisej.Web.Ext.RibbonBar.RibbonBarGroup)">
+            <summary>
+            Inserts the specified <para>item</para> in the collection at the
+            specified <para>index</para>.
+            </summary>
+            <param name="index">The position to insert the specified <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> at.</param>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> to insert in the collection.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem">
+            <summary>
+            Represents a single item in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Click">
+            <summary>
+            Fired when the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> is clicked.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItem.OnClick(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Click" /> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Parent">
+            <summary>
+            Returns the 
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> that owns this
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.RibbonBar">
+            <summary>
+            Returns the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.RibbonBar"/> that contains this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>;
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ColumnBreak">
+            <summary>
+            Returns or sets a value indicating whether a new column starts after
+            this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Enabled">
+            <summary>
+            Returns or sets whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> can respond to user interaction.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Visible">
+            <summary>
+            Returns or sets whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> is visible or hidden.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Text">
+             <summary>
+             Returns or sets the text of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.
+            </summary>
+             <returns>The text displayed in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ToolTipText">
+             <summary>
+             Returns or sets the tooltip text for the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.
+            </summary>
+             <returns>The text displayed in a tooltip for the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Image">
+             <summary>
+             Returns or sets the image that is displayed next to a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" />.
+            </summary>
+             <returns>The <see cref="T:System.Drawing.Image" /> displayed next to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" />. The default value is null.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ImageSource">
+            <summary>
+            Returns or sets the theme name or URL for the image to display next to a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" />.
+            </summary>
+            <returns>The theme name or URL for the image to display next to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" />.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ImageIndex">
+             <summary>
+             Returns or sets the index value of the image assigned to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" />.
+            </summary>
+             <returns>The index value of the <see cref="T:System.Drawing.Image" /> assigned to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" />. The default is -1.</returns>
+             <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1.</exception>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ImageKey">
+             <summary>
+             Returns or sets the name of the image assigned to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" />.
+            </summary>
+             <returns>The name of the <see cref="T:System.Drawing.Image" /> assigned to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem" />.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ImageSettings">
+            <summary>
+            Creates the property manager for the Image properties on first use.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem.RibbonBarImageProperties">
+            <summary>
+            Overrides the standard ImagePropertySettings to 
+            retrieve the ImageList from the parent ToolBar control.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ValidateActiveControl">
+            <summary>
+            Validates the current control.
+            </summary>
+            <returns>true if the active control is validated.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Update">
+            <summary>
+            Updates the component on the client.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ToString">
+            <summary>
+            Returns a string that represents the current object.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current object.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItem.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton">
+            <summary>
+            Represents the main application button in a <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.RibbonBar"/> displayed
+            before the first <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.Parent">
+            <summary>
+            Returns the 
+            <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.RibbonBar"/> that owns this
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.RibbonBar">
+            <summary>
+            Returns the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.RibbonBar"/> that contains this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/>;
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.Visible">
+            <summary>
+            Returns or sets whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/> is visible or hidden.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.BackColor">
+            <summary>
+            Returns or sets the background color of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/> tab button.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.ForeColor">
+            <summary>
+            Returns or sets the text color of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/> tab button.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.Text">
+             <summary>
+             Returns or sets the text of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/>.
+            </summary>
+             <returns>The text displayed in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/>.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.ToolTipText">
+             <summary>
+             Returns or sets the tooltip text for the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/>.
+            </summary>
+             <returns>The text displayed in a tooltip for the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton"/>.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.Image">
+             <summary>
+             Returns or sets the image that is displayed in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton" />.
+            </summary>
+             <returns>The <see cref="T:System.Drawing.Image" /> displayed in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton" />. The default value is null.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.ImageSource">
+            <summary>
+            Returns or sets the theme name or URL for the image to display in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton" />.
+            </summary>
+            <returns>The theme name or URL for the image to display in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton" />.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.ImageIndex">
+             <summary>
+             Returns or sets the index value of the image assigned to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton" />.
+            </summary>
+             <returns>The index value of the <see cref="T:System.Drawing.Image" /> assigned to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton" />. The default is -1.</returns>
+             <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1.</exception>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.ImageKey">
+             <summary>
+             Returns or sets the name of the image assigned to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton" />.
+            </summary>
+             <returns>The name of the <see cref="T:System.Drawing.Image" /> assigned to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton" />.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.ImageSettings">
+            <summary>
+            Creates the property manager for the Image properties on first use.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.RibbonBarImageProperties">
+            <summary>
+            Overrides the standard ImagePropertySettings to 
+            retrieve the ImageList from the parent ToolBar control.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.Update">
+            <summary>
+            Updates the component on the client.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.ToString">
+            <summary>
+            Returns a string that represents the current object.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current object.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarAppButton.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup">
+            <summary>
+            Represents a group of buttons in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>
+            organized horizontally.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.Click">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.OnClick(System.EventArgs)">
+            <summary>
+            This method is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.Text">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.ToolTipText">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.Enabled">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.Image">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.ImageSource">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.ImageIndex">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.ImageKey">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.Buttons">
+            <summary>
+            Returns the collection of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> children.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.Dispose(System.Boolean)">
+            <summary>
+            Disposes of the resources (other than memory) used by the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage" />.
+            </summary>
+            <param name="disposing">true when this method is called by the application rather than a finalizer.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.OnAddReferences(System.Collections.IList)">
+             <summary>
+             Returns a collection of referenced components or collection of components.
+             </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.ButtonCollection">
+            <summary>
+            Represents a collection of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup"/>
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.ButtonCollection.Add(Wisej.Web.Ext.RibbonBar.RibbonBarItemButton)">
+            <summary>
+            Adds the specified <para>item</para> to the collection.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> to add to the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonGroup.ButtonCollection.Insert(System.Int32,Wisej.Web.Ext.RibbonBar.RibbonBarItemButton)">
+            <summary>
+            Inserts the specified <para>item</para> in the collection at the
+            specified <para>index</para>.
+            </summary>
+            <param name="index">The position to insert the specified <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> at.</param>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> to insert in the collection.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonMenu">
+            <summary>
+            Represents a drop down menu associated to a 
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> or a
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemSplitButton"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonMenu.Button">
+            <summary>
+            Returns the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> or <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemSplitButton"/>
+            that own this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonMenu"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonMenu.Dispose(System.Boolean)">
+            <summary>
+            Disposes of the resources, other than memory, used by the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButtonMenu" />.
+            </summary>
+            <param name="disposing">true when this method is called by the application rather than a finalizer.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton">
+            <summary>
+            Represents a button in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.ItemClicked">
+            <summary>
+            Fired when the user clicks one of the drop down menu items.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.OnItemClick(Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.ItemClicked" /> event.
+            </summary>
+            <param name="e">A <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.PushedChanged">
+            <summary>
+            Fired when the value of the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.Pushed"/> property changes.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.OnPushedChanged(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.PushedChanged" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.EventHandler" /> that contains the event data. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.Pushed">
+            <summary>
+            Returns or sets whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> 
+            is rendered using the "pushed" state.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.Orientation">
+            <summary>
+            Returns or sets the layout orientation of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.ColumnBreak">
+            <summary>
+            Returns or sets a value indicating whether a new column starts after
+            this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.MenuItems">
+            <summary>
+            Returns the collection of <see cref="T:Wisej.Web.MenuItem" /> objects associated with the button.
+            </summary>
+            <returns>A <see cref="T:Wisej.Web.Menu.MenuItemCollection" /> that represents the list of <see cref="T:Wisej.Web.MenuItem" /> objects stored in the menu.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.Dispose(System.Boolean)">
+            <summary>
+            Disposes the control.
+            </summary>
+            <param name="disposing">true when this method is called by the application rather than a finalizer.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.OnAddReferences(System.Collections.IList)">
+            <summary>
+            Adds references components to the list. Referenced components
+            can be added individually or as a reference to a collection.
+            </summary>
+            <param name="items">Container for the referenced components or collections.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox">
+            <summary>
+            Represents a checkbox in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox.CheckedChanged">
+            <summary>
+            Fired when the value of the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox.Checked" /> property changes.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox.OnCheckedChanged(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox.CheckedChanged" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox.Checked">
+            <summary>
+            Returns or whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox" /> is in the checked state.
+            </summary>
+            <returns>true if the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox" /> is in the checked state; otherwise, false.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemCheckBox.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemCollection">
+            <summary>
+            Represents a collection of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemCollection.Add(Wisej.Web.Ext.RibbonBar.RibbonBarItem)">
+            <summary>
+            Adds the specified <para>item</para> to the collection.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> to add to the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemCollection.Insert(System.Int32,Wisej.Web.Ext.RibbonBar.RibbonBarItem)">
+            <summary>
+            Inserts the specified <para>item</para> in the collection at the
+            specified <para>index</para>.
+            </summary>
+            <param name="index">The position to insert the specified <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> at.</param>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> to insert in the collection.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox">
+            <summary>
+            Represents a combobox in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.ValueChanged">
+            <summary>
+            Fired when the value of the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.Value" /> property changes.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.OnValueChanged(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.ValueChanged" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.Value">
+            <summary>
+            Returns or sets the currently selected item or the
+            value in the editable field of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.Editable">
+            <summary>
+            Returns or sets whether the user can edit the combobox. When this property
+            is false, the user can only select one of the drop down items. The default  is false.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.FieldWidth">
+            <summary>
+            Returns or sets the width of the ComboBox field inside the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.Items">
+            <summary>
+            Returns the array of items displayed in this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox" />.
+            </summary>
+            <returns>A <see cref="!:" /> containing the items in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox" />.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemComboBox.Wisej#Core#IWisejComponent#Configuration">
+            <summary>
+            Stores the last configuration for the component.
+            
+            Overridden to remove the items list. There is no need to
+            store and diff the list of items.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl">
+            <summary>
+            Represents a user defined control in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl.Control">
+            <summary>
+            Returns or sets the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl.Control"/> to be hosted inside the
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl.Orientation">
+            <summary>
+            Returns or sets the layout orientation of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl.ColumnBreak">
+            <summary>
+            Returns or sets a value indicating whether a new column starts after
+            this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl.Dispose(System.Boolean)">
+            <summary>
+            Disposes the page and related resources.
+            </summary>
+            <param name="disposing">true when this method is called by the application rather than a finalizer.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl.OnAddReferences(System.Collections.IList)">
+            <summary>
+            Adds references components to the list. Referenced components
+            can be added individually or as a reference to a collection.
+            </summary>
+            <param name="items">Container for the referenced components or collections.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemControl.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventArgs">
+            <summary>
+            Contains the data for the events in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBar"/> control
+            fired by its <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> components.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventArgs.#ctor(Wisej.Web.Ext.RibbonBar.RibbonBarGroup)">
+            <summary>
+            Initializes a new instance of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventArgs"/>
+            using the specified parameters.
+            </summary>
+            <param name="group">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> that originated the event.</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventArgs.Group">
+            <summary>
+            The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> that originated the event.
+            </summary>
+            <returns>A reference to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> that originated this event.</returns>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventArgs">
+            <summary>
+            Contains the data for the events in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBar"/> control
+            fired by its <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> components with drop down menu items..
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventArgs.#ctor(Wisej.Web.Ext.RibbonBar.RibbonBarItemButton,Wisej.Web.MenuItem)">
+            <summary>
+            Initializes a new instance of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs"/>
+            using the specified parameters.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> that originated the event.</param>
+            <param name="menuItem">The <see cref="T:Wisej.Web.MenuItem"/> that was clicked or tapped.</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventArgs.Item">
+            <summary>
+            The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemButton"/> that originated the event.
+            </summary>
+            <returns>A reference to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> that originated this event.</returns>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs">
+            <summary>
+            Contains the data for the events in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBar"/> control
+            fired by its <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> components.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs.#ctor(Wisej.Web.Ext.RibbonBar.RibbonBarItem)">
+            <summary>
+            Initializes a new instance of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs"/>
+            using the specified parameters.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> that originated the event.</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs.Item">
+            <summary>
+            The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> that originated the event.
+            </summary>
+            <returns>A reference to the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> that originated this event.</returns>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventHandler">
+            <summary>
+            Represents a method that will handle events related to <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> components.
+            </summary>
+            <param name="sender">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> that fired the event.</param>
+            <param name="e">An instance of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventArgs"/> that contains the data for the event.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventHandler">
+            <summary>
+            Represents a method that will handle events related to <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> components.
+            </summary>
+            <param name="sender">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> that fired the event.</param>
+            <param name="e">An instance of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventArgs"/> that contains the data for the event.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventHandler">
+            <summary>
+            Represents a method that will handle events related to <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> components.
+            </summary>
+            <param name="sender">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItem"/> that fired the event.</param>
+            <param name="e">An instance of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemEventArgs"/> that contains the data for the event.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton">
+            <summary>
+            Represents a radio button in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton.CheckedChanged">
+            <summary>
+            Fired when the value of the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton.Checked" /> property changes.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton.OnCheckedChanged(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton.CheckedChanged" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton.Checked">
+            <summary>
+            Returns or whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton" /> is in the checked state.
+            </summary>
+            <returns>true if the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton" /> is in the checked state; otherwise, false.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemRadioButton.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator">
+            <summary>
+            Represents a vertical separator in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.Click">
+            <summary>
+            This event is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.OnClick(System.EventArgs)">
+            <summary>
+            This method is not relevant for this class.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.ColumnBreak">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.Text">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.ToolTipText">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.Enabled">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.Image">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.ImageSource">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.ImageIndex">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.ImageKey">
+            <summary>
+            This property doesn't apply.
+            </summary>
+            <exclude/>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemSeparator.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemSplitButton">
+            <summary>
+            Represents a split button in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemSplitButton.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemSplitButton.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox">
+            <summary>
+            Represents a textbox in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/>.
+            </summary>
+        </member>
+        <member name="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox.ValueChanged">
+            <summary>
+            Fired when the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox.Value" /> property has changed.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox.OnValueChanged(System.EventArgs)">
+            <summary>
+            Fires the <see cref="E:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox.ValueChanged" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox.Value">
+            <summary>
+            Returns or sets the currently selected item or the
+            value in the editable field of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox.FieldWidth">
+            <summary>
+            Returns or sets the width of the TextBox field inside the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItemTextBox.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage">
+            <summary>
+            Represent a page in a <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.RibbonBar"/> control.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.Parent">
+            <summary>
+            Returns the 
+            <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.RibbonBar"/> that owns this
+            <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.RibbonBar">
+            <summary>
+            Returns the <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.RibbonBar"/> that contains this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>;
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.Groups">
+            <summary>
+            Returns the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup"/> collection in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.Text">
+             <summary>
+             Returns or sets the title of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+             <returns>The text displayed in the button that corresponds to this page.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.TabBackColor">
+            <summary>
+            Returns or sets the background color of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> tab button.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.TabForeColor">
+            <summary>
+            Returns or sets the text color of the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> tab button.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.UseMnemonic">
+             <summary>
+             Returns or sets whether the first character 
+             that is preceded by an ampersand (&amp;) is used as the mnemonic key
+             to select this <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/>.
+            </summary>
+             <returns>true if the first character that is preceded by an ampersand (&amp;) is used as the mnemonic key; otherwise, false. The default is true.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.Visible">
+            <summary>
+            Returns or sets whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> is visible or hidden.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.Enabled">
+            <summary>
+            Returns or sets whether the items in the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> can respond to user interaction.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.RibbonBar.RibbonBarPage.Selected">
+            <summary>
+            Returns or sets whether the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> is the 
+            currently <see cref="P:Wisej.Web.Ext.RibbonBar.RibbonBar.SelectedPage"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarPage.Dispose(System.Boolean)">
+            <summary>
+            Disposes of the resources (other than memory) used by the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage" />.
+            </summary>
+            <param name="disposing">true when this method is called by the application rather than a finalizer.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarPage.Update">
+            <summary>
+            Updates the component on the client.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarPage.ToString">
+            <summary>
+            Returns a string that represents the current object.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current object.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarPage.OnAddReferences(System.Collections.IList)">
+             <summary>
+             Returns a collection of referenced components or collection of components.
+             </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarPage.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object.</param>
+        </member>
+        <member name="T:Wisej.Web.Ext.RibbonBar.RibbonBarPageCollection">
+            <summary>
+            Represents a collection of <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> in a <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBar"/> control.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarPageCollection.Add(Wisej.Web.Ext.RibbonBar.RibbonBarPage)">
+            <summary>
+            Adds the specified <para>item</para> to the collection.
+            </summary>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> to add to the collection.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarPageCollection.Insert(System.Int32,Wisej.Web.Ext.RibbonBar.RibbonBarPage)">
+            <summary>
+            Inserts the specified <para>item</para> in the collection at the
+            specified <para>index</para>.
+            </summary>
+            <param name="index">The position to insert the specified <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> at.</param>
+            <param name="item">The <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarPage"/> to insert in the collection.</param>
+        </member>
+    </members>
+</doc>
