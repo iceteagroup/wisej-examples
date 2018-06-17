@@ -92,7 +92,7 @@ namespace Wisej.Responsive.Views
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("To test Wisej responsive features, activate Developer Tools in your browser and try device emulation.\r\n Enter an arbitrary user name to login.", "Wisej Reponsive Features", MessageBoxButtons.OK);
+            MessageBox.Show("To test Wisej responsive features, activate Developer Tools in your browser and try device emulation.\r\n Enter an arbitrary user name to login.\r\nPassword is \"demo\"", "Wisej Reponsive Features", MessageBoxButtons.OK);
         }
     }
 }
