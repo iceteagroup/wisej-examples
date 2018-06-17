@@ -101,7 +101,7 @@
     <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Web.Ext.Polymer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\Wisej\QX\Extensions\Wisej.Web.Ext.Polymer\bin\Debug\Wisej.Web.Ext.Polymer.dll</HintPath>
+      <HintPath>..\..\wisej-extensions\Wisej.Web.Ext.Polymer.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

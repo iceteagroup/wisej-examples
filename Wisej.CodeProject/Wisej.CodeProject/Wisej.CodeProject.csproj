@@ -149,7 +149,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data.SQLite, Version=1.0.101.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+    <Reference Include="System.Data.SQLite">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Assemblies\System.Data.SQLite.dll</HintPath>
     </Reference>
@@ -164,29 +164,17 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Wisej.Core" />
-    <Reference Include="Wisej.Ext.MaterialDesign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+    <Reference Include="Wisej.Ext.MaterialDesign">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Assemblies\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\..\wisej-extensions\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web" />
-    <Reference Include="Wisej.Web.Ext.BingWallpaper">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.Ext.BingWallpaper.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.CKEditor">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.Ext.CKEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.CoolClock">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.Ext.CoolClock.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.JustGage">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.Ext.JustGage.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.ProgressCircle">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.Ext.ProgressCircle.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.Speech">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.Ext.Speech.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Web.Ext.BingWallpaper" />
+    <Reference Include="Wisej.Web.Ext.CKEditor" />
+    <Reference Include="Wisej.Web.Ext.CoolClock" />
+    <Reference Include="Wisej.Web.Ext.JustGage" />
+    <Reference Include="Wisej.Web.Ext.ProgressCircle" />
+    <Reference Include="Wisej.Web.Ext.Speech" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Examples\BackgroundTasks.resx">
@@ -245,7 +233,7 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
-    </ProjectExtensions>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
