@@ -87,20 +87,13 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Wisej.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\WiseJ\Development\Wisej\bin\Wisej.Core.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL" />
     <Reference Include="Wisej.Ext.ModernUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\WiseJ\Development\Wisej\bin\Wisej.Ext.ModernUI.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\WiseJ\Development\Wisej\bin\Wisej.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.FullCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\WiseJ\Development\Wisej\bin\Wisej.Web.Ext.FullCalendar.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL" />
+    <Reference Include="Wisej.Web.Ext.FullCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.de.resx">
