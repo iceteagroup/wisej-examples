@@ -89,7 +89,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Web" />
-    <Reference Include="Wisej.Web.Ext.Notification, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL" />
+    <Reference Include="Wisej.Web.Ext.Notification" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.resx">
@@ -116,9 +116,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53799</DevelopmentServerPort>
+          <DevelopmentServerPort>55635</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53799/</IISUrl>
+          <IISUrl>http://localhost:55635/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

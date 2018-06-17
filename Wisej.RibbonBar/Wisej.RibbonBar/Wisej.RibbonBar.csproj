@@ -96,12 +96,11 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Web" />
+    <Reference Include="Wisej.Ext.FontAwesome">
+      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Ext.FontAwesome.dll</HintPath>
+    </Reference>
     <Reference Include="Wisej.Ext.MaterialDesign">
       <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.RibbonBar">
       <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\QX\Extensions\Wisej.Web.Ext.RibbonBar\bin\Debug\Wisej.Web.Ext.RibbonBar.dll</HintPath>
@@ -132,7 +131,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>2317</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:2317/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
