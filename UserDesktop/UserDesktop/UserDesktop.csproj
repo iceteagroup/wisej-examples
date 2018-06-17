@@ -84,10 +84,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Web" />
-    <Reference Include="Wisej.Web.Ext.BingWallpaper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Development\Wisej\bin\Wisej.Web.Ext.BingWallpaper.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Web.Ext.BingWallpaper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyDesktop.resx">

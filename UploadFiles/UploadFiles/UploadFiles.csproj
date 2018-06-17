@@ -73,12 +73,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Core">
-      <HintPath>..\..\..\Development\Wisej\bin\Wisej.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web">
-      <HintPath>..\..\..\Development\Wisej\bin\Wisej.Web.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Core" />
+    <Reference Include="Wisej.Web" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Window1.resx">

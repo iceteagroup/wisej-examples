@@ -38,12 +38,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Wisej.Core">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Core" />
+    <Reference Include="Wisej.Web" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDataSupplier.cs" />
