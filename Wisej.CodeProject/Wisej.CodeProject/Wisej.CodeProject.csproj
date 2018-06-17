@@ -163,17 +163,12 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Wisej.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Core.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Ext.MaterialDesign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Assemblies\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web">
-      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Web.Ext.BingWallpaper">
       <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.Ext.BingWallpaper.dll</HintPath>
     </Reference>
@@ -250,15 +245,10 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
-  </ProjectExtensions>
+    </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
-</Project>Build">
   </Target>
   <Target Name="AfterBuild">
   </Target>
