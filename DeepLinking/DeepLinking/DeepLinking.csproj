@@ -81,12 +81,8 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
-    <Reference Include="Wisej.Core">
-      <HintPath>..\..\..\Development\Wisej\bin\Wisej.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web">
-      <HintPath>..\..\..\Development\Wisej\bin\Wisej.Web.dll</HintPath>
-    </Reference>
+    <Reference Include="Wisej.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL" />
+    <Reference Include="Wisej.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UserDataDialog.resx">
