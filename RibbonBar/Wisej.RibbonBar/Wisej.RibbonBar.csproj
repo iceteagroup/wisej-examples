@@ -97,13 +97,13 @@
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Ext.FontAwesome">
-      <HintPath>..\..\wisej-extensions\Wisej.Ext.FontAwesome.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Ext.FontAwesome.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Ext.MaterialDesign">
-      <HintPath>..\..\wisej-extensions\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.RibbonBar">
-      <HintPath>..\..\wisej-extensions\Wisej.Web.Ext.RibbonBar.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Web.Ext.RibbonBar.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

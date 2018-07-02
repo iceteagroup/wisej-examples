@@ -166,7 +166,7 @@
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Ext.MaterialDesign">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\wisej-extensions\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Web.Ext.BingWallpaper" />

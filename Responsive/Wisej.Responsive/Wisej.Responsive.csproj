@@ -123,14 +123,14 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Ext.ElegantIcons">
-      <HintPath>..\..\wisej-extensions\Wisej.Ext.ElegantIcons.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Ext.ElegantIcons.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Ext.MaterialDesign">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\wisej-extensions\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Ext.ModernUI">
-      <HintPath>..\..\wisej-extensions\Wisej.Ext.ModernUI.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Ext.ModernUI.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Web.Ext.AspNetControl" />

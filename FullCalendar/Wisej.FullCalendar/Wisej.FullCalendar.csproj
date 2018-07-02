@@ -89,7 +89,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Ext.ModernUI">
-      <HintPath>..\..\wisej-extensions\Wisej.Ext.ModernUI.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Ext.ModernUI.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Web.Ext.FullCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />

@@ -78,7 +78,7 @@
     <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Web" />
     <Reference Include="Wisej.Web.Ext.Pannellum">
-      <HintPath>..\..\wisej-extensions\Wisej.Web.Ext.Pannellum.dll</HintPath>
+      <HintPath>..\Dependencies\Wisej.Web.Ext.Pannellum.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
