@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding", "DataBinding\DataBinding.csproj", "{6437F003-99FF-4ECF-918B-BB69ECC539F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding.WinForms", "DataBinding.WinForms\DataBinding.WinForms.csproj", "{409D1C8B-D574-41CB-8EDD-B110AC876E1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6437F003-99FF-4ECF-918B-BB69ECC539F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6437F003-99FF-4ECF-918B-BB69ECC539F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6437F003-99FF-4ECF-918B-BB69ECC539F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6437F003-99FF-4ECF-918B-BB69ECC539F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409D1C8B-D574-41CB-8EDD-B110AC876E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409D1C8B-D574-41CB-8EDD-B110AC876E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409D1C8B-D574-41CB-8EDD-B110AC876E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409D1C8B-D574-41CB-8EDD-B110AC876E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
