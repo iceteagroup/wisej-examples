@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using Wisej.Web;
 
 namespace Wisej.RibbonBar
@@ -10,6 +11,7 @@ namespace Wisej.RibbonBar
 		/// </summary>
 		static void Main()
 		{
+			//Application.CurrentCulture = CultureInfo.GetCultureInfo("de");
 			new Window1().Show();
 			new Window1().Show();
 		}
