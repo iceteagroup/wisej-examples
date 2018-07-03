@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wisej.Web.Ext.ColumnFilter</name>
+    </assembly>
+    <members>
+        <member name="T:Wisej.Web.Ext.ColumnFilter.ColumnFilter">
+            <summary>
+            Adds a custom filter button to <see cref="T:Wisej.Web.DataGridViewColumn"/> to
+            display a custom filter panel.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilter.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilter"/>
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilter.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilter" /> class with a specified container.
+            </summary>
+            <param name="container">An <see cref="T:System.ComponentModel.IContainer" />container. </param>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilter.FilterPanelType">
+            <summary>
+            Returns or sets the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/> to associate
+            with this <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilter"/> extender.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilter.ImageSettings">
+            <summary>
+            Creates the property manager for the Image properties on first use.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilter.Image">
+            <summary>
+            Returns or sets the image that is displayed in the filter button.
+            </summary>
+            <returns>The <see cref="T:System.Drawing.Image" /> to display.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilter.ImageSource">
+            <summary>
+            Returns or sets the theme name or URL for the image to display in the filter button.
+            </summary>
+            <returns>The theme name or URL for the image to display in the filter button.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilter.FilteredImageSettings">
+            <summary>
+            Creates the property manager for the Image properties on first use.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilter.FilteredImage">
+            <summary>
+            Returns or sets the image that is displayed in the filter button when
+            there is an active filter. Can be null.
+            </summary>
+            <returns>The <see cref="T:System.Drawing.Image" /> to display.</returns>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilter.FilteredImageSource">
+            <summary>
+            Returns or sets the theme name or URL for the image to display in the filter button when
+            there is an active filter. Can be null.
+            </summary>
+            <returns>The theme name or URL for the image to display in the filter button.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilter.GetShowFilter(Wisej.Web.DataGridViewColumn)">
+            <summary>
+            Returns whether the specified <see cref="T:Wisej.Web.DataGridViewColumn"/>
+            shows the filter button in its header.
+            </summary>
+            <param name="column">The <see cref="T:Wisej.Web.DataGridViewColumn"/> to query.</param>
+            <returns>True if the <see cref="T:Wisej.Web.DataGridViewColumn"/> shows the filter button.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilter.SetShowFilter(Wisej.Web.DataGridViewColumn,System.Boolean)">
+            <summary>
+            Shows or hides the filter button on a <see cref="T:Wisej.Web.DataGridViewColumn"/> header panel.
+            </summary>
+            <param name="column">The <see cref="T:Wisej.Web.DataGridViewColumn"/> for which to show or hide the filter button.</param>
+            <param name="show">True to show the filter button or false to remove it.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilter.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)">
+            <summary>
+            Returns true if the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilter" /> extender can offer an extender property to the specified target component.
+            </summary>
+            <returns>true if the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilter" /> class can offer one or more extender properties; otherwise, false.</returns>
+            <param name="extendee">The target object to add an extender property to. </param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilter.Wisej#Core#IWisejExtenderProvider#RenderDesignMode(Wisej.Core.IWisejComponent)">
+            <summary>
+            Renders the additional properties for the specified component.
+            </summary>
+            <param name="component"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel">
+            <summary>
+            Base class for the filter panels to use in conjunction with the
+            <see cref="P:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.ColumnFilter"/> extender.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.DataGridViewColumn">
+            <summary>
+            Returns the <see cref="P:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.DataGridViewColumn"/> bound
+            to this <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/>.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.FilterButton">
+            <summary>
+            Returns the control used as the filter button.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.ColumnFilter">
+            <summary>
+            Returns the instance of the <see cref="P:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.ColumnFilter"/> that is managing this
+            <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.GetFilterPanels">
+            <summary>
+            Returns all the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/> panels
+            associated to the columns of the <see cref="T:Wisej.Web.DataGridView"/> that
+            owns the <see cref="P:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.DataGridViewColumn"/> linked to the
+            calling panel.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.ApplyFilters">
+            <summary>
+            Applies the filters registered with each
+            column in the order of creation in the <see cref="P:Wisej.Web.DataGridView.Columns"/> collection.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.OnBeforeShow">
+            <summary>
+            Invoked when the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/> is shown
+            but before it is visible on the client.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.OnAfterShow">
+            <summary>
+            Invoked when the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/> after
+            is visible on the client.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.OnApplyFilter">
+            <summary>
+            Invoked when the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/>
+            should apply the filter criteria selected by the user.
+            </summary>
+            <returns>True to indicate that the filter has been applied. False if the filter has been cleared.</returns>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.OnWebEvent(Wisej.Core.WisejEventArgs)">
+            <summary>
+            Processes the event from the client.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.OnWebRender(System.Object)">
+            <summary>
+            Renders the client component.
+            </summary>
+            <param name="config">Dynamic configuration object</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.ok">
+            <summary>
+            Reference to the OK button.
+            </summary>
+        </member>
+        <member name="F:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel.cancel">
+            <summary>
+            Reference to the Cancel button.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanelTypeConverter">
+            <summary>
+            Converter for the <see cref="P:Wisej.Web.Ext.ColumnFilter.ColumnFilter.FilterPanelType"/> property.
+            Allows for the selection of the valid subclasses of <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/>.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanelTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Returns whether this converter can convert the specified <see cref="T:System.Type" /> of the source object using the given context.
+            </summary>
+            <returns>true if this converter can perform the conversion; otherwise, false.</returns>
+            <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+            <param name="sourceType">The <see cref="T:System.Type" /> of the source object.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanelTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Returns whether this converter can convert an object to the given destination type using the context.
+            </summary>
+            <returns>true if this converter can perform the conversion; otherwise, false.</returns>
+            <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context. </param>
+            <param name="destinationType">A <see cref="T:System.Type" /> that represents the type you wish to convert to. </param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanelTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Converts the specified object to the native type of the converter.
+            </summary>
+            <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
+            <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context. </param>
+            <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that specifies the culture used to represent the font. </param>
+            <param name="value">The <see cref="T:System.Object" /> to convert. </param>
+        </member>
+        <member name="T:Wisej.Web.Ext.ColumnFilter.lblANDOR">
+            <summary>
+            Custom AND/OR label.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel">
+            <summary>
+            Simple column filter panel showing the unique values found in
+            the bound column in a checked list box. The user can select
+            multiple values, clear the selection or select all.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.OnLoad(System.EventArgs)">
+            <summary>
+            Performs initialization tasks when the panel is created.
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.OnBeforeShow">
+            <summary>
+            Invoked when the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/> is shown
+            but before it is visible on the client.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.OnAfterShow">
+            <summary>
+            Invoked when the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/> after
+            is visible on the client.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.ApplyFilters">
+            <summary>
+            Applies the filters registered with each
+            column in the order of creation in the <see cref="P:Wisej.Web.DataGridView.Columns"/> collection.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.OnApplyFilter">
+            <summary>
+            Invoked when the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/>
+            should apply the filter criteria selected by the user.
+            </summary>
+            <returns>True to indicate that the filter has been applied. False if the filter has been cleared.</returns>
+        </member>
+        <member name="F:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.SimpleColumnFilterPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel">
+            <summary>
+            Where column filter panel showing a list of operators and values based on the Columns ValueType
+            
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel"/> class.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel.OnBeforeShow">
+            <summary>
+            Show hide controls based on the ValueType
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel.ApplyFilters">
+            <summary>
+            Applies the filters registered with each
+            column in the order of creation in the <see cref="P:Wisej.Web.DataGridView.Columns"/> collection.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel.OnApplyFilter">
+            <summary>
+            Invoked when the <see cref="T:Wisej.Web.Ext.ColumnFilter.ColumnFilterPanel"/>
+            should apply the filter criteria selected by the user.
+            </summary>
+            <returns>True to indicate that the filter has been applied. False if the filter has been cleared.</returns>
+        </member>
+        <member name="F:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.ColumnFilter.WhereColumnFilterPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
