@@ -14,7 +14,7 @@ Each example is self contained and includes all Wisej extensions needed to run o
 ## Example categories
 * Applications - Page, Window and Desktop applications, Page Navigation, etc.
 * Controls - A few examples of less common Wisej controls.
-* Extensions - Examples using Wisej extensions, including DGV column filter or integrations like GoogleMaps, the amazing TourPanel, common web rich text editors, etc.
+* Extensions - Examples using Wisej extensions, including DGV column filter or integrations like GoogleMaps, the amazing TourPanel, the fantastic [Pannellum](http://demo.wisej.com:8080/Pannellum.html), common web rich text editors, etc.
 * How To - Less common uses of Wisej, like Deep Linking, Localization, Upload and Download, etc.
 
 ### The source code for all Wisej extensions is available at [Wisej-Extensions](https://github.com/iceteagroup/wisej-extensions).
