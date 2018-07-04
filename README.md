@@ -12,6 +12,8 @@ Developers new to Wisej should install [Wisej trial version](https://wisej.com/#
 Each example is self contained and includes all Wisej extensions needed to run out-of-the-box.
 
 ## Example categories
+
+The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categories:
 * Applications - Page, Window and Desktop applications, Page Navigation, etc.
 * Controls - A few examples of less common Wisej controls.
 * Extensions - Examples using Wisej extensions, including DGV column filter or integrations like GoogleMaps, the amazing TourPanel, the fantastic [Pannellum](http://demo.wisej.com:8080/Pannellum.html), common web rich text editors, etc.
