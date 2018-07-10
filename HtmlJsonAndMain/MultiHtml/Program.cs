@@ -1,5 +1,4 @@
-﻿using System;
-using Wisej.Web;
+﻿using Wisej.Web;
 
 namespace MultiHtml
 {
@@ -12,13 +11,5 @@ namespace MultiHtml
         {
             Application.MainPage = new DefaultPage();
         }
-
-        //
-        // You can use the entry method below
-        // to receive the parameters from the URL in the args collection.
-        //
-        //static void Main(NameValueCollection args)
-        //{
-        //}
     }
 }

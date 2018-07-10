@@ -1,18 +1,28 @@
 ﻿using System;
 using Wisej.Web;
 
-namespace MultiHtml
+namespace MultiHtml.Customers
 {
-    public partial class DefaultPage : Page
+    public partial class CustomerPage : Page
     {
-        public DefaultPage()
+        public CustomerPage()
         {
             InitializeComponent();
         }
 
-        private void DefaultPage_Load(object sender, EventArgs e)
+        private void CustomerPage_Load(object sender, EventArgs e)
         {
             url.Text = $"Application URL {Application.Url}";
+        }
+
+        private void navigateToDefault_Click(object sender, EventArgs e)
+        {
+            Application.Navigate("/Default");
+        }
+
+        private void navigateToDefaultHtml_Click(object sender, EventArgs e)
+        {
+            Application.Navigate("/Default.html");
         }
 
         private void navigateToAdministration_Click(object sender, EventArgs e)
@@ -33,16 +43,6 @@ namespace MultiHtml
         private void navigateToStatisticsHtml_Click(object sender, EventArgs e)
         {
             Application.Navigate("/Statistics.html");
-        }
-
-        private void navigateToCustomers_Click(object sender, EventArgs e)
-        {
-            Application.Navigate("/Customers/");
-        }
-
-        private void navigateToCustomersHtml_Click(object sender, EventArgs e)
-        {
-            Application.Navigate("/Customers/Default.html");
         }
 
         private void navigateToSuppliers_Click(object sender, EventArgs e)

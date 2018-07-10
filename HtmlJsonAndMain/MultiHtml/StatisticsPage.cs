@@ -3,16 +3,26 @@ using Wisej.Web;
 
 namespace MultiHtml
 {
-    public partial class DefaultPage : Page
+    public partial class StatisticsPage : Page
     {
-        public DefaultPage()
+        public StatisticsPage()
         {
             InitializeComponent();
         }
 
-        private void DefaultPage_Load(object sender, EventArgs e)
+        private void StatisticsPage_Load(object sender, EventArgs e)
         {
             url.Text = $"Application URL {Application.Url}";
+        }
+
+        private void navigateToDefault_Click(object sender, EventArgs e)
+        {
+            Application.Navigate("/Default");
+        }
+
+        private void navigateToDefaultHtml_Click(object sender, EventArgs e)
+        {
+            Application.Navigate("/Default.html");
         }
 
         private void navigateToAdministration_Click(object sender, EventArgs e)
@@ -23,16 +33,6 @@ namespace MultiHtml
         private void navigateToAdministrationHtml_Click(object sender, EventArgs e)
         {
             Application.Navigate("/Administration.html");
-        }
-
-        private void navigateToStatistics_Click(object sender, EventArgs e)
-        {
-            Application.Navigate("/Statistics");
-        }
-
-        private void navigateToStatisticsHtml_Click(object sender, EventArgs e)
-        {
-            Application.Navigate("/Statistics.html");
         }
 
         private void navigateToCustomers_Click(object sender, EventArgs e)
