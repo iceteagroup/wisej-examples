@@ -42,3 +42,7 @@ There is no Default.html file so Wisej will not proceed to load and handle Defau
 2) http://localhost:57877/ChangedNames
 HTTP Error 404.0 - Not Found
 There is no ChangedNames.json file.
+
+2) http://localhost:57877/ChangedNames.html
+The wisej.wx script reloads the same page.
+Look at the URL label to see what Wisej really loaded.
