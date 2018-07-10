@@ -13,7 +13,7 @@ namespace ChangedNames
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-            url.Text = $"Application URL {Application.Url}";
+            url.Text = $"URL {Application.Url}";
         }
     }
 }

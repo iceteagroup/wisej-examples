@@ -42,7 +42,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Alias.html" />
     <Content Include="ChangedNames.html" />
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />

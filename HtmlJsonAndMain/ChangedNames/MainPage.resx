@@ -124,21 +124,21 @@
 - Program.cs
 
 This example uses a very unusual setup:
-- ChangedNames.html and Alias.html
+- ChangedNames.html
 - Default.json
 - Startup.cs
-
-Wisej can use the HTML file name or the JSON file name.
 
 When you type
 http://servername/Default
 all Wisej cares is about finding a Default.json file.
 
 When you type
-http://servername/ChangedNames.html or http://servername/Alias.html 
+http://servername/ChangedNames.html or http://servername/folder/ChangedNames.html
 provided the HTML file exists, Wisej tries to find a matching JSON file,
-that is a file with the same name but with a json extension.
-If Wisej can not find the json file, it uses the configuration in "Default.json" file.
+respectively &lt;ProjectRoot&gt;/ChangedNames.json or &lt;ProjectRoot&gt;/folder/ChangedNames.json
+If Wisej can not find the json file, the wisej.wx script reloads the same page, although the browser shows the address you typed.
+
+In this example, look at the URL label in the top right corner, to find out what Wisej used to load the Page.
 
 The Default.json file on this projects looks like this:
 {
