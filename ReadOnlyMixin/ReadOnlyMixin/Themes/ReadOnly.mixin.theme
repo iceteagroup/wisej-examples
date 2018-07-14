@@ -1,15 +1,15 @@
 
 {
 	"name": "ReadOnly.mixin",
-    "fonts": 
-    {
-    },
-    "images": 
-    {
-    },
-    "colors": 
-    {
-    },
+	"fonts": 
+	{
+	},
+	"images": 
+	{
+	},
+	"colors": 
+	{
+	},
 	"appearances": 
 	{
 		"combobox": 
