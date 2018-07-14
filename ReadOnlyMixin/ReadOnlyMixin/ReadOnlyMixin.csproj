@@ -45,7 +45,7 @@
     <Content Include="Default.html" />
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
-    <EmbeddedResource Include="Themes\Themes\ReadOnlyMixin.theme" />
+    <EmbeddedResource Include="Themes\ReadOnly.mixin.theme" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

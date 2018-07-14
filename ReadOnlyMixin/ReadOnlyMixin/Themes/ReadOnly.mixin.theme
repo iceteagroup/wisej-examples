@@ -1,0 +1,89 @@
+
+{
+	"name": "ReadOnly.mixin",
+	"fonts": 
+	{
+	},
+	"images": 
+	{
+	},
+	"colors": 
+	{
+	},
+	"appearances": 
+	{
+		"combobox": 
+		{
+			"text": "ComboBox",
+			"inherit": "combobox",
+			"states": 
+			{
+				"readonly": 
+				{
+					"properties": 
+					{
+						"opacity": 0.5
+					}
+				}
+			}
+		},
+		"datefield": 
+		{
+			"inherit": "datefield",
+			"states": 
+			{
+				"readonly": 
+				{
+					"properties": 
+					{
+						"opacity": 0.5
+					}
+				}
+			}
+		},
+		"list": 
+		{
+			"text": "ListBox",
+			"inherit": "list",
+			"states": 
+			{
+				"readonly": 
+				{
+					"properties": 
+					{
+						"opacity": 0.5
+					}
+				}
+			}
+		},
+		"spinner": 
+		{
+			"inherit": "spinner",
+			"states": 
+			{
+				"readonly": 
+				{
+					"properties": 
+					{
+						"opacity": 0.5
+					}
+				}
+			}
+		},
+		"textbox": 
+		{
+			"text": "TextBox",
+			"inherit": "textbox",
+			"states": 
+			{
+				"readonly": 
+				{
+					"properties": 
+					{
+						"opacity": 0.5
+					}
+				}
+			}
+		}
+	}
+}
