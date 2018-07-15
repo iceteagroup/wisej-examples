@@ -13,7 +13,9 @@ On a brand new project, by default Wisej creates 3 startup files:
 * Default.json
 * Program.cs
 
-Note - The filename __Program.cs__ is used because that’s the name we are used to in WinForms.
+Notes
+* The filename __Default.html__ is used because that’s the filename we are used for a startup file in ASP.NET.
+* The filename__Program.cs__ is used because that’s where we look for the _static_ __Main__ method in WinForms.
 
 ### 2.1. Create new sub-applications
 
@@ -29,7 +31,7 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 * Admin.json
 * Admin.cs
 
-The __Admin.json__ will look like this:
+The __Admin.json__ file will look like this:
 ```json
 {
 	"url" : "Admin.html",
