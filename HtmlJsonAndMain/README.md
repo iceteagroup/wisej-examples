@@ -8,7 +8,7 @@ All Wisej projects must have at least one sub-application that is created by def
 
 ## 2. About the startup files and their use
 
-On a brand new project, Wisej creates 3 startup files:
+When you create a new Wisej project, Wisej creates 3 startup files:
 * Default.html
 * Default.json
 * Program.cs
@@ -16,6 +16,9 @@ On a brand new project, Wisej creates 3 startup files:
 Notes
 * The filename __Default.html__ is used because that’s the filename we are used to, for a startup page in ASP.NET.
 * The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
+* For simplicity, the __.html__ and __.json__ filenames should match, but they have to match.
+
+These names can be changed. The [ChangedNames project](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) is an example of changing the __.html__ and __.cs__ filenames.
 
 ### 2.1. Creating sub-applications
 
@@ -30,6 +33,10 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 * Admin.html
 * Admin.json
 * Admin.cs
+
+### 2.2. Running sub-applications
+
+
 
 The __Admin.json__ file will look like this:
 ```json
