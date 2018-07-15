@@ -39,7 +39,7 @@ namespace TreeGrid
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 
-                if (row.Cells["colTYPE"].Value.ToString() == prevType)
+                if (row.Cells["colType"].Value.ToString() == prevType)
                 {
                     row.ParentRow = dataGridView1.Rows[ParentRow];
                 }
@@ -47,7 +47,7 @@ namespace TreeGrid
                 {
                     ParentRow = row.Index;
                 }
-                prevType = row.Cells["colTYPE"].Value.ToString();
+                prevType = row.Cells["colType"].Value.ToString();
             }
         }
 
