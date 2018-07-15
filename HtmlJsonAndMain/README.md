@@ -8,21 +8,21 @@ All Wisej projects must have at least one sub-application that is created by def
 
 ## 2. About the startup files and their use
 
-On a brand new project, by default Wisej creates 3 startup files:
+On a brand new project, Wisej creates 3 startup files:
 * Default.html
 * Default.json
 * Program.cs
 
 Notes
-* The filename __Default.html__ is used because that’s the filename we are used to for a startup file in ASP.NET.
+* The filename __Default.html__ is used because that’s the filename we are used to, for a startup page in ASP.NET.
 * The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
 
-### 2.1. Create new sub-applications
+### 2.1. Creating sub-applications
 
 You can create a sub-application in the project's root or in a project's folder.
 
-To create a new sub-application, follow the steps:
-1) Right click on the project, _Select __Add => New Item__;
+To create a sub-application, follow the steps:
+1) Right click on the project, selecting __Add => New Item__.
 2) On the __Add New Item__ form, select __Wisej__ on the left side and click on __Application__ in the object list.
 3) Set the application __Name__ and click __Add__.
 
