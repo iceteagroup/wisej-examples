@@ -105,7 +105,7 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
     * If __Customers.json__ doesn't exist, Wisej presumes __Customers__ is a folder name and looks for the __.json__ file at  __\Customers\Default.json__ (like if the URL  was "/Customers/Default.json").  
 	Note - his beahaviour was introduced in release 1.5.4.
 
-### 4. No need for a default document in Web.config
+### 3.1. No need for a default document in Web.config
 
 The __Web.config__ file created by Wisej templates, by default includes a section like this:
 
@@ -120,3 +120,5 @@ The __Web.config__ file created by Wisej templates, by default includes a sectio
 According to rule 2) above, you don't need __defaultDocument__ to be defined in the __Web.config__ file.
 
 If your URL doesn't include a document, say it looks like http://localhost, as explained earlier, Wisej tries to get the __.json__ file at __\Default.json__.
+
+In fact, both projects [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames)  and [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) have the __defaultDocument__ commented  in the __Web.config__ file
