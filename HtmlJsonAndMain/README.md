@@ -78,10 +78,10 @@ Wisej also needs to know what method the server should execute on startup, in th
 
 Say that instead of executing the __Main__ method, we want to instantiate an __AdminPage__. In fact, most of the time, all the __Main__ method does is instantiate a view (Form or Page). In this case, __Admin.json__ file should look like:
 
-```json
+```javascript
 {
-  "url": "Admin.html",
-  "mainWindow": "[ProjectName].AdminPage, [ProjectName]"
+    "url": "Admin.html",
+    "mainWindow": "[ProjectName].AdminPage, [ProjectName]"
 }
 ```
 
@@ -114,9 +114,9 @@ The __Web.config__ file created by Wisej project templates, by default includes 
 
  ```xml
 <defaultDocument enabled="true">
-  <files>
-    <add value="Default.html" />
-  </files>
+    <files>
+        <add value="Default.html" />
+    </files>
 </defaultDocument>
 ```
 
