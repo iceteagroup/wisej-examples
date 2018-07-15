@@ -34,6 +34,17 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 * Admin.json
 * Admin.cs
 
+The __Admin.cs__ file is the equivalent to the __Program.cs__ default file and looks like this: 
+```csharp
+static class Admin
+{
+    static void Main()
+	{
+	}
+}
+```
+
+
 ### 2.2. Running sub-applications
 
 We are trained to look for the __.html__ file as the starting point for a web application. In fact, the Wisej sub-application starts by the __.json__ file. Even when we type an URL that includes the __.html__ part, Wisej looks for is the __.json__ file. Later on, we will discuss the rules Wisej uses to get a __.json__ file.
