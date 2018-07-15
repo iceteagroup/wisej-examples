@@ -37,7 +37,7 @@ namespace MultiHtml
 
         private void navigateToCustomers_Click(object sender, EventArgs e)
         {
-            Application.Navigate("/Customers/");
+            Application.Navigate("/Customers");
         }
 
         private void navigateToCustomersHtml_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace MultiHtml
 
         private void navigateToSuppliers_Click(object sender, EventArgs e)
         {
-            Application.Navigate("/Suppliers/");
+            Application.Navigate("/Suppliers");
         }
 
         private void navigateToSuppliersHtml_Click(object sender, EventArgs e)
