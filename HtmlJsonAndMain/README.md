@@ -47,8 +47,8 @@ In the __Admin__ sub-application we created, the __Admin.json__ file will look l
 ```
 
 This file tells Wisej two important pieces of information:
-* What __.html__ file to show on the browser - the "url" key.
-* What is the startup method - the "startup" key.
+* What __.html__ file to show on the browser - the __"url"__ key.
+* What is the startup method - the __"startup"__ key.
 
 Notes
 * Browsers need an HTML-like file and Wisej needs the browser to load and execute __wisej.wx__. More on this later.
@@ -64,18 +64,25 @@ This line is very important, because it loads and executes the browser (client) 
 
 #### 2.2.2. What method should the server execute
 
-Wisej also needs to know what method the server should execute on startup, in this case
-- method <ProjectName>.Admin.Main
-- assembly <ProjectName>
+Wisej also needs to know what method the server should execute on startup, in this case the method __<ProjectName>.Admin.Main__ on assembly __<ProjectName>__.
 
-Say that instead of executing the __Main__  method, we want to instantiate an AdminPage. In fact, most of the time, all the __Main__ does is instantiate a view (Form or Page). In this case, __Admin.json__ file should look like:
+Say that instead of executing the __Main__ method, we want to instantiate an AdminPage. In fact, most of the time, all the __Main__ method does is instantiate a view (Form or Page). In this case, __Admin.json__ file should look like:
 
 ```json
 {
 	"url": "Admin.html",
-	"startup": "<ProjectName>.AdminPage, <ProjectName>"
+	"mainWindow": "<ProjectName>.AdminPage, <ProjectName>"
 }
 ```
+
+### 2.3. Wisej startup workflow
+
+The Wisej startup workflow is quite simple and is composed of the following steps:
+1) Find a __.json__ file.
+2) Tell the browser to load and show __"url"__ HTML-like file.
+3) Execute the __"startup"__ method on the server
+or
+3) Instantiate (invoke the constructor of) the __"mainWindow"__ view.
 
 ## 3. How Wisej looks for the json file
 
