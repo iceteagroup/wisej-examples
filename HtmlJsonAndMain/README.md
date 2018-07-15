@@ -14,9 +14,9 @@ When you create a new Wisej project, Wisej creates 3 startup files:
 * Program.cs
 
 Notes
-* The filename __Default.html__ is used because that’s the filename we are used to, for a startup page in ASP.NET.
-* The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
-* For simplicity, the __.html__ and __.json__ filenames should match, but they don't have to match.
+    * The filename __Default.html__ is used because that’s the filename we are used to, for a startup page in ASP.NET.
+    * The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
+    * For simplicity, the __.html__ and __.json__ filenames should match, but they don't have to match.
 
 These names can be changed. The [ChangedNames project](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) is an example of changing the __.html__ and __.cs__ filenames.
 
@@ -51,8 +51,8 @@ This file tells Wisej two important pieces of information:
 * What is the startup method - the __"startup"__ key.
 
 Notes
-* Browsers need an HTML-like file and Wisej needs the browser to load and execute __wisej.wx__. More on this later.
-* Instead of the startup method, we can specify the sub-application's main view. More on this later.
+    * Browsers need an HTML-like file and Wisej needs the browser to load and execute __wisej.wx__. More on this later.
+    * Instead of the startup method, we can specify the sub-application's main view. More on this later.
 
 #### 2.2.1. Showing an .html file on the browser
 
@@ -80,8 +80,8 @@ Say that instead of executing the __Main__ method, we want to instantiate an Adm
 Putting it all together, you will find the Wisej startup workflow quite simple. It's composed of the following steps:
 1) Find a __.json__ file.
 2) Tell the browser to load and show __"url"__ HTML-like file.
-3) Tell the server what to do, according to the key specified in the __.json__ file:  
-    * Execute the __"startup"__ method or  
+3) Tell the server what to do, according to the key specified in the __.json__ file:
+    * Execute the __"startup"__ method or
     * Instantiate (invoke the constructor of) the __"mainWindow"__ view.
 
 ## 3. How Wisej looks for the json file
@@ -90,8 +90,8 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
 
 2) If you type an URL that ends with "/" like "folder/", Wisej uses "folder/Default.json".
 
-3) if you type an URL that does __not__ end with __.html__ like __Customer__, Wisej tries to solve the URL in two steps:  
-    * Wisej appends __.json__ to __Customer__ and use as the json file, in this case uses __Customer.json__.  
+3) if you type an URL that does __not__ end with __.html__ like __Customer__, Wisej tries to solve the URL in two steps:
+    * Wisej appends __.json__ to __Customer__ and use as the json file, in this case uses __Customer.json__.
     * If __Customer.json__ doesn't exist, Wisej presumes __Customer__ is a folder name and tries to use __Customer/Default.json__ (this beahaviour was introduced in release 1.5.4).
 
  
