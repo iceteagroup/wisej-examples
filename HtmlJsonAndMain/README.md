@@ -98,7 +98,7 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
 
 1) If you type an URL that ends with an extension (html or any other extension), like __http://myserver.com/Startup.php__, if the file exists, Wisej tries to find the matching __.json__ file (a file with the same name, but with a json extension instead of supplied extension). In this case it looks for __\Startup.json__. If Wisej can not find a matching json file, the __wisej.wx__ script reloads the same page.
 
-2) If you type an URL that ends with "/" like __http://myserver.com/folder/__", Wisej uses __Default.json__ file at the specified folder location, in this case at __\folder\Default.json__.
+2) If you type an URL that ends with "/" like __http://myserver.com/Suppliers/__", Wisej uses __Default.json__ file at the specified folder location, in this case at __\Suppliers\Default.json__.
 
 3) if you type an URL that does __NOT__ end with any extension like __http://myserver.com/Customers__, Wisej tries to find the __.json__ file in two steps:
     * Wisej appends __.json__ to __Customers__ and use as the json file, in this case it looks for __\Customers.json__.
