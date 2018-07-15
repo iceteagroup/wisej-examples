@@ -99,13 +99,13 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
 1) Replace the extension by __.json__  
 If you type an URL that ends with an extension (html or any other extension), like __http://myserver.com/Startup.php__, if the file exists, Wisej tries to find the matching __.json__ file (a file with the same name, but with the json extension instead of supplied extension). In this case it looks for __\Startup.json__. If Wisej can not find a matching json file, the __wisej.wx__ script reloads the same page.
 
-2) Append __Default.json__ to the folder path  
+2) Append __Default.json__ to a folder path  
 If you type an URL that refers to a folder, be it the root folder __http://myserver.com__ or an URL that ends with "/" like __http://myserver.com/Suppliers/__, Wisej uses __Default.json__ file at the specified folder location, in this case at __\Default.json__ or __\Suppliers\Default.json__.
 
 3) Append __.json__ extension or __\Default.json__  
 If you type an URL that does __NOT__ end with any extension like __http://myserver.com/Customers__, Wisej tries to find the __.json__ file in two steps:
-    * Wisej appends __.json__ to __Customers__ and use it as the json file, in this case it looks for __\Customers.json__.
-    * If __\Customers.json__ doesn't exist, Wisej presumes __Customers__ is a folder name and looks for the __.json__ file at __\Customers\Default.json__.  
+    * Appends __.json__ to __Customers__ and use it as the json file, in this case it looks for __\Customers.json__.
+    * If __\Customers.json__ doesn't exist, Wisej presumes __Customers__ is a folder and looks for the __.json__ file at __\Customers\Default.json__.  
 	Note - The later behaviour was introduced in Wisej 1.5.4.
 
 ### 3.1. No need for a default document in Web.config
