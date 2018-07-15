@@ -17,8 +17,8 @@ The ReadOnly state is supported on the follwoing controls:
 * ComboBox
 * DateTimePicker
 * ListBox
-* NumericUpDown
 * DomainUpDown
+* NumericUpDown
 
 This project defines an __opacity__ property of 0.5 for the ReadOnly state. This means a __ReadOnly__ control looks just like a __Disabled__ control.
 The main difference is that, on most controls, you can't select the contents of a Disabled control, but you can select the contents of a ReadOnly control.
@@ -28,4 +28,8 @@ The main difference is that, on most controls, you can't select the contents of 
 The file __ReadOnly.mixin.theme__ is worth your attention, specially if you plan to customize a theme file.
 
 1) Theme Builder shows the appearance name with the first letter in upper case. If you want ThemeBuilder to show __TextBox__, you must use the __"text"__ key.
+
+2) The appearance name doesn't always match the control name. The appearance name for __ListBox__ is "list".
+
+3) An appearance name may be shared by several controls. The appearance name __"spinner"__ is used by __DomainUpDown__ and __NumericUpDown__.
 
