@@ -14,8 +14,8 @@ On a brand new project, by default Wisej creates 3 startup files:
 * Program.cs
 
 Notes
-* The filename __Default.html__ is used because that’s the filename we are used for a startup file in ASP.NET.
-* The filename__Program.cs__ is used because that’s where we look for the _static_ __Main__ method in WinForms.
+* The filename __Default.html__ is used because that’s the filename we are used to for a startup file in ASP.NET.
+* The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
 
 ### 2.1. Create new sub-applications
 
