@@ -29,7 +29,7 @@ The file __ReadOnly.mixin.theme__ is worth your attention, specially if you plan
 
 1) Theme Builder shows the appearance name with the first letter in upper case. If you want ThemeBuilder to show __TextBox__, you must use the __"text"__ key.
 
-2) The appearance name doesn't always match the control name. The appearance name for __ListBox__ is "list".
+2) The appearance name doesn't always match the control name. The appearance name for __ListBox__ is __"list"__.
 
 3) An appearance name may be shared by several controls. The appearance name __"spinner"__ is used by __DomainUpDown__ and __NumericUpDown__.
 
