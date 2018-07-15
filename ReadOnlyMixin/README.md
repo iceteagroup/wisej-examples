@@ -2,9 +2,9 @@
 
 A mixin is partial theme definition. It extends or overrides the application theme, no matter what theme is used by the application
 
-A mixin file must be named <arbitrary_mixin_name>__.mixin.theme__ and must in the /Themes folder. It can be an __EmbeddedResource__ or a __Content__ file. This project uses the later option.
+A mixin file must be named <arbitrary_mixin_name>__.mixin.theme__ and must in the __/Themes__ folder. It can be an __EmbeddedResource__ or a __Content__ file. This project uses the later option.
 
-Even if the theme or mixin files are an EmbeddedResource, you don't need to recompile the application to change them. To override theme or mixin files on runtime, just change the files in the /Themes folder.
+Even if the theme or mixin files are an EmbeddedResource, you don't need to recompile the application to change them. To override theme or mixin files on runtime, just change the files in the __/Themes__ folder.
 
 Embedded themes and mixins in __other assemblies__ are loaded only when the __[assembly:WisejResources]__ attribute is present in __AssemblyInfo.cs__ file.
 
