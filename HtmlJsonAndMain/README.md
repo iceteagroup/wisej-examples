@@ -101,13 +101,13 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
 2) If you type an URL that ends with "/" like "folder/", Wisej uses __.json__ file at __\folder\Default.json__ (like if the URL  was "/folder/Default.json").
 
 3) if you type an URL that does __not__ end with __.html__ like __Customers__, Wisej tries to solve the URL in two steps:
-    * Wisej appends __.json__ to __Customers__ and use as the json file, in this case uses __Customers.json__.
+    * Wisej appends __.json__ to __Customers__ and use as the json file, in this case it looks for __Customers.json__.
     * If __Customers.json__ doesn't exist, Wisej presumes __Customers__ is a folder name and looks for the __.json__ file at  __\Customers\Default.json__ (like if the URL  was "/Customers/Default.json").  
-	Note - his beahaviour was introduced in release 1.5.4.
+	Note - The later behaviour was introduced in Wisej 1.5.4.
 
 ### 3.1. No need for a default document in Web.config
 
-The __Web.config__ file created by Wisej templates, by default includes a section like this:
+The __Web.config__ file created by Wisej project templates, by default includes a section like this:
 
  ```xml
     <defaultDocument enabled="true">
