@@ -56,7 +56,7 @@ Notes
 
 #### 2.2.1. Showing an HTML-like file on the browser
 
-In the _Admin_ sub-application we created, the __Admin.html__ file will include a line like this:
+In the __Admin__ sub-application we created, the __Admin.html__ file will include a line like this:
 ```html
 <script src="wisej.wx"></script>
 ```
