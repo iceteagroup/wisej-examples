@@ -90,7 +90,7 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
 
 2) If you type an URL that ends with "/" like "folder/", Wisej uses "folder/Default.json".
 
-3) if you type an URL that does __not__ end with __.html__ like __Customer__, Wisej tries to solve the URL in two steps:
-* Wisej appends __.json__ to __Customer__ and use as the json file, in this case uses __Customer.json__.
-* If __Customer.json__ doesn't exist, Wisej presumes __Customer__ is a folder name and tries to use __Customer/Default.json__ (this beahaviour was introduced in release 1.5.4).
+3) if you type an URL that does __not__ end with __.html__ like __Customer__, Wisej tries to solve the URL in two steps:  
+  * Wisej appends __.json__ to __Customer__ and use as the json file, in this case uses __Customer.json__.  
+  * If __Customer.json__ doesn't exist, Wisej presumes __Customer__ is a folder name and tries to use __Customer/Default.json__ (this beahaviour was introduced in release 1.5.4).
  
