@@ -77,10 +77,10 @@ Say that instead of executing the __Main__ method, we want to instantiate an Adm
 
 ### 2.3. Wisej startup workflow
 
-The Wisej startup workflow is quite simple and is composed of the following steps:
+Putting it all together, you will find the Wisej startup workflow quite simple. It's composed of the following steps:
 1) Find a __.json__ file.
 2) Tell the browser to load and show __"url"__ HTML-like file.
-3) Tell the server waht to do, according to the specified key:  
+3) Tell the server what to do, according to the key specified in the __.json__ file:  
   Execute the __"startup"__ method or  
   Instantiate (invoke the constructor of) the __"mainWindow"__ view.
 
