@@ -122,6 +122,6 @@ The __Web.config__ file created by Wisej project templates, by default includes 
 
 According to rule 2) above, you don't need __defaultDocument__ to be defined in the __Web.config__ file.
 
-If the URL is just the web site URL, it refers to a folder and Wisej looks for the __.json__ file at __\Default.json__ (the project's root folder).
+If the URL is the web site URL, it refers to a folder and Wisej looks for the __.json__ file at the project's root folder, it looks for __\Default.json__.
 
 In fact, both projects [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames)  and [MultiHtml](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/MultiHtml) have the __defaultDocument__ commented  in the __Web.config__ file
