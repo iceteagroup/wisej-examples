@@ -36,21 +36,31 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 
 ### 2.2. Running sub-applications
 
+We are trained to look for the __.html__ file as the starting point for a web application. In fact, the Wisej sub-application starts by the __.json__ file. Even when we type a full URL, including the __.html__ part, what Wisej is looking for is the __.json__ file. Later on, we will discuss the rules Wisej uses to get a __.json__ file.
+
+In the _Admin_ sub-application we created, the __Admin.json__ file will look like this:
+```json
+{
+	"url": "Admin.html",
+	"startup": "<ProjectName>.Admin.Main, <ProjectName>"
+}
+```
+
+This file tells Wisej two important pieces of information:
+* What __.html__ file to show on the browser - the "url" key.
+* What is the startup method - the "startup" key.
+
+#### 2.2.1. Showing an .html file on the broser
+
 In the _Admin_ sub-application we created, the __Admin.html__ file will include a line like this:
 ```html
 <script src="wisej.wx"></script>
 ```
 This line is very important, because it loads and executes the browser part of Wisej. Without this line, the Wisej won't run.
 
-In the _Admin_ sub-application we created, the __Admin.json__ file will look like this:
-```json
-{
-	"url" : "Admin.html",
-	"startup": "<ProjectName>.Admin.Main, <ProjectName>"
-}
-```
+#### 2.2.2. What method should the server execute
 
-Why is the __.json__ file so important?
+Wisej also needs to know what method the server should execute and that information isn't on the __.html__ file.
 
 ## 3. How Wisej looks for the json file
 
