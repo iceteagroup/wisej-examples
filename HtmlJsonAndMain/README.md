@@ -100,7 +100,7 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
 
 2) If you type an URL that ends with "/" like __http://myserver.com/folder/__", Wisej uses __Default.json__ file at the specified folder location, in this case at __\folder\Default.json__.
 
-3) if you type an URL that does __NOT__ end with any extension like __http://myserver.com/Customers__, Wisej tries to solve the URL in two steps:
+3) if you type an URL that does __NOT__ end with any extension like __http://myserver.com/Customers__, Wisej tries to find the __.json__ file in two steps:
     * Wisej appends __.json__ to __Customers__ and use as the json file, in this case it looks for __\Customers.json__.
     * If __\Customers.json__ doesn't exist, Wisej presumes __Customers__ is a folder name and looks for the __.json__ file at __\Customers\Default.json__.  
 	Note - The later behaviour was introduced in Wisej 1.5.4.
