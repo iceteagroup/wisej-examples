@@ -25,7 +25,7 @@ These names can be changed. The [ChangedNames project](https://github.com/tfreit
 You can create a sub-application in the project's root or in a project's folder.
 
 To create a sub-application, follow the steps:
-1) Right click on the project, selecting __Add => New Item__.
+1) Right click on the project (or a project's folder), selecting __Add => New Item__.
 2) On the __Add New Item__ form, select __Wisej__ on the left side and click on __Application__ in the object list.
 3) Set the application __Name__ and click __Add__.
 
@@ -36,9 +36,9 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 
 ### 2.2. Running sub-applications
 
-We are trained to look for the __.html__ file as the starting point for a web application. In fact, the Wisej sub-application start by the __.json__ file. Even when we type an URL that includes the __.html__ part, what Wisej is looking for is the __.json__ file. Later on, we will discuss the rules Wisej uses to get a __.json__ file.
+We are trained to look for the __.html__ file as the starting point for a web application. In fact, the Wisej sub-application starts by the __.json__ file. Even when we type an URL that includes the __.html__ part, Wisej looks for is the __.json__ file. Later on, we will discuss the rules Wisej uses to get a __.json__ file.
 
-In the __Admin__ sub-application we created, the __Admin.json__ file will look like this:
+In the __Admin__ sub-application we created, the __Admin.json__ file looks like this:
 ```json
 {
 	"url": "Admin.html",
@@ -48,19 +48,29 @@ In the __Admin__ sub-application we created, the __Admin.json__ file will look l
 
 This file tells Wisej two important pieces of information:
 * What __.html__ file to show on the browser - the __"url"__ key.
-* What is the startup method - the __"startup"__ key.
+* What startup method to run on the server - the __"startup"__ key.
 
 Notes
 * Browsers need an HTML-like file and Wisej needs the browser to load and execute __wisej.wx__. More on this later.
 * Instead of the startup method, we can specify the sub-application's main view. More on this later.
 
-#### 2.2.1. Showing an .html file on the browser
+#### 2.2.1. Showing an HTML-like file on the browser
 
 In the _Admin_ sub-application we created, the __Admin.html__ file will include a line like this:
 ```html
 <script src="wisej.wx"></script>
 ```
-This line is very important, because it loads and executes the browser (client) part of Wisej. Without this line, the Wisej sub-application won't run.
+This line is very important, because it bootstraps the browser (client) part of Wisej. Without this line, the Wisej sub-application won't run.
+
+The __HTML-like__ file can use any extension you want:
+* .html
+* .htm
+* .aspx
+* .cshtml
+* .php
+* anything that the browser can load.
+
+All wisej needs is the browser to load and execute the __wisej.wx__ bootstrap script.
 
 #### 2.2.2. What method should the server execute
 
@@ -84,14 +94,29 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
     * Execute the __"startup"__ method or
     * Instantiate (invoke the constructor of) the __"mainWindow"__ view.
 
-## 3. How Wisej looks for the json file
+## 3. Rules for finding the .json file
 
 1) If you type an URL that ends with __.html__, if the file exists, Wisej tries to find the matching __.json__ file (a file with the same name, but with a json extension instead of html) and uses it. If Wisej can not find a matching json file, the __wisej.wx__ script reloads the same page.
 
-2) If you type an URL that ends with "/" like "folder/", Wisej uses "folder/Default.json".
+2) If you type an URL that ends with "/" like "folder/", Wisej uses __.json__ file at __\folder\Default.json__ (like if the URL  was "/folder/Default.json").
 
-3) if you type an URL that does __not__ end with __.html__ like __Customer__, Wisej tries to solve the URL in two steps:
-    * Wisej appends __.json__ to __Customer__ and use as the json file, in this case uses __Customer.json__.
-    * If __Customer.json__ doesn't exist, Wisej presumes __Customer__ is a folder name and tries to use __Customer/Default.json__ (this beahaviour was introduced in release 1.5.4).
+3) if you type an URL that does __not__ end with __.html__ like __Customers__, Wisej tries to solve the URL in two steps:
+    * Wisej appends __.json__ to __Customers__ and use as the json file, in this case uses __Customers.json__.
+    * If __Customers.json__ doesn't exist, Wisej presumes __Customers__ is a folder name and looks for the __.json__ file at  __\Customers\Default.json__ (like if the URL  was "/Customers/Default.json").  
+	Note - his beahaviour was introduced in release 1.5.4.
 
- 
+### 4. No need for a default document in Web.config
+
+The __Web.config__ file created by Wisej templates, by default includes a section like this:
+
+ ```xml
+    <defaultDocument enabled="true">
+      <files>
+        <add value="Default.html" />
+      </files>
+    </defaultDocument>
+```
+
+According to rule 2) above, you don't need __defaultDocument__ to be defined in the __Web.config__ file.
+
+If your URL doesn't include a document, say it looks like http://localhost, as explained earlier, Wisej tries to get the __.json__ file at __\Default.json__.
