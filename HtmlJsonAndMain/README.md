@@ -34,13 +34,13 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 * Admin.json
 * Admin.cs
 
-The __Admin.cs__ file is the equivalent to the __Program.cs__ default file and looks like this: 
+The __Admin.cs__ file is just like the __Program.cs__ default file and looks like this: 
 ```csharp
 static class Admin
 {
     static void Main()
-	{
-	}
+    {
+    }
 }
 ```
 
