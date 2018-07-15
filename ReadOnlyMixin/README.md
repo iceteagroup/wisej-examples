@@ -1,4 +1,4 @@
-## Concepts
+## 1. Concepts
 
 A mixin is partial theme definition. It extends or overrides the application theme, no matter what theme is used by the application
 
@@ -10,7 +10,7 @@ Embedded themes and mixins in __other assemblies__ are loaded only when the __[a
 
 A mixin must be created in Visual Studio and it may be edited in the ThemeBuilder. Please refer to [Edit Mixins](https://wisej.com/docs/html/EditMixins.htm) on Wisej Documentation.
 
-## About the ReadOnly state
+## 2. About the ReadOnly state
 
 The ReadOnly state was introduced in Wisej 1.5.4. No __Styles__ or __Properties__ are defined in the standard theme files, as different people have different views on how a ReadOnly control should look like.
 
@@ -25,7 +25,7 @@ The ReadOnly state is supported on the follwoing controls:
 This project defines an __opacity__ property of 0.5 for the ReadOnly state. This means a __ReadOnly__ control looks just like a __Disabled__ control.
 The main difference is that, on most controls, you can't select the contents of a Disabled control, but you can select the contents of a ReadOnly control.
 
-## Points of interest
+## 3. Points of interest
 
 The file __ReadOnly.mixin.theme__ is worth your attention, specially if you plan to customize a theme file.
 

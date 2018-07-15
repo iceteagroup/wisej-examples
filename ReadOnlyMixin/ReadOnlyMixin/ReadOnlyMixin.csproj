@@ -45,6 +45,7 @@
     <Content Include="Default.html" />
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
+    <Content Include="Readme.txt" />
     <Content Include="Themes\ReadOnly.mixin.theme" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
