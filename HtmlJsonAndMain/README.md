@@ -13,7 +13,7 @@ When you create a new Wisej project, Wisej creates 3 startup files:
 * Default.json
 * Program.cs
 
-Notes
+Notes  
     * The filename __Default.html__ is used because that’s the filename we are used to, for a startup page in ASP.NET.
     * The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
     * For simplicity, the __.html__ and __.json__ filenames should match, but they don't have to match.
