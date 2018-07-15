@@ -80,8 +80,8 @@ Say that instead of executing the __Main__ method, we want to instantiate an __A
 
 ```json
 {
-	"url": "Admin.html",
-	"mainWindow": "[ProjectName].AdminPage, [ProjectName]"
+  "url": "Admin.html",
+  "mainWindow": "[ProjectName].AdminPage, [ProjectName]"
 }
 ```
 
@@ -102,7 +102,7 @@ If you type an URL that ends with an extension (html or any other extension), li
 2) Append __Default.json__ to a folder path  
 If you type an URL that refers to a folder, be it the root folder __http://myserver.com__ or an URL that ends with "/" like __http://myserver.com/Suppliers/__, Wisej uses __Default.json__ file at the specified folder location. In these cases, respectively at __\Default.json__ and at __\Suppliers\Default.json__.
 
-3) Append  either __.json__ extension or __\Default.json__  
+3) Append either __.json__ extension or __\Default.json__  
 If you type an URL that does __NOT__ end with any extension like __http://myserver.com/Customers__, Wisej tries to find the __.json__ file in two steps:
     * Wisej appends __.json__ to __Customers__ and looks for __\Customers.json__.
     * If __\Customers.json__ doesn't exist, Wisej presumes __Customers__ is a folder and appends __\Default.json__ to the folder path. In this case, it looks for the __.json__ file at __\Customers\Default.json__.  
@@ -113,15 +113,15 @@ If you type an URL that does __NOT__ end with any extension like __http://myserv
 The __Web.config__ file created by Wisej project templates, by default includes a section like this:
 
  ```xml
-    <defaultDocument enabled="true">
-      <files>
-        <add value="Default.html" />
-      </files>
-    </defaultDocument>
+<defaultDocument enabled="true">
+  <files>
+    <add value="Default.html" />
+  </files>
+</defaultDocument>
 ```
 
 According to rule 2) above, you don't need __defaultDocument__ to be defined in the __Web.config__ file.
 
 If the URL is the web site URL, it refers to a folder and Wisej looks for the __.json__ file at the project's root folder, it looks for __\Default.json__.
 
-In fact, both projects [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames)  and [MultiHtml](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/MultiHtml) have the __defaultDocument__ commented  in the __Web.config__ file
+In fact, both projects [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) and [MultiHtml](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/MultiHtml) have the __defaultDocument__ commented out in the __Web.config__ file
