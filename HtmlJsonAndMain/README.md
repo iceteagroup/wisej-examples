@@ -121,4 +121,4 @@ According to rule 2) above, you don't need __defaultDocument__ to be defined in 
 
 If your URL doesn't include a document, say it looks like http://localhost, as explained earlier, Wisej tries to get the __.json__ file at __\Default.json__.
 
-In fact, both projects [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames)  and [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) have the __defaultDocument__ commented  in the __Web.config__ file
+In fact, both projects [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames)  and [MultiHtml](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/MultiHtml) have the __defaultDocument__ commented  in the __Web.config__ file
