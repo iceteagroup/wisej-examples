@@ -1,10 +1,12 @@
-## Context
+## 1. Context
 
-The most common Wisej applications (in the broad sense) have only a single application (in the strict sense). To keep things simple, we will use "sub-application" to refer to an application in the strict sense.
+The most common Wisej applications (in the broad sense) have only a single application (in the strict sense). To keep things simple, we will use __sub-application__ to refer to an application __in the strict sense__.
 
 Wisej __sub-applications__ are different entry points in your application, independent URL you can use for whatever purpose you decide.
 
-## About the startup files and their use
+All Wisej projects must have at least one sub-application that is created by default.
+
+## 2. About the startup files and their use
 
 On a brand new project, by default Wisej creates 3 startup files:
 * Default.html
@@ -13,7 +15,7 @@ On a brand new project, by default Wisej creates 3 startup files:
 
 Note - The filename __Program.cs__ is used because that’s the name we are used to in WinForms.
 
-### Create new sub-applications
+### 2.1. Create new sub-applications
 
 You can create a sub-application in the project's root or in a project's folder.
 
@@ -27,7 +29,15 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 * Admin.json
 * Admin.cs
 
-## How Wisej looks for the json file
+The __Admin.json__ will look like this:
+```json
+{
+	"url" : "Admin.html",
+	"startup": "<ProjectName>.Admin.Main, <ProjectName>"
+}
+```
+
+## 3. How Wisej looks for the json file
 
 1) If you type an URL that ends with __.html__, if the file exists, Wisej tries to find the matching __.json__ file (a file with the same name, but with a json extension instead of html) and uses it. If Wisej can not find a matching json file, the __wisej.wx__ script reloads the same page.
 
