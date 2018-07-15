@@ -13,10 +13,10 @@ When you create a new Wisej project, Wisej creates 3 startup files:
 * Default.json
 * Program.cs
 
-Notes  
-    * The filename __Default.html__ is used because that’s the filename we are used to, for a startup page in ASP.NET.
-    * The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
-    * For simplicity, the __.html__ and __.json__ filenames should match, but they don't have to match.
+Notes
+* The filename __Default.html__ is used because that’s the filename we are used to, for a startup page in ASP.NET.
+* The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
+* For simplicity, the __.html__ and __.json__ filenames should match, but they don't have to match.
 
 These names can be changed. The [ChangedNames project](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) is an example of changing the __.html__ and __.cs__ filenames.
 
@@ -51,8 +51,8 @@ This file tells Wisej two important pieces of information:
 * What is the startup method - the __"startup"__ key.
 
 Notes
-    * Browsers need an HTML-like file and Wisej needs the browser to load and execute __wisej.wx__. More on this later.
-    * Instead of the startup method, we can specify the sub-application's main view. More on this later.
+* Browsers need an HTML-like file and Wisej needs the browser to load and execute __wisej.wx__. More on this later.
+* Instead of the startup method, we can specify the sub-application's main view. More on this later.
 
 #### 2.2.1. Showing an .html file on the browser
 
