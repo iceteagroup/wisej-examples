@@ -102,7 +102,7 @@ If you type an URL that ends with an extension (html or any other extension), li
 2) Append __Default.json__ to a folder path  
 If you type an URL that refers to a folder, be it the root folder __http://myserver.com__ or an URL that ends with "/" like __http://myserver.com/Suppliers/__, Wisej uses __Default.json__ file at the specified folder location. In these cases, respectively at __\Default.json__ and __\Suppliers\Default.json__.
 
-3) Append __.json__ extension or __\Default.json__  
+3) Append  either __.json__ extension or __\Default.json__  
 If you type an URL that does __NOT__ end with any extension like __http://myserver.com/Customers__, Wisej tries to find the __.json__ file in two steps:
     * Appends __.json__ to __Customers__ and use it as the json file. In this case it looks for __\Customers.json__.
     * If __\Customers.json__ doesn't exist, Wisej presumes __Customers__ is a folder and looks for the __.json__ file at __\Customers\Default.json__.  
