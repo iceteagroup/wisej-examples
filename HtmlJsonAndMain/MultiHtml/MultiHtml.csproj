@@ -49,6 +49,7 @@
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
     <Content Include="Customers\Default.json" />
+    <Content Include="Readme.txt" />
     <Content Include="Statistics.html" />
     <Content Include="Suppliers\Default.json" />
     <Content Include="Statistics.json" />

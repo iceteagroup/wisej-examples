@@ -46,3 +46,5 @@ There is no ChangedNames.json file.
 2) http://localhost:57877/ChangedNames.html
 The wisej.wx script reloads the same page.
 Look at the URL label to see what Wisej really loaded.
+
+Please refer to https://github.com/iceteagroup/wisej-examples/blob/master/HtmlJsonAndMain/README.md
