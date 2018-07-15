@@ -27,7 +27,7 @@ The main difference is that, on most controls, you can't select the contents of 
 
 The file __ReadOnly.mixin.theme__ is worth your attention, specially if you plan to customize a theme file.
 
-1) Theme Builder shows the appearance name with the first letter in upper case. If you want ThemeBuilder to show __TextBox__, you must use the __"text"__ key.
+1) Theme Builder shows the appearance name with the first letter in upper case. If you want ThemeBuilder to show __ComboBox__, you must use the __"text"__ key.
 
 2) The appearance name doesn't always match the control name. The appearance name for __ListBox__ is __"list"__.
 
