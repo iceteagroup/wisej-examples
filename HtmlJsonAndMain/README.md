@@ -50,19 +50,32 @@ This file tells Wisej two important pieces of information:
 * What __.html__ file to show on the browser - the "url" key.
 * What is the startup method - the "startup" key.
 
-Instead of the startup method, we can specify the sub-application's main view. More on this later.
+Notes
+* Browsers need an HTML-like file and Wisej needs the browser to load and execute __wisej.wx__. More on this later.
+* Instead of the startup method, we can specify the sub-application's main view. More on this later.
 
-#### 2.2.1. Showing an .html file on the broser
+#### 2.2.1. Showing an .html file on the browser
 
 In the _Admin_ sub-application we created, the __Admin.html__ file will include a line like this:
 ```html
 <script src="wisej.wx"></script>
 ```
-This line is very important, because it loads and executes the browser part of Wisej. Without this line, the Wisej won't run.
+This line is very important, because it loads and executes the browser (client) part of Wisej. Without this line, the Wisej sub-application won't run.
 
 #### 2.2.2. What method should the server execute
 
-Wisej also needs to know what method the server should execute and that information isn't on the __.html__ file.
+Wisej also needs to know what method the server should execute on startup, in this case
+- method <ProjectName>.Admin.Main
+- assembly <ProjectName>
+
+Say that instead of executing the __Main__  method, we want to instantiate an AdminPage. In fact, most of the time, all the __Main__ does is instantiate a view (Form or Page). In this case, __Admin.json__ file should look like:
+
+```json
+{
+	"url": "Admin.html",
+	"startup": "<ProjectName>.AdminPage, <ProjectName>"
+}
+```
 
 ## 3. How Wisej looks for the json file
 
