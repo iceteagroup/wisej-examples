@@ -97,10 +97,10 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
 ## 3. Rules for finding the .json file
 
 1) Replace the extension by __.json__  
-If you type an URL that ends with an extension (html or any other extension), like __http://myserver.com/Startup.php__, if the file exists, Wisej tries to find the matching __.json__ file (a file with the same name, but with a json extension instead of supplied extension). In this case it looks for __\Startup.json__. If Wisej can not find a matching json file, the __wisej.wx__ script reloads the same page.
+If you type an URL that ends with an extension (html or any other extension), like __http://myserver.com/Startup.php__, if the file exists, Wisej tries to find the matching __.json__ file (a file with the same name, but with the json extension instead of supplied extension). In this case it looks for __\Startup.json__. If Wisej can not find a matching json file, the __wisej.wx__ script reloads the same page.
 
-2) Append __Default.json__ to the root or folder path  
-If you type an URL that ends with "/" like __http://myserver.com__ or __http://myserver.com/Suppliers/__, Wisej uses __Default.json__ file at the specified folder location, in this case at __\Default.json__ or __\Suppliers\Default.json__.
+2) Append __Default.json__ to the folder path  
+If you type an URL that refers to a folder, be it the root folder __http://myserver.com__ or an URL that ends with "/" like __http://myserver.com/Suppliers/__, Wisej uses __Default.json__ file at the specified folder location, in this case at __\Default.json__ or __\Suppliers\Default.json__.
 
 3) Append __.json__ extension or __\Default.json__  
 If you type an URL that does __NOT__ end with any extension like __http://myserver.com/Customers__, Wisej tries to find the __.json__ file in two steps:
@@ -122,6 +122,6 @@ The __Web.config__ file created by Wisej project templates, by default includes 
 
 According to rule 2) above, you don't need __defaultDocument__ to be defined in the __Web.config__ file.
 
-If the URL is just the web site URL, Wisej looks for the __.json__ file at __\Default.json__ (the projects' root folder).
+If the URL is just the web site URL, it refers to a folder and Wisej looks for the __.json__ file at __\Default.json__ (the projects' root folder).
 
 In fact, both projects [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames)  and [MultiHtml](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/MultiHtml) have the __defaultDocument__ commented  in the __Web.config__ file
