@@ -16,7 +16,7 @@ When you create a new Wisej project, Wisej creates 3 startup files:
 Notes
 * The filename __Default.html__ is used because that’s the filename we are used to, for a startup page in ASP.NET.
 * The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
-* For simplicity, the __.html__ and __.json__ filenames should match, but they have to match.
+* For simplicity, the __.html__ and __.json__ filenames should match, but they don't have to match.
 
 These names can be changed. The [ChangedNames project](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) is an example of changing the __.html__ and __.cs__ filenames.
 
@@ -36,15 +36,21 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 
 ### 2.2. Running sub-applications
 
+In the _Admin_ sub-application we created, the __Admin.html__ file will include a line like this:
+```html
+<script src="wisej.wx"></script>
+```
+This line is very important, because it loads and executes the browser part of Wisej. Without this line, the Wisej won't run.
 
-
-The __Admin.json__ file will look like this:
+In the _Admin_ sub-application we created, the __Admin.json__ file will look like this:
 ```json
 {
 	"url" : "Admin.html",
 	"startup": "<ProjectName>.Admin.Main, <ProjectName>"
 }
 ```
+
+Why is the __.json__ file so important?
 
 ## 3. How Wisej looks for the json file
 
