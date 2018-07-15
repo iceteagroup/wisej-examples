@@ -136,7 +136,7 @@
             this.navigateToSuppliers.Name = "navigateToSuppliers";
             this.navigateToSuppliers.Size = new System.Drawing.Size(300, 40);
             this.navigateToSuppliers.TabIndex = 8;
-            this.navigateToSuppliers.Text = "Navigate to Suppliers/";
+            this.navigateToSuppliers.Text = "Navigate to Suppliers";
             this.navigateToSuppliers.Click += new System.EventHandler(this.navigateToSuppliers_Click);
             // 
             // jsonFile
