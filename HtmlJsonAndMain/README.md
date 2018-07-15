@@ -81,8 +81,8 @@ Putting it all together, you will find the Wisej startup workflow quite simple. 
 1) Find a __.json__ file.
 2) Tell the browser to load and show __"url"__ HTML-like file.
 3) Tell the server what to do, according to the key specified in the __.json__ file:  
-  Execute the __"startup"__ method or  
-  Instantiate (invoke the constructor of) the __"mainWindow"__ view.
+    * Execute the __"startup"__ method or  
+    * Instantiate (invoke the constructor of) the __"mainWindow"__ view.
 
 ## 3. How Wisej looks for the json file
 
