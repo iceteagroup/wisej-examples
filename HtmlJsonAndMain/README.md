@@ -13,7 +13,9 @@ On a brand new project, by default Wisej creates 3 startup files:
 
 Note - The filename __Program.cs__ is used because that’s the name we are used to in WinForms.
 
-#### Create new sub-applications
+### Create new sub-applications
+
+You can create a sub-application in the project's root or in a project's folder.
 
 To create a new sub-application, follow the steps:
 1) Right click on the project, _Select __Add => New Item__;
@@ -24,8 +26,6 @@ Supposing you set the Name to __Admin__, Wisej creates 3 startup files, all with
 * Admin.html
 * Admin.json
 * Admin.cs
-
-Note you can create a sub-application in a folder.
 
 ## How Wisej looks for the json file
 
