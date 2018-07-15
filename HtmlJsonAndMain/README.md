@@ -42,7 +42,7 @@ In the __Admin__ sub-application we created, the __Admin.json__ file looks like 
 ```json
 {
 	"url": "Admin.html",
-	"startup": "<ProjectName>.Admin.Main, <ProjectName>"
+	"startup": "[ProjectName].Admin.Main, [ProjectName]"
 }
 ```
 
@@ -70,18 +70,18 @@ The __HTML-like__ file can use any extension you want:
 * .php
 * anything that the browser can load.
 
-All wisej needs is the browser to load and execute the __wisej.wx__ bootstrap script.
+All Wisej needs is the browser to load and execute the __wisej.wx__ bootstrap script.
 
 #### 2.2.2. What method should the server execute
 
-Wisej also needs to know what method the server should execute on startup, in this case the method __<ProjectName>.Admin.Main__ on assembly __<ProjectName>__.
+Wisej also needs to know what method the server should execute on startup, in this case the method __[ProjectName].Admin.Main__ on assembly __[ProjectName]__.
 
 Say that instead of executing the __Main__ method, we want to instantiate an AdminPage. In fact, most of the time, all the __Main__ method does is instantiate a view (Form or Page). In this case, __Admin.json__ file should look like:
 
 ```json
 {
 	"url": "Admin.html",
-	"mainWindow": "<ProjectName>.AdminPage, <ProjectName>"
+	"mainWindow": "[ProjectName].AdminPage, [ProjectName]"
 }
 ```
 
