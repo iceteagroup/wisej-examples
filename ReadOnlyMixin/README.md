@@ -1,6 +1,6 @@
 ## 1. Concepts
 
-A mixin is partial theme definition. It extends or overrides the application theme, no matter what theme is used by the application
+A mixin is a partial theme definition. It extends or overrides the application theme, no matter what theme is used by the application
 
 A mixin file must be named <arbitrary_mixin_name>__.mixin.theme__ and must in the __/Themes__ folder. It can be an __EmbeddedResource__ or a __Content__ file. This project uses the later option.
 
