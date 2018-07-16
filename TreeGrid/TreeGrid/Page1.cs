@@ -76,7 +76,7 @@ namespace TreeGrid
             dt.Rows.Add(7, "Helminthic Therapy", "Type 4", "");
             dt.Rows.Add(7, "", "Type 4", "Dr. Publius Terentius Afer (Dr. Terence)");
             dt.Rows.Add(8, "Physiotherapy", "Type 5", "");
-            dt.Rows.Add(8, "", "Type 5", "Dr.  Marcus Porcius Cato (Dr. Cato the Elder)");
+            dt.Rows.Add(8, "", "Type 5", "Dr. Marcus Porcius Cato (Dr. Cato the Elder)");
             dt.Rows.Add(9, "", "Type 5", "Dr. Gaius Lucilius");
             dt.Rows.Add(10, "", "Type 5", "Dr. Marcus Tullius Cicero");
             dt.Rows.Add(11, "", "Type 5", "Dr. Publius Ovidius Naso (Dr. Ovid)");
