@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using Wisej.Web;
 using System.Data;
 
@@ -17,7 +16,7 @@ namespace TreeGrid
             this.dataGridView1.Columns[0].DataPropertyName = "ID";
             this.dataGridView1.Columns[1].DataPropertyName = "NAME";
             this.dataGridView1.Columns[2].DataPropertyName = "TYPE";
-            this.dataGridView1.Columns[3].DataPropertyName = "THERAPIST";           
+            this.dataGridView1.Columns[3].DataPropertyName = "THERAPIST";
 
             this.dataGridView1.DataBindingComplete += DataGridView1_DataBindingComplete;
 
@@ -32,26 +31,29 @@ namespace TreeGrid
         /// <summary>
         /// Set Parent Rows
         /// </summary>
-        private void SetParents ()
+        private void SetParents()
         {
             string prevType = "";
             int ParentRow = 0;
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                
                 if (row.Cells["colType"].Value.ToString() == prevType)
                 {
                     row.ParentRow = dataGridView1.Rows[ParentRow];
                 }
                 else
                 {
+                    dataGridView1.Rows[ParentRow].Collapse();
                     ParentRow = row.Index;
                 }
+
                 prevType = row.Cells["colType"].Value.ToString();
             }
+
+            dataGridView1.Rows[ParentRow].Collapse();
         }
 
-        private DataTable DefineData ()
+        private DataTable DefineData()
         {
             DataTable dt = new DataTable();
             dt.TableName = "Therapy";
@@ -62,21 +64,25 @@ namespace TreeGrid
             dt.Columns.Add("THERAPIST", typeof(string));
 
             // preordered
-            dt.Rows.Add(1, "Therapy 1", "Type 1", "Dr. A");
-            dt.Rows.Add(2, "Therapy 1", "Type 1", "Dr. B");
-            dt.Rows.Add(3, "Therapy 1", "Type 1", "Dr. C");
-            dt.Rows.Add(4, "Therapy 2", "Type 2", "Dr. D");
-            dt.Rows.Add(5, "Therapy 3", "Type 3", "Dr. E");
-            dt.Rows.Add(6, "Therapy 3", "Type 3", "Dr. F");
-            dt.Rows.Add(7, "Therapy 4", "Type 4", "Dr. G");
-            dt.Rows.Add(8, "Therapy 5", "Type 5", "Dr. A");
-            dt.Rows.Add(9, "Therapy 5", "Type 5", "Dr. B");
-            dt.Rows.Add(10, "Therapy 5", "Type 5", "Dr. C");
-            dt.Rows.Add(11, "Therapy 5", "Type 5", "Dr. D");
-            dt.Rows.Add(11, "Therapy 5", "Type 5", "Dr. E");
+            dt.Rows.Add(1, "Acupuncture", "Type 1", "");
+            dt.Rows.Add(1, "", "Type 1", "Dr. Lucius Livius Andronicus");
+            dt.Rows.Add(2, "", "Type 1", "Dr. Gnaeus Naevius");
+            dt.Rows.Add(3, "", "Type 1", "Dr. Quintus Ennius");
+            dt.Rows.Add(4, "Osmotherapy", "Type 2", "");
+            dt.Rows.Add(4, "", "Type 2", "Dr. Marcus Pacuvius");
+            dt.Rows.Add(5, "Prolotherapy", "Type 3", "");
+            dt.Rows.Add(5, "", "Type 3", "Dr. Lucius Accius");
+            dt.Rows.Add(6, "", "Type 3", "Dr. Titus Maccius Plautus");
+            dt.Rows.Add(7, "Helminthic Therapy", "Type 4", "");
+            dt.Rows.Add(7, "", "Type 4", "Dr. Publius Terentius Afer (Dr. Terence)");
+            dt.Rows.Add(8, "Physiotherapy", "Type 5", "");
+            dt.Rows.Add(8, "", "Type 5", "Dr.  Marcus Porcius Cato (Dr. Cato the Elder)");
+            dt.Rows.Add(9, "", "Type 5", "Dr. Gaius Lucilius");
+            dt.Rows.Add(10, "", "Type 5", "Dr. Marcus Tullius Cicero");
+            dt.Rows.Add(11, "", "Type 5", "Dr. Publius Ovidius Naso (Dr. Ovid)");
+            dt.Rows.Add(11, "", "Type 5", "Dr. Gaius Valerius Catullus");
 
             return dt;
         }
-
     }
 }

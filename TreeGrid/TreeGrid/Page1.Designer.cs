@@ -38,6 +38,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.Columns.AddRange(new Wisej.Web.DataGridViewColumn[] {
             this.colId,
             this.colName,
@@ -45,27 +46,32 @@
             this.colTherapist});
             this.dataGridView1.Location = new System.Drawing.Point(17, 19);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ShowColumnVisibilityMenu = false;
             this.dataGridView1.ShowFocusCell = false;
-            this.dataGridView1.Size = new System.Drawing.Size(483, 475);
+            this.dataGridView1.Size = new System.Drawing.Size(500, 475);
             this.dataGridView1.TabIndex = 0;
             // 
             // colId
             // 
             this.colId.HeaderText = "ID";
             this.colId.Name = "colId";
+            this.colId.Visible = false;
             // 
             // colName
             // 
-            this.colName.HeaderText = "Name";
+            this.colName.HeaderText = "Therapy Name";
             this.colName.Name = "colName";
+            this.colName.Width = 150;
             // 
             // colType
             // 
             this.colType.HeaderText = "Type";
             this.colType.Name = "colType";
+            this.colType.Visible = false;
             // 
             // colTherapist
             // 
+            this.colTherapist.AutoSizeMode = Wisej.Web.DataGridViewAutoSizeColumnMode.Fill;
             this.colTherapist.HeaderText = "Therapist";
             this.colTherapist.Name = "colTherapist";
             // 
@@ -76,7 +82,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Page1";
             this.Size = new System.Drawing.Size(941, 804);
-            this.Text = "Page1";
+            this.Text = "TreeGrid Example";
             this.Load += new System.EventHandler(this.Page1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
