@@ -4,9 +4,9 @@ using System.Data;
 
 namespace TreeGrid
 {
-    public partial class Page1 : Page
+    public partial class DataTableWindow : Form
     {
-        public Page1()
+        public DataTableWindow()
         {
             InitializeComponent();
         }
