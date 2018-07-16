@@ -10,7 +10,7 @@ namespace TreeGrid
         /// </summary>
         static void Main()
         {
-            Application.MainPage = new Page1();
+            Application.MainPage = new MainPage();
         }
 
         //

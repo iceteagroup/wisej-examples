@@ -1,6 +1,6 @@
 ﻿namespace TreeGrid
 {
-    partial class Page1
+    partial class ObjectListWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new Wisej.Web.DataGridView();
+            this.dataGridView = new Wisej.Web.DataGridView();
             this.colId = new Wisej.Web.DataGridViewColumn();
             this.colName = new Wisej.Web.DataGridViewColumn();
-            this.colType = new Wisej.Web.DataGridViewColumn();
             this.colTherapist = new Wisej.Web.DataGridViewColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.Columns.AddRange(new Wisej.Web.DataGridViewColumn[] {
+            this.dataGridView.AutoGenerateColumns = false;
+            this.dataGridView.Columns.AddRange(new Wisej.Web.DataGridViewColumn[] {
             this.colId,
             this.colName,
-            this.colType,
             this.colTherapist});
-            this.dataGridView1.Location = new System.Drawing.Point(17, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ShowColumnVisibilityMenu = false;
-            this.dataGridView1.ShowFocusCell = false;
-            this.dataGridView1.Size = new System.Drawing.Size(500, 475);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView.Location = new System.Drawing.Point(17, 19);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ShowColumnVisibilityMenu = false;
+            this.dataGridView.ShowFocusCell = false;
+            this.dataGridView.Size = new System.Drawing.Size(500, 475);
+            this.dataGridView.TabIndex = 0;
             // 
             // colId
             // 
@@ -63,38 +61,31 @@
             this.colName.Name = "colName";
             this.colName.Width = 150;
             // 
-            // colType
-            // 
-            this.colType.HeaderText = "Type";
-            this.colType.Name = "colType";
-            this.colType.Visible = false;
-            // 
             // colTherapist
             // 
             this.colTherapist.AutoSizeMode = Wisej.Web.DataGridViewAutoSizeColumnMode.Fill;
             this.colTherapist.HeaderText = "Therapist";
             this.colTherapist.Name = "colTherapist";
             // 
-            // Page1
+            // ObjectListWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Page1";
-            this.Size = new System.Drawing.Size(941, 804);
-            this.Text = "TreeGrid Example";
+            this.ClientSize = new System.Drawing.Size(533, 509);
+            this.Controls.Add(this.dataGridView);
+            this.Name = "ObjectListWindow";
+            this.Text = "Object List Example";
             this.Load += new System.EventHandler(this.Page1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Wisej.Web.DataGridView dataGridView1;
+        private Wisej.Web.DataGridView dataGridView;
         private Wisej.Web.DataGridViewColumn colId;
         private Wisej.Web.DataGridViewColumn colName;
-        private Wisej.Web.DataGridViewColumn colType;
         private Wisej.Web.DataGridViewColumn colTherapist;
     }
 }

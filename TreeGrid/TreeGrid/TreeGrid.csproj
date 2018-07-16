@@ -55,14 +55,30 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page1.cs">
+    <Compile Include="DataTableWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Page1.Designer.cs">
-      <DependentUpon>Page1.cs</DependentUpon>
+    <Compile Include="DataTableWindow.Designer.cs">
+      <DependentUpon>DataTableWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Therapist.cs" />
+    <Compile Include="Model\TherapistList.cs" />
+    <Compile Include="Model\Therapy.cs" />
+    <Compile Include="Model\TherapyList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ObjectListWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectListWindow.Designer.cs">
+      <DependentUpon>ObjectListWindow.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Themes\" />
@@ -79,8 +95,14 @@
     <Reference Include="Wisej.Web" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Page1.resx">
-      <DependentUpon>Page1.cs</DependentUpon>
+    <EmbeddedResource Include="DataTableWindow.resx">
+      <DependentUpon>DataTableWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectListWindow.resx">
+      <DependentUpon>ObjectListWindow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
