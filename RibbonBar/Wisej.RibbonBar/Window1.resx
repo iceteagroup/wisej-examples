@@ -134,7 +134,7 @@
   </data>
   <data name="ribbonBarItemCheckBox1.Text" xml:space="preserve">
     <value>Overwrite</value>
-  <comment>Überschreiben</comment></data>
+  </data>
   <data name="&gt;&gt;ribbonBarItemSeparator1.Name" xml:space="preserve">
     <value>ribbonBarItemSeparator1</value>
   </data>
@@ -285,7 +285,7 @@
   </data>
   <data name="ribbonBarItemButton21.Text" xml:space="preserve">
     <value>Wizard</value>
-  <comment>Wizard</comment></data>
+  </data>
   <data name="&gt;&gt;ribbonBarItemButton9.Type" xml:space="preserve">
     <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
   </data>
@@ -415,7 +415,7 @@
   </data>
   <data name="ribbonBarGroup4.Text" xml:space="preserve">
     <value>Themes</value>
-  <comment>Themes</comment></data>
+  </data>
   <data name="ribbonBarGroup5.Text" xml:space="preserve">
     <value>Formatting</value>
   </data>
@@ -488,7 +488,7 @@
   </data>
   <data name="ribbonBarGroup1.Text" xml:space="preserve">
     <value>Clipboard</value>
-  <comment>Zwischenablage</comment></data>
+  </data>
   <data name="&gt;&gt;ribbonBarItemButton15.Type" xml:space="preserve">
     <value>Wisej.Web.Ext.RibbonBar.RibbonBarItemButton, Wisej.Web.Ext.RibbonBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259</value>
   </data>
