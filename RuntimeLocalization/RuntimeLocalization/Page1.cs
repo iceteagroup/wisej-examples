@@ -18,6 +18,11 @@ namespace RuntimeLocalization
             dataGridView.Rows.Add(DateTime.Now.ToString("dd/MM/yyyy HH:mm"), "Daily standup");
             dataGridView.Rows[0].Selected = false;
 
+            SetLanguageMenu();
+        }
+
+        public void SetLanguageMenu()
+        {
             var lang = GetLanguage();
             if (lang == "fr")
             {
