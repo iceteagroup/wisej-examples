@@ -47,7 +47,9 @@
             this.groupBox4 = new Wisej.Web.GroupBox();
             this.tableLayoutPanel1 = new Wisej.Web.TableLayoutPanel();
             this.panel4 = new Wisej.Web.Panel();
-            this.buttonGetLocation = new Wisej.Web.Button();
+            this.coordsFromAddressButton = new Wisej.Web.Button();
+            this.addressFromCoordsButton = new Wisej.Web.Button();
+            this.currentLocationButton = new Wisej.Web.Button();
             this.panel3 = new Wisej.Web.Panel();
             this.buttonCenterMap = new Wisej.Web.Button();
             this.buttonClearMarkers = new Wisej.Web.Button();
@@ -324,22 +326,44 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.buttonGetLocation);
+            this.panel4.Controls.Add(this.coordsFromAddressButton);
+            this.panel4.Controls.Add(this.addressFromCoordsButton);
+            this.panel4.Controls.Add(this.currentLocationButton);
             this.panel4.Dock = Wisej.Web.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 118);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(500, 64);
             this.panel4.TabIndex = 3;
             // 
-            // buttonGetLocation
+            // coordsFromAddressBtton
             // 
-            this.buttonGetLocation.Anchor = Wisej.Web.AnchorStyles.Left;
-            this.buttonGetLocation.Location = new System.Drawing.Point(11, 11);
-            this.buttonGetLocation.Name = "buttonGetLocation";
-            this.buttonGetLocation.Size = new System.Drawing.Size(97, 43);
-            this.buttonGetLocation.TabIndex = 11;
-            this.buttonGetLocation.Text = "Get Location";
-            this.buttonGetLocation.Click += new System.EventHandler(this.buttonGetLocation_Click);
+            this.coordsFromAddressButton.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.coordsFromAddressButton.Location = new System.Drawing.Point(202, 11);
+            this.coordsFromAddressButton.Name = "coordsFromAddressButton";
+            this.coordsFromAddressButton.Size = new System.Drawing.Size(97, 43);
+            this.coordsFromAddressButton.TabIndex = 13;
+            this.coordsFromAddressButton.Text = "Coords from Address";
+            this.coordsFromAddressButton.Click += new System.EventHandler(this.coordsFromAddressButton_Click);
+            // 
+            // addressFromCoordsButton
+            // 
+            this.addressFromCoordsButton.Anchor = Wisej.Web.AnchorStyles.Right;
+            this.addressFromCoordsButton.Location = new System.Drawing.Point(374, 11);
+            this.addressFromCoordsButton.Name = "addressFromCoordsButton";
+            this.addressFromCoordsButton.Size = new System.Drawing.Size(97, 43);
+            this.addressFromCoordsButton.TabIndex = 12;
+            this.addressFromCoordsButton.Text = "Address from Coords";
+            this.addressFromCoordsButton.Click += new System.EventHandler(this.addressFromCoordsButton_Click);
+            // 
+            // currentLocationButton
+            // 
+            this.currentLocationButton.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.currentLocationButton.Location = new System.Drawing.Point(11, 11);
+            this.currentLocationButton.Name = "currentLocationButton";
+            this.currentLocationButton.Size = new System.Drawing.Size(97, 43);
+            this.currentLocationButton.TabIndex = 11;
+            this.currentLocationButton.Text = "Current Location";
+            this.currentLocationButton.Click += new System.EventHandler(this.currentLocationButton_Click);
             // 
             // panel3
             // 
@@ -576,7 +600,9 @@
         private Web.ComboBox comboBoxMapType;
         private Web.Button buttonCenterMap;
         private Web.Panel panel4;
-        private Web.Button buttonGetLocation;
+        private Web.Button currentLocationButton;
         private Ext.Geolocation.Geolocation geolocation;
+        private Web.Button addressFromCoordsButton;
+        private Web.Button coordsFromAddressButton;
     }
 }

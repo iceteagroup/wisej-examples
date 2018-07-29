@@ -149,11 +149,19 @@ namespace Wisej.GoogleMaps
             }
         }
 
-        private async void buttonGetLocation_Click(object sender, EventArgs e)
+        private async void currentLocationButton_Click(object sender, EventArgs e)
         {
             var position = await geolocation.GetCurrentPositionAsync();
             this.maskedTextBoxLat.Text = position.Latitude.ToString();
             this.maskedTextBoxLng.Text = position.Longitude.ToString();
+        }
+
+        private void coordsFromAddressButton_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void addressFromCoordsButton_Click(object sender, EventArgs e)
+        {
         }
     }
 }
