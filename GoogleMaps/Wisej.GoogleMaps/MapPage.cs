@@ -1,6 +1,6 @@
 ﻿using System;
 using Wisej.Web;
-using Position = Wisej.Ext.Geolocation.Position;
+using Wisej.Web.Ext.GoogleMaps;
 
 namespace Wisej.GoogleMaps
 {
@@ -158,6 +158,23 @@ namespace Wisej.GoogleMaps
 
         private void coordsFromAddressButton_Click(object sender, EventArgs e)
         {
+            googleMap1.GetGeocode(Coords, this.textBoxAddress.Text.Replace("\r\n", ","));
+        }
+
+        private void Coords(GeocoderResult[] geocodes)
+        {
+            if (geocodes[0].IsError)
+            {
+                MessageBox.Show($"Received error {geocodes[0].ResultCode}",
+                    "Search Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            else
+            {
+                this.maskedTextBoxLat.Text = geocodes[0].GeocodeGeometry.Location.Lat.ToString();
+                this.maskedTextBoxLng.Text = geocodes[0].GeocodeGeometry.Location.Lng.ToString();
+            }
         }
 
         private void addressFromCoordsButton_Click(object sender, EventArgs e)
