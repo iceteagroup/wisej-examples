@@ -164,7 +164,7 @@
             "Terrain"});
             this.comboBoxMapType.Location = new System.Drawing.Point(18, 25);
             this.comboBoxMapType.Name = "comboBoxMapType";
-            this.comboBoxMapType.Size = new System.Drawing.Size(69, 22);
+            this.comboBoxMapType.Size = new System.Drawing.Size(85, 22);
             this.comboBoxMapType.TabIndex = 1;
             this.comboBoxMapType.Text = "Map";
             this.comboBoxMapType.SelectedIndexChanged += new System.EventHandler(this.comboBoxMatType_SelectedIndexChanged);
