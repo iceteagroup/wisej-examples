@@ -38,7 +38,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 * HtmlJsonAndMain - Interesting details about the 3 startup files. - 15 Jul 2018
 * ReadOnlyMixin - Well documented example of mixin. - 15 Jul 2018
 * MDIExample - How to use MDI. - 09 Jul 2018
-* EditorsChoice - Showcase of well known web editors. - 03 Jul 2018
+* EditorsChoice - Showcase of rich text editors for web environement. - 03 Jul 2018
 * SlideBar - Showcase of this new control. - 03 Jul 2018
 * SmoothieChartSample - Showcase of yeta another chart extension. - 03 Jul 2018
 * DataBinding - Advanced Business Objects data binding. - 02 Jul 2018
