@@ -4,6 +4,177 @@
         <name>Wisej.Web.Ext.GoogleMaps</name>
     </assembly>
     <members>
+        <member name="T:Wisej.Web.Ext.GoogleMaps.GeocoderLocationType">
+            <summary>
+            Indicates additional data about the specified location.
+            </summary>
+        </member>
+        <member name="F:Wisej.Web.Ext.GoogleMaps.GeocoderLocationType.Rooftop">
+            <summary>
+            Indicates that the returned result reflects a precise geocode.
+            </summary>
+        </member>
+        <member name="F:Wisej.Web.Ext.GoogleMaps.GeocoderLocationType.RangeInterpolated">
+            <summary>
+            indicates that the returned result reflects an approximation (usually on a road)
+            interpolated between two precise points (such as intersections).
+            Interpolated results are generally returned when rooftop geocodes are unavailable for a street address.
+            </summary>
+        </member>
+        <member name="F:Wisej.Web.Ext.GoogleMaps.GeocoderLocationType.GeometricCenter">
+            <summary>
+            Indicates that the returned result is the geometric center of a result such as a polyline
+            (for example, a street) or polygon (region).
+            </summary>
+        </member>
+        <member name="F:Wisej.Web.Ext.GoogleMaps.GeocoderLocationType.Approximate">
+            <summary>
+            Indicates that the returned result is approximate.
+            </summary>
+        </member>
+        <member name="T:Wisej.Web.Ext.GoogleMaps.GeocoderResult">
+            <summary>
+            represents a single geocoding result.
+            </summary>
+            <remarks>A geocode request may return multiple result objects.</remarks>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.IsError">
+            <summary>
+            Gets a value indicating whether this instance is error.
+            </summary>
+            <value>
+              <c>true</c> if this instance is error; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.ResultCode">
+            <summary>
+            Gets the result code.
+            </summary>
+            <value>
+            The result code.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.Types">
+            <summary>
+            Gets an array indicating the address type of the returned result.
+            </summary>
+            <value>
+            The array indicating the address type of the returned result.
+            </value>
+            <remarks>This array contains a set of zero or more tags identifying the type of feature
+            returned in the result.</remarks>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.FormattedAddress">
+            <summary>
+            Gets the human-readable address of this location.
+            </summary>
+            <value>
+            The human-readable address of this location.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.AddressComponents">
+            <summary>
+            Gets an array of separate components applicable to this address.
+            </summary>
+            <value>
+            The array of separate components applicable to this addresss.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.PartialMatch">
+            <summary>
+            Gets a value indicating that the geocoder did not return an exact match for the original request,
+            though it was able to match part of the requested address.
+            </summary>
+            <value>
+              <c>true</c> if the geocoder did not return an exact match; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.PlaceId">
+            <summary>
+            Gets the unique identifier of a place, which can be used with other Google APIs.
+            </summary>
+            <value>
+            The unique identifier of a place.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.PostcodeLocalities">
+            <summary>
+            Gets an rray denoting all the localities contained in a postal code.
+            </summary>
+            <value>
+            The rray denoting all the localities contained in a postal code.
+            </value>
+            <remarks>Is only present when the result is a postal code that contains multiple localities.
+            This array can contain up to 10 localities</remarks>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.GeocodeGeometry">
+            <summary>
+            Gets the geocode geeometry information.
+            </summary>
+            <value>
+            The geocode geeometry information.
+            </value>
+        </member>
+        <member name="T:Wisej.Web.Ext.GoogleMaps.GeocoderResult.AddressComponent">
+            <summary>
+            Indicates the separate components applicable to an addresss
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.AddressComponent.ShortName">
+            <summary>
+            Gets the abbreviated textual name for the address component, if available.
+            </summary>
+            <value>
+            The abbreviated textual name for the address component, if available.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.AddressComponent.LongName">
+            <summary>
+            Gets the full text description or name of the address component as returned by the Geocoder.
+            </summary>
+            <value>
+            The full text description or name of the address component as returned by the Geocoder.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.AddressComponent.PostcodeLocalities">
+            <summary>
+            Gets an array denoting all the localities contained in a postal code.
+            </summary>
+            <value>
+            The array denoting all the localities contained in a postal codes.
+            </value>
+            <remarks>Is only present when the result is a postal code that contains multiple localities.
+            This array can contain up to 10 localities.</remarks>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.AddressComponent.Types">
+            <summary>
+            Gets an array indicating the type of the address component.
+            </summary>
+            <value>
+            The array indicating the type of the address component.
+            </value>
+        </member>
+        <member name="T:Wisej.Web.Ext.GoogleMaps.GeocoderResult.Geometry">
+            <summary>
+            Contains geocode geometry information.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.Geometry.Location">
+            <summary>
+            Gets the geocoded latitude,longitude value.
+            </summary>
+            <value>
+            The geocoded latitude,longitude value.
+            </value>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.Geometry.LocationType">
+            <summary>
+            Gets additional data about the specified location.
+            </summary>
+            <value>
+            The additional data about the specified location.
+            </value>
+        </member>
         <member name="T:Wisej.Web.Ext.GoogleMaps.GoogleMap">
             <summary>
             Represent an instance of the Google Maps widget.
@@ -177,6 +348,53 @@
             Closes the google.maps.InfoWindow related to the specified marker.
             </summary>
             <param name="markerId">The marker unique ID.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.GetGeocode(System.Action{Wisej.Web.Ext.GoogleMaps.GeocoderResult[]},System.String)">
+            <summary>
+            Retrieves geocode information.
+            </summary>
+            <param name="callback">The callback method.</param>
+            <param name="address">The address.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.GetGeocode(System.Action{Wisej.Web.Ext.GoogleMaps.GeocoderResult[]},Wisej.Web.Ext.GoogleMaps.LatLng)">
+            <summary>
+            Retrieves geocode information.
+            </summary>
+            <param name="callback">The callback method.</param>
+            <param name="location">The location (latitude/longitude)/.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.GetGeocode(System.Action{Wisej.Web.Ext.GoogleMaps.GeocoderResult[]},System.Double,System.Double)">
+            <summary>
+            Retrieves geocode information.
+            </summary>
+            <param name="callback">The callback method.</param>
+            <param name="lat">The latitude.</param>
+            <param name="lng">The longitude.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.GetGeocodeAsync(System.String)">
+            <summary>
+            Asynchronously retrieves geocode information.
+            </summary>
+            <param name="address">The address.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.GetGeocodeAsync(Wisej.Web.Ext.GoogleMaps.LatLng)">
+            <summary>
+            Asynchronously retrieves geocode information.
+            </summary>
+            <param name="location">The location (latitude/longitude)/.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.GetGeocodeAsync(System.Double,System.Double)">
+            <summary>
+            Asynchronously retrieves geocode information.
+            </summary>
+            <param name="lat">The latitude.</param>
+            <param name="lng">The longitude.</param>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.ProcessCallbackWidgetEvent(Wisej.Web.WidgetEventArgs)">
+            <summary>
+            Process the getCurrentPosition response from the client.
+            </summary>
+            <param name="e"></param>
         </member>
         <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.OnWidgetEvent(Wisej.Web.WidgetEventArgs)">
             <summary>
