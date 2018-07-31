@@ -37,7 +37,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 * TreeGrid - Use a DataGridView as a tree. - 16 Jul 2018
 * HtmlJsonAndMain - Interesting details about the 3 startup files. - 15 Jul 2018
 * ReadOnlyMixin - Well documented example of mixin. - 15 Jul 2018
-* MDIExample - How to use MDI. - 09 Jul 2018
+* MDIExample - MDI showcase. - 09 Jul 2018
 * EditorsChoice - Showcase of rich text editors for web environement. - 03 Jul 2018
 * SlideBar - Showcase of this new control. - 03 Jul 2018
 * SmoothieChartSample - Showcase of yet another chart extension. - 03 Jul 2018
