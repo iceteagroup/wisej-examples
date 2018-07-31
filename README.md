@@ -19,6 +19,31 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 * Extensions - Examples using Wisej extensions, including DGV column filter or integrations like GoogleMaps, the amazing TourPanel, the fantastic [Pannellum](http://demo.wisej.com:8080/Pannellum.html), common web rich text editors, etc.
 * How To - Less common uses of Wisej, like Deep Linking, Localization, Upload and Download, etc.
 
+## Specialized README files
+[Startup files](https://github.com/iceteagroup/wisej-examples/blob/master/HtmlJsonAndMain/README.md) - All about Default.html, Default.json and Program.cs
+[About mixins](https://github.com/iceteagroup/wisej-examples/blob/master/ReadOnlyMixin/README.md) - Important details you should know about mixins.
+
+## News
+
+### Improvements
+
+* GoogleMaps - Use GoogleMaps reverse Geolocation: get Coords from address and vv.. - 31 Jul 2018
+* GoogleMaps - Use Geolocation extension to get current location. - 29 Jul 2018
+
+### New examples
+
+* RuntimeLocalization - Update localization using reflection. - 27 Jul 2018
+* TreeGrid - Use a DataGridView as a tree. - 16 Jul 2018
+* HtmlJsonAndMain - Interesting details about the 3 startup files. - 15 Jul 2018
+* ReadOnlyMixin - Well documented example of mixin. - 15 Jul 2018
+* MDIExample - How to use MDI. - 09 Jul 2018
+* EditorsChoice - Showcase of well known web editors. - 03 Jul 2018
+* SlideBar - Showcase of this new control. - 03 Jul 2018
+* SmoothieChartSample - Showcase of yeta another chart extension. - 03 Jul 2018
+* DataBinding - Advanced Business Objects data binding. - 02 Jul 2018
+* TourPanelSample - Very interesting extension that can be used for demos or training. - 02 Jul 2018
+* PageNavigation - Classic web application infrastructure. - 02 Jul 2018
+
 ### The source code for all Wisej extensions is available at [Wisej-Extensions](https://github.com/iceteagroup/wisej-extensions).
 
 License
