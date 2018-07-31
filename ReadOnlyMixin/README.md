@@ -31,15 +31,15 @@ The file __ReadOnly.mixin.theme__ is worth your attention, specially if you plan
 
 1) Appearance names are case sensitive.
 
-2) We intend to override how a Control or Component looks, its __appearance__. To override an appearance, we must the same appearance name.
+2) We intend to override how a Control or Component looks, its __appearance__. To override an appearance, we must __use the same appearance name__.
 
-3) Theme Builder shows the appearance name with the first letter in upper case. If you want ThemeBuilder to show __ComboBox__, you must use the __"text"__ key.
+3) ThemeBuilder shows the appearance name with the first letter in upper case. If you want ThemeBuilder to show __ComboBox__, you must use the __"text"__ key.
 
-4) The appearance name doesn't always match the control name. The appearance name for the __ListBox__ control is __"list"__. Use ThemeBuilder to verify the appearance name for each control. Again, use the __"text"__ key to show a more different name on ThemeBuilder.
+4) The appearance name doesn't always match the control name. The appearance name for the __ListBox__ control is __"list"__. Use ThemeBuilder to verify the appearance name for each control. Again, use the __"text"__ key to show a different name on ThemeBuilder.
 
 5) An appearance name may be shared by several controls. The appearance name __"spinner"__ is used by __DomainUpDown__ and __NumericUpDown__ controls.
 
 6) Last note, to use custom names like “My-ComboBox”, you have the to explicitly set the control’s AppearanceKey on the __Properties__ property grid or programmatically like this:  
-```csharp
-this.comboBox.AppearanceKey = "My-ComboBox";
-```
+  ```csharp
+  this.comboBox.AppearanceKey = "My-ComboBox";
+  ```
