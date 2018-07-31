@@ -40,10 +40,10 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 * MDIExample - How to use MDI. - 09 Jul 2018
 * EditorsChoice - Showcase of rich text editors for web environement. - 03 Jul 2018
 * SlideBar - Showcase of this new control. - 03 Jul 2018
-* SmoothieChartSample - Showcase of yeta another chart extension. - 03 Jul 2018
+* SmoothieChartSample - Showcase of yet another chart extension. - 03 Jul 2018
 * DataBinding - Advanced Business Objects data binding. - 02 Jul 2018
-* TourPanelSample - Very interesting extension that can be used for demos or training. - 02 Jul 2018
-* PageNavigation - Classic navigation on a web application. - 02 Jul 2018
+* TourPanelSample - Amazing extension that can be used for demos or training. - 02 Jul 2018
+* PageNavigation - Classic web navigation showcase. - 02 Jul 2018
 
 ### The source code for all Wisej extensions is available at [Wisej-Extensions](https://github.com/iceteagroup/wisej-extensions).
 
