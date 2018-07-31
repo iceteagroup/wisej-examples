@@ -21,6 +21,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 ## Specialized README files
 [Startup files](https://github.com/iceteagroup/wisej-examples/blob/master/HtmlJsonAndMain/README.md) - All about Default.html, Default.json and Program.cs
+
 [About mixins](https://github.com/iceteagroup/wisej-examples/blob/master/ReadOnlyMixin/README.md) - Important details you should know about mixins.
 
 ## News
@@ -30,7 +31,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 * GoogleMaps - Use GoogleMaps reverse Geolocation: get Coords from address and vv.. - 31 Jul 2018
 * GoogleMaps - Use Geolocation extension to get current location. - 29 Jul 2018
 
-### New examples
+### New projects
 
 * RuntimeLocalization - Update localization using reflection. - 27 Jul 2018
 * TreeGrid - Use a DataGridView as a tree. - 16 Jul 2018
@@ -42,7 +43,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 * SmoothieChartSample - Showcase of yeta another chart extension. - 03 Jul 2018
 * DataBinding - Advanced Business Objects data binding. - 02 Jul 2018
 * TourPanelSample - Very interesting extension that can be used for demos or training. - 02 Jul 2018
-* PageNavigation - Classic web application infrastructure. - 02 Jul 2018
+* PageNavigation - Classic navigation on a web application. - 02 Jul 2018
 
 ### The source code for all Wisej extensions is available at [Wisej-Extensions](https://github.com/iceteagroup/wisej-extensions).
 
