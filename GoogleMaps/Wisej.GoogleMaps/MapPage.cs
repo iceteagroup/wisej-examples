@@ -77,8 +77,8 @@ namespace Wisej.GoogleMaps
                 }
                 else
                 {
-                    this.googleMap1.AddMarker(this.maskedTextBoxID.Text, Double.Parse(this.maskedTextBoxLat.Text),
-                        Double.Parse(this.maskedTextBoxLng.Text));
+                    this.googleMap1.AddMarker(this.maskedTextBoxID.Text, double.Parse(this.maskedTextBoxLat.Text),
+                        double.Parse(this.maskedTextBoxLng.Text));
                 }
             }
             else
@@ -144,8 +144,8 @@ namespace Wisej.GoogleMaps
             }
             else
             {
-                this.googleMap1.CenterMap(Double.Parse(this.maskedTextBoxLat.Text),
-                    Double.Parse(this.maskedTextBoxLng.Text));
+                this.googleMap1.CenterMap(double.Parse(this.maskedTextBoxLat.Text),
+                    double.Parse(this.maskedTextBoxLng.Text));
             }
         }
 
@@ -158,10 +158,31 @@ namespace Wisej.GoogleMaps
 
         private void coordsFromAddressButton_Click(object sender, EventArgs e)
         {
-            googleMap1.GetGeocode(Coords, this.textBoxAddress.Text.Replace("\r\n", ","));
+            CoordsFromAddress();
         }
 
-        private void Coords(GeocoderResult[] geocodes)
+        private void coordsFromAddressButton_ItemClicked(object sender, MenuButtonItemClickedEventArgs e)
+        {
+            CoordsFromAddress();
+        }
+
+        private void addressFromCoordsButton_ItemClicked(object sender, MenuButtonItemClickedEventArgs e)
+        {
+            AddressFromCoords();
+        }
+
+        private void addressFromCoordsButton_Click(object sender, EventArgs e)
+        {
+            AddressFromCoords();
+        }
+
+
+        private void CoordsFromAddress()
+        {
+            googleMap1.GetGeocode(FillCoords, this.textBoxAddress.Text.Replace("\r\n", ","));
+        }
+
+        private void FillCoords(GeocoderResult[] geocodes)
         {
             if (geocodes[0].IsError)
             {
@@ -177,8 +198,25 @@ namespace Wisej.GoogleMaps
             }
         }
 
-        private void addressFromCoordsButton_Click(object sender, EventArgs e)
+        private void AddressFromCoords()
         {
+            googleMap1.GetGeocode(FillAddress, double.Parse(this.maskedTextBoxLat.Text),
+                double.Parse(this.maskedTextBoxLng.Text));
+        }
+
+        private void FillAddress(GeocoderResult[] geocodes)
+        {
+            if (geocodes[0].IsError)
+            {
+                MessageBox.Show($"Received error {geocodes[0].ResultCode}",
+                    "Search Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            else
+            {
+                this.textBoxAddress.Text = geocodes[0].FormattedAddress;
+            }
         }
     }
 }

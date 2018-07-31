@@ -47,8 +47,8 @@
             this.groupBox4 = new Wisej.Web.GroupBox();
             this.tableLayoutPanel1 = new Wisej.Web.TableLayoutPanel();
             this.panel4 = new Wisej.Web.Panel();
-            this.coordsFromAddressButton = new Wisej.Web.Button();
-            this.addressFromCoordsButton = new Wisej.Web.Button();
+            this.coordsFromAddressButton = new Wisej.Web.SplitButton();
+            this.addressFromCoordsButton = new Wisej.Web.SplitButton();
             this.currentLocationButton = new Wisej.Web.Button();
             this.panel3 = new Wisej.Web.Panel();
             this.buttonCenterMap = new Wisej.Web.Button();
@@ -67,6 +67,8 @@
             this.label6 = new Wisej.Web.Label();
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
             this.geolocation = new Wisej.Ext.Geolocation.Geolocation(this.components);
+            this.menuItem1 = new Wisej.Web.MenuItem();
+            this.menuItem2 = new Wisej.Web.MenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -335,24 +337,30 @@
             this.panel4.Size = new System.Drawing.Size(500, 64);
             this.panel4.TabIndex = 3;
             // 
-            // coordsFromAddressBtton
+            // coordsFromAddressButton
             // 
             this.coordsFromAddressButton.Anchor = Wisej.Web.AnchorStyles.Left;
             this.coordsFromAddressButton.Location = new System.Drawing.Point(202, 11);
+            this.coordsFromAddressButton.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
+            this.menuItem1});
             this.coordsFromAddressButton.Name = "coordsFromAddressButton";
             this.coordsFromAddressButton.Size = new System.Drawing.Size(97, 43);
             this.coordsFromAddressButton.TabIndex = 13;
             this.coordsFromAddressButton.Text = "Coords from Address";
+            this.coordsFromAddressButton.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.coordsFromAddressButton_ItemClicked);
             this.coordsFromAddressButton.Click += new System.EventHandler(this.coordsFromAddressButton_Click);
             // 
             // addressFromCoordsButton
             // 
             this.addressFromCoordsButton.Anchor = Wisej.Web.AnchorStyles.Right;
             this.addressFromCoordsButton.Location = new System.Drawing.Point(374, 11);
+            this.addressFromCoordsButton.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
+            this.menuItem2});
             this.addressFromCoordsButton.Name = "addressFromCoordsButton";
             this.addressFromCoordsButton.Size = new System.Drawing.Size(97, 43);
             this.addressFromCoordsButton.TabIndex = 12;
             this.addressFromCoordsButton.Text = "Address from Coords";
+            this.addressFromCoordsButton.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.addressFromCoordsButton_ItemClicked);
             this.addressFromCoordsButton.Click += new System.EventHandler(this.addressFromCoordsButton_Click);
             // 
             // currentLocationButton
@@ -532,6 +540,18 @@
             this.geolocation.MaximumAge = ((long)(-1));
             this.geolocation.Timeout = ((long)(-1));
             // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 0;
+            this.menuItem1.Name = "menuItem1";
+            this.menuItem1.Text = "Show Details";
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = 0;
+            this.menuItem2.Name = "menuItem2";
+            this.menuItem2.Text = "Show Details";
+            // 
             // MapPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -602,7 +622,9 @@
         private Web.Panel panel4;
         private Web.Button currentLocationButton;
         private Ext.Geolocation.Geolocation geolocation;
-        private Web.Button addressFromCoordsButton;
-        private Web.Button coordsFromAddressButton;
+        private Web.SplitButton addressFromCoordsButton;
+        private Web.SplitButton coordsFromAddressButton;
+        private Web.MenuItem menuItem1;
+        private Web.MenuItem menuItem2;
     }
 }
