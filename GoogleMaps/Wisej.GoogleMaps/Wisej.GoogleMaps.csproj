@@ -57,6 +57,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeocodeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeocodeDetails.Designer.cs">
+      <DependentUpon>GeocodeDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="MapPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GeocodeDetails.resx">
+      <DependentUpon>GeocodeDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MapPage.resx">
       <DependentUpon>MapPage.cs</DependentUpon>
       <SubType>Designer</SubType>
