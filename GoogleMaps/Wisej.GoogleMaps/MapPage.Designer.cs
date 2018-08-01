@@ -47,9 +47,7 @@
             this.groupBox4 = new Wisej.Web.GroupBox();
             this.tableLayoutPanel1 = new Wisej.Web.TableLayoutPanel();
             this.panel4 = new Wisej.Web.Panel();
-            this.coordsFromAddressButton = new Wisej.Web.SplitButton();
-            this.addressFromCoordsButton = new Wisej.Web.SplitButton();
-            this.currentLocationButton = new Wisej.Web.Button();
+            this.buttonCurrentLocation = new Wisej.Web.Button();
             this.panel3 = new Wisej.Web.Panel();
             this.buttonCenterMap = new Wisej.Web.Button();
             this.buttonClearMarkers = new Wisej.Web.Button();
@@ -65,10 +63,19 @@
             this.maskedTextBoxLat = new Wisej.Web.MaskedTextBox();
             this.maskedTextBoxID = new Wisej.Web.MaskedTextBox();
             this.label6 = new Wisej.Web.Label();
+            this.buttonCoordsFromAddress = new Wisej.Web.Button();
+            this.buttonAddressFromCoords = new Wisej.Web.Button();
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
+            this.groupBox5 = new Wisej.Web.GroupBox();
+            this.buttonCopyToMarkers = new Wisej.Web.Button();
+            this.buttonShowDetails = new Wisej.Web.Button();
+            this.label9 = new Wisej.Web.Label();
+            this.geocodeLng = new Wisej.Web.TextBox();
+            this.label8 = new Wisej.Web.Label();
+            this.geocodeLat = new Wisej.Web.TextBox();
+            this.label7 = new Wisej.Web.Label();
+            this.geocodeAddress = new Wisej.Web.TextBox();
             this.geolocation = new Wisej.Ext.Geolocation.Geolocation(this.components);
-            this.menuItem1 = new Wisej.Web.MenuItem();
-            this.menuItem2 = new Wisej.Web.MenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -82,6 +89,7 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -92,9 +100,9 @@
             this.groupBox1.Controls.Add(this.checkBoxMapType);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox1, 33);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.MinimumSize = new System.Drawing.Size(150, 0);
+            this.groupBox1.MinimumSize = new System.Drawing.Size(152, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(335, 172);
+            this.groupBox1.Size = new System.Drawing.Size(304, 140);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.Text = "Controls";
             this.groupBox1.UseMnemonic = false;
@@ -103,7 +111,7 @@
             // 
             this.checkBoxStreetView.Checked = true;
             this.checkBoxStreetView.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
-            this.checkBoxStreetView.Location = new System.Drawing.Point(16, 115);
+            this.checkBoxStreetView.Location = new System.Drawing.Point(16, 100);
             this.checkBoxStreetView.Name = "checkBoxStreetView";
             this.checkBoxStreetView.Size = new System.Drawing.Size(94, 23);
             this.checkBoxStreetView.TabIndex = 3;
@@ -112,7 +120,7 @@
             // 
             // checkBoxFullScreen
             // 
-            this.checkBoxFullScreen.Location = new System.Drawing.Point(16, 85);
+            this.checkBoxFullScreen.Location = new System.Drawing.Point(16, 75);
             this.checkBoxFullScreen.Name = "checkBoxFullScreen";
             this.checkBoxFullScreen.Size = new System.Drawing.Size(94, 23);
             this.checkBoxFullScreen.TabIndex = 2;
@@ -123,7 +131,7 @@
             // 
             this.checkBoxZoom.Checked = true;
             this.checkBoxZoom.CheckState = ((Wisej.Web.CheckState)(Wisej.Web.CheckState.Checked));
-            this.checkBoxZoom.Location = new System.Drawing.Point(16, 55);
+            this.checkBoxZoom.Location = new System.Drawing.Point(16, 50);
             this.checkBoxZoom.Name = "checkBoxZoom";
             this.checkBoxZoom.Size = new System.Drawing.Size(60, 23);
             this.checkBoxZoom.TabIndex = 1;
@@ -146,10 +154,10 @@
             this.groupBox2.Controls.Add(this.comboBoxMapType);
             this.groupBox2.Controls.Add(this.checkedListBoxMapType);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox2, 33);
-            this.groupBox2.Location = new System.Drawing.Point(344, 3);
-            this.groupBox2.MinimumSize = new System.Drawing.Size(150, 0);
+            this.groupBox2.Location = new System.Drawing.Point(313, 3);
+            this.groupBox2.MinimumSize = new System.Drawing.Size(152, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(335, 172);
+            this.groupBox2.Size = new System.Drawing.Size(304, 140);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.Text = "Map Type";
             this.groupBox2.UseMnemonic = false;
@@ -166,7 +174,7 @@
             "Terrain"});
             this.comboBoxMapType.Location = new System.Drawing.Point(18, 25);
             this.comboBoxMapType.Name = "comboBoxMapType";
-            this.comboBoxMapType.Size = new System.Drawing.Size(85, 22);
+            this.comboBoxMapType.Size = new System.Drawing.Size(54, 22);
             this.comboBoxMapType.TabIndex = 1;
             this.comboBoxMapType.Text = "Map";
             this.comboBoxMapType.SelectedIndexChanged += new System.EventHandler(this.comboBoxMatType_SelectedIndexChanged);
@@ -179,7 +187,7 @@
             "Hybrid",
             "Satellite",
             "Terrain"});
-            this.checkedListBoxMapType.Location = new System.Drawing.Point(18, 53);
+            this.checkedListBoxMapType.Location = new System.Drawing.Point(130, 20);
             this.checkedListBoxMapType.Name = "checkedListBoxMapType";
             this.checkedListBoxMapType.Size = new System.Drawing.Size(139, 113);
             this.checkedListBoxMapType.TabIndex = 0;
@@ -191,13 +199,13 @@
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
             this.googleMap1.ApiKey = "AIzaSyDJ13giW35qbt9Qsznjy_CFqMJMQlAjoSw";
-            this.googleMap1.Location = new System.Drawing.Point(48, 453);
+            this.googleMap1.Location = new System.Drawing.Point(5, 453);
             this.googleMap1.MaximumSize = new System.Drawing.Size(1024, 0);
             this.googleMap1.MinimumSize = new System.Drawing.Size(0, 400);
             this.googleMap1.Name = "googleMap1";
             this.googleMap1.Options = ((Wisej.Core.DynamicObject)(Wisej.Core.WisejSerializer.Parse("{\"zoom\":4,\"center\":{\"lat\":0,\"lng\":0},\"mapTypeId\":\"roadmap\",\"mapTypeControlOptions" +
         "\":{\"style\":2,\"mapTypeIds\":[\"roadmap\",\"hybrid\",\"satellite\",\"terrain\"]}}")));
-            this.googleMap1.Size = new System.Drawing.Size(1024, 400);
+            this.googleMap1.Size = new System.Drawing.Size(929, 400);
             this.googleMap1.TabIndex = 0;
             this.googleMap1.Text = "googleMap1";
             this.googleMap1.MapClick += new Wisej.Web.Ext.GoogleMaps.MapMouseEventHandler(this.googleMap1_MapClick);
@@ -207,10 +215,10 @@
             // 
             this.trackBar1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.trackBar1.Location = new System.Drawing.Point(22, 105);
+            this.trackBar1.Location = new System.Drawing.Point(21, 98);
             this.trackBar1.Maximum = 20;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(298, 34);
+            this.trackBar1.Size = new System.Drawing.Size(267, 34);
             this.trackBar1.TabIndex = 3;
             this.trackBar1.TickStyle = Wisej.Web.TickStyle.Both;
             this.trackBar1.Value = 10;
@@ -225,10 +233,10 @@
             this.groupBox3.Controls.Add(this.numericUpDownMinZoom);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox3, 33);
             this.flowLayoutPanel1.SetFlowBreak(this.groupBox3, true);
-            this.groupBox3.Location = new System.Drawing.Point(685, 3);
+            this.groupBox3.Location = new System.Drawing.Point(623, 3);
             this.groupBox3.MinimumSize = new System.Drawing.Size(210, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(335, 172);
+            this.groupBox3.Size = new System.Drawing.Size(304, 140);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.Text = "Zoom";
             this.groupBox3.UseMnemonic = false;
@@ -236,7 +244,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 59);
+            this.label2.Location = new System.Drawing.Point(21, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 16);
             this.label2.TabIndex = 3;
@@ -244,7 +252,7 @@
             // 
             // numericUpDownMaxZoom
             // 
-            this.numericUpDownMaxZoom.Location = new System.Drawing.Point(71, 57);
+            this.numericUpDownMaxZoom.Location = new System.Drawing.Point(70, 54);
             this.numericUpDownMaxZoom.Maximum = new decimal(new int[] {
             20,
             0,
@@ -268,7 +276,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 28);
+            this.label1.Location = new System.Drawing.Point(21, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 16);
             this.label1.TabIndex = 1;
@@ -276,7 +284,7 @@
             // 
             // numericUpDownMinZoom
             // 
-            this.numericUpDownMinZoom.Location = new System.Drawing.Point(71, 26);
+            this.numericUpDownMinZoom.Location = new System.Drawing.Point(70, 23);
             this.numericUpDownMinZoom.Maximum = new decimal(new int[] {
             10,
             0,
@@ -301,9 +309,10 @@
             // 
             this.groupBox4.Controls.Add(this.tableLayoutPanel1);
             this.flowLayoutPanel1.SetFillWeight(this.groupBox4, 100);
-            this.groupBox4.Location = new System.Drawing.Point(3, 181);
+            this.flowLayoutPanel1.SetFlowBreak(this.groupBox4, true);
+            this.groupBox4.Location = new System.Drawing.Point(3, 149);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1018, 207);
+            this.groupBox4.Size = new System.Drawing.Size(923, 160);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.Text = "Markers";
             this.groupBox4.UseMnemonic = false;
@@ -321,57 +330,29 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 19);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new Wisej.Web.RowStyle(Wisej.Web.SizeType.Absolute, 115F));
-            this.tableLayoutPanel1.RowStyles.Add(new Wisej.Web.RowStyle(Wisej.Web.SizeType.Absolute, 34F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1012, 185);
+            this.tableLayoutPanel1.RowStyles.Add(new Wisej.Web.RowStyle(Wisej.Web.SizeType.Absolute, 85F));
+            this.tableLayoutPanel1.RowStyles.Add(new Wisej.Web.RowStyle(Wisej.Web.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(917, 138);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.coordsFromAddressButton);
-            this.panel4.Controls.Add(this.addressFromCoordsButton);
-            this.panel4.Controls.Add(this.currentLocationButton);
+            this.panel4.Controls.Add(this.buttonCurrentLocation);
             this.panel4.Dock = Wisej.Web.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 118);
+            this.panel4.Location = new System.Drawing.Point(3, 88);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(500, 64);
+            this.panel4.Size = new System.Drawing.Size(452, 47);
             this.panel4.TabIndex = 3;
             // 
-            // coordsFromAddressButton
+            // buttonCurrentLocation
             // 
-            this.coordsFromAddressButton.Anchor = Wisej.Web.AnchorStyles.Left;
-            this.coordsFromAddressButton.Location = new System.Drawing.Point(202, 11);
-            this.coordsFromAddressButton.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
-            this.menuItem1});
-            this.coordsFromAddressButton.Name = "coordsFromAddressButton";
-            this.coordsFromAddressButton.Size = new System.Drawing.Size(97, 43);
-            this.coordsFromAddressButton.TabIndex = 13;
-            this.coordsFromAddressButton.Text = "Coords from Address";
-            this.coordsFromAddressButton.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.coordsFromAddressButton_ItemClicked);
-            this.coordsFromAddressButton.Click += new System.EventHandler(this.coordsFromAddressButton_Click);
-            // 
-            // addressFromCoordsButton
-            // 
-            this.addressFromCoordsButton.Anchor = Wisej.Web.AnchorStyles.Right;
-            this.addressFromCoordsButton.Location = new System.Drawing.Point(374, 11);
-            this.addressFromCoordsButton.MenuItems.AddRange(new Wisej.Web.MenuItem[] {
-            this.menuItem2});
-            this.addressFromCoordsButton.Name = "addressFromCoordsButton";
-            this.addressFromCoordsButton.Size = new System.Drawing.Size(97, 43);
-            this.addressFromCoordsButton.TabIndex = 12;
-            this.addressFromCoordsButton.Text = "Address from Coords";
-            this.addressFromCoordsButton.ItemClicked += new Wisej.Web.MenuButtonItemClickedEventHandler(this.addressFromCoordsButton_ItemClicked);
-            this.addressFromCoordsButton.Click += new System.EventHandler(this.addressFromCoordsButton_Click);
-            // 
-            // currentLocationButton
-            // 
-            this.currentLocationButton.Anchor = Wisej.Web.AnchorStyles.Left;
-            this.currentLocationButton.Location = new System.Drawing.Point(11, 11);
-            this.currentLocationButton.Name = "currentLocationButton";
-            this.currentLocationButton.Size = new System.Drawing.Size(97, 43);
-            this.currentLocationButton.TabIndex = 11;
-            this.currentLocationButton.Text = "Current Location";
-            this.currentLocationButton.Click += new System.EventHandler(this.currentLocationButton_Click);
+            this.buttonCurrentLocation.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.buttonCurrentLocation.Location = new System.Drawing.Point(90, 0);
+            this.buttonCurrentLocation.Name = "buttonCurrentLocation";
+            this.buttonCurrentLocation.Size = new System.Drawing.Size(200, 40);
+            this.buttonCurrentLocation.TabIndex = 11;
+            this.buttonCurrentLocation.Text = "Current Location";
+            this.buttonCurrentLocation.Click += new System.EventHandler(this.buttonCurrentLocation_Click);
             // 
             // panel3
             // 
@@ -380,17 +361,17 @@
             this.panel3.Controls.Add(this.buttonAddMarker);
             this.panel3.Controls.Add(this.buttonRemoveMarker);
             this.panel3.Dock = Wisej.Web.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(509, 118);
+            this.panel3.Location = new System.Drawing.Point(461, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(500, 64);
+            this.panel3.Size = new System.Drawing.Size(453, 47);
             this.panel3.TabIndex = 2;
             // 
             // buttonCenterMap
             // 
             this.buttonCenterMap.Anchor = Wisej.Web.AnchorStyles.Right;
-            this.buttonCenterMap.Location = new System.Drawing.Point(88, 11);
+            this.buttonCenterMap.Location = new System.Drawing.Point(41, 0);
             this.buttonCenterMap.Name = "buttonCenterMap";
-            this.buttonCenterMap.Size = new System.Drawing.Size(97, 43);
+            this.buttonCenterMap.Size = new System.Drawing.Size(97, 40);
             this.buttonCenterMap.TabIndex = 11;
             this.buttonCenterMap.Text = "Center Map";
             this.buttonCenterMap.Click += new System.EventHandler(this.buttonCenterMap_Click);
@@ -398,9 +379,9 @@
             // buttonClearMarkers
             // 
             this.buttonClearMarkers.Anchor = Wisej.Web.AnchorStyles.Right;
-            this.buttonClearMarkers.Location = new System.Drawing.Point(397, 11);
+            this.buttonClearMarkers.Location = new System.Drawing.Point(350, 0);
             this.buttonClearMarkers.Name = "buttonClearMarkers";
-            this.buttonClearMarkers.Size = new System.Drawing.Size(97, 43);
+            this.buttonClearMarkers.Size = new System.Drawing.Size(97, 40);
             this.buttonClearMarkers.TabIndex = 10;
             this.buttonClearMarkers.Text = "Clear";
             this.buttonClearMarkers.Click += new System.EventHandler(this.buttonClearMarkers_Click);
@@ -408,9 +389,9 @@
             // buttonAddMarker
             // 
             this.buttonAddMarker.Anchor = Wisej.Web.AnchorStyles.Right;
-            this.buttonAddMarker.Location = new System.Drawing.Point(191, 11);
+            this.buttonAddMarker.Location = new System.Drawing.Point(144, 0);
             this.buttonAddMarker.Name = "buttonAddMarker";
-            this.buttonAddMarker.Size = new System.Drawing.Size(97, 43);
+            this.buttonAddMarker.Size = new System.Drawing.Size(97, 40);
             this.buttonAddMarker.TabIndex = 8;
             this.buttonAddMarker.Text = "Add";
             this.buttonAddMarker.Click += new System.EventHandler(this.buttonAddMarker_Click);
@@ -418,9 +399,9 @@
             // buttonRemoveMarker
             // 
             this.buttonRemoveMarker.Anchor = Wisej.Web.AnchorStyles.Right;
-            this.buttonRemoveMarker.Location = new System.Drawing.Point(294, 11);
+            this.buttonRemoveMarker.Location = new System.Drawing.Point(247, 0);
             this.buttonRemoveMarker.Name = "buttonRemoveMarker";
-            this.buttonRemoveMarker.Size = new System.Drawing.Size(97, 43);
+            this.buttonRemoveMarker.Size = new System.Drawing.Size(97, 40);
             this.buttonRemoveMarker.TabIndex = 9;
             this.buttonRemoveMarker.Text = "Remove";
             this.buttonRemoveMarker.Click += new System.EventHandler(this.buttonRemoveMarker_Click);
@@ -430,15 +411,15 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBoxAddress);
             this.panel2.Dock = Wisej.Web.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(509, 3);
+            this.panel2.Location = new System.Drawing.Point(461, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(500, 109);
+            this.panel2.Size = new System.Drawing.Size(453, 79);
             this.panel2.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 11);
+            this.label3.Location = new System.Drawing.Point(11, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 0;
@@ -449,11 +430,12 @@
             this.textBoxAddress.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
             | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.textBoxAddress.Location = new System.Drawing.Point(89, 11);
+            this.textBoxAddress.Location = new System.Drawing.Point(89, 3);
             this.textBoxAddress.Multiline = true;
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(402, 95);
+            this.textBoxAddress.Size = new System.Drawing.Size(355, 76);
             this.textBoxAddress.TabIndex = 1;
+            this.textBoxAddress.Watermark = "Type Piccadilly Circus";
             // 
             // panel1
             // 
@@ -466,22 +448,22 @@
             this.panel1.Dock = Wisej.Web.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(500, 109);
+            this.panel1.Size = new System.Drawing.Size(452, 79);
             this.panel1.TabIndex = 0;
             // 
             // maskedTextBoxLng
             // 
             this.maskedTextBoxLng.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.maskedTextBoxLng.Location = new System.Drawing.Point(90, 65);
+            this.maskedTextBoxLng.Location = new System.Drawing.Point(90, 55);
             this.maskedTextBoxLng.Name = "maskedTextBoxLng";
-            this.maskedTextBoxLng.Size = new System.Drawing.Size(381, 22);
+            this.maskedTextBoxLng.Size = new System.Drawing.Size(333, 22);
             this.maskedTextBoxLng.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 39);
+            this.label4.Location = new System.Drawing.Point(11, 31);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 16);
             this.label4.TabIndex = 2;
@@ -490,7 +472,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 67);
+            this.label5.Location = new System.Drawing.Point(10, 57);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 16);
             this.label5.TabIndex = 3;
@@ -500,14 +482,14 @@
             // 
             this.maskedTextBoxLat.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-            this.maskedTextBoxLat.Location = new System.Drawing.Point(90, 37);
+            this.maskedTextBoxLat.Location = new System.Drawing.Point(90, 29);
             this.maskedTextBoxLat.Name = "maskedTextBoxLat";
-            this.maskedTextBoxLat.Size = new System.Drawing.Size(381, 22);
+            this.maskedTextBoxLat.Size = new System.Drawing.Size(333, 22);
             this.maskedTextBoxLat.TabIndex = 4;
             // 
             // maskedTextBoxID
             // 
-            this.maskedTextBoxID.Location = new System.Drawing.Point(90, 9);
+            this.maskedTextBoxID.Location = new System.Drawing.Point(90, 3);
             this.maskedTextBoxID.Name = "maskedTextBoxID";
             this.maskedTextBoxID.Size = new System.Drawing.Size(77, 22);
             this.maskedTextBoxID.TabIndex = 7;
@@ -515,11 +497,31 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 13);
+            this.label6.Location = new System.Drawing.Point(11, 7);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 16);
             this.label6.TabIndex = 6;
             this.label6.Text = "ID:";
+            // 
+            // buttonCoordsFromAddress
+            // 
+            this.buttonCoordsFromAddress.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.buttonCoordsFromAddress.Location = new System.Drawing.Point(16, 79);
+            this.buttonCoordsFromAddress.Name = "buttonCoordsFromAddress";
+            this.buttonCoordsFromAddress.Size = new System.Drawing.Size(150, 32);
+            this.buttonCoordsFromAddress.TabIndex = 13;
+            this.buttonCoordsFromAddress.Text = "Coords from Address";
+            this.buttonCoordsFromAddress.Click += new System.EventHandler(this.buttonCoordsFromAddress_Click);
+            // 
+            // buttonAddressFromCoords
+            // 
+            this.buttonAddressFromCoords.Anchor = Wisej.Web.AnchorStyles.Left;
+            this.buttonAddressFromCoords.Location = new System.Drawing.Point(16, 35);
+            this.buttonAddressFromCoords.Name = "buttonAddressFromCoords";
+            this.buttonAddressFromCoords.Size = new System.Drawing.Size(150, 32);
+            this.buttonAddressFromCoords.TabIndex = 12;
+            this.buttonAddressFromCoords.Text = "Address from Coords";
+            this.buttonAddressFromCoords.Click += new System.EventHandler(this.buttonAddressFromCoords_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -529,28 +531,105 @@
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.groupBox3);
             this.flowLayoutPanel1.Controls.Add(this.groupBox4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 46);
-            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(1024, 388);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox5);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 5);
+            this.flowLayoutPanel1.MaximumSize = new System.Drawing.Size(1024, 440);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1024, 388);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(929, 440);
             this.flowLayoutPanel1.TabIndex = 6;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.buttonCopyToMarkers);
+            this.groupBox5.Controls.Add(this.buttonShowDetails);
+            this.groupBox5.Controls.Add(this.label9);
+            this.groupBox5.Controls.Add(this.geocodeLng);
+            this.groupBox5.Controls.Add(this.label8);
+            this.groupBox5.Controls.Add(this.geocodeLat);
+            this.groupBox5.Controls.Add(this.label7);
+            this.groupBox5.Controls.Add(this.buttonCoordsFromAddress);
+            this.groupBox5.Controls.Add(this.geocodeAddress);
+            this.groupBox5.Controls.Add(this.buttonAddressFromCoords);
+            this.flowLayoutPanel1.SetFillWeight(this.groupBox5, 100);
+            this.groupBox5.Location = new System.Drawing.Point(3, 315);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(923, 125);
+            this.groupBox5.TabIndex = 6;
+            this.groupBox5.Text = "Reverse Geocode";
+            // 
+            // buttonCopyToMarkers
+            // 
+            this.buttonCopyToMarkers.Anchor = Wisej.Web.AnchorStyles.Right;
+            this.buttonCopyToMarkers.Location = new System.Drawing.Point(814, 35);
+            this.buttonCopyToMarkers.Name = "buttonCopyToMarkers";
+            this.buttonCopyToMarkers.Size = new System.Drawing.Size(97, 35);
+            this.buttonCopyToMarkers.TabIndex = 18;
+            this.buttonCopyToMarkers.Text = "To Markers";
+            this.buttonCopyToMarkers.Click += new System.EventHandler(this.buttonCopyToMarkers_Click);
+            // 
+            // buttonShowDetails
+            // 
+            this.buttonShowDetails.Anchor = Wisej.Web.AnchorStyles.Right;
+            this.buttonShowDetails.Location = new System.Drawing.Point(814, 79);
+            this.buttonShowDetails.Name = "buttonShowDetails";
+            this.buttonShowDetails.Size = new System.Drawing.Size(97, 35);
+            this.buttonShowDetails.TabIndex = 11;
+            this.buttonShowDetails.Text = "Show Details";
+            this.buttonShowDetails.Click += new System.EventHandler(this.buttonShowDetails_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(659, 69);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 16);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Latiude:";
+            // 
+            // geocodeLng
+            // 
+            this.geocodeLng.Location = new System.Drawing.Point(659, 89);
+            this.geocodeLng.Name = "geocodeLng";
+            this.geocodeLng.Size = new System.Drawing.Size(200, 22);
+            this.geocodeLng.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(659, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 16);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Latiude:";
+            // 
+            // geocodeLat
+            // 
+            this.geocodeLat.Location = new System.Drawing.Point(659, 35);
+            this.geocodeLat.Name = "geocodeLat";
+            this.geocodeLat.Size = new System.Drawing.Size(200, 22);
+            this.geocodeLat.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(208, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 16);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Address:";
+            // 
+            // geocodeAddress
+            // 
+            this.geocodeAddress.Location = new System.Drawing.Point(208, 35);
+            this.geocodeAddress.Multiline = true;
+            this.geocodeAddress.Name = "geocodeAddress";
+            this.geocodeAddress.Size = new System.Drawing.Size(400, 76);
+            this.geocodeAddress.TabIndex = 3;
             // 
             // geolocation
             // 
             this.geolocation.MaximumAge = ((long)(-1));
             this.geolocation.Timeout = ((long)(-1));
-            // 
-            // menuItem1
-            // 
-            this.menuItem1.Index = 0;
-            this.menuItem1.Name = "menuItem1";
-            this.menuItem1.Text = "Show Details";
-            // 
-            // menuItem2
-            // 
-            this.menuItem2.Index = 0;
-            this.menuItem2.Name = "menuItem2";
-            this.menuItem2.Text = "Show Details";
             // 
             // MapPage
             // 
@@ -560,7 +639,7 @@
             this.Controls.Add(this.googleMap1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "MapPage";
-            this.Size = new System.Drawing.Size(922, 696);
+            this.Size = new System.Drawing.Size(917, 696);
             this.Load += new System.EventHandler(this.MapPage_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -580,6 +659,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -620,11 +701,18 @@
         private Web.ComboBox comboBoxMapType;
         private Web.Button buttonCenterMap;
         private Web.Panel panel4;
-        private Web.Button currentLocationButton;
+        private Web.Button buttonCurrentLocation;
         private Ext.Geolocation.Geolocation geolocation;
-        private Web.SplitButton addressFromCoordsButton;
-        private Web.SplitButton coordsFromAddressButton;
-        private Web.MenuItem menuItem1;
-        private Web.MenuItem menuItem2;
+        private Web.Button buttonAddressFromCoords;
+        private Web.Button buttonCoordsFromAddress;
+        private Web.GroupBox groupBox5;
+        private Web.Label label9;
+        private Web.TextBox geocodeLng;
+        private Web.Label label8;
+        private Web.TextBox geocodeLat;
+        private Web.Label label7;
+        private Web.TextBox geocodeAddress;
+        private Web.Button buttonShowDetails;
+        private Web.Button buttonCopyToMarkers;
     }
 }
