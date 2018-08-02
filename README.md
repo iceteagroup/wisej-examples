@@ -34,6 +34,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 ### New projects
 
+* DGVEmbeddedNavigator - Embedding the navigator into a DataGridView (visual only sample). - 02 Aug 2018
 * RuntimeLocalization - Update localized resources using reflection. - 27 Jul 2018
 * TreeGrid - Use a DataGridView as a tree. - 16 Jul 2018
 * HtmlJsonAndMain - Interesting details about the 3 startup files. - 15 Jul 2018
