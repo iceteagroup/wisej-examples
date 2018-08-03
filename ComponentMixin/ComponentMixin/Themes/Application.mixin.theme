@@ -1,0 +1,847 @@
+
+{
+	"name": "Application.mixin",
+	"images": 
+	{
+		"icon-file": "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik02IDJjLTEuMSAwLTEuOTkuOS0xLjk5IDJMNCAyMGMwIDEuMS44OSAyIDEuOTkgMkgxOGMxLjEgMCAyLS45IDItMlY4bC02LTZINnptNyA3VjMuNUwxOC41IDlIMTN6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==",
+		"icon-folder": "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMCA0SDRjLTEuMSAwLTEuOTkuOS0xLjk5IDJMMiAxOGMwIDEuMS45IDIgMiAyaDE2YzEuMSAwIDItLjkgMi0yVjhjMC0xLjEtLjktMi0yLTJoLThsLTItMnoiLz4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KPC9zdmc+",
+		"icon-folder-open": "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik0yMCA2aC04bC0yLTJINGMtMS4xIDAtMS45OS45LTEuOTkgMkwyIDE4YzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWOGMwLTEuMS0uOS0yLTItMnptMCAxMkg0VjhoMTZ2MTB6Ii8+Cjwvc3ZnPg==",
+		"node-closed": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMTUyIDg5NnEwIDI2LTE5IDQ1bC00NDggNDQ4cS0xOSAxOS00NSAxOXQtNDUtMTktMTktNDV2LTg5NnEwLTI2IDE5LTQ1dDQ1LTE5IDQ1IDE5bDQ0OCA0NDhxMTkgMTkgMTkgNDV6Ii8+PC9zdmc+",
+		"node-opened": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMTUyIDg5NnEwIDI2LTE5IDQ1bC00NDggNDQ4cS0xOSAxOS00NSAxOXQtNDUtMTktMTktNDV2LTg5NnEwLTI2IDE5LTQ1dDQ1LTE5IDQ1IDE5bDQ0OCA0NDhxMTkgMTkgMTkgNDV6Ii8+PC9zdmc+"
+	},
+	"colors": 
+	{
+		"my-color": "red",
+		"color-cancel": "#F12924",
+		"background-cancel": "#DD635A",
+		"color-checked": "#DE8C8C",
+		"background-button": "#E6E6E6",
+		"hotTrack": "#C1DCF1",
+		"highlight": "#298AE5",
+		"highlightText": "white"
+	},
+	"appearances": 
+	{
+		"my-accordion": 
+		{
+			"inherit": "accordion",
+			"states": 
+			{
+				"default": 
+				{
+					"styles": 
+					{
+						"color": "#02436B"
+					},
+					"properties": 
+					{
+						"backgroundColor": "#02436B",
+						"textColor": "#FFFFFF",
+						"height": 40
+					}
+				}
+			},
+			"components": 
+			{
+				"panel": 
+				{
+					"text": "Panel",
+					"states": 
+					{
+						"default": 
+						{
+							"styles": 
+							{
+								"transition": "top 200ms,height 100ms",
+								"backgroundColor": "#023859",
+								"color": "#023859"
+							},
+							"properties": 
+							{
+								"height": "50"
+							}
+						}
+					},
+					"components": 
+					{
+						"open-button": 
+						{
+							"text": "Open Button",
+							"inherit": "panel/close-button"
+						},
+						"icon": 
+						{
+							"text": "Icon",
+							"states": 
+							{
+								"default": 
+								{
+									"styles": 
+									{
+										"color": "#F4F4F4"
+									},
+									"properties": 
+									{
+										"marginLeft": 10,
+										"width": 20,
+										"height": 20,
+										"scale": "True",
+										"textColor": "#FFFFFF"
+									}
+								}
+							}
+						},
+						"captionBar": 
+						{
+							"text": "CaptionBar",
+							"states": 
+							{
+								"hovered": 
+								{
+									"styles": 
+									{
+										"backgroundColor": "#2580A2"
+									},
+									"properties": 
+									{
+										"cursor": "pointer",
+										"textColor": "window"
+									}
+								}
+							},
+							"components": 
+							{
+								"icon": 
+								{
+									"inherit": "icon-light",
+									"states": 
+									{
+										"default": 
+										{
+											"properties": 
+											{
+												"margin": [5, 0, 0, 20]
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"mybutton-cancel": 
+		{
+			"inherit": "button",
+			"states": 
+			{
+				"default": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "#F7F7F7",
+						"width": [1, 1, 1, 1],
+						"color": "background-cancel",
+						"radius": [3, 3, 3, 3]
+					},
+					"properties": 
+					{
+						"opacity": 1,
+						"center": true,
+						"height": 26,
+						"font": 
+						{
+							"size": 12,
+							"family": ["helvetica", "arial", "verdana", "sans-serif"],
+							"bold": true,
+							"italic": false
+						},
+						"textColor": "background-cancel"
+					}
+				},
+				"focused": 
+				{
+					"styles": 
+					{
+						"color": "Crimson"
+					}
+				},
+				"hovered": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "background-cancel",
+						"shadowLength": [0, 0],
+						"shadowColor": "rgba(255,145,145,0.99)",
+						"shadowBlurRadius": "10"
+					},
+					"properties": 
+					{
+						"cursor": "pointer",
+						"textColor": "#FFFFFF"
+					}
+				},
+				"pressed": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "rgba(255,0,0,0.64)",
+						"width": [1, 1, 1, 1],
+						"color": "#F24641",
+						"radius": [3, 3, 3, 3]
+					},
+					"properties": 
+					{
+						"opacity": 1,
+						"center": true,
+						"textColor": "GhostWhite",
+						"height": 26
+					}
+				},
+				"checked": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "color-checked"
+					},
+					"properties": 
+					{
+						"textColor": "Firebrick"
+					}
+				}
+			}
+		},
+		"mybutton-ok": 
+		{
+			"inherit": "button",
+			"states": 
+			{
+				"default": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "#F7F7F7",
+						"width": [1, 1, 1, 1],
+						"color": "#567EAE",
+						"radius": [3, 3, 3, 3]
+					},
+					"properties": 
+					{
+						"opacity": 1,
+						"center": true,
+						"height": 26,
+						"font": 
+						{
+							"size": 12,
+							"family": ["helvetica", "arial", "verdana", "sans-serif"],
+							"bold": true,
+							"italic": false
+						},
+						"textColor": "#567EAE"
+					}
+				},
+				"focused": 
+				{
+					"styles": 
+					{
+						"color": "#4867AA"
+					}
+				},
+				"hovered": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "#567EAE",
+						"shadowLength": [0, 0],
+						"shadowColor": "#BBCBDE",
+						"shadowBlurRadius": 15
+					},
+					"properties": 
+					{
+						"cursor": "pointer",
+						"textColor": "#FFFFFF"
+					}
+				},
+				"pressed": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "#567EAE",
+						"width": [1, 1, 1, 1],
+						"color": "#2D79CF",
+						"radius": [3, 3, 3, 3]
+					},
+					"properties": 
+					{
+						"opacity": 1,
+						"center": true,
+						"textColor": "GhostWhite",
+						"height": 26
+					}
+				},
+				"checked": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "#567EAE"
+					},
+					"properties": 
+					{
+						"textColor": "#2D79CF"
+					}
+				}
+			}
+		},
+		"my-panel": 
+		{
+			"inherit": "panel",
+			"states": 
+			{
+				"default": 
+				{
+					"styles": 
+					{
+						"width": [1, 1, 1, 1],
+						"style": ["solid", "solid", "solid", "solid"],
+						"color": "windowFrame",
+						"shadowBlurRadius": "17",
+						"shadowLength": ["5", "5"],
+						"shadowColor": "#545454",
+						"shadowSpreadRadius": -5,
+						"backgroundColor": "#F7F7F7"
+					}
+				},
+				"borderNone": 
+				{
+					"styles": 
+					{
+						"width": [0, 0, 0, 0]
+					}
+				},
+				"borderDashed": 
+				{
+					"styles": 
+					{
+						"width": [1, 1, 1, 1],
+						"style": ["dashed", "dashed", "dashed", "dashed"]
+					}
+				},
+				"borderDotted": 
+				{
+					"styles": 
+					{
+						"width": [1, 1, 1, 1],
+						"style": ["dotted", "dotted", "dotted", "dotted"]
+					}
+				},
+				"borderDouble": 
+				{
+					"styles": 
+					{
+						"width": [3, 3, 3, 3],
+						"style": ["double", "double", "double", "double"]
+					}
+				}
+			},
+			"components": 
+			{
+				"pane": 
+				{
+					"inherit": "scrollarea"
+				},
+				"captionbar": 
+				{
+					"text": "CaptionBar",
+					"states": 
+					{
+						"default": 
+						{
+							"styles": 
+							{
+								"backgroundColor": "activeCaption"
+							},
+							"properties": 
+							{
+								"textColor": "activeCaptionText"
+							}
+						},
+						"horizontal": 
+						{
+							"properties": 
+							{
+								"height": 28
+							}
+						},
+						"vertical": 
+						{
+							"properties": 
+							{
+								"width": 28,
+								"maxHeight": null
+							}
+						}
+					}
+				},
+				"close-button": 
+				{
+					"states": 
+					{
+						"default": 
+						{
+							"properties": 
+							{
+								"icon": "icon-down",
+								"cursor": "pointer",
+								"opacity": 0.5,
+								"margin": [0, 10, 0, 10],
+								"width": 24,
+								"height": 24
+							}
+						},
+						"vertical": 
+						{
+							"properties": 
+							{
+								"margin": [10, 0, 10, 0]
+							}
+						},
+						"collapsed": 
+						{
+							"properties": 
+							{
+								"icon": "icon-up"
+							}
+						},
+						"hovered": 
+						{
+							"properties": 
+							{
+								"opacity": 1
+							}
+						}
+					},
+					"components": 
+					{
+						"icon": 
+						{
+							"inherit": "icon-dark",
+							"states": 
+							{
+								"default": 
+								{
+									"properties": 
+									{
+										"width": 24,
+										"height": 24
+									}
+								}
+							}
+						}
+					}
+				},
+				"title": 
+				{
+					"states": 
+					{
+						"default": 
+						{
+						},
+						"horizontal": 
+						{
+							"properties": 
+							{
+								"margin": [0, 10, 0, 10]
+							}
+						},
+						"vertical": 
+						{
+							"properties": 
+							{
+								"margin": [10, 0, 10, 0]
+							}
+						}
+					}
+				},
+				"icon": 
+				{
+					"states": 
+					{
+						"default": 
+						{
+							"properties": 
+							{
+								"scale": true,
+								"width": 18,
+								"height": 18
+							}
+						},
+						"vertical": 
+						{
+							"properties": 
+							{
+								"margin": [0, 0, 8, 0]
+							}
+						},
+						"horizontal": 
+						{
+							"properties": 
+							{
+								"margin": [0, 0, 0, 8]
+							}
+						}
+					}
+				}
+			}
+		},
+		"my-tree": 
+		{
+			"states": 
+			{
+				"default": 
+				{
+					"styles": 
+					{
+						"width": [1, 1, 1, 1],
+						"style": ["solid", "solid", "solid", "solid"],
+						"color": "windowFrame"
+					},
+					"properties": 
+					{
+						"backgroundColor": "window",
+						"opacity": 1,
+						"textColor": "windowText"
+					}
+				},
+				"focused": 
+				{
+					"styles": 
+					{
+						"color": "focusFrame"
+					}
+				},
+				"disabled": 
+				{
+					"properties": 
+					{
+						"opacity": 0.5
+					}
+				},
+				"borderNone": 
+				{
+					"styles": 
+					{
+						"width": [0, 0, 0, 0]
+					}
+				},
+				"borderDashed": 
+				{
+					"styles": 
+					{
+						"width": [1, 1, 1, 1],
+						"style": ["dashed", "dashed", "dashed", "dashed"]
+					}
+				},
+				"borderDotted": 
+				{
+					"styles": 
+					{
+						"width": [1, 1, 1, 1],
+						"style": ["dotted", "dotted", "dotted", "dotted"]
+					}
+				},
+				"borderDouble": 
+				{
+					"styles": 
+					{
+						"width": [3, 3, 3, 3],
+						"style": ["double", "double", "double", "double"]
+					}
+				}
+			},
+			"components": 
+			{
+				"scrollbar-y": 
+				{
+					"text": "Scrollbar-Y",
+					"inherit": "scrollbar"
+				},
+				"scrollbar-x": 
+				{
+					"text": "Scrollbar-X",
+					"inherit": "scrollbar"
+				},
+				"editor": 
+				{
+					"inherit": "textfield"
+				},
+				"tools": 
+				{
+					"states": 
+					{
+						"default": 
+						{
+							"styles": 
+							{
+								"color": "windowFrame",
+								"widthBottom": 1
+							}
+						}
+					}
+				}
+			},
+			"inherit": "tree"
+		},
+		"mytree-file": 
+		{
+			"text": "My Tree Item",
+			"states": 
+			{
+				"default": 
+				{
+					"properties": 
+					{
+						"textColor": "#000000",
+						"indent": 18,
+						"icon": "icon-file",
+						"opacity": 1
+					},
+					"styles": 
+					{
+						"backgroundColor": null
+					}
+				},
+				"hovered": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "hotTrack"
+					},
+					"properties": 
+					{
+						"cursor": "pointer"
+					}
+				},
+				"selected": 
+				{
+					"properties": 
+					{
+						"textColor": "highlightText"
+					},
+					"styles": 
+					{
+						"backgroundColor": "highlight"
+					}
+				},
+				"disabled": 
+				{
+					"properties": 
+					{
+						"opacity": 0.5
+					}
+				}
+			},
+			"components": 
+			{
+				"checkbox": 
+				{
+					"inherit": "checkbox",
+					"states": 
+					{
+						"default": 
+						{
+						}
+					}
+				},
+				"state": 
+				{
+					"inherit": "icon-dark"
+				},
+				"icon": 
+				{
+					"inherit": "icon-dark",
+					"states": 
+					{
+						"default": 
+						{
+							"properties": 
+							{
+								"padding": [5, 5, 5, 0],
+								"marginLeft": 5,
+								"textColor": "#999999"
+							}
+						}
+					}
+				},
+				"label": 
+				{
+					"text": "Label",
+					"states": 
+					{
+						"default": 
+						{
+							"properties": 
+							{
+								"marginLeft": 5,
+								"padding": [5, 5, 5, 0]
+							}
+						}
+					}
+				}
+			},
+			"inherit": "tree-file"
+		},
+		"mytree-folder": 
+		{
+			"text": "My Tree Node",
+			"components": 
+			{
+				"open": 
+				{
+					"text": "Open",
+					"states": 
+					{
+						"default": 
+						{
+							"properties": 
+							{
+								"source": "node-closed",
+								"textColor": "#999999"
+							},
+							"styles": 
+							{
+								"transition": "transform 250ms"
+							}
+						},
+						"opened": 
+						{
+							"properties": 
+							{
+								"source": "node-opened",
+								"textColor": "#999999"
+							},
+							"styles": 
+							{
+								"transform": "rotateZ(45deg)"
+							}
+						},
+						"rightToLeft": 
+						{
+							"styles": 
+							{
+								"transform": "rotateZ(180deg)"
+							}
+						},
+						"opened-rightToLeft": 
+						{
+							"styles": 
+							{
+								"transform": "rotateZ(135deg)"
+							}
+						}
+					},
+					"inherit": "icon-dark"
+				},
+				"checkbox": 
+				{
+					"inherit": "checkbox",
+					"states": 
+					{
+						"default": 
+						{
+						}
+					}
+				},
+				"state": 
+				{
+					"inherit": "icon-dark"
+				},
+				"icon": 
+				{
+					"inherit": "icon-dark",
+					"states": 
+					{
+						"default": 
+						{
+							"properties": 
+							{
+								"padding": [5, 5, 5, 0],
+								"marginLeft": 5,
+								"textColor": "#7A7A7A"
+							}
+						}
+					}
+				},
+				"label": 
+				{
+					"text": "Label",
+					"states": 
+					{
+						"default": 
+						{
+							"properties": 
+							{
+								"marginLeft": 5,
+								"padding": [5, 5, 5, 0]
+							}
+						}
+					}
+				}
+			},
+			"states": 
+			{
+				"default": 
+				{
+					"properties": 
+					{
+						"textColor": "#000000",
+						"indent": 18,
+						"icon": "icon-folder",
+						"opacity": 1
+					},
+					"styles": 
+					{
+						"backgroundColor": null
+					}
+				},
+				"hovered": 
+				{
+					"styles": 
+					{
+						"backgroundColor": "hotTrack"
+					},
+					"properties": 
+					{
+						"cursor": "pointer"
+					}
+				},
+				"selected": 
+				{
+					"properties": 
+					{
+						"textColor": "highlightText"
+					},
+					"styles": 
+					{
+						"backgroundColor": "highlight"
+					}
+				},
+				"opened": 
+				{
+					"properties": 
+					{
+						"icon": "icon-folder-open"
+					}
+				},
+				"disabled": 
+				{
+					"properties": 
+					{
+						"opacity": 0.5
+					}
+				}
+			},
+			"inherit": "tree-folder"
+		}
+	}
+}
