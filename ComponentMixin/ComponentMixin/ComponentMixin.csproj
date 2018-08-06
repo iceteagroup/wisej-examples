@@ -47,7 +47,6 @@
     <Content Include="favicon.ico" />
     <EmbeddedResource Include="Platform\my.TreeNode.js" />
     <None Include="Themes\Application.mixin.theme" />
-    <Content Include="Themes\Modificado2.theme" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
