@@ -28,13 +28,13 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 ### Improvements
 
-* ComponentMixin - Use a mixin to give different appearances to a Component. For now it covers only TreeNode case. - 03 Aug 2018
 * GoogleMaps - Use GoogleMaps reverse Geolocation: show full Geocode tree. - 02 Aug 2018
 * GoogleMaps - Use GoogleMaps reverse Geolocation: get Coords from address and vv.. - 31 Jul 2018
 * GoogleMaps - Use Geolocation extension to get current location. - 29 Jul 2018
 
 ### New projects
 
+* ComponentMixin - Use a mixin to give different appearances to a Component. For now it covers only TreeNode case. - 03 Aug 2018
 * DGVEmbeddedNavigator - Embedding the navigator into a DataGridView (visual only sample). - 02 Aug 2018
 * RuntimeLocalization - Update localized resources using reflection. - 27 Jul 2018
 * TreeGrid - Use a DataGridView as a tree. - 16 Jul 2018
