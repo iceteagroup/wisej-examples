@@ -28,98 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ComponentMixin.MyTreeNode treeNode17 = new ComponentMixin.MyTreeNode();
-            ComponentMixin.MyTreeNode treeNode18 = new ComponentMixin.MyTreeNode();
-            ComponentMixin.MyTreeNode treeNode19 = new ComponentMixin.MyTreeNode();
-            ComponentMixin.MyTreeNode treeNode20 = new ComponentMixin.MyTreeNode();
-            ComponentMixin.MyTreeNode treeNode21 = new ComponentMixin.MyTreeNode();
-            ComponentMixin.MyTreeNode treeNode22 = new ComponentMixin.MyTreeNode();
-            ComponentMixin.MyTreeNode treeNode23 = new ComponentMixin.MyTreeNode();
-            ComponentMixin.MyTreeNode treeNode24 = new ComponentMixin.MyTreeNode();
-            Wisej.Web.TreeNode treeNode25 = new Wisej.Web.TreeNode();
-            Wisej.Web.TreeNode treeNode26 = new Wisej.Web.TreeNode();
-            Wisej.Web.TreeNode treeNode27 = new Wisej.Web.TreeNode();
-            Wisej.Web.TreeNode treeNode28 = new Wisej.Web.TreeNode();
-            Wisej.Web.TreeNode treeNode29 = new Wisej.Web.TreeNode();
-            Wisej.Web.TreeNode treeNode30 = new Wisej.Web.TreeNode();
-            Wisej.Web.TreeNode treeNode31 = new Wisej.Web.TreeNode();
-            Wisej.Web.TreeNode treeNode32 = new Wisej.Web.TreeNode();
+            ComponentMixin.MyTreeNode myTreeNode9 = new ComponentMixin.MyTreeNode();
+            ComponentMixin.MyTreeNode myTreeNode10 = new ComponentMixin.MyTreeNode();
+            ComponentMixin.MyTreeNode myTreeNode11 = new ComponentMixin.MyTreeNode();
+            ComponentMixin.MyTreeNode myTreeNode12 = new ComponentMixin.MyTreeNode();
+            ComponentMixin.MyTreeNode myTreeNode13 = new ComponentMixin.MyTreeNode();
+            ComponentMixin.MyTreeNode myTreeNode14 = new ComponentMixin.MyTreeNode();
+            ComponentMixin.MyTreeNode myTreeNode15 = new ComponentMixin.MyTreeNode();
+            ComponentMixin.MyTreeNode myTreeNode16 = new ComponentMixin.MyTreeNode();
+            Wisej.Web.TreeNode treeNode9 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode10 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode11 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode12 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode13 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode14 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode15 = new Wisej.Web.TreeNode();
+            Wisej.Web.TreeNode treeNode16 = new Wisej.Web.TreeNode();
             this.treeView1 = new Wisej.Web.TreeView();
             this.treeView2 = new Wisej.Web.TreeView();
             this.SuspendLayout();
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(20, 18);
+            this.treeView1.Location = new System.Drawing.Point(25, 25);
             this.treeView1.Name = "treeView1";
-            treeNode17.Name = "Node0";
-            treeNode18.Name = "Node6";
-            treeNode19.Name = "Node7";
-            treeNode19.Text = "MyNode7";
-            treeNode18.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode19});
-            treeNode18.Text = "MyNode6";
-            treeNode17.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode18});
-            treeNode17.Text = "MyNode0";
-            treeNode20.Name = "Node1";
-            treeNode20.Text = "MyNode1";
-            treeNode21.Name = "Node2";
-            treeNode22.Name = "Node3";
-            treeNode23.Name = "Node4";
-            treeNode24.Name = "Node5";
-            treeNode24.Text = "MyNode5";
-            treeNode23.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode24});
-            treeNode23.Text = "MyNode4";
-            treeNode22.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode23});
-            treeNode22.Text = "MyNode3";
-            treeNode21.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode22});
-            treeNode21.Text = "MyNode2";
+            myTreeNode9.Name = "Node0";
+            myTreeNode10.Name = "Node6";
+            myTreeNode11.Name = "Node7";
+            myTreeNode11.Text = "MyNode7";
+            myTreeNode10.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            myTreeNode11});
+            myTreeNode10.Text = "MyNode6";
+            myTreeNode9.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            myTreeNode10});
+            myTreeNode9.Text = "MyNode0";
+            myTreeNode12.Name = "Node1";
+            myTreeNode12.Text = "MyNode1";
+            myTreeNode13.Name = "Node2";
+            myTreeNode14.Name = "Node3";
+            myTreeNode15.Name = "Node4";
+            myTreeNode16.Name = "Node5";
+            myTreeNode16.Text = "MyNode5";
+            myTreeNode15.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            myTreeNode16});
+            myTreeNode15.Text = "MyNode4";
+            myTreeNode14.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            myTreeNode15});
+            myTreeNode14.Text = "MyNode3";
+            myTreeNode13.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            myTreeNode14});
+            myTreeNode13.Text = "MyNode2";
             this.treeView1.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode17,
-            treeNode20,
-            treeNode21});
-            this.treeView1.Size = new System.Drawing.Size(264, 321);
+            myTreeNode9,
+            myTreeNode12,
+            myTreeNode13});
+            this.treeView1.Size = new System.Drawing.Size(250, 275);
             this.treeView1.TabIndex = 0;
             // 
             // treeView2
             // 
-            this.treeView2.Location = new System.Drawing.Point(348, 18);
+            this.treeView2.Location = new System.Drawing.Point(400, 25);
             this.treeView2.Name = "treeView2";
-            treeNode25.Name = "Node0";
-            treeNode26.Name = "Node6";
-            treeNode27.Name = "Node7";
-            treeNode27.Text = "Node7";
-            treeNode26.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode27});
-            treeNode26.Text = "Node6";
-            treeNode25.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode26});
-            treeNode25.Text = "Node0";
-            treeNode28.Name = "Node1";
-            treeNode28.Text = "Node1";
-            treeNode29.Name = "Node2";
-            treeNode30.Name = "Node3";
-            treeNode31.Name = "Node4";
-            treeNode32.Name = "Node5";
-            treeNode32.Text = "Node5";
-            treeNode31.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode32});
-            treeNode31.Text = "Node4";
-            treeNode30.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode31});
-            treeNode30.Text = "Node3";
-            treeNode29.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode30});
-            treeNode29.Text = "Node2";
+            treeNode9.Name = "Node0";
+            treeNode10.Name = "Node6";
+            treeNode11.Name = "Node7";
+            treeNode11.Text = "Node7";
+            treeNode10.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            treeNode11});
+            treeNode10.Text = "Node6";
+            treeNode9.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            treeNode10});
+            treeNode9.Text = "Node0";
+            treeNode12.Name = "Node1";
+            treeNode12.Text = "Node1";
+            treeNode13.Name = "Node2";
+            treeNode14.Name = "Node3";
+            treeNode15.Name = "Node4";
+            treeNode16.Name = "Node5";
+            treeNode16.Text = "Node5";
+            treeNode15.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            treeNode16});
+            treeNode15.Text = "Node4";
+            treeNode14.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            treeNode15});
+            treeNode14.Text = "Node3";
+            treeNode13.Nodes.AddRange(new Wisej.Web.TreeNode[] {
+            treeNode14});
+            treeNode13.Text = "Node2";
             this.treeView2.Nodes.AddRange(new Wisej.Web.TreeNode[] {
-            treeNode25,
-            treeNode28,
-            treeNode29});
-            this.treeView2.Size = new System.Drawing.Size(264, 321);
+            treeNode9,
+            treeNode12,
+            treeNode13});
+            this.treeView2.Size = new System.Drawing.Size(250, 275);
             this.treeView2.TabIndex = 1;
             // 
             // Page1
@@ -129,7 +129,7 @@
             this.Controls.Add(this.treeView2);
             this.Controls.Add(this.treeView1);
             this.Name = "Page1";
-            this.Size = new System.Drawing.Size(858, 408);
+            this.Size = new System.Drawing.Size(917, 779);
             this.Text = "Component Mixin";
             this.Load += new System.EventHandler(this.Page1_Load);
             this.ResumeLayout(false);
