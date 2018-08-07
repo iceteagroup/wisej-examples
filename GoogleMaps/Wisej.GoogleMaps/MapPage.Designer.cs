@@ -57,6 +57,7 @@
             this.label3 = new Wisej.Web.Label();
             this.textBoxAddress = new Wisej.Web.TextBox();
             this.panel1 = new Wisej.Web.Panel();
+            this.checkBoxDraggableMarker = new Wisej.Web.CheckBox();
             this.maskedTextBoxLng = new Wisej.Web.MaskedTextBox();
             this.label4 = new Wisej.Web.Label();
             this.label5 = new Wisej.Web.Label();
@@ -210,6 +211,8 @@
             this.googleMap1.Text = "googleMap1";
             this.googleMap1.MapClick += new Wisej.Web.Ext.GoogleMaps.MapMouseEventHandler(this.googleMap1_MapClick);
             this.googleMap1.MapPropertyChanged += new Wisej.Web.Ext.GoogleMaps.MapPropertyChangedEventHandler(this.googleMap1_MapPropertyChanged);
+            this.googleMap1.MarkerDragEnd += new Wisej.Web.Ext.GoogleMaps.MarkerDragEventHandler(this.googleMap1_MarkerDragEnd);
+            this.googleMap1.MapDragEnd += new System.EventHandler(this.googleMap1_MapDragEnd);
             // 
             // trackBar1
             // 
@@ -439,6 +442,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.checkBoxDraggableMarker);
             this.panel1.Controls.Add(this.maskedTextBoxLng);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
@@ -450,6 +454,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(452, 79);
             this.panel1.TabIndex = 0;
+            // 
+            // checkBoxDraggableMarker
+            // 
+            this.checkBoxDraggableMarker.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Right)));
+            this.checkBoxDraggableMarker.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBoxDraggableMarker.Location = new System.Drawing.Point(288, 3);
+            this.checkBoxDraggableMarker.Name = "checkBoxDraggableMarker";
+            this.checkBoxDraggableMarker.Size = new System.Drawing.Size(133, 23);
+            this.checkBoxDraggableMarker.TabIndex = 8;
+            this.checkBoxDraggableMarker.Text = "Draggable Marker";
             // 
             // maskedTextBoxLng
             // 
@@ -714,5 +728,6 @@
         private Web.TextBox geocodeAddress;
         private Web.Button buttonShowDetails;
         private Web.Button buttonCopyToMarkers;
+        private Web.CheckBox checkBoxDraggableMarker;
     }
 }

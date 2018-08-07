@@ -34,7 +34,7 @@
         </member>
         <member name="T:Wisej.Web.Ext.GoogleMaps.GeocoderResult">
             <summary>
-            represents a single geocoding result.
+            Represents a single geocoding result.
             </summary>
             <remarks>A geocode request may return multiple result objects.</remarks>
         </member>
@@ -77,7 +77,7 @@
             Gets an array of separate components applicable to this address.
             </summary>
             <value>
-            The array of separate components applicable to this addresss.
+            The array of separate components applicable to this address.
             </value>
         </member>
         <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.PartialMatch">
@@ -99,25 +99,25 @@
         </member>
         <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.PostcodeLocalities">
             <summary>
-            Gets an rray denoting all the localities contained in a postal code.
+            Gets an array denoting all the localities contained in a postal code.
             </summary>
             <value>
-            The rray denoting all the localities contained in a postal code.
+            The array denoting all the localities contained in a postal code.
             </value>
             <remarks>Is only present when the result is a postal code that contains multiple localities.
             This array can contain up to 10 localities</remarks>
         </member>
         <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.GeocodeGeometry">
             <summary>
-            Gets the geocode geeometry information.
+            Gets the geocode geometry information.
             </summary>
             <value>
-            The geocode geeometry information.
+            The geocode geometry information.
             </value>
         </member>
         <member name="T:Wisej.Web.Ext.GoogleMaps.GeocoderResult.AddressComponent">
             <summary>
-            Indicates the separate components applicable to an addresss
+            Indicates the separate components applicable to an address.
             </summary>
         </member>
         <member name="P:Wisej.Web.Ext.GoogleMaps.GeocoderResult.AddressComponent.ShortName">
@@ -236,7 +236,29 @@
         </member>
         <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.OnMarkerDragEnd(Wisej.Web.Ext.GoogleMaps.MarkerDragEventArgs)">
             <summary>
-            Fires the MarkerDragStart event.
+            Fires the MarkerDragEnd event.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:Wisej.Web.Ext.GoogleMaps.GoogleMap.MapDragEnd">
+            <summary>
+            Fired when the user drags the map.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.OnMapDragEnd(System.EventArgs)">
+            <summary>
+            Fires the MapDragEnd event.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:Wisej.Web.Ext.GoogleMaps.GoogleMap.MapDragStart">
+            <summary>
+            Fired when the user starts dragging the map.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.GoogleMap.OnMapDragStart(System.EventArgs)">
+            <summary>
+            Fires the MapDragStart event.
             </summary>
             <param name="e"></param>
         </member>
@@ -402,6 +424,51 @@
             </summary>
             <param name="e"></param>
         </member>
+        <member name="T:Wisej.Web.Ext.GoogleMaps.LatLngBounds">
+            <summary>
+            A LatLngBounds instance represents a rectangle in geographical coordinates, including one that crosses the 180 degrees longitudinal meridian.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.LatLngBounds.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Wisej.Web.Ext.GoogleMaps.LatLngBounds"/> class.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.LatLngBounds.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Wisej.Web.Ext.GoogleMaps.LatLngBounds"/> class.
+            </summary>
+            <param name="east">East longitude in degrees. Values outside the range [-180, 180] will be wrapped to the range [-180, 180). For example, a value of -190 will be converted to 170. A value of 190 will be converted to -170. This reflects the fact that longitudes wrap around the globe.</param>
+            <param name="north">North latitude in degrees. Values will be clamped to the range [-90, 90]. This means that if the value specified is less than -90, it will be set to -90. And if the value is greater than 90, it will be set to 90.</param>
+            <param name="south">South latitude in degrees. Values will be clamped to the range [-90, 90]. This means that if the value specified is less than -90, it will be set to -90. And if the value is greater than 90, it will be set to 90.</param>
+            <param name="west">West longitude in degrees. Values outside the range [-180, 180] will be wrapped to the range [-180, 180). For example, a value of -190 will be converted to 170. A value of 190 will be converted to -170. This reflects the fact that longitudes wrap around the globe.</param>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.LatLngBounds.East">
+            <summary>
+            East longitude in degrees. Values outside the range [-180, 180] will be wrapped to the range [-180, 180). For example, a value of -190 will be converted to 170. A value of 190 will be converted to -170. This reflects the fact that longitudes wrap around the globe.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.LatLngBounds.North">
+            <summary>
+            North latitude in degrees. Values will be clamped to the range [-90, 90]. This means that if the value specified is less than -90, it will be set to -90. And if the value is greater than 90, it will be set to 90.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.LatLngBounds.South">
+            <summary>
+            South latitude in degrees. Values will be clamped to the range [-90, 90]. This means that if the value specified is less than -90, it will be set to -90. And if the value is greater than 90, it will be set to 90.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.GoogleMaps.LatLngBounds.West">
+            <summary>
+            West longitude in degrees. Values outside the range [-180, 180] will be wrapped to the range [-180, 180). For example, a value of -190 will be converted to 170. A value of 190 will be converted to -170. This reflects the fact that longitudes wrap around the globe.
+            </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.GoogleMaps.LatLngBounds.ToString">
+            <summary>
+            Returns a string representation of a <see cref="T:Wisej.Web.Ext.GoogleMaps.LatLngBounds"/> object.
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Wisej.Web.Ext.GoogleMaps.LatLng">
             <summary>
             A LatLng is a point in geographical coordinates: latitude and longitude.
@@ -430,7 +497,7 @@
             <summary>
             Initializes a new instance of the <see cref="T:Wisej.Web.Ext.GoogleMaps.LatLng"/> class.
             </summary>
-            <param name="lat">The latitute.</param>
+            <param name="lat">The latitude.</param>
             <param name="lng">The longitude.</param>
         </member>
         <member name="P:Wisej.Web.Ext.GoogleMaps.LatLng.Lat">
