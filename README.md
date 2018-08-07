@@ -28,6 +28,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 ### Improvements
 
+* GoogleMaps - Support for draggable markers. - 07 Aug 2018
 * GoogleMaps - Use GoogleMaps reverse Geolocation: show full Geocode tree. - 02 Aug 2018
 * GoogleMaps - Use GoogleMaps reverse Geolocation: get Coords from address and vv.. - 31 Jul 2018
 * GoogleMaps - Use Geolocation extension to get current location. - 29 Jul 2018

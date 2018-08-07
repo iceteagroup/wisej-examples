@@ -93,18 +93,21 @@ namespace Wisej.GoogleMaps
 
         private void buttonAddMarker_Click(object sender, EventArgs e)
         {
+            var draggable = this.checkBoxDraggableMarker.Checked;
+
             if (this.maskedTextBoxID.Text != "")
             {
                 this.maskedTextBoxID.Invalid = false;
 
                 if (this.textBoxAddress.Text != "")
                 {
-                    this.googleMap1.AddMarker(this.maskedTextBoxID.Text, this.textBoxAddress.Text.Replace("\r\n", ","));
+                    this.googleMap1.AddMarker(this.maskedTextBoxID.Text, this.textBoxAddress.Text.Replace("\r\n", ","),
+                        draggable ? new {Draggable = true} : null);
                 }
                 else
                 {
                     this.googleMap1.AddMarker(this.maskedTextBoxID.Text, double.Parse(this.maskedTextBoxLat.Text),
-                        double.Parse(this.maskedTextBoxLng.Text));
+                        double.Parse(this.maskedTextBoxLng.Text), draggable ? new {Draggable = true} : null);
                 }
             }
             else
@@ -132,6 +135,19 @@ namespace Wisej.GoogleMaps
             else
                 AlertBox.Show("You clicked marker: " + e.Marker + "  at location: " + e.Location.ToString(),
                     alignment: System.Drawing.ContentAlignment.TopRight);
+        }
+
+        private void googleMap1_MapDragEnd(object sender, EventArgs e)
+        {
+            AlertBox.Show("You dragged the map",
+                alignment: System.Drawing.ContentAlignment.TopRight);
+        }
+
+        private void googleMap1_MarkerDragEnd(object sender, MarkerDragEventArgs e)
+        {
+            AlertBox.Show(
+                $"You dragged marker: {e.Marker} to\r\nLat: {e.Location.Lat}\r\nLng: {e.Location.Lng}\r\nat position {e.Position}",
+                alignment: System.Drawing.ContentAlignment.TopRight);
         }
 
         private void comboBoxMatType_SelectedIndexChanged(object sender, EventArgs e)
@@ -173,17 +189,7 @@ namespace Wisej.GoogleMaps
             this.maskedTextBoxLng.Text = position.Longitude.ToString();
         }
 
-        private void buttonCoordsFromAddress_Click(object sender, EventArgs e)
-        {
-            CoordsFromAddress();
-        }
-
-        private void buttonAddressFromCoords_Click(object sender, EventArgs e)
-        {
-            AddressFromCoords();
-        }
-
-        private async void CoordsFromAddress()
+        private async void buttonCoordsFromAddress_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(this.textBoxAddress.Text))
                 return;
@@ -208,7 +214,7 @@ namespace Wisej.GoogleMaps
             }
         }
 
-        private async void AddressFromCoords()
+        private async void buttonAddressFromCoords_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(this.maskedTextBoxLat.Text) ||
                 string.IsNullOrWhiteSpace(this.maskedTextBoxLng.Text))
