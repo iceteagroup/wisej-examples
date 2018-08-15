@@ -44,7 +44,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 | RuntimeLocalization | 27 Jul 2018 | Update localized resources using reflection. |
 | TreeGrid | 16 Jul 2018 | Use a DataGridView as a tree. |
 | HtmlJsonAndMain | 15 Jul 2018 | Interesting details about the 3 startup files. |
-| ReadOnlyMixin | 15 Jul 2018 | Well documented example of mixin. |
+| ReadOnlyMixin | 15 Jul 2018 | Documented example of mixin. |
 | MDIExample | 09 Jul 2018 | MDI showcase. |
 | EditorsChoice | 03 Jul 2018 | Showcase of rich text editors for web environement. |
 | SlideBar | 03 Jul 2018 | Showcase of this new control. |
