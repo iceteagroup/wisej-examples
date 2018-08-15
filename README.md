@@ -37,7 +37,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 ### New projects
 
-| Project | Change&nbsp;Date | Description |
+| Project | Project&nbsp;Date | Description |
 | :--- | :---: | :--- |
 | ComponentMixin | 03 Aug 2018 | Use a mixin to give different appearances to a Component. For now it covers only TreeNode case. |
 | DGVEmbeddedNavigator | 02 Aug 2018 | Embedding the navigator into a DataGridView (visual only sample). |
