@@ -46,6 +46,7 @@
     <Content Include="Default.json" />
     <Content Include="favicon.ico" />
     <EmbeddedResource Include="Platform\my.TreeNode.js" />
+    <EmbeddedResource Include="Platform\my.ListBox.js" />
     <None Include="Themes\Application.mixin.theme" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -58,6 +59,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MyTreeNode.cs" />
     <Compile Include="Page1.cs">
       <SubType>Form</SubType>

@@ -30,6 +30,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 | Project | Change&nbsp;Date | Description |
 | :--- | :---: | :--- |
+| ComponentMixin | 16 Aug 2018 | Add ListBox item theming. |
 | ChartJS | 16 Aug 2018 | Move sample data out of designer file. Added SteppedLine example. |
 | GoogleMaps | 07 Aug 2018 | Support for draggable markers. |
 | GoogleMaps | 02 Aug 2018 | Use GoogleMaps reverse Geolocation: show full Geocode tree. |
@@ -40,7 +41,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 | Project | Project&nbsp;Date | Description |
 | :--- | :---: | :--- |
-| ComponentMixin | 03 Aug 2018 | Use a mixin to give different appearances to a Component. For now it covers only TreeNode case. |
+| ComponentMixin | 03 Aug 2018 | Use a mixin to give different appearances to an item component. |
 | DGVEmbeddedNavigator | 02 Aug 2018 | Embedding the navigator into a DataGridView (visual only sample). |
 | RuntimeLocalization | 27 Jul 2018 | Update localized resources using reflection. |
 | TreeGrid | 16 Jul 2018 | Use a DataGridView as a tree. |

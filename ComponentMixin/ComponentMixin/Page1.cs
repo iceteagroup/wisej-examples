@@ -13,6 +13,7 @@ namespace ComponentMixin
         private void Page1_Load(object sender, EventArgs e)
         {
             treeView1.AppearanceKey = "my-tree";
+            listBox1.AppearanceKey = "my-list";
         }
     }
 }
