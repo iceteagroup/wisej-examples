@@ -15,6 +15,7 @@ namespace ChartJS
         private void ChartsPage_Load(object sender, EventArgs e)
         {
             LineDataSet lineDataSet1 = new LineDataSet();
+            LineDataSet lineDataSet2 = new LineDataSet();
             BarDataSet barDataSet1 = new BarDataSet();
             RadarDataSet radarDataSet1 = new RadarDataSet();
             PolarAreaDataSet polarAreaDataSet1 = new PolarAreaDataSet();
@@ -22,11 +23,19 @@ namespace ChartJS
             PieDataSet pieDataSet1 = new PieDataSet();
 
             lineDataSet1.BackgroundColor = Color.FromArgb(70, 255, 189, 0);
-            lineDataSet1.BorderColor = Color.Crimson;
+            lineDataSet1.BorderColor = Color.FromArgb(255, 46, 0);
             lineDataSet1.Data = new object[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+            lineDataSet1.PointBorderColor = new[] {Color.FromArgb(0, 255, 0)};
+            lineDataSet1.PointBackgroundColor = new[] {Color.FromArgb(0, 255, 0)};
             lineDataSet1.Fill = true;
             lineDataSet1.Label = "Data Set";
+            lineDataSet2.BorderColor = Color.FromArgb(0, 86, 255);
+            lineDataSet2.Data = new object[] {1, 2, 4, 8, 16, 32, 64, 32, 16, 8, 4, 2};
+            lineDataSet2.Label = "Data Set 2";
+            lineDataSet2.PointStyle = new[] {PointStyle.RectRounded};
+            lineDataSet2.SteppedLine = SteppedLine.After;
             chartJS1.DataSets.Add(lineDataSet1);
+            chartJS1.DataSets.Add(lineDataSet2);
 
             barDataSet1.BackgroundColor = new[]
             {

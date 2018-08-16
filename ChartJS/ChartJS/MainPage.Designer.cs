@@ -30,16 +30,14 @@
 		{
             Wisej.Web.Ext.ChartJS.LineOptions lineOptions1 = new Wisej.Web.Ext.ChartJS.LineOptions();
             Wisej.Web.Ext.ChartJS.OptionScalesAxesX optionScalesAxesX1 = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX();
+            Wisej.Web.Ext.ChartJS.OptionScalesAxesY optionScalesAxesY1 = new Wisej.Web.Ext.ChartJS.OptionScalesAxesY();
             Wisej.Web.Ext.ChartJS.BarOptions barOptions1 = new Wisej.Web.Ext.ChartJS.BarOptions();
             Wisej.Web.Ext.ChartJS.OptionScalesAxesX optionScalesAxesX2 = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX();
+            Wisej.Web.Ext.ChartJS.OptionScalesAxesY optionScalesAxesY2 = new Wisej.Web.Ext.ChartJS.OptionScalesAxesY();
             Wisej.Web.Ext.ChartJS.RadarOptions radarOptions1 = new Wisej.Web.Ext.ChartJS.RadarOptions();
-            Wisej.Web.Ext.ChartJS.OptionScalesAxesX optionScalesAxesX3 = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX();
             Wisej.Web.Ext.ChartJS.PolarAreaOptions polarAreaOptions1 = new Wisej.Web.Ext.ChartJS.PolarAreaOptions();
-            Wisej.Web.Ext.ChartJS.OptionScalesAxesX optionScalesAxesX4 = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX();
             Wisej.Web.Ext.ChartJS.DoughnutOptions doughnutOptions1 = new Wisej.Web.Ext.ChartJS.DoughnutOptions();
-            Wisej.Web.Ext.ChartJS.OptionScalesAxesX optionScalesAxesX5 = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX();
             Wisej.Web.Ext.ChartJS.PieOptions pieOptions1 = new Wisej.Web.Ext.ChartJS.PieOptions();
-            Wisej.Web.Ext.ChartJS.OptionScalesAxesX optionScalesAxesX6 = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
             this.chartJS1 = new Wisej.Web.Ext.ChartJS.ChartJS();
@@ -101,6 +99,9 @@
             optionScalesAxesX1.ScaleLabel.Display = false;
             lineOptions1.Scales.xAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX[] {
         optionScalesAxesX1};
+            optionScalesAxesY1.ScaleLabel.LabelString = "y scale label";
+            lineOptions1.Scales.yAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesY[] {
+        optionScalesAxesY1};
             this.chartJS1.Options = lineOptions1;
             this.chartJS1.Size = new System.Drawing.Size(372, 300);
             this.chartJS1.TabIndex = 3;
@@ -130,9 +131,12 @@
             this.chartJS2.Margin = new Wisej.Web.Padding(10);
             this.chartJS2.MinimumSize = new System.Drawing.Size(300, 300);
             this.chartJS2.Name = "chartJS2";
-            optionScalesAxesX2.ScaleLabel.Display = false;
+            optionScalesAxesX2.ScaleLabel.LabelString = "x scale label";
             barOptions1.Scales.xAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX[] {
         optionScalesAxesX2};
+            optionScalesAxesY2.ScaleLabel.LabelString = "y scale label";
+            barOptions1.Scales.yAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesY[] {
+        optionScalesAxesY2};
             barOptions1.Title.Text = "Bar Chart";
             this.chartJS2.Options = barOptions1;
             this.chartJS2.Size = new System.Drawing.Size(372, 300);
@@ -162,10 +166,6 @@
             this.chartJS4.Margin = new Wisej.Web.Padding(10);
             this.chartJS4.MinimumSize = new System.Drawing.Size(200, 200);
             this.chartJS4.Name = "chartJS4";
-            optionScalesAxesX3.Display = false;
-            optionScalesAxesX3.ScaleLabel.Display = false;
-            radarOptions1.Scales.xAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX[] {
-        optionScalesAxesX3};
             this.chartJS4.Options = radarOptions1;
             this.chartJS4.Size = new System.Drawing.Size(241, 300);
             this.chartJS4.TabIndex = 6;
@@ -195,10 +195,6 @@
             this.chartJS6.MinimumSize = new System.Drawing.Size(200, 200);
             this.chartJS6.Name = "chartJS6";
             polarAreaOptions1.Legend.Display = false;
-            optionScalesAxesX4.Display = false;
-            optionScalesAxesX4.ScaleLabel.Display = false;
-            polarAreaOptions1.Scales.xAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX[] {
-        optionScalesAxesX4};
             this.chartJS6.Options = polarAreaOptions1;
             this.chartJS6.Size = new System.Drawing.Size(241, 300);
             this.chartJS6.TabIndex = 8;
@@ -228,10 +224,6 @@
             this.chartJS5.MinimumSize = new System.Drawing.Size(200, 200);
             this.chartJS5.Name = "chartJS5";
             doughnutOptions1.Legend.Display = false;
-            optionScalesAxesX5.Display = false;
-            optionScalesAxesX5.ScaleLabel.Display = false;
-            doughnutOptions1.Scales.xAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX[] {
-        optionScalesAxesX5};
             doughnutOptions1.Title.Text = "Doughnut Chart";
             this.chartJS5.Options = doughnutOptions1;
             this.chartJS5.Size = new System.Drawing.Size(241, 300);
@@ -262,10 +254,6 @@
             this.chartJS3.MinimumSize = new System.Drawing.Size(200, 200);
             this.chartJS3.Name = "chartJS3";
             pieOptions1.Legend.Display = false;
-            optionScalesAxesX6.Display = false;
-            optionScalesAxesX6.ScaleLabel.Display = false;
-            pieOptions1.Scales.xAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX[] {
-        optionScalesAxesX6};
             this.chartJS3.Options = pieOptions1;
             this.chartJS3.Size = new System.Drawing.Size(764, 300);
             this.chartJS3.TabIndex = 5;
@@ -369,5 +357,5 @@
 		private Wisej.Web.Panel panel1;
 		private Wisej.Web.Label label1;
 		private Wisej.Web.TrackBar trackBar;
-	}
+    }
 }

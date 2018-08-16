@@ -30,6 +30,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 | Project | Change&nbsp;Date | Description |
 | :--- | :---: | :--- |
+| ChartJS | 16 Aug 2018 | Move sample data out of designer file. Added SteppedLine example. |
 | GoogleMaps | 07 Aug 2018 | Support for draggable markers. |
 | GoogleMaps | 02 Aug 2018 | Use GoogleMaps reverse Geolocation: show full Geocode tree. |
 | GoogleMaps | 31 Jul 2018 | Use GoogleMaps reverse Geolocation: get Coords from address and vv.. |
