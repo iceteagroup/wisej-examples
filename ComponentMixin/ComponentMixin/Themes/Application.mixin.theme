@@ -91,7 +91,7 @@
                 "default": {
                     "properties": {
                         "opacity": 1,
-                        "padding": [2, 2, 3, 6],
+                        "padding": [4, 4, 6, 12],
                         "textColor": "inherit",
                         "backgroundColor": "inherit"
                     }
@@ -225,7 +225,7 @@
                         "textColor": "highlightText"
                     },
                     "styles": {
-                        "backgroundColor": "highlight"
+                        "backgroundColor": "switchOn"
                     }
                 },
                 "disabled": {
@@ -346,7 +346,7 @@
                         "textColor": "highlightText"
                     },
                     "styles": {
-                        "backgroundColor": "highlight"
+                        "backgroundColor": "switchOn"
                     }
                 },
                 "opened": {
