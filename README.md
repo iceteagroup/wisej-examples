@@ -24,6 +24,8 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 [About mixins](https://github.com/iceteagroup/wisej-examples/blob/master/ReadOnlyMixin/README.md) - Important details you should know about mixins.
 
+[How to embed JavaScript files](https://github.com/iceteagroup/wisej-examples/blob/master/ComponentMixin/README.md#2-embedding-javascript-files) - Details about embedding __js__ files.
+
 ## News
 
 ### Improvements
