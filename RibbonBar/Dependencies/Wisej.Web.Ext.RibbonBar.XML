@@ -341,7 +341,7 @@
             <summary>
             Processes Windows mouse messages forwarded by the designer.
             </summary>
-            <param name="m">The <see cref="!:WinForms.Message"/> forwarded by the designer.</param>
+            <param name="m">The <see cref="T:System.Windows.Forms.Message"/> forwarded by the designer.</param>
             <returns>Returns true to prevent the base class from processing the message.</returns>
         </member>
         <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBar.Wisej#Core#IWisejControl#SetDesignMetrics(System.Object)">
@@ -673,6 +673,12 @@
             Overrides the standard ImagePropertySettings to 
             retrieve the ImageList from the parent ToolBar control.
             </summary>
+        </member>
+        <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItem.Dispose(System.Boolean)">
+            <summary>
+            Disposes of the resources (other than memory) used by the <see cref="T:Wisej.Web.Ext.RibbonBar.RibbonBarGroup" />.
+            </summary>
+            <param name="disposing">true when this method is called by the application rather than a finalizer.</param>
         </member>
         <member name="M:Wisej.Web.Ext.RibbonBar.RibbonBarItem.ValidateActiveControl">
             <summary>
