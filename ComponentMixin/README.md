@@ -15,7 +15,7 @@ A mixin must be created in Visual Studio and it may be edited in the ThemeBuilde
 As explained at [JavaScript](https://wisej.com/docs/html/JavaScript.htm) on Wisej Documentation, if you aren't using the __JavaScript Extender__ and want to embed a JavaScript file, you must follow 3 rules:
 
 1. Place the .js file under __/Resources__ or __/Platform__ folder.
-2. Set it to __Embedded Resource__  
-   right click __Properties__ and set __Build Action__ to __Embedded Resource__
+2. Set __Build Action__ to __Embedded Resource__.  
+   Right click __Properties__ and set __Build Action__ to __Embedded Resource__.
 3. Add the __[assembly:WisejResources]__ attribute to __AssemblyInfo.cs__ file.
 
