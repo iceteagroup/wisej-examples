@@ -43,6 +43,7 @@ namespace TreeGrid
                 }
                 else
                 {
+                    row[1].Style.ColSpan = 2;
                     dataGridView1.Rows[ParentRow].Collapse();
                     ParentRow = row.Index;
                 }

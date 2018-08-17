@@ -21,6 +21,7 @@ namespace TreeGrid
                 dataGridView.Rows.Add(therapy.TherapyId, therapy.TherapyName, "");
 
                 var currentTherapyRow = dataGridView.Rows[dataGridView.RowCount - 1];
+                currentTherapyRow[1].Style.ColSpan = 2;
 
                 foreach (var therapist in therapistList)
                 {
