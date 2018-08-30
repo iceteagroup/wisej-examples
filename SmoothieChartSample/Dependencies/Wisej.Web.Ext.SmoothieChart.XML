@@ -168,6 +168,11 @@
             Returns or sets the text color for the control.
             </summary>
         </member>
+        <member name="P:Wisej.Web.Ext.SmoothieChart.SmoothieChart.FontSize">
+            <summary>
+            Returns or sets the text color for the control.
+            </summary>
+        </member>
         <member name="P:Wisej.Web.Ext.SmoothieChart.SmoothieChart.GridLineColor">
             <summary>
             Returns or sets the color of the grid lines.
@@ -306,6 +311,11 @@
             </summary>
         </member>
         <member name="P:Wisej.Web.Ext.SmoothieChart.SmoothieChart.AccessibleDescription">
+            <summary>
+            This member is not meaningful for this control.
+            </summary>
+        </member>
+        <member name="P:Wisej.Web.Ext.SmoothieChart.SmoothieChart.Font">
             <summary>
             This member is not meaningful for this control.
             </summary>
