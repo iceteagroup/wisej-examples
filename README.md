@@ -32,6 +32,8 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 | Project | Change&nbsp;Date | Description |
 | :--- | :---: | :--- |
+| SmoothieChartSample | 30 Aug 2018 | Example of FontSize property use. |
+| ChartJS | 30 Aug 2018 | Example of DataLabel plugin use. |
 | ComponentMixin | 16 Aug 2018 | Add ListBox item theming. |
 | ChartJS | 16 Aug 2018 | Move sample data out of designer file. Added SteppedLine example. |
 | GoogleMaps | 07 Aug 2018 | Support for draggable markers. |
