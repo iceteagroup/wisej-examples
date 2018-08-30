@@ -131,6 +131,8 @@
             this.chartJS2.Margin = new Wisej.Web.Padding(10);
             this.chartJS2.MinimumSize = new System.Drawing.Size(300, 300);
             this.chartJS2.Name = "chartJS2";
+            barOptions1.DataLabel.Display = true;
+            barOptions1.DataLabel.Font = new System.Drawing.Font("default", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             optionScalesAxesX2.ScaleLabel.LabelString = "x scale label";
             barOptions1.Scales.xAxes = new Wisej.Web.Ext.ChartJS.OptionScalesAxesX[] {
         optionScalesAxesX2};
@@ -253,6 +255,7 @@
             this.chartJS3.Margin = new Wisej.Web.Padding(10);
             this.chartJS3.MinimumSize = new System.Drawing.Size(200, 200);
             this.chartJS3.Name = "chartJS3";
+            pieOptions1.DataLabel.Display = true;
             pieOptions1.Legend.Display = false;
             this.chartJS3.Options = pieOptions1;
             this.chartJS3.Size = new System.Drawing.Size(764, 300);
