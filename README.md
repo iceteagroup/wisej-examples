@@ -63,4 +63,4 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 License
 -------
-Wisej is Copyright Ice Tea Group LLC, 2018
+<img src="http://iceteagroup.com/wp-content/uploads/2017/01/Square-64x64-trasp.png" height="20" align="top"> Copyright (C) ICE TEA GROUP LLC, All rights reserved.
