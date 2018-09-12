@@ -31,10 +31,10 @@
 			this.components = new System.ComponentModel.Container();
 			this.label1 = new Wisej.Web.Label();
 			this.dataGridView1 = new Wisej.Web.DataGridView();
-			this.Column0 = new Wisej.Web.DataGridViewColumn();
-			this.Column1 = new Wisej.Web.DataGridViewColumn();
-			this.Column2 = new Wisej.Web.DataGridViewColumn();
-			this.Column3 = new Wisej.Web.DataGridViewColumn();
+			this.Column0 = new Wisej.Web.DataGridViewTextBoxColumn();
+			this.Column1 = new Wisej.Web.DataGridViewTextBoxColumn();
+			this.Column2 = new Wisej.Web.DataGridViewTextBoxColumn();
+			this.Column3 = new Wisej.Web.DataGridViewTextBoxColumn();
 			this.Column4 = new Wisej.Web.DataGridViewCheckBoxColumn();
 			this.SimpleColumnFilter = new Wisej.Web.Ext.ColumnFilter.ColumnFilter(this.components);
 			this.WhereColumnFilter = new Wisej.Web.Ext.ColumnFilter.ColumnFilter(this.components);
@@ -138,10 +138,10 @@
 
 		private Web.Label label1;
 		private Web.DataGridView dataGridView1;
-		private Web.DataGridViewColumn Column0;
-		private Web.DataGridViewColumn Column1;
-		private Web.DataGridViewColumn Column2;
-		private Web.DataGridViewColumn Column3;
+		private Web.DataGridViewTextBoxColumn Column0;
+		private Web.DataGridViewTextBoxColumn Column1;
+		private Web.DataGridViewTextBoxColumn Column2;
+		private Web.DataGridViewTextBoxColumn Column3;
 		private Web.Ext.ColumnFilter.ColumnFilter SimpleColumnFilter;
 		private Web.Ext.ColumnFilter.ColumnFilter WhereColumnFilter;
 		private Web.DataGridViewCheckBoxColumn Column4;
