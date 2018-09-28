@@ -45,6 +45,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 | Project | Project&nbsp;Date | Description |
 | :--- | :---: | :--- |
+| AspNetAuthentication | 28 Sep 2018 | How to integrate ASP.NET authentication with Wisej. |
 | ComponentMixin | 03 Aug 2018 | Use a mixin to give different appearances to an item component. |
 | DGVEmbeddedNavigator | 02 Aug 2018 | Embedding the navigator into a DataGridView (visual only sample). |
 | RuntimeLocalization | 27 Jul 2018 | Update localized resources using reflection. |
