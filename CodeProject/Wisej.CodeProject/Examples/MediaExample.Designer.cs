@@ -146,9 +146,10 @@
 			this.video1.Location = new System.Drawing.Point(452, 3);
 			this.video1.Name = "video1";
 			this.video1.Size = new System.Drawing.Size(444, 293);
-			this.video1.SourceURL = "http://www.html5videoplayer.net/videos/toystory.mp4";
+			this.video1.SourceURL = "https://dl3.webmfiles.org/big-buck-bunny_trailer.webm";
 			this.video1.TabIndex = 1;
 			this.video1.Volume = 0.5D;
+			this.video1.AutoPlay = true;
 			// 
 			// pdfViewer1
 			// 
