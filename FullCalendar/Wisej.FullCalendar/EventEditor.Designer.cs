@@ -65,6 +65,7 @@
 			this.buttonClose.Size = new System.Drawing.Size(129, 36);
 			this.buttonClose.TabIndex = 11;
 			this.buttonClose.Text = "Close";
+			this.buttonClose.CausesValidation = false;
 			this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
 			// 
 			// label4

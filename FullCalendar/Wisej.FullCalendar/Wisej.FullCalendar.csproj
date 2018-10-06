@@ -92,7 +92,10 @@
       <HintPath>..\Dependencies\Wisej.Ext.ModernUI.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web" />
-    <Reference Include="Wisej.Web.Ext.FullCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Wisej.Web.Ext.FullCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Wisej.Web.Ext.FullCalendar.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.de.resx">
