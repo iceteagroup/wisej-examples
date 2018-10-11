@@ -46,7 +46,6 @@
 			// panel1
 			// 
 			this.panel1.AutoShow = Wisej.Web.PanelAutoShowMode.OnPointerOver;
-			this.panel1.AutoSize = true;
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
 			this.panel1.CollapseSide = Wisej.Web.HeaderPosition.Left;
 			this.panel1.Controls.Add(this.button5);
