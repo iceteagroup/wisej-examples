@@ -254,12 +254,24 @@
 			// numericUpDownMaxZoom
 			// 
 			this.numericUpDownMaxZoom.Location = new System.Drawing.Point(70, 54);
-			this.numericUpDownMaxZoom.Maximum = ((decimal)(resources.GetObject("numericUpDownMaxZoom.Maximum")));
-			this.numericUpDownMaxZoom.Minimum = ((decimal)(resources.GetObject("numericUpDownMaxZoom.Minimum")));
+            this.numericUpDownMaxZoom.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownMaxZoom.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			this.numericUpDownMaxZoom.Name = "numericUpDownMaxZoom";
 			this.numericUpDownMaxZoom.Size = new System.Drawing.Size(104, 22);
 			this.numericUpDownMaxZoom.TabIndex = 2;
-			this.numericUpDownMaxZoom.Value = ((decimal)(resources.GetObject("numericUpDownMaxZoom.Value")));
+            this.numericUpDownMaxZoom.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
 			this.numericUpDownMaxZoom.ValueChanged += new System.EventHandler(this.numericUpDownMaxZoom_ValueChanged);
 			// 
 			// label1
@@ -274,12 +286,24 @@
 			// numericUpDownMinZoom
 			// 
 			this.numericUpDownMinZoom.Location = new System.Drawing.Point(70, 23);
-			this.numericUpDownMinZoom.Maximum = ((decimal)(resources.GetObject("numericUpDownMinZoom.Maximum")));
-			this.numericUpDownMinZoom.Minimum = ((decimal)(resources.GetObject("numericUpDownMinZoom.Minimum")));
+            this.numericUpDownMinZoom.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDownMinZoom.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			this.numericUpDownMinZoom.Name = "numericUpDownMinZoom";
 			this.numericUpDownMinZoom.Size = new System.Drawing.Size(104, 22);
 			this.numericUpDownMinZoom.TabIndex = 0;
-			this.numericUpDownMinZoom.Value = ((decimal)(resources.GetObject("numericUpDownMinZoom.Value")));
+            this.numericUpDownMinZoom.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			this.numericUpDownMinZoom.ValueChanged += new System.EventHandler(this.numericUpDownMinZoom_ValueChanged);
 			// 
 			// groupBox4
