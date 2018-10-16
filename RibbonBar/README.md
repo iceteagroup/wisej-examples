@@ -1,7 +1,7 @@
 RibbonBar
 ====
 
-<img src="https://github.com/tfreitasleal/wisej-examples/blob/master/Support/Images/RibbonBarExample.png" height="20" align="top">
+<img src="http://github.com/tfreitasleal/wisej-examples/blob/master/Support/Images/RibbonBarExample.png?raw=true" height="20" align="top">
 
 Example application to demonstrate some of the features available to the [RibbonBar](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.RibbonBar) Wisej extension.
 
