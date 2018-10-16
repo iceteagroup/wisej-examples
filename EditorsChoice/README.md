@@ -1,8 +1,6 @@
 Editors Choice
 ====
 
-Shows how to use the [ChartJs](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.ChartJs) Wisej extension. This example application uses multiple charts, real time updates of the data sets, and the responsive FillWeight property managed by the FlowLayoutPanel.
-
 Example of using 3 Wisej extensions for formatted text editors: [CKEditor](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.CKEditor), [TinyMCE](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.TinyMCE) and [TinyEditor](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.TinyEditor). Use it to explore the different features of all 3 edit controls. When Live Sync is checked, changes you apply in CKEditor1 control are directly reflected in real time in the 3 lower edit controls.
 
 Uses 3rd party JavaScript library:
