@@ -1,7 +1,7 @@
 RibbonBar
 ====
 
-![](/Support/Images/RibbonBarExample.png | height=410)
+![](https://raw.githubusercontent.com/tfreitasleal/wisej-examples/master/Support/Images/RibbonBarExample.png)
 
 Example application to demonstrate some of the features available to the [RibbonBar](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.RibbonBar) Wisej extension.
 
