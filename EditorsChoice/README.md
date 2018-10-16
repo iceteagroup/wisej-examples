@@ -10,7 +10,7 @@ Uses 3rd party JavaScript library:
 - [TinyMCE](https://www.tiny.cloud)
 - [TinyEditor](https://github.com/jessegreathouse/TinyEditor)
 
-##[Try it on Online](http://demo.wisej.com/EditorsChoice)
+## [Try it on Online](http://demo.wisej.com/EditorsChoice)
 
 License
 -------

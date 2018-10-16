@@ -5,7 +5,7 @@ Shows how to use the [ChartJs](https://github.com/iceteagroup/wisej-extensions/t
 
 Uses 3rd party JavaScript library [ChartJS](http://www.chartjs.org/)
 
-##[Try it on Online](http://demo.wisej.com/ChartJS)
+## [Try it on Online](http://demo.wisej.com/ChartJS)
 
 License
 -------
