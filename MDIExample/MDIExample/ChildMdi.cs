@@ -9,7 +9,7 @@ namespace MDIExample
         {
             InitializeComponent();
 
-            label1.Text = label;
+            label1.Text = "MDI Child is "+label;
         }
     }
 }
