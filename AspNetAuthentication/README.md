@@ -1,6 +1,8 @@
 ASP.NET Authentication
 ====
 
+<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/AspNetAuthentication.png" width="350" height="233">
+
 Example application to demonstrate the integration of ASP.NET Authentication into a Wisej application.
 
 License
