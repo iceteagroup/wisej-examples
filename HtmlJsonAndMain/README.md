@@ -3,7 +3,7 @@ Html, Json and Main
 
 <img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/HtmlJsonAndMain.png" width="350" height="233">
 
-Shows different entry points in your application, using ´.json´ and ´.html´ files, as well as using ´mainWindow´ instead of ´startup´ in the json file.
+Shows different entry points in your application, using `.json` and `.html` files, as well as using `mainWindow` instead of `startup` in the json file.
 
 ## 1. Context
 
