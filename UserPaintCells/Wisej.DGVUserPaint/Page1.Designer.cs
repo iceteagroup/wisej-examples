@@ -48,18 +48,18 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.Anchor = ((Wisej.Web.AnchorStyles)((((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Bottom) 
-            | Wisej.Web.AnchorStyles.Left) 
-            | Wisej.Web.AnchorStyles.Right)));
+			| Wisej.Web.AnchorStyles.Left) 
+			| Wisej.Web.AnchorStyles.Right)));
 			this.dataGridView1.Columns.AddRange(new Wisej.Web.DataGridViewColumn[] {
-            this.Column0,
-            this.Column2,
-            this.Column1});
+			this.Column0,
+			this.Column2,
+			this.Column1});
 			this.dataGridView1.EditMode = Wisej.Web.DataGridViewEditMode.EditOnEnter;
 			this.dataGridView1.Location = new System.Drawing.Point(40, 178);
-			this.dataGridView1.MinimumSize = new System.Drawing.Size(200, 350);
+			this.dataGridView1.MinimumSize = new System.Drawing.Size(200, 450);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersMinimumWidth = 2;
-			this.dataGridView1.Size = new System.Drawing.Size(806, 350);
+			this.dataGridView1.Size = new System.Drawing.Size(806, 450);
 			this.dataGridView1.TabIndex = 1;
 			this.dataGridView1.CellValueChanged += new Wisej.Web.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
 			this.dataGridView1.CellPaint += new Wisej.Web.DataGridViewCellPaintEventHandler(this.dataGridView1_CellPaint);
@@ -75,11 +75,11 @@
 			this.Column2.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.Column2.HeaderText = "Type";
 			this.Column2.Items.AddRange(new object[] {
-            "Bar",
-            "Area",
-            "Line",
-            "Spline",
-            "Column"});
+			"Bar",
+			"Area",
+			"Line",
+			"Spline",
+			"Column"});
 			this.Column2.Name = "Column2";
 			// 
 			// Column1
