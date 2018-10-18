@@ -1,6 +1,8 @@
 UI Containers
 ====
 
+<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/UIContainers.png" width="350" height="233">
+
 This sample explores 3 kinds of Wisej applications: Desktop, Page and Forms. It shows the relation between the containers and how to switch the active Desktop or the active Page while there are visible forms.
 
 License
