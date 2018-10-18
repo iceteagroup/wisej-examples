@@ -1,6 +1,8 @@
 Simple Chat
 ====
 
+<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/SimpleChat.png" width="350" height="233">
+
 Very simple chat server and client. Demonstrates how to fire and handle shared events and update multiple clients at once. Can be used as a base for broadcast notifications or a simple chat feature to add to any application.
 
 License
