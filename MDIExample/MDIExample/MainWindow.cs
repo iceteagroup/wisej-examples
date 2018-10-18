@@ -44,7 +44,8 @@ namespace MDIExample
 
         private void AddMdiChild()
         {
-            Form form = new Form() {Text = "Form " + (this.MdiChildren.Length + 1), MdiParent = this};
+            var name = "Form " + (this.MdiChildren.Length + 1);
+            Form form = new ChildMdi(name) {Text = name, MdiParent = this};
             form.Show();
         }
     }

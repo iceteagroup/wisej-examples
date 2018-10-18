@@ -45,12 +45,12 @@
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2"),
-            resources.GetString("comboBox1.Items3"),
-            resources.GetString("comboBox1.Items4"),
-            resources.GetString("comboBox1.Items5")});
+			resources.GetString("comboBox1.Items"),
+			resources.GetString("comboBox1.Items1"),
+			resources.GetString("comboBox1.Items2"),
+			resources.GetString("comboBox1.Items3"),
+			resources.GetString("comboBox1.Items4"),
+			resources.GetString("comboBox1.Items5")});
 			resources.ApplyResources(this.comboBox1, "comboBox1");
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);

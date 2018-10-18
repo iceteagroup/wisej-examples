@@ -1,6 +1,13 @@
+Component Mixin
+====
+
+<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/ComponentMixin.png" width="350" height="233">
+
+Shows how to use mixins to have two or more appearances for TreeView and ListBox on the same application.
+
 ## 1. About mixins
 
-A mixin is a partial theme definition. It extends or overrides the application theme, no matter what theme is used by the application
+A mixin is a partial theme definition. It extends or overrides the application theme, no matter what theme is used by the application.
 
 A mixin file must be named <arbitrary_mixin_name>__.mixin.theme__ and must in the __/Themes__ folder. The __Build Action__ can be set to __Embedded Resource__, __Content__ or __None__. This project uses the later option.
 

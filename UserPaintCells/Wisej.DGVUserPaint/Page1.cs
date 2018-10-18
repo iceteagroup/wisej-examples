@@ -18,10 +18,36 @@ namespace Wisej.DGVUserPaint
 		{
 			this.dataGridView1.RowCount = 10;
 
-			foreach (var row in this.dataGridView1.Rows)
+			for (var index = 0; index < this.dataGridView1.Rows.Count; index++)
 			{
-				row[0].Value = "1,2,3,4,5,6,7,8,9,10";
-				row[1].Value = "Line";
+				var row = this.dataGridView1.Rows[index];
+				switch (index)
+				{
+						case 0:
+							row[0].Value = "12,345,64,57,36,34,363";
+							row[1].Value = "Area";
+							row.Height = row.Height * 3;
+							break;
+						case 1:
+							row[0].Value = "345,3456,34,363,463,6,3";
+							row[1].Value = "Column";
+							row.Height = row.Height * 3;
+						break;
+						case 2:
+							row[0].Value = "675,345,145,6,474,76,875,685";
+							row[1].Value = "Spline";
+							row.Height = row.Height * 3;
+						break;
+						case 3:
+							row[0].Value = "234,234,234,254,25,235,35,23";
+							row[1].Value = "Line";
+							row.Height = row.Height * 3;
+						break;
+					default:
+						row[0].Value = "1,2,3,4,5,6,7,8,9,10";
+						row[1].Value = "Line";
+						break;
+				}
 			}
 		}
 

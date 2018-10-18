@@ -1,3 +1,10 @@
+Html, Json and Main
+====
+
+<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/HtmlJsonAndMain.png" width="350" height="233">
+
+Shows different entry points in your application, using `.json` and `.html` files, as well as using `mainWindow` instead of `startup` in the json file.
+
 ## 1. Context
 
 The most common Wisej applications (in the broad sense) have only a single application (in the strict sense). To keep things simple, we will use __sub-application__ to refer to an application __in the strict sense__.
@@ -18,7 +25,7 @@ Notes
 * The filename __Program.cs__ is used because that’s where we look for the _static_ (_Shared_ in VB) __Main__ method in WinForms.
 * For simplicity, the __.html__ and __.json__ filenames should match, but they don't have to match.
 
-These names can be changed. The [ChangedNames project](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) is an example of changing the __.html__ and __.cs__ filenames.
+These names can be changed. The [ChangedNames project](https://github.com/iceteagroup/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) is an example of changing the __.html__ and __.cs__ filenames.
 
 ### 2.1. Creating sub-applications
 
@@ -135,4 +142,4 @@ According to rule 2) above, you don't need __defaultDocument__ to be defined in 
 
 If the URL is the web site URL, it refers to a folder and Wisej looks for the __.json__ file at the project's root folder, it looks for __\Default.json__.
 
-In fact, both projects [ChangedNames](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) and [MultiHtml](https://github.com/tfreitasleal/wisej-examples/tree/master/HtmlJsonAndMain/MultiHtml) have the __defaultDocument__ commented out in the __Web.config__ file
+In fact, both projects [ChangedNames](https://github.com/iceteagroup/wisej-examples/tree/master/HtmlJsonAndMain/ChangedNames) and [MultiHtml](https://github.com/iceteagroup/wisej-examples/tree/master/HtmlJsonAndMain/MultiHtml) have the __defaultDocument__ commented out in the __Web.config__ file
