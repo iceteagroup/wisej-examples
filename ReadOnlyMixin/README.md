@@ -1,3 +1,10 @@
+ReadOnly Mixin
+====
+
+<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/ReadOnlyMixin.png" width="350" height="233">
+
+The __ReadOnly__ state that was introduced in Wisej 1.5.4. No __Styles__ or __Properties__ are defined in the standard theme files, as different people have different views on how a ReadOnly control should look like. This example shows how to do a mixin to define how a ReadOnly control will look.
+
 ## 1. Concepts
 
 A mixin is a partial theme definition. It extends or overrides the application theme, no matter what theme is used by the application
@@ -11,8 +18,6 @@ Embedded themes and mixins in __other assemblies__ are loaded only when the __[a
 A mixin must be created in Visual Studio and it may be edited in the ThemeBuilder. Please refer to [Edit Mixins](https://wisej.com/docs/html/EditMixins.htm) on Wisej Documentation.
 
 ## 2. About the ReadOnly state
-
-The ReadOnly state was introduced in Wisej 1.5.4. No __Styles__ or __Properties__ are defined in the standard theme files, as different people have different views on how a ReadOnly control should look like.
 
 The ReadOnly state is supported on the following controls:
 * TextBox
