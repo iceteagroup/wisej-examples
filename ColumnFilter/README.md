@@ -5,7 +5,7 @@ Column Filter
 
 Shows how to use the [ColumnFilter](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.ColumnFilter) Wisej extension. This extension is used to Filter your DataGridView rows. 
 
-## [How to blog](https://wisej.com/blog/columnfilter/)
+## ["How to" blog](https://wisej.com/blog/columnfilter/)
 
 ## [Try it on Online](http://demo.wisej.com/ColumnFilter)
 
