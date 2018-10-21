@@ -1,7 +1,6 @@
 Pannellum
 ====
 
-
 <img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/Pannellum.png" width="350" height="233">
 
 Shows how to use the [Pannellum](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.Pannellum) Wisej extension. The example application covers most common uses of this __panorama viewer__ for the web.
