@@ -16,6 +16,12 @@ namespace DataBinding.Views
         {
             vendorListBindingSource.DataSource = VendorList.GetVendorList();
 
+            // Bind ComboBox list datasources first
+            statesBindingSource.EnumToDataSource(typeof(States));
+            colState.DataSource = statesBindingSource;
+            colState.DisplayMember = "Description";
+            colState.ValueMember = "Key";
+
             dataGridView.Rows[0].Selected = true;
         }
 

@@ -66,6 +66,21 @@ namespace DataBinding.Model
             }
         }
 
+        private States _state;
+
+        public States State
+        {
+            get { return _state; }
+            set
+            {
+                if (_state != value)
+                {
+                    _state = value;
+                    OnPropertyChanged(nameof(State));
+                }
+            }
+        }
+
         public string FullName
         {
             get { return $"{_firstName} {_lastName}"; }
