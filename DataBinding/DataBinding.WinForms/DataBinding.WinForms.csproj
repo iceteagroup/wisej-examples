@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\DataBinding\Model\States.cs">
+      <Link>Model\States.cs</Link>
+    </Compile>
     <Compile Include="..\DataBinding\Model\Vendor.cs">
       <Link>Model\Vendor.cs</Link>
     </Compile>

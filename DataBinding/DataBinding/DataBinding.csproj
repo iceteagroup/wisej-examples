@@ -65,6 +65,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\EnumExtension.cs" />
+    <Compile Include="Model\States.cs" />
     <Compile Include="Views\AllBindings.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -34,10 +34,13 @@
             this.colFirstname = new Wisej.Web.DataGridViewTextBoxColumn();
             this.colLastname = new Wisej.Web.DataGridViewTextBoxColumn();
             this.colTown = new Wisej.Web.DataGridViewTextBoxColumn();
+            this.colState = new Wisej.Web.DataGridViewComboBoxColumn();
             this.colFullname = new Wisej.Web.DataGridViewTextBoxColumn();
             this.vendorListBindingSource = new Wisej.Web.BindingSource(this.components);
+            this.statesBindingSource = new Wisej.Web.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendorListBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -51,6 +54,7 @@
             this.colFirstname,
             this.colLastname,
             this.colTown,
+            this.colState,
             this.colFullname});
             this.dataGridView.DataSource = this.vendorListBindingSource;
             this.dataGridView.Dock = Wisej.Web.DockStyle.Top;
@@ -93,6 +97,12 @@
             this.colTown.Name = "colTown";
             this.colTown.Width = 150;
             // 
+            // colState
+            // 
+            this.colState.DataPropertyName = "State";
+            this.colState.HeaderText = "State";
+            this.colState.Name = "colState";
+            // 
             // colFullname
             // 
             this.colFullname.AutoSizeMode = Wisej.Web.DataGridViewAutoSizeColumnMode.Fill;
@@ -106,9 +116,13 @@
             this.vendorListBindingSource.DataSource = typeof(DataBinding.Model.VendorList);
             this.vendorListBindingSource.RefreshValueOnChange = true;
             // 
+            // statesBindingSource
+            // 
+            this.statesBindingSource.AllowNew = false;
+            // 
             // DataGridBinding
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 480);
             this.Controls.Add(this.dataGridView);
@@ -117,6 +131,7 @@
             this.Load += new System.EventHandler(this.DataGridBinding_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendorListBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -130,5 +145,7 @@
         private Wisej.Web.DataGridViewTextBoxColumn colLastname;
         private Wisej.Web.DataGridViewTextBoxColumn colTown;
         private Wisej.Web.DataGridViewTextBoxColumn colFullname;
+        private Wisej.Web.DataGridViewComboBoxColumn colState;
+        private Wisej.Web.BindingSource statesBindingSource;
     }
 }

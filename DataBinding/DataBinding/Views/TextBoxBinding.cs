@@ -15,6 +15,12 @@ namespace DataBinding.Views
         private void TextBoxBinding_Load(object sender, System.EventArgs e)
         {
             GetNewVendor();
+
+            // Bind ComboBox list datasources first
+            statesBindingSource.EnumToDataSource(typeof(States));
+            stateComboBox.DataSource = statesBindingSource;
+            stateComboBox.DisplayMember = "Description";
+            stateComboBox.ValueMember = "Key";
         }
 
         private void newButton_Click(object sender, System.EventArgs e)
