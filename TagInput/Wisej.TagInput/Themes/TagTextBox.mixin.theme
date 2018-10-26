@@ -1,0 +1,31 @@
+﻿{
+	"appearances": {
+
+		"states-panel": {
+			"inherit": "panel",
+			"states": {
+				"default": {
+					"styles": {
+						"width": 2,
+						"color": "#579FDA"
+					}
+				}
+			},
+			"components": {
+				"captionbar": {
+					"states": {
+						"default": {
+							"styles": {
+								"backgroundColor": "#579FDA"
+							},
+							"properties": {
+								"font": "windowTitle"
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
