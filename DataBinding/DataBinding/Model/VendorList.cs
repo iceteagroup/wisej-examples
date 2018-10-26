@@ -43,14 +43,16 @@ namespace DataBinding.Model
             {
                 FirstName = "Ella",
                 LastName = "Fitzgerald",
-                Town = "Newport News"
+                Town = "Newport News",
+                State = States.VA
             }.Save();
 
             new Vendor
             {
                 FirstName = "Louis",
                 LastName = "Armstrong",
-                Town = "New Orleans"
+                Town = "New Orleans",
+                State = States.LA
             }.Save();
         }
     }
