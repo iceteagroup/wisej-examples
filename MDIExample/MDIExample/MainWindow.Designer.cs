@@ -32,6 +32,10 @@
             this.addMdiChild = new Wisej.Web.ToolBarButton();
             this.closeMdiChild = new Wisej.Web.ToolBarButton();
             this.activateFirstMdiChild = new Wisej.Web.ToolBarButton();
+            this.separator1 = new Wisej.Web.ToolBarButton();
+            this.showModeless = new Wisej.Web.ToolBarButton();
+            this.separator2 = new Wisej.Web.ToolBarButton();
+            this.showHideThumbnails = new Wisej.Web.ToolBarButton();
             this.SuspendLayout();
             // 
             // toolBar1
@@ -40,7 +44,11 @@
             this.toolBar1.Buttons.AddRange(new Wisej.Web.ToolBarButton[] {
             this.addMdiChild,
             this.closeMdiChild,
-            this.activateFirstMdiChild});
+            this.activateFirstMdiChild,
+            this.separator1,
+            this.showModeless,
+            this.separator2,
+            this.showHideThumbnails});
             this.toolBar1.Location = new System.Drawing.Point(0, 0);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.Size = new System.Drawing.Size(676, 51);
@@ -65,6 +73,28 @@
             this.activateFirstMdiChild.ImageSource = "window-icon";
             this.activateFirstMdiChild.Name = "activateFirstMdiChild";
             this.activateFirstMdiChild.Text = "Activate First MDI";
+            // 
+            // separator1
+            // 
+            this.separator1.Name = "separator1";
+            this.separator1.Style = Wisej.Web.ToolBarButtonStyle.Separator;
+            // 
+            // showModeless
+            // 
+            this.showModeless.ImageSource = "icon-file";
+            this.showModeless.Name = "showModeless";
+            this.showModeless.Text = "Show Modeless";
+            // 
+            // separator2
+            // 
+            this.separator2.Name = "separator2";
+            this.separator2.Style = Wisej.Web.ToolBarButtonStyle.Separator;
+            // 
+            // showHideThumbnails
+            // 
+            this.showHideThumbnails.ImageSource = "icon-preview";
+            this.showHideThumbnails.Name = "showHideThumbnails";
+            this.showHideThumbnails.Text = "Hide Thumbnails Buttom";
             // 
             // MainWindow
             // 
@@ -93,6 +123,10 @@
         private Wisej.Web.ToolBarButton addMdiChild;
         private Wisej.Web.ToolBarButton closeMdiChild;
         private Wisej.Web.ToolBarButton activateFirstMdiChild;
+        private Wisej.Web.ToolBarButton showModeless;
+        private Wisej.Web.ToolBarButton separator1;
+        private Wisej.Web.ToolBarButton separator2;
+        private Wisej.Web.ToolBarButton showHideThumbnails;
     }
 }
 

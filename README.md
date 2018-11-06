@@ -32,6 +32,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 | Project | Change&nbsp;Date | Description |
 | :--- | :---: | :--- |
+| MDIExample | 06 Nov 2018 | Add modeless Form example. |
 | DataBinding | 25 Oct 2018 | Add ComboBox data binding to Wisej project. |
 | SmoothieChartSample | 30 Aug 2018 | Example of FontSize property use. |
 | ChartJS | 30 Aug 2018 | Example of DataLabel plugin use. |

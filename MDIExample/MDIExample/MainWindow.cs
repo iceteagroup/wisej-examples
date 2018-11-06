@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Drawing;
 using Wisej.Web;
 
 namespace MDIExample
 {
     public partial class MainWindow : Form
     {
+        private Modeless modeless;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -40,6 +43,23 @@ namespace MDIExample
                     this.MdiChildren[0].Activate();
                 }
             }
+            else if (e.Button == this.showModeless)
+            {
+                ShowModeless();
+            }
+            else if (e.Button == this.showHideThumbnails)
+            {
+                if (this.MdiTabProperties.ShowThumbnails)
+                {
+                    this.MdiTabProperties.ShowThumbnails = false;
+                    this.showHideThumbnails.Text = "Show Thumbnails Buttom";
+                }
+                else
+                {
+                    this.MdiTabProperties.ShowThumbnails = true;
+                    this.showHideThumbnails.Text = "Hide Thumbnails Buttom";
+                }
+            }
         }
 
         private void AddMdiChild()
@@ -47,6 +67,18 @@ namespace MDIExample
             var name = "Form " + (this.MdiChildren.Length + 1);
             Form form = new ChildMdi(name) {Text = name, MdiParent = this};
             form.Show();
+        }
+
+        private void ShowModeless()
+        {
+            if (modeless == null)
+            {
+                modeless = new Modeless();
+                modeless.Location = new Point(this.Width - modeless.Width-10, this.Height - modeless.Height-10);
+                modeless.TopMost = true;
+            }
+
+            modeless.Show();
         }
     }
 }
