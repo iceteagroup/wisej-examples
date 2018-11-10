@@ -16,11 +16,7 @@ namespace Wisej.Responsive.Views
 			// create or activate the view that corresponds to the clicked option button.
 			string viewName = args.ViewName;
 			Control view = (Control)Application.FindComponent(o => o is Control && ((Control)o).Name == viewName);
-			if (view != null)
-			{
-				view.BringToFront();
-			}
-			else
+			if (view == null)
 			{
 				Type type = Type.GetType("Wisej.Responsive.Views." + viewName, true);
 				view = (Control)Activator.CreateInstance(type);
@@ -29,6 +25,7 @@ namespace Wisej.Responsive.Views
 				view.Disposed += (s, e) => { this.optionsPanel1.UpdateState(); };
 				this.optionsPanel1.UpdateState();
 			}
+			view.BringToFront();
 		}
 	}
 }
