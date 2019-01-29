@@ -37,7 +37,7 @@
 			this.tagTextBox1 = new Wisej.Web.TagTextBox();
 			this.flexLayoutPanel3 = new Wisej.Web.FlexLayoutPanel();
 			this.checkBox1 = new Wisej.Web.CheckBox();
-			this.separator1 = new Wisej.Web.Separator();
+			this.separator1 = new Wisej.Web.Spacer();
 			this.button1 = new Wisej.Web.Button();
 			this.button2 = new Wisej.Web.Button();
 			this.panel1.SuspendLayout();
@@ -289,7 +289,7 @@
 		private Web.Label label1;
 		private Web.Label label2;
 		private Web.CheckBox checkBox1;
-		private Web.Separator separator1;
+		private Web.Spacer separator1;
 	}
 }
 

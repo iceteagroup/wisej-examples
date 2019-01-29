@@ -23,6 +23,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,11 +84,21 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Core" />
-    <Reference Include="Wisej.Web" />
-    <Reference Include="Wisej.Web.Ext.CKEditor" />
-    <Reference Include="Wisej.Web.Ext.TinyEditor" />
-    <Reference Include="Wisej.Web.Ext.TinyMCE" />
+    <Reference Include="Wisej.Framework">
+      <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.CKEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.CKEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.TinyEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.TinyEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.TinyMCE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.TinyMCE.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Window1.resx">

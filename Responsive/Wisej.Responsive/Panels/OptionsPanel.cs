@@ -15,7 +15,7 @@ namespace Wisej.Responsive.Panels
 		public event OptionClickedEventHandler OptionClick;
 
 		// Adapts the panel to the device.
-		private void OptionsPanel_ResponsiveProfileChanged(object sender, Core.ResponsiveProfileChangedEventArgs e)
+		private void OptionsPanel_ResponsiveProfileChanged(object sender, ResponsiveProfileChangedEventArgs e)
 		{
 			var display = Display.Both;
 

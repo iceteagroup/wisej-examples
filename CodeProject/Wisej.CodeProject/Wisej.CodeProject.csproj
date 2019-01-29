@@ -23,6 +23,7 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -183,18 +184,30 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Wisej.Core" />
     <Reference Include="Wisej.Ext.MaterialDesign">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Dependencies\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web" />
-    <Reference Include="Wisej.Web.Ext.BingWallpaper" />
-    <Reference Include="Wisej.Web.Ext.CKEditor" />
-    <Reference Include="Wisej.Web.Ext.CoolClock" />
-    <Reference Include="Wisej.Web.Ext.JustGage" />
-    <Reference Include="Wisej.Web.Ext.ProgressCircle" />
-    <Reference Include="Wisej.Web.Ext.Speech" />
+    <Reference Include="Wisej.Framework">
+      <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.BingWallpaper">
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.BingWallpaper.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.CKEditor">
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.CKEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.CoolClock">
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.CoolClock.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.JustGage">
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.JustGage.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.ProgressCircle">
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.ProgressCircle.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.Speech">
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.Speech.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Examples\BackgroundTasks.resx">

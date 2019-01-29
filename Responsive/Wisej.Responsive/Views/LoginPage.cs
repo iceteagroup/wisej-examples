@@ -56,7 +56,7 @@ namespace Wisej.Responsive.Views
 			}
 		}
 
-		private void LoginPage_ResponsiveProfileChanged(object sender, Core.ResponsiveProfileChangedEventArgs e)
+		private void LoginPage_ResponsiveProfileChanged(object sender, ResponsiveProfileChangedEventArgs e)
 		{
 			if (this.Width <= 450)
 			{

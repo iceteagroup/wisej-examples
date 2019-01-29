@@ -1,4 +1,6 @@
-﻿namespace Wisej.Responsive.Panels
+﻿using Wisej.Web;
+
+namespace Wisej.Responsive.Panels
 {
 	partial class OptionsPanel
 	{
@@ -125,7 +127,7 @@
 			this.Name = "OptionsPanel";
 			this.Size = new System.Drawing.Size(250, 680);
 			this.Load += new System.EventHandler(this.OptionsPanel_Load);
-			this.ResponsiveProfileChanged += new Wisej.Core.ResponsiveProfileChangedEventHandler(this.OptionsPanel_ResponsiveProfileChanged);
+			this.ResponsiveProfileChanged += new ResponsiveProfileChangedEventHandler(this.OptionsPanel_ResponsiveProfileChanged);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 

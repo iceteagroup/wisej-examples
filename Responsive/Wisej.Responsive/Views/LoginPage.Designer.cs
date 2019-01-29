@@ -1,4 +1,6 @@
-﻿namespace Wisej.Responsive.Views
+﻿using Wisej.Web;
+
+namespace Wisej.Responsive.Views
 {
 	partial class LoginPage
 	{
@@ -140,7 +142,7 @@
 			this.Size = new System.Drawing.Size(1139, 742);
 			this.Text = "ACME Hardware - Login";
 			this.Load += new System.EventHandler(this.LoginPage_Load);
-			this.ResponsiveProfileChanged += new Wisej.Core.ResponsiveProfileChangedEventHandler(this.LoginPage_ResponsiveProfileChanged);
+			this.ResponsiveProfileChanged += new ResponsiveProfileChangedEventHandler(this.LoginPage_ResponsiveProfileChanged);
 			this.Accelerator += new Wisej.Web.AcceleratorEventHandler(this.LoginPage_Accelerator);
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
 			this.panel.ResumeLayout(false);

@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Wisej.GoogleMaps</RootNamespace>
     <AssemblyName>Wisej.GoogleMaps</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -80,18 +80,25 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Core" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="Wisej.Ext.Geolocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\wisej-extensions\bin\Wisej.Ext.Geolocation.dll</HintPath>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Ext.Geolocation.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web" />
+    <Reference Include="Wisej.Framework">
+      <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="Wisej.Web.Ext.GoogleMaps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\wisej-extensions\bin\Wisej.Web.Ext.GoogleMaps.dll</HintPath>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.GoogleMaps.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

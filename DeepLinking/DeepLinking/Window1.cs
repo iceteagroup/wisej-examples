@@ -41,7 +41,7 @@ namespace DeepLinking
 			EditUser(Application.Hash);
 		}
 
-		private void Application_HashChanged(object sender, Wisej.Core.HashChangedEventArgs e)
+		private void Application_HashChanged(object sender, HashChangedEventArgs e)
 		{
 			EditUser(e.Hash);
 		}
