@@ -1,4 +1,4 @@
-Integration1 (SyncFusion)
+Integration2 (SyncFusion)
 ====
 
 <img src="../Support/Images/Integration2A.png" width="450" height="233">
