@@ -1,7 +1,7 @@
 Download
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/Download.png" width="350" height="233">
+<img src="../Support/Images/Download.png" width="350" height="233">
 
 This example shows different ways of providing download options with Wisej. The options `Download` and `DownloadAndOpen` should suit for basic requirements with static downloads. Dynamic downloads options include download based on a FileStream and download of a ZIP file created in memory.
 

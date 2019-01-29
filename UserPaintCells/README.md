@@ -1,7 +1,7 @@
 User Paint Cells
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/user-paint-cells.png" width="350" height="233">
+<img src="../Support/Images/user-paint-cells.png" width="350" height="233">
 
 Shows the UserPaint feature supported by all DataGridView columns and cells. Additionally, this example demonstrates how to use the System.Web Chart control to draw sparkline-type charts inside cells.
 

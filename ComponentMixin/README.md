@@ -1,7 +1,7 @@
 Component Mixin
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/ComponentMixin.png" width="350" height="233">
+<img src="../Support/Images/ComponentMixin.png" width="350" height="233">
 
 Shows how to use mixins to have two or more appearances for TreeView and ListBox on the same application.
 

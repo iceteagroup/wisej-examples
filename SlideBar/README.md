@@ -1,7 +1,7 @@
 SlideBar
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/SlideBar.png" width="350" height="233">
+<img src="../Support/Images/SlideBar.png" width="350" height="233">
 
 Shows how to use the new new __SlideBar__ control that can be used as a container for objects of virtually any type. Contained objects can be scrolled by arrow buttons, swiping or programmatically
 

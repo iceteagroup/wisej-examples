@@ -1,7 +1,7 @@
-ReadOnly Mixin
+﻿ReadOnly Mixin
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/ReadOnlyMixin.png" width="350" height="233">
+<img src="../Support/Images/ReadOnlyMixin.png" width="350" height="233">
 
 The __ReadOnly__ state that was introduced in Wisej 1.5.4. No __Styles__ or __Properties__ are defined in the standard theme files, as different people have different views on how a ReadOnly control should look like. This example shows how to do a mixin to define how a ReadOnly control will look.
 

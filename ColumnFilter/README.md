@@ -1,7 +1,7 @@
 Column Filter
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/ColumnFilter.png" width="350" height="233">
+<img src="../Support/Images/ColumnFilter.png" width="350" height="233">
 
 Shows how to use the [ColumnFilter](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.ColumnFilter) Wisej extension. This extension is used to Filter your DataGridView rows. 
 

@@ -1,7 +1,7 @@
 Editors Choice
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/EditorsChoice.png" width="350" height="233">
+<img src="../Support/Images/EditorsChoice.png" width="350" height="233">
 
 Example of using 3 Wisej extensions for formatted text editors: [CKEditor](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.CKEditor), [TinyMCE](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.TinyMCE) and [TinyEditor](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.TinyEditor). Use it to explore the different features of all 3 edit controls. When Live Sync is checked, changes you apply in CKEditor1 control are directly reflected in real time in the 3 lower edit controls.
 

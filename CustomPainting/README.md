@@ -1,7 +1,7 @@
 Custom Painting
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/CustomPainting.png" width="350" height="233">
+<img src="../Support/Images/CustomPainting.png" width="350" height="233">
 
 Shows one of the many unique features of Wisej: Custom Painting. You can draw using basic GDI on the surface of any widget. This is one of the most powerful functionality in Wisej, along with Custom Drawing, Real Time Updates, and Background Tasks.
 

@@ -1,7 +1,7 @@
-User Control
+﻿User Control
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/UserControl.png" width="350" height="233">
+<img src="../Support/Images/UserControl.png" width="350" height="233">
 
 The User Control example shows how to create a server side widget component that can be reused in the application. A user control is a container based on Wisej.Web.UserControl that can expose methods, properties and events, and it’s integrated with the Wisej Designer.
 

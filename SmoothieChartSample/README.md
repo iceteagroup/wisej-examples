@@ -1,7 +1,7 @@
 Smoothie Chart
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/SmoothieChart.png" width="350" height="233">
+<img src="../Support/Images/SmoothieChart.png" width="350" height="233">
 
 Shows how to use the [SmoothieChart](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.SmoothieChart) Wisej extension. This example application charts multiple feeds of streaming data, using different font sizes.
 

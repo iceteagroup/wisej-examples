@@ -1,7 +1,7 @@
-Localization
+﻿Localization
 ====
 
-<img src="https://raw.githubusercontent.com/iceteagroup/wisej-examples/master/Support/Images/Localization.png" width="350" height="233">
+<img src="../Support/Images/Localization.png" width="350" height="233">
 
 The Localization example shows how to take advantage of Visual Studio’s localization capabilities in a Wisej application. You can localize directly in the designer and/or use localized resources in the code.
 
