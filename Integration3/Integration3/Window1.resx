@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="widgetDonut.InitScript" xml:space="preserve">
+    <value>
+
+//@ sourceURL=wisej.web.Widget.startup.js
+
+/**
+* Initializes the widget.
+*
+* This function is called when the InitScript property of
+* wisej.web.Widget changes.
+*
+* 'this' refers to the container which is a wisej.web.Widget instance.
+*
+* 'this.container' refers to the DOM element and can be used to initialize
+* the third party javascript widget.
+*
+*/
+this.init = function(options) 
+{
+    
+    var me = this;
+    
+    $(this.container).kendoChart(
+    {
+        transitions: wisej.web.DesignMode ? false : true,
+        
+        title: {
+            text: "What is your favourite Simpson character?"
+        },
+        legend: {
+            position: "top"
+        },
+        seriesDefaults: {
+            labels: {
+                template: "#= category # - #= kendo.format('{0:P}', percentage)#",
+                position: "outsideEnd",
+                visible: true,
+                background: "transparent"
+            }
+        },
+        series: [{
+            type: "donut",
+            data: [{
+                category: "Homer",
+                value: 35,
+                color: "#2f64d6"
+            },
+            {
+                category: "Bart",
+                value: 25,
+                color: "#f8db27"
+            }, 
+            {
+                category: "Marge",
+                value: 20,
+                color: "#9c5b01"
+            }, 
+            {
+                category: "Lisa",
+                value: 10,
+                color: "#ff81c1"
+            },
+            {
+                category: "Maggie",
+                value: 10,
+                color: "#f0f0f0"
+            }]
+        }],
+        seriesClick: function(e)
+        {
+        me.fireWidgetEvent("Clicked", {category: e.category});
+        }
+    });
+
+    this.addListener("resize", this._onResize, this);
+}
+
+
+this._onResize = function()
+{
+    $(this.container).data("kendoChart").resize();
+ 
+}
+
+</value>
+  </data>
+  <data name="widgetPie.InitScript" xml:space="preserve">
+    <value>
+
+//@ sourceURL=wisej.web.Widget.startup.js
+
+/**
+* Initializes the widget.
+*
+* This function is called when the InitScript property of
+* wisej.web.Widget changes.
+*
+* 'this' refers to the container which is a wisej.web.Widget instance.
+*
+* 'this.container' refers to the DOM element and can be used to initialize
+* the third party javascript widget.
+*
+*/
+this.init = function() 
+{
+    var me  = this;
+    var url = this.getPostbackUrl();
+    
+    $(this.container).kendoChart ( 
+    {   
+        dataSource: {
+            transport: {
+                read: {
+                    url: url,
+                    dataType: "json"
+                }
+            },
+            filter: {
+                field: "Year", operator: "eq", value: 2010
+            }
+        },
+        title: {
+            text: 2010
+        },
+        legend: {
+            position: "top",
+        },
+        chartArea: {
+            background: ""
+        },
+        seriesColors: ["#4D4D4D", "#5DA5DA", "#FAA43A", "#60BD68", "#F17CB0", "#B2912F", "#B276B2", "#DECF3F", "#F15854", "#A00000"],
+        seriesDefaults: {
+            type: "pie",
+            tooltip: {
+                template: "#= category # - $#= value #M",
+                visible: true
+            }
+        },
+        series: [{
+            field: "Worldwide",
+            categoryField: "Title",
+            padding: 0
+        }]
+    } );
+    
+    this.addListener("resize", this._onResize, this);
+}
+
+this._onResize = function()
+{
+    $(this.container).data("kendoChart").resize();
+};
+
+
+this.reload = function(value)
+{
+    var url = this.getPostbackUrl();
+    
+    var chart                = $(this.container).data("kendoChart");
+    if (chart != null)
+    {
+        chart.options.title.text = value;
+        chart.setDataSource (new kendo.data.DataSource({ 
+            transport: {
+                read: {
+                    url: url,
+                    dataType: "json"
+                }
+            },
+            filter: {
+                field: "Year", operator: "eq", value: value
+            } 
+        })
+        );
+    }
+}
+</value>
+  </data>
+  <data name="widgetQRfreeText.InitScript" xml:space="preserve">
+    <value>
+
+//@ sourceURL=wisej.web.Widget.startup.js
+
+/**
+* Initializes the widget.
+*
+* This function is called when the InitScript property of
+* wisej.web.Widget changes.
+*
+* 'this' refers to the container which is a wisej.web.Widget instance.
+*
+* 'this.container' refers to the DOM element and can be used to initialize
+* the third party javascript widget.
+*
+*/
+this.init = function() {
+    
+    var me = this;
+    
+    $(this.container).kendoQRCode({
+        value: "default",
+        errorCorrection: "Q",
+        color: "#67a814",
+        border: {
+            color: "#67a814",
+            width: 5
+        }
+    });
+    
+    
+    this.setValue = function(value){
+        $(this.container).data("kendoQRCode").value(value);
+    };
+    
+    this.addListener("resize", this._onResize, this);
+}
+
+this._onResize = function()
+{
+    $(this.container).data("kendoQRCode").resize();
+};</value>
+  </data>
+  <data name="widgetQRurl.InitScript" xml:space="preserve">
+    <value>
+
+//@ sourceURL=wisej.web.Widget.startup.js
+
+/**
+* Initializes the widget.
+*
+* This function is called when the InitScript property of
+* wisej.web.Widget changes.
+*
+* 'this' refers to the container which is a wisej.web.Widget instance.
+*
+* 'this.container' refers to the DOM element and can be used to initialize
+* the third party javascript widget.
+*
+*/
+this.init = function() {
+    
+    $(this.container).kendoQRCode({
+        value: "http://wisej.com",
+        errorCorrection: "M",
+        border: {
+            color: "#000000",
+            width: 5
+        }
+    });
+    this.addListener("resize", this._onResize, this);
+}
+
+this._onResize = function()
+{
+    $(this.container).data("kendoQRCode").resize();
+};</value>
+  </data>
+  <data name="widgetQRgeo.InitScript" xml:space="preserve">
+    <value>
+
+//@ sourceURL=wisej.web.Widget.startup.js
+
+/**
+* Initializes the widget.
+*
+* This function is called when the InitScript property of
+* wisej.web.Widget changes.
+*
+* 'this' refers to the container which is a wisej.web.Widget instance.
+*
+* 'this.container' refers to the DOM element and can be used to initialize
+* the third party javascript widget.
+*
+*/
+this.init = function() {
+    
+    $(this.container).kendoQRCode({
+        value: "geo:28.418749,-81.581211",
+        errorCorrection: "H",
+        color: "#166a83"
+    });
+    this.addListener("resize", this._onResize, this);
+}
+
+this._onResize = function()
+{
+    $(this.container).data("kendoQRCode").resize();
+};</value>
+  </data>
+  <data name="widgetQRemail.InitScript" xml:space="preserve">
+    <value>
+
+//@ sourceURL=wisej.web.Widget.startup.js
+
+/**
+* Initializes the widget.
+*
+* This function is called when the InitScript property of
+* wisej.web.Widget changes.
+*
+* 'this' refers to the container which is a wisej.web.Widget instance.
+*
+* 'this.container' refers to the DOM element and can be used to initialize
+* the third party javascript widget.
+*
+*/
+this.init = function() {
+    
+    $(this.container).kendoQRCode({
+        value: "mailto:info@wisej.com",
+        color: "#e15613",
+        background: "transparent"
+    });
+    
+     this.addListener("resize", this._onResize, this);
+}
+
+this._onResize = function()
+{
+    $(this.container).data("kendoQRCode").resize();
+};</value>
+  </data>
+</root>
