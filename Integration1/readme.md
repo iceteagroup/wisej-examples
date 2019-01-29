@@ -1,10 +1,10 @@
 Integration1 (DevExpress)
 ====
 
-<img src="../Support/Images/Integration1A.png" width="350" height="233">
-<img src="../Support/Images/Integration1B.png" width="350" height="233">
-<img src="../Support/Images/Integration1C.png" width="350" height="233">
-<img src="../Support/Images/Integration1D.png" width="350" height="233">
+<img src="../Support/Images/Integration1A.png" width="450" height="233">
+<img src="../Support/Images/Integration1B.png" width="450" height="233">
+<img src="../Support/Images/Integration1C.png" width="450" height="233">
+<img src="../Support/Images/Integration1D.png" width="450" height="233">
 
 Example application to demonstrate the integration of DevExtreme controls into Wisej and how to use them in server side code.
 Shows controls dxPivotGrid, dxCircularGauge, dxBarGauge, dxGallery
