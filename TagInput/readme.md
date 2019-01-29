@@ -1,7 +1,7 @@
 Tag Input
 ====
 
-<img src="../Support/Images/RuntimeLocalization.png" width="350" height="233">
+<img src="../Support/Images/TagInput.png" width="350" height="233">
 
 Example application that shows the usage of the TagInput control in Wisej.
 
