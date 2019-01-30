@@ -1,9 +1,9 @@
 Integration3 (Telerik Kendo UI)
 ====
 
-<img src="../Support/Images/Integration3A.png" width="450" height="233">
-<img src="../Support/Images/Integration3B.png" width="450" height="233">
-<img src="../Support/Images/Integration3C.png" width="450" height="233">
+<img src="../Support/Images/Integration3A.png" width="350" height="233">
+<img src="../Support/Images/Integration3B.png" width="350" height="233">
+<img src="../Support/Images/Integration3C.png" width="350" height="233">
 
 Example application to demonstrate the integration of Telerik Kendo UI controls into Wisej and how to use them in server side code.
 Shows controls 
