@@ -1,17 +1,19 @@
-Integration2 (SyncFusion)
+Integration1 (DevExpress)
 ====
 
-<img src="../Support/Images/Integration2A.png" width="450" height="233">
-<img src="../Support/Images/Integration2B.png" width="450" height="233">
+<img src="../Support/Images/Integration1A.png" width="350" height="233">
+<img src="../Support/Images/Integration1B.png" width="350" height="233">
+<img src="../Support/Images/Integration1C.png" width="350" height="233">
+<img src="../Support/Images/Integration1D.png" width="350" height="233">
 
-Example application to demonstrate the integration of SyncFusion controls into Wisej and how to use them in server side code.
-Shows controls ejTagCloud, ejSlider, ejSignature
+Example application to demonstrate the integration of DevExtreme controls into Wisej and how to use them in server side code.
+Shows controls dxPivotGrid, dxCircularGauge, dxBarGauge, dxGallery
 
-Find a blog with detailed explanation of the code here: https://wisej.com/blog/integration2/
+Find a blog with detailed explanation of the code here: https://wisej.com/blog/integration1/
 
-Learn more about SyncFusion http://www.syncfusion.com/
+Learn more about DevExtreme by DevExpress: https://js.devexpress.com/
 
-Run it online: http://demo.wisej.com/Integration2
+Run it online: http://demo.wisej.com/Integration1
 
 License
 -------
