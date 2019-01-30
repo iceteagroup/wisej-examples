@@ -1,7 +1,7 @@
 Integration of an OrgChart control
 ====
 
-<img src="../Support/Images/OrgChart.png" width="350" height="233">
+<img src="../Support/Images/OrgChart.png" width="250" height="233">
 
 Example application to demonstrate the integration of an OrgChart control into Wisej and how to use them in server side code.
 
