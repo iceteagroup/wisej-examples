@@ -32,6 +32,7 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 | Project | Change&nbsp;Date | Description |
 | :--- | :---: | :--- |
+| various | 29 Jan 2019 | Added readmes. |
 | MDIExample | 06 Nov 2018 | Add modeless Form example. |
 | DataBinding | 25 Oct 2018 | Add ComboBox data binding to Wisej project. |
 | SmoothieChartSample | 30 Aug 2018 | Example of FontSize property use. |
@@ -47,6 +48,12 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 
 | Project | Project&nbsp;Date | Description |
 | :--- | :---: | :--- |
+| OrgChart | 30 Jan 2019 | Integration of an OrgChart control with Wisej. |
+| Integration1 | 29 Jan 2019 | Integration of DevExtreme controls with Wisej. |
+| Integration2 | 29 Jan 2019 | Integration of SyncSoft controls with Wisej. |
+| Integration3 | 29 Jan 2019 | Integration of Telerik Keno UI controls with Wisej. |
+| Integration4 | 29 Jan 2019 | Integration of jqWidgets controls with Wisej. |
+| LazyLoadingPanel | 29 Jan 2019 | LazyLoading of Panels with Wisej.
 | AspNetAuthentication | 28 Sep 2018 | How to integrate ASP.NET authentication with Wisej. |
 | ComponentMixin | 03 Aug 2018 | Use a mixin to give different appearances to an item component. |
 | DGVEmbeddedNavigator | 02 Aug 2018 | Embedding the navigator into a DataGridView (visual only sample). |
