@@ -81,21 +81,20 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Ext.MaterialDesign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+    <Reference Include="Wisej.Ext.ElegantIcons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\wisej\Extensions\2.0\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Ext.ElegantIcons.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
+    <Reference Include="Wisej.Framework">
+      <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.NavigationBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.NavigationBar.dll</HintPath>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.NavigationBar.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.SideButton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.SideButton.dll</HintPath>
+      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.SideButton.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
