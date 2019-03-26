@@ -1,7 +1,7 @@
 ﻿OfficeViewer
 ====
 
-<img src="../Support/Images/OfficeViewer.png" width="350" height="233">
+<img src="../Support/Images/OfficeViewer.png" width="450" height="233">
 
 Demonstrates the usage of the OfficeViewer to show Word, Excel and PowerPoint files.
 
