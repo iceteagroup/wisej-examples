@@ -20,11 +20,11 @@ The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categorie
 * How To - Less common uses of Wisej, like Deep Linking, Localization, Upload and Download, etc.
 
 ## Specialized README files
-[Startup files](https://github.com/iceteagroup/wisej-examples/blob/master/HtmlJsonAndMain/README.md) - All about Default.html, Default.json and Program.cs
+[Startup files](https://github.com/iceteagroup/wisej-examples/blob/2.0/HtmlJsonAndMain/README.md) - All about Default.html, Default.json and Program.cs
 
-[About mixins](https://github.com/iceteagroup/wisej-examples/blob/master/ReadOnlyMixin/README.md) - Important details you should know about mixins.
+[About mixins](https://github.com/iceteagroup/wisej-examples/blob/2.0/ReadOnlyMixin/README.md) - Important details you should know about mixins.
 
-[How to embed JavaScript files](https://github.com/iceteagroup/wisej-examples/blob/master/ComponentMixin/README.md#2-embedding-javascript-files) - Details about embedding __js__ files.
+[How to embed JavaScript files](https://github.com/iceteagroup/wisej-examples/blob/2.0/ComponentMixin/README.md#2-embedding-javascript-files) - Details about embedding __js__ files.
 
 ## News
 
