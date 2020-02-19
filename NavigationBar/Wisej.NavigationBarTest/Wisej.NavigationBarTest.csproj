@@ -78,30 +78,36 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Ext.ElegantIcons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Ext.ElegantIcons.dll</HintPath>
+    <Reference Include="Wisej.Ext.ElegantIcons">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Ext.ElegantIcons.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Ext.MaterialDesign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
+    <Reference Include="Wisej.Ext.MaterialDesign">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Framework">
       <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Framework.Design">
-      <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.Design.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.ChartJS">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.ChartJS.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web.Ext.NavigationBar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.NavigationBar.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.CoolClock">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.CoolClock.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web.Ext.SideButton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.SideButton.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.NavigationBar">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.NavigationBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.Odometer">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.Odometer.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.RibbonBar">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.RibbonBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web.Ext.SideButton">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.SideButton.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
