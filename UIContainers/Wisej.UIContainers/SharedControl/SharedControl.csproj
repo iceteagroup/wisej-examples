@@ -9,9 +9,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SharedControl</RootNamespace>
     <AssemblyName>SharedControl</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,8 +38,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Wisej.Framework">
-      <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
+    <Reference Include="Wisej.Core">
+      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Wisej.Web">
+      <HintPath>..\..\..\..\..\..\Projects\WISEJ\Development\1.4\Wisej\bin\Wisej.Web.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
