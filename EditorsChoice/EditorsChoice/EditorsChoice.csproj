@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EditorsChoice</RootNamespace>
     <AssemblyName>EditorsChoice</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -83,21 +83,19 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Wisej.Framework">
       <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web.Ext.CKEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.CKEditor.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.CKEditor">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.CKEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web.Ext.TinyEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.TinyEditor.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.TinyEditor">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.TinyEditor.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web.Ext.TinyMCE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.TinyMCE.dll</HintPath>
+    <Reference Include="Wisej.Web.Ext.TinyMCE">
+      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.TinyMCE.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
