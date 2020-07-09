@@ -44,21 +44,6 @@ namespace Wisej.NavigationBarTest
             this.animation2 = new Wisej.Web.Animation(this.components);
             this.button1 = new Wisej.Web.Ext.SideButton.SideButton();
             this.label1 = new Wisej.Web.Label();
-            this.ribbonBar1 = new Wisej.Web.Ext.RibbonBar.RibbonBar();
-            this.ribbonBarPage1 = new Wisej.Web.Ext.RibbonBar.RibbonBarPage();
-            this.ribbonBarGroup1 = new Wisej.Web.Ext.RibbonBar.RibbonBarGroup();
-            this.ribbonBarItemButton1 = new Wisej.Web.Ext.RibbonBar.RibbonBarItemButton();
-            this.ribbonBarItemButton2 = new Wisej.Web.Ext.RibbonBar.RibbonBarItemButton();
-            this.ribbonBarItemButton3 = new Wisej.Web.Ext.RibbonBar.RibbonBarItemButton();
-            this.ribbonBarItemButton4 = new Wisej.Web.Ext.RibbonBar.RibbonBarItemButton();
-            this.ribbonBarGroup2 = new Wisej.Web.Ext.RibbonBar.RibbonBarGroup();
-            this.ribbonBarGroup3 = new Wisej.Web.Ext.RibbonBar.RibbonBarGroup();
-            this.ribbonBarGroup4 = new Wisej.Web.Ext.RibbonBar.RibbonBarGroup();
-            this.ribbonBarPage2 = new Wisej.Web.Ext.RibbonBar.RibbonBarPage();
-            this.ribbonBarPage3 = new Wisej.Web.Ext.RibbonBar.RibbonBarPage();
-            this.odometer1 = new Wisej.Web.Ext.Odometer.Odometer();
-            this.coolClock1 = new Wisej.Web.Ext.CoolClock.CoolClock();
-            this.button2 = new Wisej.Web.Button();
             this.flexLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -83,6 +68,7 @@ namespace Wisej.NavigationBarTest
             // 
             // navigationBarItem1
             // 
+            this.navigationBarItem1.ForeColor = System.Drawing.Color.FromName("@navbar-text");
             this.navigationBarItem1.Icon = "resource.wx/Wisej.Ext.ElegantIcons/3x3-grid.svg?color=#3FBF77";
             this.navigationBarItem1.InfoText = "new";
             this.navigationBarItem1.InfoTextBackColor = System.Drawing.Color.Salmon;
@@ -92,7 +78,9 @@ namespace Wisej.NavigationBarTest
             // 
             // navigationBarItem2
             // 
+            this.navigationBarItem2.ForeColor = System.Drawing.Color.FromName("@navbar-text");
             this.navigationBarItem2.Icon = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-file.svg?color=#00CEFF";
+            this.navigationBarItem2.InfoTextForeColor = System.Drawing.Color.FromName("@navbar-text");
             this.navigationBarItem2.Items.AddRange(new Wisej.Web.Ext.NavigationBar.NavigationBarItem[] {
             this.navigationBarItem3,
             this.navigationBarItem4});
@@ -101,6 +89,7 @@ namespace Wisej.NavigationBarTest
             // 
             // navigationBarItem3
             // 
+            this.navigationBarItem3.ForeColor = System.Drawing.Color.FromName("@navbar-text");
             this.navigationBarItem3.Icon = "resource.wx/Wisej.Ext.MaterialDesign/high-signal-indicator.svg?color=#FF002F";
             this.navigationBarItem3.InfoText = "3";
             this.navigationBarItem3.InfoTextBackColor = System.Drawing.Color.SpringGreen;
@@ -110,6 +99,7 @@ namespace Wisej.NavigationBarTest
             // 
             // navigationBarItem4
             // 
+            this.navigationBarItem4.ForeColor = System.Drawing.Color.FromName("@navbar-text");
             this.navigationBarItem4.Icon = "resource.wx/Wisej.Ext.MaterialDesign/exit-to-app-button.svg?color=#DFFF00";
             this.navigationBarItem4.InfoTextForeColor = System.Drawing.Color.White;
             this.navigationBarItem4.Name = "navigationBarItem4";
@@ -117,7 +107,9 @@ namespace Wisej.NavigationBarTest
             // 
             // navigationBarItem5
             // 
+            this.navigationBarItem5.ForeColor = System.Drawing.Color.FromName("@navbar-text");
             this.navigationBarItem5.Icon = "resource.wx/Wisej.Ext.MaterialDesign/user-shape.svg?color=#00CEFF";
+            this.navigationBarItem5.InfoTextForeColor = System.Drawing.Color.FromName("@navbar-text");
             this.navigationBarItem5.Name = "navigationBarItem5";
             this.navigationBarItem5.Text = "Users";
             // 
@@ -132,7 +124,7 @@ namespace Wisej.NavigationBarTest
             this.flexLayoutPanel1.Controls.Add(this.pictureBox2);
             this.flexLayoutPanel1.Dock = Wisej.Web.DockStyle.Right;
             this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
-            this.flexLayoutPanel1.Location = new System.Drawing.Point(735, 0);
+            this.flexLayoutPanel1.Location = new System.Drawing.Point(1021, 0);
             this.flexLayoutPanel1.Name = "flexLayoutPanel1";
             this.flexLayoutPanel1.Padding = new Wisej.Web.Padding(5, 40, 5, 0);
             this.flexLayoutPanel1.Size = new System.Drawing.Size(42, 781);
@@ -162,9 +154,9 @@ namespace Wisej.NavigationBarTest
             this.button1.Collapsed = true;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.ImageSource = "icon-left";
-            this.button1.Location = new System.Drawing.Point(735, 740);
+            this.button1.Location = new System.Drawing.Point(1021, 740);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 40);
+            this.button1.Size = new System.Drawing.Size(42, 0);
             this.button1.TabIndex = 5;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -178,112 +170,16 @@ namespace Wisej.NavigationBarTest
             this.label1.TabIndex = 7;
             this.label1.Text = "Home";
             // 
-            // ribbonBar1
-            // 
-            this.ribbonBar1.Location = new System.Drawing.Point(201, 0);
-            this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Pages.Add(this.ribbonBarPage1);
-            this.ribbonBar1.Pages.Add(this.ribbonBarPage2);
-            this.ribbonBar1.Pages.Add(this.ribbonBarPage3);
-            this.ribbonBar1.Size = new System.Drawing.Size(534, 129);
-            // 
-            // ribbonBarPage1
-            // 
-            this.ribbonBarPage1.Groups.Add(this.ribbonBarGroup1);
-            this.ribbonBarPage1.Groups.Add(this.ribbonBarGroup2);
-            this.ribbonBarPage1.Groups.Add(this.ribbonBarGroup3);
-            this.ribbonBarPage1.Groups.Add(this.ribbonBarGroup4);
-            this.ribbonBarPage1.Text = "ribbonBarPage1";
-            // 
-            // ribbonBarGroup1
-            // 
-            this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton1);
-            this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton2);
-            this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton3);
-            this.ribbonBarGroup1.Items.Add(this.ribbonBarItemButton4);
-            this.ribbonBarGroup1.Text = "ribbonBarGroup1";
-            // 
-            // ribbonBarItemButton1
-            // 
-            this.ribbonBarItemButton1.Name = "ribbonBarItemButton1";
-            this.ribbonBarItemButton1.Text = "ribbonBarItemButton1";
-            // 
-            // ribbonBarItemButton2
-            // 
-            this.ribbonBarItemButton2.Name = "ribbonBarItemButton2";
-            this.ribbonBarItemButton2.Text = "ribbonBarItemButton2";
-            // 
-            // ribbonBarItemButton3
-            // 
-            this.ribbonBarItemButton3.Name = "ribbonBarItemButton3";
-            this.ribbonBarItemButton3.Text = "ribbonBarItemButton3";
-            // 
-            // ribbonBarItemButton4
-            // 
-            this.ribbonBarItemButton4.Name = "ribbonBarItemButton4";
-            this.ribbonBarItemButton4.Text = "ribbonBarItemButton4";
-            // 
-            // ribbonBarGroup2
-            // 
-            this.ribbonBarGroup2.Text = "ribbonBarGroup2";
-            // 
-            // ribbonBarGroup3
-            // 
-            this.ribbonBarGroup3.Text = "ribbonBarGroup3";
-            // 
-            // ribbonBarGroup4
-            // 
-            this.ribbonBarGroup4.Text = "ribbonBarGroup4";
-            // 
-            // ribbonBarPage2
-            // 
-            this.ribbonBarPage2.Text = "ribbonBarPage2";
-            // 
-            // ribbonBarPage3
-            // 
-            this.ribbonBarPage3.Text = "ribbonBarPage3";
-            // 
-            // odometer1
-            // 
-            this.odometer1.FontSize = 25;
-            this.odometer1.Location = new System.Drawing.Point(303, 192);
-            this.odometer1.Name = "odometer1";
-            this.odometer1.Size = new System.Drawing.Size(188, 61);
-            this.odometer1.Skin = Wisej.Web.Ext.Odometer.OdometerSkin.SlotMachine;
-            this.odometer1.TabIndex = 1;
-            this.odometer1.Value = 1212;
-            // 
-            // coolClock1
-            // 
-            this.coolClock1.Location = new System.Drawing.Point(343, 410);
-            this.coolClock1.Name = "coolClock1";
-            this.coolClock1.Size = new System.Drawing.Size(92, 95);
-            this.coolClock1.Skin = Wisej.Web.Ext.CoolClock.CoolClockSkin.Securephp;
-            this.coolClock1.Text = "coolClock1";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(269, 292);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 52);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "button2";
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // Page1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.coolClock1);
-            this.Controls.Add(this.odometer1);
-            this.Controls.Add(this.ribbonBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flexLayoutPanel1);
             this.Name = "Page1";
-            this.Size = new System.Drawing.Size(777, 781);
+            this.Size = new System.Drawing.Size(1063, 781);
             this.Text = "Page1";
             this.Load += new System.EventHandler(this.Page1_Load);
             this.flexLayoutPanel1.ResumeLayout(false);
@@ -309,21 +205,6 @@ namespace Wisej.NavigationBarTest
 		private Web.Ext.NavigationBar.NavigationBarItem navigationBarItem3;
 		private Web.Ext.NavigationBar.NavigationBarItem navigationBarItem4;
 		private Web.Ext.NavigationBar.NavigationBarItem navigationBarItem5;
-        private Web.Ext.RibbonBar.RibbonBar ribbonBar1;
-        private Web.Ext.RibbonBar.RibbonBarPage ribbonBarPage1;
-        private Web.Ext.RibbonBar.RibbonBarPage ribbonBarPage2;
-        private Web.Ext.RibbonBar.RibbonBarPage ribbonBarPage3;
-        private Web.Ext.RibbonBar.RibbonBarGroup ribbonBarGroup1;
-        private Web.Ext.RibbonBar.RibbonBarItemButton ribbonBarItemButton1;
-        private Web.Ext.RibbonBar.RibbonBarItemButton ribbonBarItemButton2;
-        private Web.Ext.RibbonBar.RibbonBarItemButton ribbonBarItemButton3;
-        private Web.Ext.RibbonBar.RibbonBarItemButton ribbonBarItemButton4;
-        private Web.Ext.RibbonBar.RibbonBarGroup ribbonBarGroup2;
-        private Web.Ext.RibbonBar.RibbonBarGroup ribbonBarGroup3;
-        private Web.Ext.RibbonBar.RibbonBarGroup ribbonBarGroup4;
-        private Web.Ext.Odometer.Odometer odometer1;
-        private Web.Ext.CoolClock.CoolClock coolClock1;
-        private Button button2;
     }
 }
 

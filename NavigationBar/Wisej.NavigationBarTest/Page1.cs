@@ -39,10 +39,5 @@ namespace Wisej.NavigationBarTest
 		{
 			this.panel1.CompactView = !this.panel1.CompactView;
 		}
-
-		private void button2_Click(object sender, EventArgs e)
-		{
-			this.odometer1.Value = 10000;
-		}
 	}
 }
