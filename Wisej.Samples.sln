@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundTasks", "BackgroundTasks\BackgroundTasks\BackgroundTasks.csproj", "{DB9C1348-8737-4AF2-AD5E-9C7BFBA5B067}"
 EndProject
@@ -96,6 +96,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentMixin", "ComponentMixin\ComponentMixin\ComponentMixin.csproj", "{42848D1E-A85E-4457-A35B-3879B292731F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetAuthentication", "AspNetAuthentication\AspNetAuthentication\AspNetAuthentication.csproj", "{BC6BB478-F457-48E4-8B8D-12BA5ABC0E28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.CustomCellRenderer", "Wisej.CustomCellRenderer\Wisej.CustomCellRenderer\Wisej.CustomCellRenderer.csproj", "{09C876DF-314D-4CF4-BD13-CB10A4F92078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DataRepeaterDragDrop", "Wisej.DataRepeaterDragDrop\Wisej.DataRepeaterDragDrop\Wisej.DataRepeaterDragDrop.csproj", "{19224B51-B7DD-441C-A6F0-CC6456BFA21B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -267,6 +271,14 @@ Global
 		{BC6BB478-F457-48E4-8B8D-12BA5ABC0E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC6BB478-F457-48E4-8B8D-12BA5ABC0E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC6BB478-F457-48E4-8B8D-12BA5ABC0E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C876DF-314D-4CF4-BD13-CB10A4F92078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C876DF-314D-4CF4-BD13-CB10A4F92078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C876DF-314D-4CF4-BD13-CB10A4F92078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C876DF-314D-4CF4-BD13-CB10A4F92078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19224B51-B7DD-441C-A6F0-CC6456BFA21B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19224B51-B7DD-441C-A6F0-CC6456BFA21B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19224B51-B7DD-441C-A6F0-CC6456BFA21B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19224B51-B7DD-441C-A6F0-CC6456BFA21B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -315,5 +327,10 @@ Global
 		{3605B2AA-D230-4E34-A725-3C4F8660DF25} = {76363DE0-8076-4107-B00B-8740A839809B}
 		{42848D1E-A85E-4457-A35B-3879B292731F} = {9B500B11-C16E-4212-8F17-C06DCD65215B}
 		{BC6BB478-F457-48E4-8B8D-12BA5ABC0E28} = {4ACC66BC-2C89-4BD2-9931-DEAD4F3FC683}
+		{09C876DF-314D-4CF4-BD13-CB10A4F92078} = {9B500B11-C16E-4212-8F17-C06DCD65215B}
+		{19224B51-B7DD-441C-A6F0-CC6456BFA21B} = {9B500B11-C16E-4212-8F17-C06DCD65215B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FF6E2EE-0480-4C05-86DA-F6B4F4890FC4}
 	EndGlobalSection
 EndGlobal
