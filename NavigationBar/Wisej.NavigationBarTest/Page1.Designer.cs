@@ -44,6 +44,7 @@ namespace Wisej.NavigationBarTest
 			this.navigationBarItem4 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
 			this.navigationBarItem1 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
 			this.panel1 = new Wisej.Web.Ext.NavigationBar.NavigationBar();
+			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.flexLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -163,10 +164,19 @@ namespace Wisej.NavigationBarTest
 			this.panel1.TitleClick += new System.EventHandler(this.panel1_TitleClick);
 			this.panel1.ItemClick += new Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventHandler(this.panel1_ItemClick);
 			// 
+			// comboBox1
+			// 
+			this.comboBox1.LabelText = "";
+			this.comboBox1.Location = new System.Drawing.Point(319, 190);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(120, 22);
+			this.comboBox1.TabIndex = 9;
+			// 
 			// Page1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
+			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panel1);
@@ -197,6 +207,7 @@ namespace Wisej.NavigationBarTest
 		private Web.Ext.NavigationBar.NavigationBarItem navigationBarItem4;
 		private Web.Ext.NavigationBar.NavigationBarItem navigationBarItem1;
 		private Web.Ext.NavigationBar.NavigationBar panel1;
+		private ComboBox comboBox1;
 	}
 }
 
