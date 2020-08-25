@@ -56,12 +56,11 @@ namespace Wisej.NavigationBarTest
 			this.animation1.GetAnimation(this.flexLayoutPanel1).Name = "slideRightIn";
 			this.animation2.GetAnimation(this.flexLayoutPanel1).Event = "disappear";
 			this.animation2.GetAnimation(this.flexLayoutPanel1).Name = "slideRightOut";
-			this.flexLayoutPanel1.BackColor = System.Drawing.Color.Gainsboro;
 			this.flexLayoutPanel1.Controls.Add(this.pictureBox1);
 			this.flexLayoutPanel1.Controls.Add(this.pictureBox2);
 			this.flexLayoutPanel1.Dock = Wisej.Web.DockStyle.Right;
 			this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
-			this.flexLayoutPanel1.Location = new System.Drawing.Point(1406, 0);
+			this.flexLayoutPanel1.Location = new System.Drawing.Point(1422, 0);
 			this.flexLayoutPanel1.Name = "flexLayoutPanel1";
 			this.flexLayoutPanel1.Padding = new Wisej.Web.Padding(5, 40, 5, 0);
 			this.flexLayoutPanel1.Size = new System.Drawing.Size(42, 781);
@@ -87,11 +86,10 @@ namespace Wisej.NavigationBarTest
 			// 
 			this.button1.Alignment = Wisej.Web.LeftRightAlignment.Right;
 			this.button1.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
-			this.button1.BackColor = System.Drawing.Color.Gainsboro;
 			this.button1.Collapsed = true;
 			this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button1.ImageSource = "icon-left";
-			this.button1.Location = new System.Drawing.Point(1406, 740);
+			this.button1.Location = new System.Drawing.Point(1422, 740);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(42, 40);
 			this.button1.TabIndex = 5;
@@ -115,7 +113,9 @@ namespace Wisej.NavigationBarTest
 			// 
 			// navigationBarItem2
 			// 
-			this.navigationBarItem2.Icon = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-file.svg?color=#00CEFF";
+			this.navigationBarItem2.BackColor = System.Drawing.Color.Yellow;
+			this.navigationBarItem2.Expanded = true;
+			this.navigationBarItem2.Icon = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-file.svg?color=#4E3FBF";
 			this.navigationBarItem2.Items.AddRange(new Wisej.Web.Ext.NavigationBar.NavigationBarItem[] {
             this.navigationBarItem3,
             this.navigationBarItem4});
@@ -124,39 +124,38 @@ namespace Wisej.NavigationBarTest
 			// 
 			// navigationBarItem3
 			// 
-			this.navigationBarItem3.Icon = "resource.wx/Wisej.Ext.MaterialDesign/high-signal-indicator.svg?color=#FF002F";
+			this.navigationBarItem3.Icon = "resource.wx/Wisej.Ext.MaterialDesign/high-signal-indicator.svg?color=#00FF3E";
 			this.navigationBarItem3.InfoText = "3";
-			this.navigationBarItem3.InfoTextBackColor = System.Drawing.Color.SpringGreen;
-			this.navigationBarItem3.InfoTextForeColor = System.Drawing.Color.White;
 			this.navigationBarItem3.Name = "navigationBarItem3";
 			this.navigationBarItem3.Text = "Priority";
 			// 
 			// navigationBarItem4
 			// 
 			this.navigationBarItem4.Icon = "resource.wx/Wisej.Ext.MaterialDesign/exit-to-app-button.svg?color=#DFFF00";
-			this.navigationBarItem4.InfoTextForeColor = System.Drawing.Color.White;
 			this.navigationBarItem4.Name = "navigationBarItem4";
 			this.navigationBarItem4.Text = "External";
 			// 
 			// navigationBarItem1
 			// 
+			this.navigationBarItem1.ForeColor = System.Drawing.Color.AliceBlue;
 			this.navigationBarItem1.Icon = "resource.wx/Wisej.Ext.ElegantIcons/3x3-grid.svg?color=#3FBF77";
 			this.navigationBarItem1.InfoText = "new";
-			this.navigationBarItem1.InfoTextBackColor = System.Drawing.Color.Salmon;
-			this.navigationBarItem1.InfoTextForeColor = System.Drawing.Color.White;
 			this.navigationBarItem1.Name = "navigationBarItem1";
 			this.navigationBarItem1.Text = "Dashboard";
 			// 
 			// panel1
 			// 
+			this.panel1.BackColor = System.Drawing.Color.Red;
 			this.panel1.Dock = Wisej.Web.DockStyle.Left;
+			this.panel1.ForeColor = System.Drawing.Color.Black;
+			this.panel1.Indentation = 20;
 			this.panel1.Items.AddRange(new Wisej.Web.Ext.NavigationBar.NavigationBarItem[] {
             this.navigationBarItem1,
             this.navigationBarItem2,
             this.navigationBarItem5});
 			this.panel1.Logo = "Images\\itg-128x128.png";
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(222, 781);
+			this.panel1.Size = new System.Drawing.Size(203, 781);
 			this.panel1.Text = "Nav App";
 			this.panel1.UserAvatar = "https://www.gravatar.com/avatar/00000000000000000000000000000000";
 			this.panel1.UserName = "Some User";
@@ -181,7 +180,7 @@ namespace Wisej.NavigationBarTest
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.flexLayoutPanel1);
 			this.Name = "Page1";
-			this.Size = new System.Drawing.Size(1448, 781);
+			this.Size = new System.Drawing.Size(1464, 781);
 			this.Text = "Page1";
 			this.Load += new System.EventHandler(this.Page1_Load);
 			this.flexLayoutPanel1.ResumeLayout(false);
