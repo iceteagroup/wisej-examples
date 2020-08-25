@@ -61,7 +61,7 @@ namespace Wisej.NavigationBarTest
 			this.flexLayoutPanel1.Controls.Add(this.pictureBox2);
 			this.flexLayoutPanel1.Dock = Wisej.Web.DockStyle.Right;
 			this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
-			this.flexLayoutPanel1.Location = new System.Drawing.Point(1091, 0);
+			this.flexLayoutPanel1.Location = new System.Drawing.Point(1406, 0);
 			this.flexLayoutPanel1.Name = "flexLayoutPanel1";
 			this.flexLayoutPanel1.Padding = new Wisej.Web.Padding(5, 40, 5, 0);
 			this.flexLayoutPanel1.Size = new System.Drawing.Size(42, 781);
@@ -91,7 +91,7 @@ namespace Wisej.NavigationBarTest
 			this.button1.Collapsed = true;
 			this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button1.ImageSource = "icon-left";
-			this.button1.Location = new System.Drawing.Point(1091, 740);
+			this.button1.Location = new System.Drawing.Point(1406, 740);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(42, 40);
 			this.button1.TabIndex = 5;
@@ -166,10 +166,9 @@ namespace Wisej.NavigationBarTest
 			// 
 			// comboBox1
 			// 
-			this.comboBox1.LabelText = "";
 			this.comboBox1.Location = new System.Drawing.Point(319, 190);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(120, 22);
+			this.comboBox1.Size = new System.Drawing.Size(151, 22);
 			this.comboBox1.TabIndex = 9;
 			// 
 			// Page1
@@ -182,7 +181,7 @@ namespace Wisej.NavigationBarTest
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.flexLayoutPanel1);
 			this.Name = "Page1";
-			this.Size = new System.Drawing.Size(1133, 781);
+			this.Size = new System.Drawing.Size(1448, 781);
 			this.Text = "Page1";
 			this.Load += new System.EventHandler(this.Page1_Load);
 			this.flexLayoutPanel1.ResumeLayout(false);
