@@ -44,7 +44,6 @@ namespace Wisej.NavigationBarTest
 			this.navigationBarItem4 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
 			this.navigationBarItem1 = new Wisej.Web.Ext.NavigationBar.NavigationBarItem();
 			this.panel1 = new Wisej.Web.Ext.NavigationBar.NavigationBar();
-			this.comboBox1 = new Wisej.Web.ComboBox();
 			this.flexLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,7 +59,7 @@ namespace Wisej.NavigationBarTest
 			this.flexLayoutPanel1.Controls.Add(this.pictureBox2);
 			this.flexLayoutPanel1.Dock = Wisej.Web.DockStyle.Right;
 			this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
-			this.flexLayoutPanel1.Location = new System.Drawing.Point(1422, 0);
+			this.flexLayoutPanel1.Location = new System.Drawing.Point(1383, 0);
 			this.flexLayoutPanel1.Name = "flexLayoutPanel1";
 			this.flexLayoutPanel1.Padding = new Wisej.Web.Padding(5, 40, 5, 0);
 			this.flexLayoutPanel1.Size = new System.Drawing.Size(42, 781);
@@ -89,7 +88,7 @@ namespace Wisej.NavigationBarTest
 			this.button1.Collapsed = true;
 			this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button1.ImageSource = "icon-left";
-			this.button1.Location = new System.Drawing.Point(1422, 740);
+			this.button1.Location = new System.Drawing.Point(1383, 740);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(42, 40);
 			this.button1.TabIndex = 5;
@@ -113,7 +112,6 @@ namespace Wisej.NavigationBarTest
 			// 
 			// navigationBarItem2
 			// 
-			this.navigationBarItem2.BackColor = System.Drawing.Color.Yellow;
 			this.navigationBarItem2.Expanded = true;
 			this.navigationBarItem2.Icon = "resource.wx/Wisej.Ext.MaterialDesign/google-drive-file.svg?color=#4E3FBF";
 			this.navigationBarItem2.Items.AddRange(new Wisej.Web.Ext.NavigationBar.NavigationBarItem[] {
@@ -145,9 +143,7 @@ namespace Wisej.NavigationBarTest
 			// 
 			// panel1
 			// 
-			this.panel1.BackColor = System.Drawing.Color.Red;
 			this.panel1.Dock = Wisej.Web.DockStyle.Left;
-			this.panel1.ForeColor = System.Drawing.Color.Black;
 			this.panel1.Indentation = 20;
 			this.panel1.Items.AddRange(new Wisej.Web.Ext.NavigationBar.NavigationBarItem[] {
             this.navigationBarItem1,
@@ -163,24 +159,16 @@ namespace Wisej.NavigationBarTest
 			this.panel1.TitleClick += new System.EventHandler(this.panel1_TitleClick);
 			this.panel1.ItemClick += new Wisej.Web.Ext.NavigationBar.NavigationBarItemClickEventHandler(this.panel1_ItemClick);
 			// 
-			// comboBox1
-			// 
-			this.comboBox1.Location = new System.Drawing.Point(319, 190);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(151, 22);
-			this.comboBox1.TabIndex = 9;
-			// 
 			// Page1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.flexLayoutPanel1);
 			this.Name = "Page1";
-			this.Size = new System.Drawing.Size(1464, 781);
+			this.Size = new System.Drawing.Size(1425, 781);
 			this.Text = "Page1";
 			this.Load += new System.EventHandler(this.Page1_Load);
 			this.flexLayoutPanel1.ResumeLayout(false);
@@ -205,7 +193,6 @@ namespace Wisej.NavigationBarTest
 		private Web.Ext.NavigationBar.NavigationBarItem navigationBarItem4;
 		private Web.Ext.NavigationBar.NavigationBarItem navigationBarItem1;
 		private Web.Ext.NavigationBar.NavigationBar panel1;
-		private ComboBox comboBox1;
 	}
 }
 
