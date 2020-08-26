@@ -91,20 +91,8 @@
     <Reference Include="Wisej.Framework">
       <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Web.Ext.ChartJS">
-      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.ChartJS.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.CoolClock">
-      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.CoolClock.dll</HintPath>
-    </Reference>
     <Reference Include="Wisej.Web.Ext.NavigationBar">
       <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.NavigationBar.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.Odometer">
-      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.Odometer.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.RibbonBar">
-      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.RibbonBar.dll</HintPath>
     </Reference>
     <Reference Include="Wisej.Web.Ext.SideButton">
       <HintPath>..\..\..\..\IceTeaGroup\Wisej\Extensions\2.1\bin\Wisej.Web.Ext.SideButton.dll</HintPath>

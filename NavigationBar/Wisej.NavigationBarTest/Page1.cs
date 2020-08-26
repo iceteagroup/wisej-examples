@@ -1,6 +1,7 @@
 ﻿
 using System;
 using Wisej.Web;
+using Wisej.Web.Ext.Html2Canvas;
 
 namespace Wisej.NavigationBarTest
 {
