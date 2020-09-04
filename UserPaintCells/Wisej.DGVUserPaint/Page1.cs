@@ -64,10 +64,8 @@ namespace Wisej.DGVUserPaint
 
 		private void dataGridView1_CellPaint(object sender, DataGridViewCellPaintEventArgs e)
 		{
-			if (e.ColumnIndex == 2)
+			if (e.ColumnIndex == 2 && e.RowIndex > -1)
 			{
-				// e.Graphics.FillRectangle(Brushes.White, e.ClipRectangle);
-
 				var text = this.dataGridView1[0, e.RowIndex].Value as string;
 				if (text != null)
 				{
