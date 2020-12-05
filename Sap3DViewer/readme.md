@@ -4,6 +4,7 @@ SAP 3D Viewer
 <img src="../Support/Images/3DSAPViewer.png" width="350" height="233">
 
 Example application to demonstrate some of the features available to the [SAP 3D Visual Enterprise Viewer](https://wiki.scn.sap.com/wiki/display/SVE/SAP+3D+Visual+Enterprise+Viewer) Wisej extension.
+To use it unpack Samples/combined02.zip 
 
 License
 -------
