@@ -7,6 +7,10 @@ Shows how to use the [ChartJs](https://github.com/iceteagroup/wisej-extensions/t
 
 Uses 3rd party JavaScript library [ChartJS](http://www.chartjs.org/)
 
+VB.NET
+------
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/ChartJS)
+
 ## [Try it on Online](http://demo.wisej.com/ChartJS)
 
 License
