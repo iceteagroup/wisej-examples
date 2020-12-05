@@ -5,6 +5,10 @@ Upload Files
 
 This example shows how easy it is with Wisej to upload a single or multiple files to the server. You can use a fully themeable upload widget or drag and drop the files from the desktop to any Wisej control. Wisej can also receive pre notifications from the client and inspect the names of the files being dropped.
 
+VB.NET
+------
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/UploadFiles)
+
 ## [Try it on Online](http://demo.wisej.com/UploadFiles)
 
 License
