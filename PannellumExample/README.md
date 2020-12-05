@@ -7,6 +7,10 @@ Shows how to use the [Pannellum](https://github.com/iceteagroup/wisej-extensions
 
 Uses 3rd party JavaScript library [Pannellum](https://pannellum.org/)
 
+VB.NET
+------
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/Pannellum)
+
 ## [Try it on Online](http://demo.wisej.com/Pannellum)
 
 License
