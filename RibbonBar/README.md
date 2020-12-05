@@ -1,4 +1,4 @@
-RibbonBar
+SAP 3D Viewer
 ====
 
 <img src="../Support/Images/3DSAPViewer.png" width="350" height="233">
