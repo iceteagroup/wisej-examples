@@ -7,6 +7,10 @@ This example shows how to use the [FullCalendar](https://github.com/iceteagroup/
 
 Uses 3rd party JavaScript library [FullCalendar](https://fullcalendar.io/)
 
+VB.NET
+------
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/FullCalendar)
+
 ## [Try it on Online](http://demo.wisej.com/FullCalendar)
 
 License
