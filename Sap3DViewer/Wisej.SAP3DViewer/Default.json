@@ -1,0 +1,38 @@
+﻿//
+// Application Configuration:
+//
+// All settings are optional.
+//
+// startup:                    Full name of the startup method. i.e. "MyApp.Program.Main, MyApp".
+// mainWindow:                 Full name of a view (Page or Form) created automatically at startup. i.e. "MyApp.MainView, MyApp".
+// theme:                      Name of the theme, without the extension, to load at startup.
+// url:                        Destination URL. If null, the request must match a web page.
+// allowedRoutes:              Allows the application to handle different Url routes, separated by a semicolon. i.e. "api;admin;query/users".
+// culture:                    The default culture of the application. Default: "auto" (detects the culture from the browser.)
+// rightToLeft:                Enables or disables Right to Left mode: true, false or auto. Default: "auto".
+// sessionTimeout:             Timeout of the session in seconds. Default: 120. Minimum: 60. Disable: 0.
+// responseTimeout:            Timeout of the Wisej requests in seconds. Default: 300. Minimum: 300.
+//                             Increase this value if you expect your application to process long running requests.
+// pollingInterval:            Interval for the automatic polling of the server in milliseconds. Default: 0 (disabled). Minimum: 1000.
+//                             This option is ignored for WebSocket connections.
+// autoReload:                 When true, the application is automatically reloaded when the session expires or Application.Exit() is called. Default: false.
+// secure:                     Forces the client to use SSL. Default: false.
+// showLoader:                 Loads the wisej ajax loader. Default: true.
+// loaderTimeout:              Timeout before the appearance of the Ajax loader in milliseconds. Default: 5000. Minimum: 1000. Disable: 0.
+// browserCheck:               Custom expression to validate the browser, i.e. "navigator.platform == 'Win32'".
+// notSupportedUrl:            URL of the not-supported page. Wisej will redirect here when the browser is not supported. Default: 'resource.wx/Wisej.Framework/NotSupported.html'
+// notAvailableUrl:            URL of the not-available page. Wisej will redirect here when the server cannot accept any more sessions. Default: 'resource.wx/Wisej.Framework/NotAvailable.html'
+// debug:                      Enables logging on the client browser console. Default: false.
+// enableWebSocket:            Enables the user of WebSocket if available. Default: true.
+// enableWebSocketCompression: Enables compression of incoming WebSocket data. Default: true.
+// maxSessions:                Maximum number of active sessions (users) before redirecting to notAvailableUrl. Default: -1 (unlimited).
+// maxModalStack:              Maximum number of nested modal dialogs. Default: 10.
+// dropDuplicateClicks:        Drops all "execute" (clicks) events while there is a pending request. Touch and mouse clicks are still queued and will be executed. Default: false.
+// disableClientObjectModel:   Disables the creation of the JavaScript object model on the client.
+// options:                    Map of platform options. i.e. {"automation.mode": true, "mobile.mode": true, ...}.
+// settings:                   Map of custom application settings. i.e. {jquery: "http://cdn...", rootPath: "c:\\users\\...", ...}.
+//                             Custom settings are available using Application.Configuration.Settings.
+{
+	"url": "Default.html",
+	"startup": "Wisej.SAP3DViewer.Program.Main, Wisej.SAP3DViewer"
+}
