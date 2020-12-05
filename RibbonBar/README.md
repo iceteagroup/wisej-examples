@@ -1,9 +1,9 @@
-SAP 3D Viewer
+RibbonBar
 ====
 
-<img src="../Support/Images/3DSAPViewer.png" width="350" height="233">
+<img src="../Support/Images/RibbonBarExample.png" width="350" height="233">
 
-Example application to demonstrate some of the features available to the [SAP 3D Visual Enterprise Viewer](https://wiki.scn.sap.com/wiki/display/SVE/SAP+3D+Visual+Enterprise+Viewer) Wisej extension.
+Example application to demonstrate some of the features available to the [RibbonBar](https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Web.Ext.RibbonBar) Wisej extension.
 
 License
 -------
