@@ -11,6 +11,8 @@ Developers new to Wisej should install [Wisej trial version](https://wisej.com/#
 
 Each example is self contained and includes all Wisej extensions needed to run out-of-the-box.
 
+All Examples here are written in C#. You can find a growing list of Wisej samples in VB.NET [here](https://github.com/iceteagroup/wisej-examples-vb).
+
 ## Example categories
 
 The __Wisej.Samples.sln__ file contains all Wisej projects, grouped by categories:
