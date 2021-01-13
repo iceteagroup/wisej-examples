@@ -5,6 +5,10 @@
 
 Shows different entry points in your application, using `.json` and `.html` files, as well as using `mainWindow` instead of `startup` in the json file.
 
+VB.NET
+------
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/HtmlJsonAndMain)
+
 ## 1. Context
 
 The most common Wisej applications (in the broad sense) have only a single application (in the strict sense). To keep things simple, we will use __sub-application__ to refer to an application __in the strict sense__.
