@@ -34,5 +34,5 @@
 //                             Custom settings are available using Application.Configuration.Settings.
 {
 	"url": "Default.html",
-	"startup": "Html2CanvasTest.Program.Main, Html2CanvasTest"
+	"startup": "Html2CanvasSample.Program.Main, Html2CanvasSample"
 }

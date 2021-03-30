@@ -25,5 +25,13 @@ namespace Html2CanvasSample
 			   this.pictureBox1.Image = Image;
 		   });
 		}
-	}
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+			Html2Canvas.Screenshot((Image) =>
+			{
+				this.pictureBox1.Image = Image;
+			});
+		}
+    }
 }

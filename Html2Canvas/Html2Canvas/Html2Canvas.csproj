@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Html2CanvasTest</RootNamespace>
-    <AssemblyName>Html2CanvasTest</AssemblyName>
+    <RootNamespace>Html2CanvasSample</RootNamespace>
+    <AssemblyName>Html2CanvasSample</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -76,10 +76,13 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Wisej.Framework" />
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Development\2.2\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="Wisej.Web.Ext.Html2Canvas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\wisej\Extensions\2.2\bin\Wisej.Web.Ext.Html2Canvas.dll</HintPath>
+      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Web.Ext.Html2Canvas.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
