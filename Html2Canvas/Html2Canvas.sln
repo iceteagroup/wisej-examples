@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1433
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html2CanvasTest", "Html2Canvas\Html2Canvas.csproj", "{BB30377F-8850-44B8-A44A-30ED054F019F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB30377F-8850-44B8-A44A-30ED054F019F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB30377F-8850-44B8-A44A-30ED054F019F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB30377F-8850-44B8-A44A-30ED054F019F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB30377F-8850-44B8-A44A-30ED054F019F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0870C1D0-546F-44AA-AB24-8841652684E9}
+	EndGlobalSection
+EndGlobal
