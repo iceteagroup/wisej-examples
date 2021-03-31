@@ -1,7 +1,7 @@
 HTML2Canvas
 ====
 
-The Html2Canvas extension component uses the [Html2Canvas library](https://html2canvas.hertzen.com/). This Wisej component that can take a screenshot of a specific control or the entire browser and send the image back to the server.
+The Html2Canvas extension component uses the [Html2Canvas library](https://html2canvas.hertzen.com/). This Wisej component can take a screenshot of a specific control or the entire browser and send the image back to the server.
 
 VB.NET
 ------
