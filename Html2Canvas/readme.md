@@ -5,7 +5,7 @@ The Html2Canvas extension component uses the [Html2Canvas library](https://html2
 
 VB.NET
 ------
-The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/HTML2Canvas)
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/Html2Canvas)
 
 License
 -------
