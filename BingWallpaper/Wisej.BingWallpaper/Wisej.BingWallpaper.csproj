@@ -84,7 +84,7 @@
     <Reference Include="Wisej.Framework" />
     <Reference Include="Wisej.Web.Ext.BingWallpaper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Web.Ext.BingWallpaper.dll</HintPath>
+      <HintPath>..\..\..\..\wisej\Extensions\2.2\bin\Wisej.Web.Ext.BingWallpaper.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
