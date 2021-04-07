@@ -1,7 +1,7 @@
 BingWallpaper
 ====
 
-<img src="../Support/Images/BingWallPaper.png" width="350" height="233">
+<img src="../Support/Images/BingWallpaper.png" width="350" height="233">
 
 This example shows how to use the [Wisej.Web.Ext.BingWallpaper extension](https://github.com/iceteagroup/wisej-extensions/tree/2.2/Wisej.Web.Ext.BingWallpaper).
 
