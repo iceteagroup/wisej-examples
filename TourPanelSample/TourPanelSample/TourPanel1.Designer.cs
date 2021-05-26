@@ -48,34 +48,15 @@
 			Wisej.Web.Ext.TourPanel.TourStep tourStep18 = new Wisej.Web.Ext.TourPanel.TourStep();
 			Wisej.Web.Ext.TourPanel.TourStep tourStep19 = new Wisej.Web.Ext.TourPanel.TourStep();
 			Wisej.Web.Ext.TourPanel.TourStep tourStep20 = new Wisej.Web.Ext.TourPanel.TourStep();
+			Wisej.Web.Ext.TourPanel.TourStep tourStep21 = new Wisej.Web.Ext.TourPanel.TourStep();
+			Wisej.Web.Ext.TourPanel.TourStep tourStep22 = new Wisej.Web.Ext.TourPanel.TourStep();
 			this.ButtonsPanel.SuspendLayout();
 			this.TitlePanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// HtmlText
-			// 
-			this.HtmlText.Location = new System.Drawing.Point(10, 64);
-			this.HtmlText.Margin = new Wisej.Web.Padding(3, 10, 3, 10);
-			// 
-			// TitleLabel
-			// 
-			this.TitleLabel.Dock = Wisej.Web.DockStyle.Fill;
-			this.TitleLabel.Location = new System.Drawing.Point(0, 0);
-			this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// CloseButton
-			// 
-			this.CloseButton.Display = Wisej.Web.Display.Icon;
-			this.CloseButton.Dock = Wisej.Web.DockStyle.Right;
-			this.CloseButton.Location = new System.Drawing.Point(646, 0);
-			// 
 			// PlayButton
 			// 
 			this.PlayButton.Location = new System.Drawing.Point(343, 3);
-			// 
-			// NextButton
-			// 
-			this.NextButton.Location = new System.Drawing.Point(587, 3);
 			// 
 			// BackButton
 			// 
@@ -88,7 +69,6 @@
 			// TourPanel1
 			// 
 			this.Name = "TourPanel1";
-			this.Padding = new Wisej.Web.Padding(10);
 			tourStep1.TargetName = "Desktop.toolbar1";
 			tourStep1.Text = "This is the desktop toolbar. Start your tour here<br/>\r\nYou can also start it wit" +
     "h AutoPlay on using the 2nd button.";
@@ -161,27 +141,35 @@
 			tourStep20.TargetName = "Window5.textBoxWatermark";
 			tourStep20.Text = "Show watermark on textBoxes";
 			tourStep20.Title = "Watermark";
+			tourStep21.TargetName = "Window6.ribbonBar.ribbonBarPage2";
+			tourStep21.Text = "Select RibbonBar page";
+			tourStep21.Title = "RibbonBar";
+			tourStep22.TargetName = "Window6.ribbonBar.ribbonBarPage2.ribbonBarGroup3.ribbonBarItemTextBox1";
+			tourStep22.Text = "Select RibbonBar item.";
+			tourStep22.Title = "RibbonBar Button";
 			this.Steps = new Wisej.Web.Ext.TourPanel.TourStep[] {
-        tourStep1,
-        tourStep2,
-        tourStep3,
-        tourStep4,
-        tourStep5,
-        tourStep6,
-        tourStep7,
-        tourStep8,
-        tourStep9,
-        tourStep10,
-        tourStep11,
-        tourStep12,
-        tourStep13,
-        tourStep14,
-        tourStep15,
-        tourStep16,
-        tourStep17,
-        tourStep18,
-        tourStep19,
-        tourStep20};
+		tourStep1,
+		tourStep2,
+		tourStep3,
+		tourStep4,
+		tourStep5,
+		tourStep6,
+		tourStep7,
+		tourStep8,
+		tourStep9,
+		tourStep10,
+		tourStep11,
+		tourStep12,
+		tourStep13,
+		tourStep14,
+		tourStep15,
+		tourStep16,
+		tourStep17,
+		tourStep18,
+		tourStep19,
+		tourStep20,
+		tourStep21,
+        tourStep22};
 			this.ButtonsPanel.ResumeLayout(false);
 			this.TitlePanel.ResumeLayout(false);
 			this.ResumeLayout(false);
