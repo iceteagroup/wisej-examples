@@ -1,4 +1,4 @@
-ClearSCript
+ClearScript
 ====
 
 <img src="../Support/Images/ClearScript.png" width="350" height="233">
