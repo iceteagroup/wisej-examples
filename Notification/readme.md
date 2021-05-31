@@ -6,6 +6,9 @@ Notification
 Shows how to use the [Notification](https://github.com/iceteagroup/wisej-extensions/tree/2.2/Wisej.Web.Ext.Notification) Wisej extension. 
 The Notification component adds [desktop notifications](https://developer.mozilla.org/en-US/docs/Web/API/notification) to Wisej applications. With this component your web apps can pop notifications on the user’s desktop even when the browser is minimized.
 
+VB.NET
+------
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/Notification)
 
 License
 -------
