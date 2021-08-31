@@ -13,7 +13,7 @@ CountUp [Extension](https://github.com/iceteagroup/wisej-extensions/tree/2.2/Wis
 
 VB.NET
 ------
-The VB.NET version is [here](TODO)
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/JSWidgets)
 
 License
 -------
