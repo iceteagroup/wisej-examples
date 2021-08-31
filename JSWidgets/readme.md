@@ -1,7 +1,7 @@
 JSWidgets
 ====
 
-<img src="../Support/Images/JSWidgets.png" width="350" height="233">
+<img src="../Support/Images/jswidgets.png" width="350" height="233">
 
 This sample covers the usage of several interesting JavaScript Widgets in Wisej:
 
