@@ -7,7 +7,7 @@ The CustomWallpaper extender component enhances the Desktop, the MainPage or any
 
 VB.NET
 ------
-The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples/tree/2.2/CustomWallpaper)
+The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/CustomWallpaper)
 
 License
 -------
