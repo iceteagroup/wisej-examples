@@ -1,7 +1,7 @@
 Custom Wallpaper
 ====
 
-<img src="../Support/Images/customwallpaper.png" width="350" height="233">
+<img src="../Support/Images/customwallpaper.png" width="450" height="200">
 
 The CustomWallpaper extender component enhances the Desktop, the MainPage or any Control control by rotating a list of custom images over the control’s background.
 
