@@ -1,0 +1,15 @@
+﻿{
+	"short_name": "PWA",
+	"name": "Wisej PWA",
+	"icons": [
+		{
+			"src": "Offline/icon.png",
+			"type": "image/png",
+			"sizes": "256x256"
+		}
+	],
+	"start_url": ".",
+	"display": "fullscreen",
+	"theme_color": "orange",
+	"prefer_related_applications": false
+}

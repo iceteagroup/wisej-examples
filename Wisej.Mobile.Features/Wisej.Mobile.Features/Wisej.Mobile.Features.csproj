@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.Mobile.Features</RootNamespace>
+    <AssemblyName>Wisej.Mobile.Features</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <ProjectGuid>{E5BB5113-1636-4744-9355-E83F8475D823}</ProjectGuid>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\service-bell_daniel_simion.mp3" />
+    <Content Include="Default.html" />
+    <Content Include="Default.json" />
+    <Content Include="favicon.ico" />
+    <EmbeddedResource Include="Panels\TestItemView.resx">
+      <DependentUpon>TestItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Tests.resx">
+      <DependentUpon>Tests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\MobileFeatures.mixin.theme" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\wisej-128x128.png" />
+    <EmbeddedResource Include="Images\more-icon.png" />
+    <EmbeddedResource Include="Images\setting-icon.png" />
+    <EmbeddedResource Include="Images\options-icon.png" />
+    <EmbeddedResource Include="Images\face-id.png" />
+    <EmbeddedResource Include="Images\touch-id.png" />
+    <EmbeddedResource Include="Data\offline.html" />
+    <Content Include="Images\home-icon.png" />
+    <Content Include="Images\Icons\Alerts.svg" />
+    <Content Include="Images\Icons\Permissions.svg" />
+    <Content Include="Images\Icons\Information.svg" />
+    <Content Include="Images\Icons\Input.svg" />
+    <Content Include="Images\Icons\Media.svg" />
+    <Content Include="Images\Icons\Navigation.svg" />
+    <Content Include="Images\Icons\Pickers.svg" />
+    <Content Include="Images\Icons\Popups.svg" />
+    <Content Include="Images\Icons\Security.svg" />
+    <Content Include="Images\Icons\Hardware.svg" />
+    <Content Include="Images\Icons\Storage.svg" />
+    <Content Include="Images\Icons\UI.svg" />
+    <Content Include="Images\logo-wisej-white.png" />
+    <Content Include="Images\passcode.png" />
+    <Content Include="Images\unknown.png" />
+    <Content Include="Unavailable\css\bootstrap.css" />
+    <Content Include="Unavailable\css\default.css" />
+    <Content Include="Unavailable\Default.html" />
+    <Content Include="Unavailable\icon.png" />
+    <Content Include="Unavailable\images\wisej-logo-blue.png" />
+    <Content Include="Unavailable\loading.png" />
+    <Content Include="Web.config" />
+    <EmbeddedResource Include="Panels\Accelerometer.resx">
+      <DependentUpon>Accelerometer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ActivityView.resx">
+      <DependentUpon>ActivityView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\BackButton.resx">
+      <DependentUpon>BackButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\BackColor.resx">
+      <DependentUpon>BackColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\UserData.resx">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Flashlight.resx">
+      <DependentUpon>Flashlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Gyroscope.resx">
+      <DependentUpon>Gyroscope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Magnetometer.resx">
+      <DependentUpon>Magnetometer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\DatePicker.resx">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Camera.resx">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\KeyboardFocus.resx">
+      <DependentUpon>KeyboardFocus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\NFC.resx">
+      <DependentUpon>NFC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Notifications.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Permissions.resx">
+      <DependentUpon>Permissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Audio.resx">
+      <DependentUpon>Audio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Authentication.resx">
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\DeviceInfo.resx">
+      <DependentUpon>DeviceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\DeviceScreen.resx">
+      <DependentUpon>DeviceScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\HapticFeedback.resx">
+      <DependentUpon>HapticFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\NativeAlert.resx">
+      <DependentUpon>NativeAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\NativePopup.resx">
+      <DependentUpon>NativePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\StatusBar.resx">
+      <DependentUpon>StatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TabBar.resx">
+      <DependentUpon>TabBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\DocumentScanner.resx">
+      <DependentUpon>DocumentScanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ToolbarButton.resx">
+      <DependentUpon>ToolbarButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TabBarButton.resx">
+      <DependentUpon>TabBarButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\TestBase.resx">
+      <DependentUpon>TestBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Toolbar.resx">
+      <DependentUpon>Toolbar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Accelerometer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Accelerometer.Designer.cs">
+      <DependentUpon>Accelerometer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ActivityView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ActivityView.Designer.cs">
+      <DependentUpon>ActivityView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TestItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TestItemView.Designer.cs">
+      <DependentUpon>TestItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Tests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Tests.Designer.cs">
+      <DependentUpon>Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\BackButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\BackButton.Designer.cs">
+      <DependentUpon>BackButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\BackColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\BackColor.Designer.cs">
+      <DependentUpon>BackColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ColorPicker.Designer.cs">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\UserData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\UserData.Designer.cs">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Flashlight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Flashlight.Designer.cs">
+      <DependentUpon>Flashlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Gyroscope.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Gyroscope.Designer.cs">
+      <DependentUpon>Gyroscope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Magnetometer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Magnetometer.Designer.cs">
+      <DependentUpon>Magnetometer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\DatePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\DatePicker.Designer.cs">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Camera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Camera.Designer.cs">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\KeyboardFocus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\KeyboardFocus.Designer.cs">
+      <DependentUpon>KeyboardFocus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NFC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\NFC.Designer.cs">
+      <DependentUpon>NFC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Notifications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Notifications.Designer.cs">
+      <DependentUpon>Notifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Permissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Permissions.Designer.cs">
+      <DependentUpon>Permissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Audio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Audio.Designer.cs">
+      <DependentUpon>Audio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Authentication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Authentication.Designer.cs">
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\DeviceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\DeviceInfo.Designer.cs">
+      <DependentUpon>DeviceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\DeviceScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\DeviceScreen.Designer.cs">
+      <DependentUpon>DeviceScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\HapticFeedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\HapticFeedback.Designer.cs">
+      <DependentUpon>HapticFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NativeAlert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\NativeAlert.Designer.cs">
+      <DependentUpon>NativeAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NativePopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\NativePopup.Designer.cs">
+      <DependentUpon>NativePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\StatusBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\StatusBar.Designer.cs">
+      <DependentUpon>StatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TabBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TabBar.Designer.cs">
+      <DependentUpon>TabBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\DocumentScanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\DocumentScanner.Designer.cs">
+      <DependentUpon>DocumentScanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ToolbarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ToolbarButton.Designer.cs">
+      <DependentUpon>ToolbarButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TabBarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TabBarButton.Designer.cs">
+      <DependentUpon>TabBarButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TestBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\TestBase.Designer.cs">
+      <DependentUpon>TestBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Toolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\Toolbar.Designer.cs">
+      <DependentUpon>Toolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MaterialDesign">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MobileIntegration">
+      <Version>2.5.27-dev.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56860</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/M</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

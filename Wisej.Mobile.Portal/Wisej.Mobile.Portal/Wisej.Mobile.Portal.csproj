@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.Mobile.Portal</RootNamespace>
+    <AssemblyName>Wisej.Mobile.Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <ProjectGuid>{8CA70B70-6591-41C8-BC79-4F1CC2CDE4F3}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Default.html" />
+    <Content Include="Default.json" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\Animals\icons8-alligator.svg" />
+    <Content Include="Images\Animals\icons8-bear.svg" />
+    <Content Include="Images\Animals\icons8-bird.svg" />
+    <Content Include="Images\Animals\icons8-black-jaguar.svg" />
+    <Content Include="Images\Animals\icons8-bull.svg" />
+    <Content Include="Images\Animals\icons8-deer.svg" />
+    <Content Include="Images\Animals\icons8-falcon.svg" />
+    <Content Include="Images\Animals\icons8-owl.svg" />
+    <Content Include="manifest.json" />
+    <None Include="Properties\PublishProfiles\deletemewisej - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\WisejTesting - Web Deploy.pubxml" />
+    <EmbeddedResource Include="Themes\MobilePortal.mixin.theme" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\covid.jpg" />
+    <Content Include="Images\devextreme.png" />
+    <Content Include="Images\ignite.png" />
+    <Content Include="Images\logo-wisej-white.png" />
+    <Content Include="Images\syncfusion.png" />
+    <Content Include="Images\wisej-logo-claim.png" />
+    <Content Include="Images\wisej.png" />
+    <Content Include="Offline\css\bootstrap.css" />
+    <Content Include="Offline\css\default.css" />
+    <Content Include="Offline\Default.html" />
+    <Content Include="Offline\icon.png" />
+    <Content Include="Offline\images\wisej-logo-blue.png" />
+    <Content Include="Offline\loading.png" />
+    <Content Include="Unavailable\css\bootstrap.css" />
+    <Content Include="Unavailable\css\default.css" />
+    <Content Include="Unavailable\Default.html" />
+    <Content Include="Unavailable\icon.png" />
+    <Content Include="Unavailable\images\wisej-logo-blue.png" />
+    <Content Include="Unavailable\loading.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AppItemView.Designer.cs">
+      <DependentUpon>AppItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Apps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Apps.Designer.cs">
+      <DependentUpon>Apps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Bind.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Bind.Designer.cs">
+      <DependentUpon>Bind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ViewBase.Designer.cs">
+      <DependentUpon>ViewBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-MaterialDesign">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Wisej-2-VaadinIcons">
+      <Version>2.5.*-*</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Wisej.Web.Ext.MobileIntegration">
+      <HintPath>..\..\..\..\Extensions\2.5\Wisej.Web.Ext.MobileIntegration\Wisej.Web.Ext.MobileIntegration\bin\Debug\net48\Wisej.Web.Ext.MobileIntegration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppItemView.resx">
+      <DependentUpon>AppItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Apps.resx">
+      <DependentUpon>Apps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Bind.resx">
+      <DependentUpon>Bind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewBase.resx">
+      <DependentUpon>ViewBase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54982</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Wisej.MobilePortal</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
