@@ -18,7 +18,7 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <ProjectGuid>{E5BB5113-1636-4744-9355-E83F8475D823}</ProjectGuid>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -68,7 +68,6 @@
     <EmbeddedResource Include="Images\options-icon.png" />
     <EmbeddedResource Include="Images\face-id.png" />
     <EmbeddedResource Include="Images\touch-id.png" />
-    <EmbeddedResource Include="Data\offline.html" />
     <Content Include="Images\home-icon.png" />
     <Content Include="Images\Icons\Alerts.svg" />
     <Content Include="Images\Icons\Permissions.svg" />
@@ -443,7 +442,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56860</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/M</IISUrl>
+          <IISUrl>http://localhost:56860/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
