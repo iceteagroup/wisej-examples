@@ -18,8 +18,6 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <ProjectGuid>{E5BB5113-1636-4744-9355-E83F8475D823}</ProjectGuid>
-    <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -438,7 +436,6 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56860</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

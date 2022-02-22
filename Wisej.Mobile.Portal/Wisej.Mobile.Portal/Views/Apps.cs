@@ -17,7 +17,10 @@ namespace Wisej.Mobile.Portal.Views
 
 		private void Apps_Load(object sender, EventArgs e)
 		{
-			this._itemWidth = (Application.Browser.ScreenSize.Width - 32) / 2 - 20;
+			var screenSize = Application.Browser.ScreenSize;
+			var screenWidth = Math.Min(screenSize.Width, screenSize.Height);
+			
+			this._itemWidth = (screenWidth - 32) / 2 - 20;
 
 			var features = new AppItemView("Features", "http://demo.wisej.com/MobileTest")
 			{

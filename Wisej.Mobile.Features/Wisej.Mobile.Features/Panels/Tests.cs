@@ -15,7 +15,11 @@ namespace Wisej.Mobile.Features.Panels
 
 		private void Apps_Load(object sender, EventArgs e)
 		{
-			this._itemWidth = (Application.Browser.ScreenSize.Width - 32) / 2 - 20;
+			// ScreenSize is different on Android vs. iOS.
+			var screenSize = Application.Browser.ScreenSize;
+			var screenWidth = Math.Min(screenSize.Width, screenSize.Height);
+			
+			this._itemWidth = (screenWidth - 32) / 2 - 20;
 
 			LoadApps();
 		}

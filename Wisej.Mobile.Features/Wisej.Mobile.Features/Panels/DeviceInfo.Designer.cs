@@ -34,11 +34,12 @@
 			// propertyGridInfo
 			// 
 			this.propertyGridInfo.Dock = Wisej.Web.DockStyle.Fill;
-			this.propertyGridInfo.Enabled = false;
+			this.propertyGridInfo.EditOnEnter = false;
 			this.propertyGridInfo.HelpVisible = false;
 			this.propertyGridInfo.Location = new System.Drawing.Point(16, 128);
 			this.propertyGridInfo.Name = "propertyGridInfo";
 			this.propertyGridInfo.PropertySort = Wisej.Web.PropertySort.Alphabetical;
+			this.propertyGridInfo.ReadOnly = true;
 			this.propertyGridInfo.Size = new System.Drawing.Size(618, 350);
 			this.propertyGridInfo.TabIndex = 0;
 			// 
