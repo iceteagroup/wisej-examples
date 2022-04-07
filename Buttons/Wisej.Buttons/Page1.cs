@@ -10,5 +10,20 @@ namespace Wisej.Buttons
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if (this.button11.ImageKey != this.imageList1.Images[1].Name)
+            {
+				this.button11.ImageKey = this.imageList1.Images[1].Name;
+            }
+            else
+            {
+                this.button11.ImageKey = this.imageList1.Images[0].Name;
+            }
+
+			
+
+		}
+    }
 }

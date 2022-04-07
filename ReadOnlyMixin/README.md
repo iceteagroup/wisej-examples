@@ -5,10 +5,6 @@
 
 The __ReadOnly__ state that was introduced in Wisej 1.5.4. No __Styles__ or __Properties__ are defined in the standard theme files, as different people have different views on how a ReadOnly control should look like. This example shows how to do a mixin to define how a ReadOnly control will look.
 
-VB.NET
-------
-The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/ReadOnlyMixin)
-
 ## 1. Concepts
 
 A mixin is a partial theme definition. It extends or overrides the application theme, no matter what theme is used by the application

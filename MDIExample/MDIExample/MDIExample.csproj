@@ -89,7 +89,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\IceTeaGroup\Wisej\Development\2.1\bin\Wisej.Framework.dll</HintPath>
+      <HintPath>C:\Program Files\IceTeaGroup\Wisej 2.5\bin\Wisej.Framework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

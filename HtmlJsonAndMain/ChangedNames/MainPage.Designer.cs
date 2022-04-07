@@ -50,7 +50,7 @@
             this.title.Font = new System.Drawing.Font("default", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.title.Location = new System.Drawing.Point(30, 20);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(190, 30);
+            this.title.Size = new System.Drawing.Size(177, 28);
             this.title.TabIndex = 1;
             this.title.Text = "ChangedNames";
             // 
@@ -71,7 +71,7 @@
             this.Controls.Add(this.title);
             this.Controls.Add(this.textBox1);
             this.Name = "MainPage";
-            this.Size = new System.Drawing.Size(941, 804);
+            this.Size = new System.Drawing.Size(1511, 669);
             this.Text = "Main Page";
             this.Load += new System.EventHandler(this.MainPage_Load);
             this.ResumeLayout(false);

@@ -49,7 +49,7 @@
 			// 
 			this.buttonOK.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
 			this.buttonOK.DialogResult = Wisej.Web.DialogResult.OK;
-			this.buttonOK.Location = new System.Drawing.Point(131, 418);
+			this.buttonOK.Location = new System.Drawing.Point(133, 379);
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(129, 36);
 			this.buttonOK.TabIndex = 10;
@@ -60,12 +60,11 @@
 			// 
 			this.buttonClose.Anchor = ((Wisej.Web.AnchorStyles)((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Right)));
 			this.buttonClose.DialogResult = Wisej.Web.DialogResult.Cancel;
-			this.buttonClose.Location = new System.Drawing.Point(266, 418);
+			this.buttonClose.Location = new System.Drawing.Point(268, 379);
 			this.buttonClose.Name = "buttonClose";
 			this.buttonClose.Size = new System.Drawing.Size(129, 36);
 			this.buttonClose.TabIndex = 11;
 			this.buttonClose.Text = "Close";
-			this.buttonClose.CausesValidation = false;
 			this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
 			// 
 			// label4
@@ -73,7 +72,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Location = new System.Drawing.Point(25, 226);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(34, 17);
+			this.label4.Size = new System.Drawing.Size(29, 15);
 			this.label4.TabIndex = 8;
 			this.label4.Text = "Text";
 			// 
@@ -82,7 +81,7 @@
 			this.label3.AutoSize = true;
 			this.label3.Location = new System.Drawing.Point(25, 133);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(32, 17);
+			this.label3.Size = new System.Drawing.Size(27, 15);
 			this.label3.TabIndex = 4;
 			this.label3.Text = "End";
 			// 
@@ -91,7 +90,7 @@
 			this.label2.AutoSize = true;
 			this.label2.Location = new System.Drawing.Point(25, 83);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(36, 17);
+			this.label2.Size = new System.Drawing.Size(31, 15);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Start";
 			// 
@@ -100,7 +99,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Location = new System.Drawing.Point(25, 33);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(21, 17);
+			this.label1.Size = new System.Drawing.Size(17, 15);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "ID";
 			// 
@@ -117,6 +116,7 @@
 			// eventStart
 			// 
 			this.eventStart.AutoSize = false;
+			this.eventStart.Checked = false;
 			this.eventStart.Format = Wisej.Web.DateTimePickerFormat.DateTime;
 			this.eventStart.Location = new System.Drawing.Point(80, 76);
 			this.eventStart.Name = "eventStart";
@@ -127,6 +127,7 @@
 			// eventEnd
 			// 
 			this.eventEnd.AutoSize = false;
+			this.eventEnd.Checked = false;
 			this.eventEnd.Format = Wisej.Web.DateTimePickerFormat.DateTime;
 			this.eventEnd.Location = new System.Drawing.Point(80, 126);
 			this.eventEnd.Name = "eventEnd";
@@ -158,7 +159,7 @@
 			this.label5.AutoSize = true;
 			this.label5.Location = new System.Drawing.Point(25, 183);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(38, 17);
+			this.label5.Size = new System.Drawing.Size(32, 15);
 			this.label5.TabIndex = 6;
 			this.label5.Text = "Type";
 			// 
@@ -171,8 +172,9 @@
 			this.AcceptButton = this.buttonOK;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
+			this.AutoValidate = Wisej.Web.AutoValidate.EnableAllowFocusChange;
 			this.CancelButton = this.buttonClose;
-			this.ClientSize = new System.Drawing.Size(409, 469);
+			this.ClientSize = new System.Drawing.Size(411, 430);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.eventType);
 			this.Controls.Add(this.eventText);

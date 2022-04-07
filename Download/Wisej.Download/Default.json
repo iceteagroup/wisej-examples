@@ -26,6 +26,7 @@
 // settings:               	Map of custom application settings. i.e. {jquery: "http://cdn...", rootPath: "c:\\users\\...", ...}.
 //                          Custom settings are available using Application.Configuration.Settings.
 {
-    "url": "Default.html",
-    "startup": "Wisej.Download.Program.Main, Wisej.Download"
+  "url": "Default.html",
+  "enableWebSocket": false,
+  "startup": "Wisej.Download.Program.Main, Wisej.Download"
 }

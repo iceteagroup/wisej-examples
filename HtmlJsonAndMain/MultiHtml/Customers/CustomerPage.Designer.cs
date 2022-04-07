@@ -47,7 +47,7 @@
             this.label1.Font = new System.Drawing.Font("default", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label1.Location = new System.Drawing.Point(100, 400);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 30);
+            this.label1.Size = new System.Drawing.Size(291, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Customers sub-Application";
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.url);
             this.Controls.Add(this.label1);
             this.Name = "CustomerPage";
-            this.Size = new System.Drawing.Size(941, 787);
+            this.Size = new System.Drawing.Size(1511, 669);
             this.Text = "Customer Page";
             this.Load += new System.EventHandler(this.CustomerPage_Load);
             this.ResumeLayout(false);

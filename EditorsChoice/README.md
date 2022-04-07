@@ -14,10 +14,6 @@ Uses 3rd party JavaScript library:
 
 ## [Try it on Online](http://demo.wisej.com/EditorsChoice)
 
-VB.NET
-------
-The VB.NET version is [here](https://github.com/iceteagroup/wisej-examples-vb/tree/main/EditorsChoice)
-
 License
 -------
 <img src="http://iceteagroup.com/wp-content/uploads/2017/01/Square-64x64-trasp.png" height="20" align="top"> Copyright (C) ICE TEA GROUP LLC, All rights reserved.

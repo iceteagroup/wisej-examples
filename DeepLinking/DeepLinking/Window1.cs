@@ -36,8 +36,27 @@ namespace DeepLinking
 
 			// detect changes to the hash in the URL.
 			Application.HashChanged += Application_HashChanged;
+			
+			// detect when the browser's reloads the page (the user hit refresh).
+			Application.ApplicationRefresh += Application_ApplicationRefresh;
 
-			// handle the first hash value, if any.
+			// detach all static events when disposed.
+			this.Disposed += Window1_Disposed;
+
+			// handle the hash value in the URL when this window
+			// is first loaded. the HashChanged event is fired only when
+			// the hash changes in the browser.
+			EditUser(Application.Hash);
+		}
+
+		private void Window1_Disposed(object sender, EventArgs e)
+		{
+			Application.HashChanged -= Application_HashChanged;
+			Application.ApplicationRefresh -= Application_ApplicationRefresh;
+		}
+
+		private void Application_ApplicationRefresh(object sender, EventArgs e)
+		{
 			EditUser(Application.Hash);
 		}
 
@@ -104,11 +123,9 @@ namespace DeepLinking
 			var userId = -1;
 			if (int.TryParse(hash, out userId))
 				EditUser(userId);
-			else
-				EditUser(-1);
 		}
 
-		private void EditUser(int id, bool newRow=false)
+		private void EditUser(int id, bool newRow = false)
 		{
 			// close the current dialog, if still open.
 			if (this.userDialog != null)
@@ -117,14 +134,15 @@ namespace DeepLinking
 				this.userDialog.Close();
 			}
 
-			if (id < 0)
-				return;
-
 			// find the row row edit.
 			var row = this.dataGrid.Rows.FirstOrDefault(r => (int)r[0].Value == id);
 			if (row == null)
 			{
-				MessageBox.Show("User not found: ID = " + id, modal: false);
+				MessageBox.Show("User not found: ID = " + id);
+
+				// clear the hash to update the current deep linking location.
+				Application.Hash = "";
+
 				return;
 			}
 
@@ -139,20 +157,19 @@ namespace DeepLinking
 			this.userDialog.ShowDialog(this, (sender, result) =>
 			{
 				// clear the hash to update the current deep linking location.
-				if (result != Wisej.Web.DialogResult.Abort)
-					Application.Hash = "";
+				Application.Hash = "";
 
 				if (result == DialogResult.OK)
 				{
 					// this code is executed only after the dialog is closed.
 					row.SetValues(this.userDialog.Values);
 				}
-                else if (result == DialogResult.Cancel && newRow)
-                {
-                    // delete new row if cancel was pressed.
-                    dataGrid.Rows.Remove(row);
-                }
-            });
+				else if (result == DialogResult.Cancel && newRow)
+				{
+					// delete new row if cancel was pressed.
+					dataGrid.Rows.Remove(row);
+				}
+			});
 		}
 
 		// reference to the current user dialog.

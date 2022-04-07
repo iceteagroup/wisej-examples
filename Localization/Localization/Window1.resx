@@ -140,7 +140,7 @@
     <value>30, 54</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 22</value>
+    <value>244, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
@@ -209,6 +209,9 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="labelCurrency.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="labelCurrency.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 148</value>
   </data>
@@ -234,13 +237,13 @@
     <value>5</value>
   </data>
   <data name="labelDateTime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>False</value>
   </data>
   <data name="labelDateTime.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 221</value>
   </data>
   <data name="labelDateTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 16</value>
+    <value>244, 23</value>
   </data>
   <data name="labelDateTime.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -283,6 +286,9 @@
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="labelNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="labelNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 148</value>
@@ -356,11 +362,11 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 16</value>
+    <value>6, 17</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>613, 345</value>

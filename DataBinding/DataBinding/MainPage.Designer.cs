@@ -77,8 +77,8 @@
             this.Controls.Add(this.dataGridBindingButton);
             this.Controls.Add(this.textBoxBindingButton);
             this.Name = "MainPage";
+            this.Size = new System.Drawing.Size(1511, 669);
             this.Text = "Main Page";
-            this.Size = new System.Drawing.Size(1025, 548);
             this.ResumeLayout(false);
 
         }

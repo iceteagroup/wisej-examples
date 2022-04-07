@@ -46,7 +46,7 @@
             this.controlStateLabel.AutoSize = true;
             this.controlStateLabel.Location = new System.Drawing.Point(36, 41);
             this.controlStateLabel.Name = "controlStateLabel";
-            this.controlStateLabel.Size = new System.Drawing.Size(127, 16);
+            this.controlStateLabel.Size = new System.Drawing.Size(120, 15);
             this.controlStateLabel.TabIndex = 0;
             this.controlStateLabel.Text = "Select Control State";
             // 
@@ -78,19 +78,21 @@
             this.statePanel.ShowHeader = true;
             this.statePanel.Size = new System.Drawing.Size(576, 450);
             this.statePanel.TabIndex = 2;
+            this.statePanel.TabStop = true;
             this.statePanel.Text = "Enable";
             // 
             // domainUpDown
             // 
             this.domainUpDown.AutoSize = false;
-            this.domainUpDown.Items.Add("George Washington (1789-1797)");
-            this.domainUpDown.Items.Add("John Adams (1797-1801)");
-            this.domainUpDown.Items.Add("Thomas Jefferson (1801-1809)");
-            this.domainUpDown.Items.Add("James Madison (1809-1817)");
-            this.domainUpDown.Items.Add("James Monroe (1817-1825)");
-            this.domainUpDown.Items.Add("John Quincy Adams (1825-1829*)");
-            this.domainUpDown.Items.Add("Andrew Jackson (1829-1837)");
-            this.domainUpDown.Items.Add("");
+            this.domainUpDown.Items.AddRange(new object[] {
+            "George Washington (1789-1797)",
+            "John Adams (1797-1801)",
+            "Thomas Jefferson (1801-1809)",
+            "James Madison (1809-1817)",
+            "James Monroe (1817-1825)",
+            "John Quincy Adams (1825-1829*)",
+            "Andrew Jackson (1829-1837)",
+            ""});
             this.domainUpDown.Location = new System.Drawing.Point(18, 201);
             this.domainUpDown.Name = "domainUpDown";
             this.domainUpDown.SelectedIndex = 0;
@@ -185,7 +187,7 @@
             this.Controls.Add(this.controlState);
             this.Controls.Add(this.controlStateLabel);
             this.Name = "Page1";
-            this.Size = new System.Drawing.Size(941, 804);
+            this.Size = new System.Drawing.Size(1814, 759);
             this.Text = "Page1";
             this.Appear += new System.EventHandler(this.Page1_Appear);
             this.statePanel.ResumeLayout(false);

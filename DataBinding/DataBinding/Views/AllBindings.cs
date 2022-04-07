@@ -21,6 +21,9 @@ namespace DataBinding.Views
             colState.DataSource = statesBindingSource;
             colState.DisplayMember = "Description";
             colState.ValueMember = "Key";
+            stateComboBox.DataSource = statesBindingSource;
+            stateComboBox.DisplayMember = "Description";
+            stateComboBox.ValueMember = "Key";
 
             dataGridView.Rows[0].Selected = true;
         }

@@ -4,7 +4,11 @@ using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+#if WINFORMS
+using System.Windows.Forms;
+#else
 using Wisej.Web;
+#endif
 
 namespace DataBinding.Model
 {

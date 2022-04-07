@@ -26,9 +26,6 @@ namespace TourPanelSample
 
 			Window5 window5 = new Window5();
 			window5.Show();
-
-			Window6 window6 = new Window6();
-			window6.Show();
 		}
 
 		//

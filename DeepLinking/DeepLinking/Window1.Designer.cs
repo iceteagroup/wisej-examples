@@ -93,6 +93,7 @@
 			this.Controls.Add(this.buttonEdit);
 			this.Controls.Add(this.dataGrid);
 			this.Controls.Add(this.label1);
+			this.CloseBox = false;
 			this.Font = new System.Drawing.Font("Helvetica", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.Margin = new Wisej.Web.Padding(9, 0, 9, 0);
 			this.MinimizeBox = false;

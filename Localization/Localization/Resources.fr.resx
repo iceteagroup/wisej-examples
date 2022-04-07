@@ -127,7 +127,7 @@
     <value>Oui</value>
   </data>
   <data name="$No" xml:space="preserve">
-    <value>Non</value>
+    <value>No</value>
   </data>
   <data name="$Cancel" xml:space="preserve">
     <value>Annuler</value>

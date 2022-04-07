@@ -65,13 +65,10 @@ namespace Wisej.FullCalendar
 
 		private void eventID_Validating(object sender, System.ComponentModel.CancelEventArgs e)
 		{
-			if (this.CloseReason == CloseReason.None)
-			{
-				if (this.eventID.Text == "")
-					e.Cancel = true;
-			}
+			if (this.eventID.Text == "")
+				e.Cancel = true;
 		}
 
-		private static string[] EventTypes = new[] { "Appointment", "Meeting", "Vacation", "Other" };
+			private static string[] EventTypes = new[] { "Appointment", "Meeting", "Vacation", "Other" };
 	}
 }

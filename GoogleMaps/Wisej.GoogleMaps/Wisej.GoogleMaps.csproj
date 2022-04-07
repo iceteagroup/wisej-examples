@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{515B38B4-606C-4496-8EF0-43C72A53BD54}</ProjectGuid>
+    <ProjectGuid>{126C204C-7BBA-45FA-B49E-BA980BFFF8A5}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -58,12 +58,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeocodeDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GeocodeDetails.Designer.cs">
-      <DependentUpon>GeocodeDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="MapPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,35 +74,27 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="Wisej.Ext.Geolocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Ext.Geolocation.dll</HintPath>
+      <HintPath>C:\Program Files\IceTeaGroup\Wisej 2.5\bin\Wisej.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Wisej.Framework">
-      <HintPath>..\..\..\..\wisej\Development\2.0\bin\Wisej.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.GoogleMaps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
+    <Reference Include="Wisej.Web.Ext.GoogleMaps, Version=2.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\wisej\Extensions\2.0\bin\Wisej.Web.Ext.GoogleMaps.dll</HintPath>
+      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Web.Ext.GoogleMaps.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GeocodeDetails.resx">
-      <DependentUpon>GeocodeDetails.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MapPage.resx">
       <DependentUpon>MapPage.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -123,9 +109,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>20274</DevelopmentServerPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:20274/</IISUrl>
+          <IISUrl>http://localhost:50369/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

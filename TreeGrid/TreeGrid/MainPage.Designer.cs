@@ -59,7 +59,7 @@
             this.Controls.Add(this.objectList);
             this.Controls.Add(this.dataTable);
             this.Name = "MainPage";
-            this.Size = new System.Drawing.Size(941, 804);
+            this.Size = new System.Drawing.Size(899, 810);
             this.Text = "TreeGrid Example";
             this.ResumeLayout(false);
 

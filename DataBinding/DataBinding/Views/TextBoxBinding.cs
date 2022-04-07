@@ -14,13 +14,13 @@ namespace DataBinding.Views
 
         private void TextBoxBinding_Load(object sender, System.EventArgs e)
         {
-            GetNewVendor();
-
             // Bind ComboBox list datasources first
             statesBindingSource.EnumToDataSource(typeof(States));
             stateComboBox.DataSource = statesBindingSource;
             stateComboBox.DisplayMember = "Description";
             stateComboBox.ValueMember = "Key";
+
+            GetNewVendor();
         }
 
         private void newButton_Click(object sender, System.EventArgs e)
@@ -45,7 +45,11 @@ namespace DataBinding.Views
 
         private void GetNewVendor()
         {
-            _vendor = new Vendor();
+            _vendor = new Vendor
+            {
+                State = Model.States.CA
+            };
+
             vendorBindingSource.DataSource = _vendor;
         }
     }
