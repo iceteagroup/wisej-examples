@@ -1,4 +1,4 @@
-﻿namespace ParallelSorting
+﻿namespace BackgroundTasks
 {
 	partial class SortBox
 	{

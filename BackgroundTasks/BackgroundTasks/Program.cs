@@ -1,7 +1,7 @@
 ﻿using System;
 using Wisej.Web;
 
-namespace ParallelSorting
+namespace BackgroundTasks
 {
 	static class Program
 	{

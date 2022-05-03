@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Wisej.Web;
 
-namespace ParallelSorting
+namespace BackgroundTasks
 {
 	public partial class SortBox : UserControl
 	{
@@ -42,15 +42,15 @@ namespace ParallelSorting
 
 			switch (this.SortMode)
 			{
-				case ParallelSorting.SortMode.BubbleSort:
+				case BackgroundTasks.SortMode.BubbleSort:
 					Application.StartTask(() => { RunBubbleSort(); });
 					break;
 
-				case ParallelSorting.SortMode.QuickSort:
+				case BackgroundTasks.SortMode.QuickSort:
 					Application.StartTask(() => { RunQuickSort(); });
 					break;
 
-				case ParallelSorting.SortMode.SelectionSort:
+				case BackgroundTasks.SortMode.SelectionSort:
 					Application.StartTask(() => { RunSelectionSort(); });
 					break;
 			}

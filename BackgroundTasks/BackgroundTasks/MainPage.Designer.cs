@@ -1,4 +1,4 @@
-﻿namespace ParallelSorting
+﻿namespace BackgroundTasks
 {
 	partial class MainPage
 	{
@@ -35,9 +35,9 @@
 			this.label3 = new Wisej.Web.Label();
 			this.panel1 = new Wisej.Web.Panel();
 			this.notification = new Wisej.Web.Ext.Notification.Notification(this.components);
-			this.sortBox1 = new ParallelSorting.SortBox();
-			this.sortBox3 = new ParallelSorting.SortBox();
-			this.sortBox2 = new ParallelSorting.SortBox();
+			this.sortBox1 = new BackgroundTasks.SortBox();
+			this.sortBox3 = new BackgroundTasks.SortBox();
+			this.sortBox2 = new BackgroundTasks.SortBox();
 			this.flowLayoutPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			this.panel1.SuspendLayout();
@@ -61,7 +61,7 @@
 			this.label1.AutoSize = false;
 			this.label1.Dock = Wisej.Web.DockStyle.Top;
 			this.label1.Font = new System.Drawing.Font("default", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-			this.label1.Image = global::ParallelSorting.Properties.Resources._64x64;
+			this.label1.Image = global::BackgroundTasks.Properties.Resources._64x64;
 			this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.label1.Location = new System.Drawing.Point(0, 0);
 			this.label1.Margin = new Wisej.Web.Padding(7, 0, 7, 0);
@@ -133,7 +133,7 @@
 			this.sortBox1.Name = "sortBox1";
 			this.sortBox1.Padding = new Wisej.Web.Padding(14, 11, 14, 11);
 			this.sortBox1.Size = new System.Drawing.Size(413, 351);
-			this.sortBox1.SortMode = ParallelSorting.SortMode.BubbleSort;
+			this.sortBox1.SortMode = BackgroundTasks.SortMode.BubbleSort;
 			this.sortBox1.TabIndex = 5;
 			this.sortBox1.Title = "Bubble Sort";
 			this.sortBox1.SortCompleted += new System.EventHandler(this.sortBox_SortCompleted);
@@ -148,7 +148,7 @@
 			this.sortBox3.Name = "sortBox3";
 			this.sortBox3.Padding = new Wisej.Web.Padding(14, 11, 14, 11);
 			this.sortBox3.Size = new System.Drawing.Size(413, 351);
-			this.sortBox3.SortMode = ParallelSorting.SortMode.SelectionSort;
+			this.sortBox3.SortMode = BackgroundTasks.SortMode.SelectionSort;
 			this.sortBox3.TabIndex = 5;
 			this.sortBox3.Title = "Selection Sort";
 			this.sortBox3.SortCompleted += new System.EventHandler(this.sortBox_SortCompleted);
@@ -163,7 +163,7 @@
 			this.sortBox2.Name = "sortBox2";
 			this.sortBox2.Padding = new Wisej.Web.Padding(14, 11, 14, 11);
 			this.sortBox2.Size = new System.Drawing.Size(413, 351);
-			this.sortBox2.SortMode = ParallelSorting.SortMode.QuickSort;
+			this.sortBox2.SortMode = BackgroundTasks.SortMode.QuickSort;
 			this.sortBox2.TabIndex = 4;
 			this.sortBox2.Title = "Quick Sort";
 			this.sortBox2.SortCompleted += new System.EventHandler(this.sortBox_SortCompleted);
