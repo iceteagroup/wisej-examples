@@ -181,13 +181,13 @@
             // 
             // Page1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
             this.Controls.Add(this.statePanel);
             this.Controls.Add(this.controlState);
             this.Controls.Add(this.controlStateLabel);
             this.Name = "Page1";
-            this.Size = new System.Drawing.Size(1814, 759);
+            this.Size = new System.Drawing.Size(1527, 549);
             this.Text = "Page1";
             this.Appear += new System.EventHandler(this.Page1_Appear);
             this.statePanel.ResumeLayout(false);
