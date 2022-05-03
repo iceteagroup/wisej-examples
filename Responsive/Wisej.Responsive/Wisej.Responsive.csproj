@@ -1,228 +1,59 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{93925FA7-5ADB-44A6-BC32-0A90E5CFA12E}</ProjectGuid>
-    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <TargetFrameworks>net48;net6.0</TargetFrameworks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+    <OutputPath>bin\</OutputPath>
+    <StartupObject></StartupObject>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wisej.Responsive</RootNamespace>
-    <AssemblyName>Wisej.Responsive</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
-    <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
-    <Use64BitIISExpress />
+    <RunCommand>$(ProgramFiles)\IIS Express\iisexpress.exe</RunCommand>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+
+  <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'!='net'">
+    <StartupObject>$(RootNamespace).Startup</StartupObject>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="Default.html" />
-    <Content Include="Default.json" />
-    <Content Include="Themes\Application.mixin.theme" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Windows.Forms" />
+    <Compile Remove="Startup.cs" />
+    <Content Include="Startup.cs" />
   </ItemGroup>
+
   <ItemGroup>
-    <Content Include="Images\Background.jpg" />
-    <Content Include="Images\Wisej-Logo-64x64.png" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
+    <_ContentIncludedByDefault Remove="Startup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Themes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Default.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Web.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  
   <ItemGroup>
-    <Compile Include="Panels\OptionsPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\OptionsPanel.Designer.cs">
-      <DependentUpon>OptionsPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\WorkspacePanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\WorkspacePanel.Designer.cs">
-      <DependentUpon>WorkspacePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\CustomersView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\CustomersView.Designer.cs">
-      <DependentUpon>CustomersView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\DashboardView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\DashboardView.Designer.cs">
-      <DependentUpon>DashboardView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\HomePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\HomePage.Designer.cs">
-      <DependentUpon>HomePage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\LoginPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\LoginPage.Designer.cs">
-      <DependentUpon>LoginPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\ProductsView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\ProductsView.Designer.cs">
-      <DependentUpon>ProductsView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ViewBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\ViewBase.Designer.cs">
-      <DependentUpon>ViewBase.cs</DependentUpon>
-    </Compile>
+    <PackageReference Include="Wisej-3" Version="3.*-*" />
+	<PackageReference Include="Wisej-3-ElegantIcons" Version="3.*-*" />
+	<PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
+	<PackageReference Include="Wisej-3-ModernUI" Version="3.*-*" />
+	<PackageReference Include="Wisej-3-AspNetControl" Version="3.*-*" />
+	<PackageReference Include="Wisej-3-ChartJS" Version="3.*-*" />
+	<PackageReference Include="Wisej-3-FullCalendar" Version="3.*-*" />
+	<PackageReference Include="Wisej-3-JustGage" Version="3.*-*" />
+	<PackageReference Include="Wisej-3-ProgressCircle" Version="3.*-*" />	
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Model\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Design" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="Wisej.Ext.ElegantIcons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Ext.ElegantIcons.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Ext.MaterialDesign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Ext.MaterialDesign.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Ext.ModernUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Ext.ModernUI.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Development\2.5\bin\Wisej.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.AspNetControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Web.Ext.AspNetControl.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.ChartJS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Web.Ext.ChartJS.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.FullCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Web.Ext.FullCalendar.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.JustGage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Web.Ext.JustGage.dll</HintPath>
-    </Reference>
-    <Reference Include="Wisej.Web.Ext.ProgressCircle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=653fbd0440795259, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Extensions\2.2\bin\Wisej.Web.Ext.ProgressCircle.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Panels\OptionsPanel.resx">
-      <DependentUpon>OptionsPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Panels\WorkspacePanel.resx">
-      <DependentUpon>WorkspacePanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\CustomersView.resx">
-      <DependentUpon>CustomersView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\DashboardView.resx">
-      <DependentUpon>DashboardView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\HomePage.resx">
-      <DependentUpon>HomePage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\LoginPage.resx">
-      <DependentUpon>LoginPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\ProductsView.resx">
-      <DependentUpon>ProductsView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\ViewBase.resx">
-      <DependentUpon>ViewBase.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-        <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49026/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-        </WebProjectProperties>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>
