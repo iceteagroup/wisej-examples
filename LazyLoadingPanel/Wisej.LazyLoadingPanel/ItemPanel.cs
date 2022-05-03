@@ -20,7 +20,6 @@ namespace Wisej.LazyLoadingPanel
 		}
 
 		[TypeConverter("Wisej.Web.Design.ImageSourceConverter, Wisej.Web.Design")]
-		[Editor("Wisej.Web.Design.ImageSourceEditor, Wisej.Web.Design", typeof(UITypeEditor))]
 		public string ImageSource
 		{
 			get { return this.icon.ImageSource; }
