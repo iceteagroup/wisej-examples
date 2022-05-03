@@ -113,7 +113,7 @@
             // 
             // Page1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
             this.Controls.Add(this.widgetTagCloud);
             this.Controls.Add(this.widgetTreeMap);
@@ -121,7 +121,7 @@
             this.Controls.Add(this.widgetColorPicker);
             this.Controls.Add(this.widgetInput);
             this.Name = "Page1";
-            this.Size = new System.Drawing.Size(1793, 676);
+            this.Size = new System.Drawing.Size(1174, 779);
             this.Text = "Integration 4 - jQWidgets";
             this.ResumeLayout(false);
             this.PerformLayout();
