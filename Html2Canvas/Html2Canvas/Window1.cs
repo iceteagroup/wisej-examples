@@ -14,7 +14,7 @@ namespace Html2CanvasSample
 
 		private async void button1_Click(object sender, EventArgs e)
 		{
-			var image = await Html2Canvas.ScreenshotAsync(this);
+			var image = await  Html2Canvas.ScreenshotAsync(this);
 			this.pictureBox1.Image = image;
 		}
 

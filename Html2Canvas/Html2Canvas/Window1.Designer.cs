@@ -125,7 +125,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Name = "Window1";
-            this.Text = "HTML2Canvas Sample";
+            this.Text = "Html2CanvasSample Sample";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
