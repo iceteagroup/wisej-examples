@@ -31,7 +31,7 @@ namespace ChartJS
 					Application.Update(this);
 				}
 
-				AlertBox.Show("Done!", alignment: System.Drawing.ContentAlignment.TopCenter, icon: MessageBoxIcon.Information);
+				AlertBox.Show("Done!", icon: MessageBoxIcon.Information);
 				Application.Update(this);
 			});
 		}
