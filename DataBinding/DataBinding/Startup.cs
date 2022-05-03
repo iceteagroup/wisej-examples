@@ -1,10 +1,7 @@
 
 
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Wisej.Core;
 
 namespace DataBinding
@@ -23,24 +20,16 @@ namespace DataBinding
 
 		public static void Main(string[] args)
 		{
-			Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(builder =>
+			var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 			{
-				builder.UseWebRoot(@"./");
-				builder.UseStartup<Startup>();
+				Args = args,
+				WebRootPath = "./"
+			});
 
-			}).Build().Run();
-		}
-
-		// This method gets called by the runtime. Use this method to add services to the container.
-		public void ConfigureServices(IServiceCollection services)
-		{
-		}
-
-		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-		{
+			var app = builder.Build();
 			app.UseWisej();
 			app.UseFileServer();
+			app.Run();
 		}
 	}
 }
