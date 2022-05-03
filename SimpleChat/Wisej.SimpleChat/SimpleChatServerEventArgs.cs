@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Wisej.ChatServer
+namespace Wisej.SimpleChat
 {
 	public class SimpleChatServerEventArgs : EventArgs
 	{

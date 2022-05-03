@@ -1,7 +1,7 @@
 ﻿using System;
 using Wisej.Web;
 
-namespace Wisej.ChatServer
+namespace Wisej.SimpleChat
 {
 	static class Program
 	{

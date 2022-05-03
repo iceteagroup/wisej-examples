@@ -1,4 +1,4 @@
-﻿namespace Wisej.ChatServer
+﻿namespace Wisej.SimpleChat
 {
 	partial class SimpleChatClient
 	{

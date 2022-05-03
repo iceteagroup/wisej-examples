@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using Wisej.Web;
 
-namespace Wisej.ChatServer
+namespace Wisej.SimpleChat
 {
 	public partial class SimpleChatClient : Page
 	{

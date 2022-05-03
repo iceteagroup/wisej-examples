@@ -27,5 +27,5 @@
 //                          Custom settings are available using Application.Configuration.Settings.
 {
 	"url": "Default.html",
-    "startup": "Wisej.ChatServer.Program.Main, Wisej.ChatServer"
+  "startup": "Wisej.SimpleChat.Program.Main, Wisej.SimpleChat"
 }
