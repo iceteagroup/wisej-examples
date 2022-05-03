@@ -102,10 +102,9 @@ namespace Wisej.GoogleMaps
 		private void googleMap1_MapClick(object sender, Web.Ext.GoogleMaps.MapMouseEventArgs e)
 		{
 			if (e.Marker == null)
-				AlertBox.Show("You clicked location: " + e.Location.ToString(), alignment: System.Drawing.ContentAlignment.BottomRight);
+				AlertBox.Show("You clicked location: " + e.Location.ToString());
 			else
-				AlertBox.Show("You clicked marker: " + e.Marker + "  at location: " + e.Location.ToString(), alignment: System.Drawing.ContentAlignment.TopRight);
-
+				AlertBox.Show("You clicked marker: " + e.Marker + "  at location: " + e.Location.ToString());
 		}
 
 		private void comboBoxMatType_SelectedIndexChanged(object sender, EventArgs e)
