@@ -6,11 +6,11 @@ namespace Wisej.TaskBar
 {
     public partial class SimpleWindow : Form
     {
-        Wisej.Web.Ext.TaskBar.TaskBar TaskBar;
+        Wisej.Web.TaskBar TaskBar;
         public SimpleWindow()
         {
             InitializeComponent();
-            TaskBar = new Web.Ext.TaskBar.TaskBar();
+            TaskBar = new Wisej.Web.TaskBar();
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Wisej.TaskBar.Pages
         /// </summary>
         private void InitializeComponent()
         {
-            this.taskBar1 = new Wisej.Web.Ext.TaskBar.TaskBar();
+            this.taskBar1 = new Wisej.Web.TaskBar();
             this.panel1 = new Wisej.Web.Panel();
             this.btnSimpleWindow = new Wisej.Web.Button();
             this.btnFileExplorer = new Wisej.Web.Button();
@@ -123,7 +123,7 @@ namespace Wisej.TaskBar.Pages
 
         #endregion
 
-        private Web.Ext.TaskBar.TaskBar taskBar1;
+        private Web.TaskBar taskBar1;
         private Web.Panel panel1;
         private Web.Panel panel2;
         private Web.Button btnFileExplorer;
