@@ -58,7 +58,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(40, 178);
             this.dataGridView1.MinimumSize = new System.Drawing.Size(200, 350);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(598, 350);
+            this.dataGridView1.Size = new System.Drawing.Size(835, 350);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellValueChanged += new Wisej.Web.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
             this.dataGridView1.CellPaint += new Wisej.Web.DataGridViewCellPaintEventHandler(this.dataGridView1_CellPaint);
@@ -91,14 +91,14 @@
             // 
             // Page1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
             this.BackgroundImageLayout = Wisej.Web.ImageLayout.Zoom;
             this.BackgroundImageSource = "Images/background.jpg";
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "Page1";
-            this.Size = new System.Drawing.Size(874, 810);
+            this.Size = new System.Drawing.Size(1111, 810);
             this.Text = "Page1";
             this.Load += new System.EventHandler(this.Page1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

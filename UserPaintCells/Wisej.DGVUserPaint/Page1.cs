@@ -2,7 +2,8 @@
 using System;
 using System.Linq;
 using System.Drawing;
-using System.Web.UI.DataVisualization.Charting;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using Wisej.Web;
 
 namespace Wisej.DGVUserPaint
@@ -46,58 +47,34 @@ namespace Wisej.DGVUserPaint
 				if (text != null)
 				{
 					var values = text.Split(',').Select(n => Convert.ToInt32(n)).ToArray();
-					var charType = (SeriesChartType)Enum.Parse(typeof(SeriesChartType), (string)this.dataGridView1[1, e.RowIndex].Value);
 
-					DrawChart(e.Graphics, e.ClipRectangle, values, charType);
+					DrawChart(e.Graphics, e.ClipRectangle, values);
 				}
 			}
 		}
 
-		private void DrawChart(Graphics g, Rectangle rect, int[] values, SeriesChartType chartType)
+		private void DrawChart(Graphics g,Rectangle rect, int[] values)
 		{
-			using (var chart = new Chart())
+			g.SmoothingMode = SmoothingMode.AntiAlias;
+
+			int cx = rect.Width;
+			int cy = rect.Height;
+
+			SolidBrush brush = new SolidBrush(Color.Blue);
+
+			Pen pen = new Pen(brush);
+			pen.Width = 10F;
+
+			float scale = (float)cy / (float)cx;
+
+			float x = 0;
+
+			for (int i = 0; i < values.Length; i++)
 			{
-				rect.Inflate(-10, -10);
-				chart.Width = rect.Width - 2;
-				chart.Height = rect.Height - 2;
-				chart.BackColor = Color.Transparent;
-
-				var ca = new ChartArea();
-				ca.BackColor = Color.Transparent;
-				ca.Position = new ElementPosition(1, 1, 99, 99);
-
-				ca.AxisY.LineWidth = 0;
-				ca.AxisY.MajorGrid.LineWidth = 0;
-				ca.AxisY.LabelStyle.Enabled = false;
-				ca.AxisY.MajorTickMark.Enabled = false;
-				ca.AxisY.MinorTickMark.Enabled = false;
-				ca.AxisY.IsMarginVisible = false;
-
-				ca.AxisX.LineWidth = 0;
-				ca.AxisX.MajorGrid.LineWidth = 0;
-				ca.AxisX.LabelStyle.Enabled = false;
-				ca.AxisX.MajorTickMark.Enabled = false;
-				ca.AxisX.MinorTickMark.Enabled = false;
-				ca.AxisX.LineDashStyle = ChartDashStyle.NotSet;
-				ca.AxisX.IsMarginVisible = false;
-
-				chart.ChartAreas.Add(ca);
-
-				var s = new Series();
-				s.BorderWidth = 2;
-				s.ChartType = chartType;
-
-				for (int i = 0; i < values.Length; i++)
-				{
-					DataPoint p = new DataPoint();
-					p.XValue = i;
-					p.YValues = new Double[] { values[i] };
-					s.Points.Add(p);
-				}
-
-				chart.Series.Add(s);
-
-				chart.Paint(g, rect);
+				x = values[i];
+				x += 7;
+				
+				g.DrawLine(pen, 0, (cx - x) * scale, cx - x, cy * (scale*2));
 			}
 		}
 	}
