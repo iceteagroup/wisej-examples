@@ -2,7 +2,7 @@
 using System;
 using Wisej.Web;
 
-namespace Wisej.Sequence
+namespace Wisej.jSequence
 {
     public partial class Page1 : Page
     {

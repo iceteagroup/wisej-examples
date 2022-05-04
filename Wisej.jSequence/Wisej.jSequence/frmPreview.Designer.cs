@@ -1,5 +1,5 @@
 ﻿
-namespace Wisej.Sequence
+namespace Wisej.jSequence
 {
     partial class frmPreview
     {

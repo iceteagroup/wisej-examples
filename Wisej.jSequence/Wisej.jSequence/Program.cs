@@ -1,7 +1,7 @@
 ﻿using System;
 using Wisej.Web;
 
-namespace Wisej.Sequence
+namespace Wisej.jSequence
 {
     static class Program
     {

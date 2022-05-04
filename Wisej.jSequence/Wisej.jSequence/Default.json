@@ -40,5 +40,5 @@
 {
 	"url": "Default.html",
 	"showLoader": false,
-	"startup": "Wisej.Sequence.Program.Main, Wisej.Sequence"
+	"startup": "Wisej.jSequence.Program.Main, Wisej.jSequence"
 }
