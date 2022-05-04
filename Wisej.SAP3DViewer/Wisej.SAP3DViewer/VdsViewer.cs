@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Web;
-using Wisej.Core;
+using System.Runtime.CompilerServices;
 using Wisej.Web;
 
 namespace Wisej.SAP3DViewer
@@ -15,6 +12,8 @@ namespace Wisej.SAP3DViewer
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public override string InitScript
 		{
+			// disable inlining or we lose the calling assembly in GetResourceString().
+			[MethodImpl(MethodImplOptions.NoInlining)]
 			get
 			{
 				return GetResourceString("Wisej.SAP3DViewer.JavaScript.Init.js");

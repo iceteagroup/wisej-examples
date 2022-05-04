@@ -114,7 +114,7 @@ namespace Wisej.SAP3DViewer
 
 		private void widget1_DragDrop(object sender, DragEventArgs e)
 		{
-			var files = (HttpFileCollection)e.Data.GetData(DataFormats.Files);
+			var files = (Wisej.Core.HttpFileCollection)e.Data.GetData(DataFormats.Files);
 			if (files?.Count > 0)
 				LoadFileStream(files[0].InputStream);
 		}

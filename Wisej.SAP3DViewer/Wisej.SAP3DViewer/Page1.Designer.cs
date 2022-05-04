@@ -41,8 +41,8 @@
 			this.label1 = new Wisej.Web.Label();
 			this.flowLayoutPanel1 = new Wisej.Web.FlowLayoutPanel();
 			this.flexLayoutPanel2 = new Wisej.Web.FlexLayoutPanel();
-			this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
 			this.widget1 = new Wisej.SAP3DViewer.VdsViewer();
+			this.flexLayoutPanel1 = new Wisej.Web.FlexLayoutPanel();
 			this.groupBox1.SuspendLayout();
 			this.flowLayoutPanel1.SuspendLayout();
 			this.flexLayoutPanel2.SuspendLayout();
@@ -53,7 +53,7 @@
 			// 
 			this.button1.Location = new System.Drawing.Point(3, 101);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(568, 57);
+			this.button1.Size = new System.Drawing.Size(628, 57);
 			this.button1.TabIndex = 1;
 			this.button1.Text = "Load Server File";
 			this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -77,7 +77,7 @@
 			this.comboBox1.Enabled = false;
 			this.comboBox1.Location = new System.Drawing.Point(16, 34);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(546, 43);
+			this.comboBox1.Size = new System.Drawing.Size(606, 43);
 			this.comboBox1.TabIndex = 2;
 			this.comboBox1.ValueMember = "id";
 			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -88,7 +88,7 @@
 			this.button2.Display = Wisej.Web.Display.Icon;
 			this.button2.Enabled = false;
 			this.button2.ImageSource = "node-closed";
-			this.button2.Location = new System.Drawing.Point(515, 100);
+			this.button2.Location = new System.Drawing.Point(575, 100);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(47, 43);
 			this.button2.TabIndex = 3;
@@ -105,7 +105,7 @@
 			this.comboBox2.Enabled = false;
 			this.comboBox2.Location = new System.Drawing.Point(16, 100);
 			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(493, 43);
+			this.comboBox2.Size = new System.Drawing.Size(553, 43);
 			this.comboBox2.TabIndex = 4;
 			this.comboBox2.ValueMember = "id";
 			// 
@@ -114,7 +114,7 @@
 			this.upload1.HideValue = true;
 			this.upload1.Location = new System.Drawing.Point(3, 35);
 			this.upload1.Name = "upload1";
-			this.upload1.Size = new System.Drawing.Size(568, 50);
+			this.upload1.Size = new System.Drawing.Size(628, 50);
 			this.upload1.TabIndex = 5;
 			this.upload1.Text = "Load Client File";
 			this.upload1.Uploaded += new Wisej.Web.UploadedEventHandler(this.upload1_Uploaded);
@@ -126,7 +126,7 @@
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Location = new System.Drawing.Point(3, 174);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(568, 173);
+			this.groupBox1.Size = new System.Drawing.Size(628, 173);
 			this.groupBox1.TabIndex = 6;
 			this.groupBox1.Text = "Play Steps";
 			// 
@@ -134,7 +134,7 @@
 			// 
 			this.label1.Location = new System.Drawing.Point(3, 3);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(567, 25);
+			this.label1.Size = new System.Drawing.Size(629, 25);
 			this.label1.TabIndex = 7;
 			this.label1.Text = "Drag & Drop a VDS file";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,7 +149,7 @@
 			this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 5);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
 			this.flowLayoutPanel1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flowLayoutPanel1.ResponsiveProfiles"))));
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(1159, 647);
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(1281, 647);
 			this.flowLayoutPanel1.TabIndex = 8;
 			this.flowLayoutPanel1.TabStop = true;
 			// 
@@ -165,10 +165,25 @@
 			this.flexLayoutPanel2.Name = "flexLayoutPanel2";
 			this.flexLayoutPanel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel2.ResponsiveProfiles"))));
 			this.flexLayoutPanel2.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("flexLayoutPanel2.ResponsiveProfiles1"))));
-			this.flexLayoutPanel2.Size = new System.Drawing.Size(573, 641);
+			this.flexLayoutPanel2.Size = new System.Drawing.Size(635, 641);
 			this.flexLayoutPanel2.Spacing = 4;
 			this.flexLayoutPanel2.TabIndex = 8;
 			this.flexLayoutPanel2.TabStop = true;
+			// 
+			// widget1
+			// 
+			this.widget1.AllowDrop = true;
+			this.widget1.Location = new System.Drawing.Point(3, 38);
+			this.widget1.Name = "widget1";
+			this.widget1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("widget1.ResponsiveProfiles"))));
+			this.widget1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("widget1.ResponsiveProfiles1"))));
+			this.widget1.Size = new System.Drawing.Size(629, 600);
+			this.widget1.TabIndex = 0;
+			this.widget1.Text = "widget1";
+			this.widget1.WebRequest += new Wisej.Web.WebRequestHandler(this.widget1_WebRequest);
+			this.widget1.DragDrop += new Wisej.Web.DragEventHandler(this.widget1_DragDrop);
+			this.widget1.DragEnter += new Wisej.Web.DragEventHandler(this.widget1_DragEnter);
+			this.widget1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.widget1_WidgetEvent);
 			// 
 			// flexLayoutPanel1
 			// 
@@ -180,32 +195,17 @@
 			this.flexLayoutPanel1.CssStyle = "transition:top 150ms, left 150ms";
 			this.flowLayoutPanel1.SetFillWeight(this.flexLayoutPanel1, 1);
 			this.flexLayoutPanel1.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
-			this.flexLayoutPanel1.Location = new System.Drawing.Point(582, 3);
+			this.flexLayoutPanel1.Location = new System.Drawing.Point(644, 3);
 			this.flexLayoutPanel1.MinimumSize = new System.Drawing.Size(300, 0);
 			this.flexLayoutPanel1.Name = "flexLayoutPanel1";
 			this.flexLayoutPanel1.Padding = new Wisej.Web.Padding(0, 32, 0, 0);
-			this.flexLayoutPanel1.Size = new System.Drawing.Size(574, 350);
+			this.flexLayoutPanel1.Size = new System.Drawing.Size(634, 350);
 			this.flexLayoutPanel1.TabIndex = 9;
 			this.flexLayoutPanel1.TabStop = true;
 			// 
-			// widget1
-			// 
-			this.widget1.AllowDrop = true;
-			this.widget1.Location = new System.Drawing.Point(3, 38);
-			this.widget1.Name = "widget1";
-			this.widget1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("widget1.ResponsiveProfiles"))));
-			this.widget1.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("widget1.ResponsiveProfiles1"))));
-			this.widget1.Size = new System.Drawing.Size(567, 600);
-			this.widget1.TabIndex = 0;
-			this.widget1.Text = "widget1";
-			this.widget1.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.widget1_WidgetEvent);
-			this.widget1.WebRequest += new Wisej.Web.WebRequestHandler(this.widget1_WebRequest);
-			this.widget1.DragDrop += new Wisej.Web.DragEventHandler(this.widget1_DragDrop);
-			this.widget1.DragEnter += new Wisej.Web.DragEventHandler(this.widget1_DragEnter);
-			// 
 			// Page1
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.Controls.Add(this.flowLayoutPanel1);
@@ -213,7 +213,7 @@
 			this.Padding = new Wisej.Web.Padding(5);
 			this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles"))));
 			this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
-			this.Size = new System.Drawing.Size(1169, 480);
+			this.Size = new System.Drawing.Size(1274, 307);
 			this.Text = "Page1";
 			this.groupBox1.ResumeLayout(false);
 			this.flowLayoutPanel1.ResumeLayout(false);
