@@ -40,5 +40,5 @@
 {
 	"url": "Default.html",
 	"showLoader": false,
-	"startup": "Wisej.Wallpaper.Program.Main, Wisej.Wallpaper"
+	"startup": "Wisej.BingWallpaper.Program.Main, Wisej.BingWallpaper"
 }

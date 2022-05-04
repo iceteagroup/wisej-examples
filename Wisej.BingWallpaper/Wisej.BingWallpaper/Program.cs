@@ -1,7 +1,7 @@
 ﻿using System;
 using Wisej.Web;
 
-namespace Wisej.Wallpaper
+namespace Wisej.BingWallpaper
 {
     static class Program
     {

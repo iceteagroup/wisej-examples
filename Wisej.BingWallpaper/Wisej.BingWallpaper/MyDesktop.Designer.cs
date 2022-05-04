@@ -1,5 +1,5 @@
 ﻿
-namespace Wisej.Wallpaper
+namespace Wisej.BingWallpaper
 {
     partial class MyDesktop
     {
