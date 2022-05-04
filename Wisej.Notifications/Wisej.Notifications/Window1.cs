@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Wisej.Web;
 
-namespace Wisej.Notifications
+namespace Wisej.Notification
 {
     public partial class Window1 : Form
     {

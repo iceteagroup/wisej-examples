@@ -1,7 +1,7 @@
 ﻿using System;
 using Wisej.Web;
 
-namespace Wisej.Notifications
+namespace Wisej.Notification
 {
     static class Program
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace Wisej.Notifications
+namespace Wisej.Notification
 {
     partial class Window1
     {

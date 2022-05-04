@@ -40,5 +40,5 @@
 {
 	"url": "Default.html",
 	"showLoader": false,
-	"startup": "Wisej.Notifications.Program.Main, Wisej.Notifications"
+	"startup": "Wisej.Notification.Program.Main, Wisej.Notification"
 }
