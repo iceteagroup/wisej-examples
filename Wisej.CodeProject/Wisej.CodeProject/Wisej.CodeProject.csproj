@@ -84,21 +84,21 @@
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
-		<PackageReference Include="System.Data.SQLite" Version="1.0.114.4" />
-		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.114.3" />
-		<PackageReference Include="System.Data.SQLite.EF6" Version="1.0.114" />
-		<PackageReference Include="System.Data.SQLite.Linq" Version="1.0.114" />
-		<PackageReference Include="Wisej-3" Version="3.0.1-beta.12" />
+		<PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
+		<PackageReference Include="System.Data.SQLite.EF6" Version="1.0.115.5" />
+		<PackageReference Include="System.Data.SQLite.Linq" Version="1.0.115.5" />
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Wisej-3-CKEditor" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-BingWallpaper" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-JustGage" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-Speech" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-CoolClock" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-ProgressCircle" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
+	<PackageReference Include="Wisej-3" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3-CKEditor" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3-BingWallpaper" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3-JustGage" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3-Speech" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3-CoolClock" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3-ProgressCircle" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3-MaterialDesign" Version="3.0.*-*" />
   </ItemGroup>
 
   <ItemGroup>
