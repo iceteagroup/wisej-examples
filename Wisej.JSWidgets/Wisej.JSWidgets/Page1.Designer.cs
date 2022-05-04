@@ -48,7 +48,7 @@ namespace Wisej.JSWidgets
             this.label1.Font = new System.Drawing.Font("default", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label1.Location = new System.Drawing.Point(24, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 23);
+            this.label1.Size = new System.Drawing.Size(107, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "JSWidgets";
             // 
@@ -142,7 +142,7 @@ namespace Wisej.JSWidgets
             // 
             // Page1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
             this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
@@ -156,7 +156,7 @@ namespace Wisej.JSWidgets
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Page1";
-            this.Size = new System.Drawing.Size(1590, 793);
+            this.Size = new System.Drawing.Size(1135, 509);
             this.Text = "Page1";
             this.ResumeLayout(false);
             this.PerformLayout();
