@@ -31,7 +31,7 @@ namespace UploadFiles
 
 		private void pictureBox_DragDrop(object sender, DragEventArgs e)
 		{
-			LoadFile((HttpFileCollection)e.Data.GetData(DataFormats.Files));
+			LoadFile((Wisej.Core.HttpFileCollection)e.Data.GetData(DataFormats.Files));
 		}
 
 		private void flowLayoutPanel_DragEnter(object sender, DragEventArgs e)
@@ -62,7 +62,7 @@ namespace UploadFiles
 
 		private void flowLayoutPanel_DragDrop(object sender, DragEventArgs e)
 		{
-			LoadFiles((HttpFileCollection)e.Data.GetData(DataFormats.Files));
+			LoadFiles((Wisej.Core.HttpFileCollection)e.Data.GetData(DataFormats.Files));
 		}
 
 		private void buttonClear_Click(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace UploadFiles
 
 		}
 
-		private void LoadFile(HttpFileCollection files)
+		private void LoadFile(Wisej.Core.HttpFileCollection files)
 		{
 			if (files == null)
 				return;
@@ -89,7 +89,7 @@ namespace UploadFiles
 		// Process multiple files and create a new child PictureBox inside
 		// the flow layout panel. Each PictureBox handles the click event to trigger the download of the
 		// uploaded file.
-		private void LoadFiles(HttpFileCollection files)
+		private void LoadFiles(Wisej.Core.HttpFileCollection files)
 		{
 			if (files == null)
 				return;
