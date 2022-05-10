@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.TaskBarSample", "Wisej.TaskBar\Wisej.TaskBarSample.csproj", "{6531B93C-7F69-44C6-A4EE-A2177EEC5578}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.TaskBar", "Wisej.TaskBar\Wisej.TaskBar.csproj", "{6531B93C-7F69-44C6-A4EE-A2177EEC5578}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
