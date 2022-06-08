@@ -24,5 +24,6 @@
 //						Custom settings are available using Application.Configuration.Settings.
 {
 	"url": "Default.html",
+	"theme": "blue-1",
 	"startup": "Wisej.FullCalendar.Program.Main, Wisej.FullCalendar"
 }
