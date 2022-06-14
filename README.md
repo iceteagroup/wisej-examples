@@ -23,7 +23,9 @@
   </p>
 </div>
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
+
 ![Wisej.NET Extensions](https://user-images.githubusercontent.com/21205878/171510449-4a02bf8a-503e-4951-ab56-14bceef5e915.png)
 
 This repository contains demonstrations of various Wisej.NET features and concepts.
