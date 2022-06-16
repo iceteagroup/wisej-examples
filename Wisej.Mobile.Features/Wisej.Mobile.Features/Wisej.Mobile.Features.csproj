@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48;net6.0</TargetFrameworks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'=='net48'">
+    <OutputPath>bin\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <StartupObject></StartupObject>
+    <OutputType>Library</OutputType>
+    <RunCommand>$(ProgramFiles)\IIS Express\iisexpress.exe</RunCommand>
+    <RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
+  </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <StartupObject>$(RootNamespace).Startup</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)'=='net48' ">
+    <Reference Include="System.Windows.Forms" />
+	  <Reference Include="System.IO.Compression" />
+	  <Compile Remove="Startup.cs" />
+    <Content Include="Startup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Certificates.p12" />
+    <None Remove="Data\ServerAuthKey.lic" />
+    <None Remove="Data\service-bell_daniel_simion.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Default.html" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Wisej-3" Version="3.*-*" />
+	<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
+    <PackageReference Include="Wisej-3-MobileIntegration" Version="3.*-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Default.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Web.config">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+</Project>
