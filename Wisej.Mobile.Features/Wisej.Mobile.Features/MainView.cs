@@ -21,7 +21,8 @@ namespace Wisej.Mobile.Features
 			// default view.
 			SwitchView(typeof(Tests));
 
-			InitializeNative();
+			if (Device.Valid)
+				InitializeNative();
 		}
 
 		private void InitializeNative()
