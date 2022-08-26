@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.7.0.0-->
+<svg fill="none" fill-rule="evenodd" stroke="black" stroke-width="0.501" stroke-linejoin="bevel" stroke-miterlimit="10" font-family="Times New Roman" font-size="16" style="font-variant-ligatures:none" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="420.945pt" height="595.277pt" viewBox="0 -595.277 420.945 595.277">
+ <defs>
+	</defs>
+ <g id="Layer 1" transform="scale(1 -1)">
+  <g id="Group" stroke-linejoin="miter" stroke-linecap="round" stroke="none">
+   <rect x="-95.999" y="-95.999" width="191.999" height="191.999" transform="translate(109.516 489.001) rotate(90)" stroke-width="0.571"/>
+   <g id="Group_1" stroke-width="0.5" fill="#e5e5e5">
+    <rect x="25.517" y="525.002" width="47.999" height="47.999"/>
+    <rect x="85.517" y="525.002" width="47.999" height="47.999"/>
+    <rect x="145.517" y="525.002" width="47.999" height="47.999"/>
+    <rect x="25.517" y="465.002" width="47.999" height="47.999"/>
+    <rect x="85.517" y="465.002" width="47.999" height="47.999"/>
+    <rect x="145.517" y="465.002" width="47.999" height="47.999"/>
+    <rect x="25.517" y="405.002" width="47.999" height="47.999"/>
+    <rect x="85.517" y="405.002" width="47.999" height="47.999"/>
+    <rect x="145.517" y="405.002" width="47.999" height="47.999"/>
+   </g>
+  </g>
+  <rect x="120.001" y="318.82" width="47.999" height="47.999" fill="#7dff00" stroke-linejoin="miter" stroke-width="0.5"/>
+  <text xml:space="preserve" transform="translate(120 334.618) scale(1 -1)" kerning="auto" stroke="none" stroke-linecap="round"><tspan x="14.122" y="0" fill="#387300" font-family="Open Sans ExtraBold" font-size="27.319" stroke-width="0.25" stroke-linejoin="round">X</tspan></text>
+  <rect x="195.001" y="318.82" width="47.999" height="47.999" fill="#ff0046" stroke-linejoin="miter" stroke-width="0.5"/>
+  <text xml:space="preserve" transform="translate(195 334.618) scale(1 -1)" kerning="auto" stroke-linecap="round" stroke="none"><tspan x="13.115" y="0" fill="#820024" font-family="Open Sans ExtraBold" font-size="27.319" stroke-width="0.25" stroke-linejoin="round">O</tspan></text>
+ </g>
+</svg>
