@@ -1,207 +1,182 @@
 ﻿
 using System;
 using System.Drawing;
-using System.Linq;
 using Wisej.Web;
+
+//  field order:
+//  0   1   2
+//  3   4   5
+//  6   7   8
+
+//  winning combinations:
+//  0   1   2       0   3   6       0   4   8
+//  3   4   5       1   4   7       2   4   6
+//  6   7   8       2   5   8
 
 namespace TicTacToe
 {
-
-/*	Field locations:
-		1   2   3
-		4   5   6
-		7   8   9
-*/
-
-    public partial class MainPage : Page
+	public partial class MainPage : Page
 	{
-
-		private enum Players { None, Player, Computer }
-
-        public MainPage()
+		public MainPage()
 		{
 			InitializeComponent();
+            ButtonArray = new Button[9] { Field11, Field12, Field13, Field21, Field22, Field23, Field31, Field32, Field33 };
+            Fields = new Players[9];
             ResetGame();
-        }
+		}
 
-        private int PlayerScore { get; set; } = 0;
-        private int ComputerScore { get; set; } = 0;
-        private Players CurrentPlayer { get; set; } = Players.Player;
-        
-        private readonly Random Rand = new Random();
+		private int PlayerScore { get; set; }
+		private int ComputerScore { get; set; }
+		private Players[] Fields { get;  }
+		private Players CurrentPlayer { get; set; }
+        private Button[] ButtonArray { get; }
 
-		private void ResetGame()
+        private void ResetGame()
 		{
-            // clear all fields
-            foreach (var c in Controls)
-                if (c is Button field && field.Name.StartsWith("Field"))
-					SetFieldState(field, Players.None);
+			for (int i = 0; i < Fields.Length; i++)
+				Fields[i] = Players.None;
+			CurrentPlayer = Players.Player;
+			UpdateGame();
+		}
 
-            UpdateScoreDisplay();
+		private void UpdateGame() 
+		{
+            for (int i = 0; i < Fields.Length; i++)
+			    UpdateButton(ButtonArray[i], Fields[i]);
+			
+			lblPlayerScore.Text = $"Player: {PlayerScore}";
+			lblComputerScore.Text = $"Computer: {ComputerScore}";
         }
 
-        private void SetFieldState(Button field, Players player)
+        private void UpdateButton(Button button, Players player)
         {
-            // display field depending on who clicked it
-            field.Tag = player;
             switch (player)
             {
                 case Players.Player:
-                    field.Text = "X";
-                    field.BackColor = Color.Chartreuse;
-                    field.ForeColor = Color.DarkGreen;
+                    button.Text = "X";
+                    button.BackColor = Color.Chartreuse;
+                    button.ForeColor = Color.DarkGreen;
                     break;
                 case Players.Computer:
-                    field.Text = "O";
-                    field.BackColor = Color.Crimson;
-                    field.ForeColor = Color.White;
+                    button.Text = "O";
+                    button.BackColor = Color.Crimson;
+                    button.ForeColor = Color.White;
                     break;
                 default:
-                    field.Text = "";
-                    field.BackColor = Color.LightGray;
-                    field.ForeColor = Color.DarkBlue;
+                    button.Text = "";
+                    button.BackColor = Color.LightGray;
+                    button.ForeColor = Color.DarkBlue;
                     break;
             }
         }
 
-        private Players GetState(Button field)
+        private int IndexOf(Button button)
         {
-            // return who clicked this field
-            if (field == null || !field.Name.StartsWith("Field") || field.Tag == null)
-                return Players.None;
-            return (Players)field.Tag;
+            for (int i = 0; i < ButtonArray.Length; i++)
+                if (ButtonArray[i] == button)
+                    return i;
+            return -1;
         }
 
-        private bool GameOver(Players player)
+        private bool IsWinner(Players player)
         {
-            if (player == Players.None)
-                return false;
+            //  winning combinations:
+            //  0   1   2       0   3   6       0   4   8
+            //  3   4   5       1   4   7       2   4   6
+            //  6   7   8       2   5   8
 
-            // check if there' 3 in a row (horizontally, vertically or diagonally
-            bool gameOver = 
-                (GetState(Field11) == player && GetState(Field12) == player && GetState(Field13) == player) ||
-                (GetState(Field21) == player && GetState(Field22) == player && GetState(Field23) == player) ||
-                (GetState(Field31) == player && GetState(Field32) == player && GetState(Field33) == player) ||
-                (GetState(Field11) == player && GetState(Field21) == player && GetState(Field31) == player) ||
-                (GetState(Field12) == player && GetState(Field22) == player && GetState(Field32) == player) ||
-                (GetState(Field13) == player && GetState(Field23) == player && GetState(Field33) == player) ||
-                (GetState(Field11) == player && GetState(Field22) == player && GetState(Field33) == player) ||
-                (GetState(Field13) == player && GetState(Field22) == player && GetState(Field31) == player);
-
-
-            if (!gameOver)
-            {
-                // no more buttons left? Then it's a tie
-                if (NoMoreButtonsLeft())
-                    player = Players.None;
-                else
-                    return false;
-            }
-
-            CurrentPlayer = Players.None;
-            try
-            {
-                switch (player)
-                {
-                    case Players.Player:
-                        PlayerScore++;
-                        MessageBox.Show("You won!", "Congratulations", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        break;
-                    case Players.Computer:
-                        ComputerScore++;
-                        MessageBox.Show("I'm sorry but this time you lost :-(", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        break;
-                    default:
-                        MessageBox.Show("Nobody won, it's a tie!", "Woah!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        break;
-                }
-
-                UpdateScoreDisplay();
-                ResetGame();
-            }
-            finally
-            {
-                CurrentPlayer = Players.Player;
-            }
-
-            return true;
+            return ((Fields[0] == player && Fields[1] == player && Fields[2] == player) ||
+                (Fields[3] == player && Fields[4] == player && Fields[5] == player) ||
+                (Fields[6] == player && Fields[7] == player && Fields[8] == player) ||
+                (Fields[0] == player && Fields[3] == player && Fields[6] == player) ||
+                (Fields[1] == player && Fields[4] == player && Fields[7] == player) ||
+                (Fields[2] == player && Fields[5] == player && Fields[8] == player) ||
+                (Fields[0] == player && Fields[4] == player && Fields[8] == player) ||
+                (Fields[2] == player && Fields[4] == player && Fields[6] == player));
         }
 
-        private bool NoMoreButtonsLeft()
+        private bool AnyChoiceLeft()
         {
-            return
-                GetState(Field11) != Players.None && GetState(Field12) != Players.None && GetState(Field13) != Players.None &&
-                GetState(Field21) != Players.None && GetState(Field22) != Players.None && GetState(Field23) != Players.None &&
-                GetState(Field31) != Players.None && GetState(Field32) != Players.None && GetState(Field33) != Players.None;
+            foreach (var field in Fields)
+                if (field == Players.None)
+                    return true;
+            return false;
         }
 
-        private void UpdateScoreDisplay()
+        private void PlayerChoice(Button button)
         {
-            lblPlayerScore.Text = $"Player: {PlayerScore}";
-            lblComputerScore.Text = $"Computer: {ComputerScore}";
+            int index = IndexOf(button);
+            if (index < 0 || Fields[index] != Players.None)
+                return;
+
+            Fields[index] = Players.Player;
+            UpdateButton(button, Players.Player);
+            if (IsWinner(Players.Player))
+            {
+                GameOver(Players.Player);
+                return;
+            }
+            if (!AnyChoiceLeft())
+            {
+                GameOver(Players.None);
+                return;
+            }
+
+            CurrentPlayer = Players.Computer;
         }
 
         private void ComputerChoice()
         {
-            Button field;
+            int index = ComputerBrain.GetChoice(Fields);
 
-            // find a random field that hasn't been clicked yet
-            while (true)
+            Fields[index] = Players.Computer;
+            UpdateButton(ButtonArray[index], Players.Computer);
+
+            if (IsWinner(Players.Computer))
             {
-                field = GetFieldByIndex(Rand.Next(0, 9));
-                if (GetState(field) == Players.None)
-                    break;
+                GameOver(Players.Computer);
+                return;
+            }
+            if (!AnyChoiceLeft())
+            {
+                GameOver(Players.None);
+                return;
             }
 
-            // click the field
-            SetFieldState(field, Players.Computer);
-            if (GameOver(Players.Computer))
-                return;
-
-            // next player
             CurrentPlayer = Players.Player;
         }
 
-        private Button GetFieldByIndex(int index)
+        private void GameOver(Players player)
         {
-            // there are 9 fields (0-8)
-            // depending on the index this method returns the according button
-            int row = (index / 3) + 1;
-            int col = (index % 3) + 1;
-            Button field = Controls.FirstOrDefault(x => x.Name.Equals($"Field{row}{col}")) as Button;
-            return field;
-        }
+            CurrentPlayer = Players.None;
+            if (player == Players.Player)
+            {
+                PlayerScore++;
+                MessageBox.Show("You won!", "Congratulations", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+            else if (player == Players.Computer)
+            {
+                ComputerScore++;
+                MessageBox.Show("You lost!", "Sorry", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else 
+            {
+                MessageBox.Show("Nobody won, it's a tie", "Tie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
-        private void Field_Click(object sender, EventArgs e)
-        {
-            // the player clicked a field
-            if (CurrentPlayer != Players.Player)
-                return;
-
-            // remove the ugly focus around the field button
-            ActiveControl = null;
-
-            // don't do anything if the field has already bee clicked
-            Button field = sender as Button;
-            if ((Players)field.Tag != Players.None)
-                return;
-
-            // mark the field as a player's field
-            SetFieldState(field, Players.Player);
-
-            // check if there's 3 in a row
-            if (GameOver(Players.Player))
-                return;
-
-            // next player
-            CurrentPlayer = Players.Computer;
+            ResetGame();
         }
 
         private void Ticker_Tick(object sender, EventArgs e)
-        {
-            // the ticker fires periodically and when it's the computer's turn a click is generated
+		{
             if (CurrentPlayer == Players.Computer)
                 ComputerChoice();
+        }
+
+		private void Button_Click(object sender, EventArgs e)
+		{
+            if (CurrentPlayer == Players.Player)
+                PlayerChoice(sender as Button);
         }
     }
 }
