@@ -12,7 +12,7 @@
   <p align="center">
     View the entire Wisej.NET Control Suite
     <br />
-    <a href="https://demo.wisej.com/demos"><strong>View the Live Demo »</strong></a>
+    <a href="https://wisej-demobrowser.azurewebsites.net"><strong>View the Live Demo »</strong></a>
     <br />
     <br />
     <a href="https://wisej.com">Wisej.com</a>
