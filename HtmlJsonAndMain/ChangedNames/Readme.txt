@@ -6,7 +6,7 @@ Wisej usualy uses 3 main startup files
 This example uses a very unusual setup:
 - ChangedNames.html
 - Default.json
-- Startup.cs
+- Program.cs
 
 When you type
 http://servername/Default
@@ -23,13 +23,13 @@ In this example, look at the URL label in the top right corner, to find out what
 The Default.json file on this projects looks like this:
 {
   "url": "ChangedNames.html",
-  "startup": "ChangedNames.Startup.Main, ChangedNames"
+  "startup": "ChangedNames.Program.Main, ChangedNames"
 }
 
 Now Wisej knows it must show ChangedNames.html. This is very important, since browsers need an HTML file and Wisej needs the browser to load and execute wisej.wx
 
 The second piece of information Wisej gets from the json file is the startup method, in this case
-- method ChangedNames.Startup.Main
+- method ChangedNames.Program.Main
 - assembly ChangedNames
 Please note that the "startup" setting in the json file is optional, you can use the "mainWindow" setting instead.
 
@@ -48,3 +48,4 @@ The wisej.wx script reloads the same page.
 Look at the URL label to see what Wisej really loaded.
 
 Please refer to https://github.com/iceteagroup/wisej-examples/blob/master/HtmlJsonAndMain/README.md
+  

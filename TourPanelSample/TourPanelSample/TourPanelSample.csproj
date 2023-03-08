@@ -45,9 +45,9 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Wisej-3" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-CKEditor" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-TourPanel" Version="3.*-*" />
+    <PackageReference Include="Wisej-3" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-CKEditor" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-TourPanel" Version="3.2.*-*" />
   </ItemGroup>
 
 </Project>

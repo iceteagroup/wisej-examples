@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>Wisej usualy uses 3 main startup files
+    <value>Wisej usually uses 3 main startup files
 - Default.html
 - Default.json
 - Program.cs
@@ -126,7 +126,7 @@
 This example uses a very unusual setup:
 - ChangedNames.html
 - Default.json
-- Startup.cs
+- Program.cs
 
 When you type
 http://servername/Default
@@ -143,13 +143,13 @@ In this example, look at the URL label in the top right corner, to find out what
 The Default.json file on this projects looks like this:
 {
   "url": "ChangedNames.html",
-  "startup": "ChangedNames.Startup.Main, ChangedNames"
+  "startup": "ChangedNames.Program.Main, ChangedNames"
 }
 
 Now Wisej knows it must show ChangedNames.html. This is very important, since browsers need an HTML file and Wisej needs the browser to load and execute wisej.wx
 
 The second piece of information Wisej gets from the json file is the startup method, in this case
-- method ChangedNames.Startup.Main
+- method ChangedNames.Program.Main
 - assembly ChangedNames
 Please note that the "startup" setting in the json file is optional, you can use the "mainWindow" setting instead.</value>
   </data>

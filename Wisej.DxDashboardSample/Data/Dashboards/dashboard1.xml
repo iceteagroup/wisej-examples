@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="bn-BD">
+  <Title Text="test" />
+  <DataSources>
+    <SqlDataSource Name="SalesPerson" ComponentName="sqlDataSource1">
+      <Connection Name="nwindConnection" FromAppConfig="true" />
+      <Query Type="SelectQuery" Name="SalesPerson">
+        <Tables>
+          <Table Name="SalesPerson" />
+        </Tables>
+        <Columns>
+          <Column Table="SalesPerson" Name="OrderID" />
+          <Column Table="SalesPerson" Name="Country" />
+          <Column Table="SalesPerson" Name="FirstName" />
+          <Column Table="SalesPerson" Name="LastName" />
+          <Column Table="SalesPerson" Name="ProductName" />
+          <Column Table="SalesPerson" Name="CategoryName" />
+          <Column Table="SalesPerson" Name="OrderDate" />
+          <Column Table="SalesPerson" Name="UnitPrice" />
+          <Column Table="SalesPerson" Name="Quantity" />
+          <Column Table="SalesPerson" Name="Discount" />
+          <Column Table="SalesPerson" Name="Extended Price" />
+          <Column Table="SalesPerson" Name="Sales Person" />
+        </Columns>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="sqlDataSource1" DataMember="SalesPerson">
+      <DataItems>
+        <Measure DataMember="UnitPrice" DefaultId="DataItem0" />
+        <Dimension DataMember="CategoryName" DefaultId="DataItem1" />
+        <Dimension DataMember="OrderDate" DefaultId="DataItem2" />
+        <Dimension DataMember="OrderDate" DefaultId="DataItem3" />
+        <Measure DataMember="CategoryName" SummaryType="Count" DefaultId="DataItem4" />
+      </DataItems>
+      <HiddenDimensions>
+        <Dimension DefaultId="DataItem3" />
+      </HiddenDimensions>
+      <HiddenMeasures>
+        <Measure DefaultId="DataItem4" />
+      </HiddenMeasures>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem2" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Gauge ComponentName="gaugeDashboardItem1" Name="Gauges 1" DataSource="sqlDataSource1" DataMember="SalesPerson">
+      <DataItems>
+        <Measure DataMember="UnitPrice" DefaultId="DataItem0" />
+        <Dimension DataMember="Country" DefaultId="DataItem1" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem1" />
+      </SeriesDimensions>
+      <GaugeElement>
+        <ActualValue DefaultId="DataItem0" />
+        <AbsoluteVariationNumericFormat />
+        <PercentVariationNumericFormat />
+        <PercentOfTargetNumericFormat />
+      </GaugeElement>
+    </Gauge>
+    <Card ComponentName="cardDashboardItem1" Name="Cards 1" DataSource="sqlDataSource1" DataMember="SalesPerson">
+      <DataItems>
+        <Measure DataMember="UnitPrice" DefaultId="DataItem0" />
+        <Dimension DataMember="CategoryName" DefaultId="DataItem1" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem1" />
+      </SeriesDimensions>
+      <Card>
+        <ActualValue DefaultId="DataItem0" />
+        <AbsoluteVariationNumericFormat />
+        <PercentVariationNumericFormat />
+        <PercentOfTargetNumericFormat />
+        <LayoutTemplate Type="Stretched">
+          <TopValue Visible="true" ValueType="ActualValue" DimensionIndex="0" />
+          <MainValue Visible="true" ValueType="Title" DimensionIndex="0" />
+          <SubValue Visible="true" ValueType="Subtitle" DimensionIndex="0" />
+          <BottomValue1 Visible="true" ValueType="PercentVariation" DimensionIndex="0" />
+          <BottomValue2 Visible="true" ValueType="AbsoluteVariation" DimensionIndex="0" />
+          <DeltaIndicator Visible="true" />
+          <Sparkline Visible="true" />
+        </LayoutTemplate>
+      </Card>
+    </Card>
+  </Items>
+  <ColorScheme>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-217938">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="OrderDate" />
+          <Value Type="System.Int32" Value="2015" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+  </ColorScheme>
+  <LayoutOptions>
+    <Height Value="500" />
+  </LayoutOptions>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutGroup Orientation="Vertical">
+        <LayoutGroup>
+          <LayoutItem DashboardItem="chartDashboardItem1" />
+          <LayoutItem DashboardItem="cardDashboardItem1" Weight="1.0376610505450943" />
+        </LayoutGroup>
+        <LayoutItem DashboardItem="gaugeDashboardItem1" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

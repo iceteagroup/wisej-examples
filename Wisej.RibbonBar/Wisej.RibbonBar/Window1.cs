@@ -11,16 +11,6 @@ namespace Wisej.RibbonBar
 		public Window1()
 		{
 			InitializeComponent();
-
-			this.ribbonBarItemCheckBox1.Checked = true;
-			this.ribbonBar.MenuButtonItemClick += RibbonBar_MenuButtonItemClick;
-
-			this.ribbonBarItemComboBox1.Items = new string[] {
-				"One", "Two", "Three"
-			};
-			this.ribbonBarItemComboBox1.Value = "One";
-			this.ribbonBarItemTextBox2.Value = "Text2";
-
 		}
 
 		private void RibbonBar_MenuButtonItemClick(object sender, RibbonBarMenuItemEventArgs e)

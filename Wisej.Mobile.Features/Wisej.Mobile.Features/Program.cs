@@ -10,10 +10,12 @@ namespace Wisej.Mobile.Features
 		/// </summary>
 		static void Main()
 		{
-			//if (Device.Valid)
-				Application.MainPage = new MainView();
-			//else
-			//	Application.Navigate("Unavailable/Default.html");
+			Application.MainPage = new MainView();
 		}
-	}
+
+        static void DeepLink()
+        {
+            Application.MainPage = new DeepLink();
+        }
+    }
 }

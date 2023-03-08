@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Drawing;
+using System.Net;
 using Wisej.Mobile.Features.Panels;
 using Wisej.Web;
 using Wisej.Web.Ext.MobileIntegration;
@@ -34,6 +35,13 @@ namespace Wisej.Mobile.Features
 			Device.ScreenAdded += this.Screen_Added;
 			Device.ScreenRemoved += this.Screen_Removed;
 			Device.PermissionStateChanged += Device_PermissionStateChanged;
+
+			Device.LinkClicked += Device_LinkClicked;
+		}
+
+		private void Device_LinkClicked(object sender, DeviceEventArgs e)
+		{
+			AlertBox.Show($"Deep Link Data: {WebUtility.UrlDecode(e.Data)}");
 		}
 
 		private void SwitchView(Type type)

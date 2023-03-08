@@ -81,7 +81,7 @@ namespace Wisej.RibbonBar
 			// 
 			// 
 			this.ribbonBar.AppButton.ImageSource = "icon-preview?color=#3FBEBF";
-			this.ribbonBar.AppButton.Text = "FIle";
+			this.ribbonBar.AppButton.Text = "File";
 			this.ribbonBar.AppButton.Visible = true;
 			this.ribbonBar.Dock = Wisej.Web.DockStyle.Top;
 			this.ribbonBar.Location = new System.Drawing.Point(0, 0);
@@ -102,6 +102,7 @@ namespace Wisej.RibbonBar
 			this.ribbonBar.ItemClick += new Wisej.Web.Ext.RibbonBar.RibbonBarItemEventHandler(this.ribbonBar_ItemClick);
 			this.ribbonBar.GroupClick += new Wisej.Web.Ext.RibbonBar.RibbonBarGroupEventHandler(this.ribbonBar_GroupClick);
 			this.ribbonBar.ToolClick += new Wisej.Web.ToolClickEventHandler(this.ribbonBar_ToolClick);
+			this.ribbonBar.MenuButtonItemClick += new Wisej.Web.Ext.RibbonBar.RibbonBarMenuItemEventHandler(this. RibbonBar_MenuButtonItemClick);
 			// 
 			// ribbonBarPage1
 			// 
@@ -213,6 +214,7 @@ namespace Wisej.RibbonBar
 			// ribbonBarItemCheckBox1
 			// 
 			this.ribbonBarItemCheckBox1.Text = "Overwrite";
+			this.ribbonBarItemCheckBox1.Checked = true;
 			// 
 			// ribbonBarItemCheckBox2
 			// 
@@ -245,6 +247,10 @@ namespace Wisej.RibbonBar
 			// 
 			this.ribbonBarItemComboBox1.ImageSource = "menu-overflow?color=#DF00FF";
 			this.ribbonBarItemComboBox1.Text = "User Level";
+			this.ribbonBarItemComboBox1.Items = new string[] {
+				"One", "Two", "Three"
+			};
+
 			// 
 			// ribbonBarGroup4
 			// 

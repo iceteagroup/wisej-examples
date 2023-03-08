@@ -3,7 +3,6 @@ using System.Diagnostics;
 using System.Drawing;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
-//using Microsoft.VisualBasic.CompilerServices;
 using Wisej.Web;
 
 namespace TetrisBoxWisej
@@ -59,7 +58,7 @@ namespace TetrisBoxWisej
             {
                 var withBlock = dlgColor;
                 withBlock.Color = sender.BackColor;
-                if ((int)withBlock.ShowDialog(this) == (int)System.Windows.Forms.DialogResult.OK)
+                if ((int)withBlock.ShowDialog(this) == (int)Wisej.Web.DialogResult.OK)
                 {
                     sender.BackColor = withBlock.Color;
                     Microsoft.VisualBasic.Interaction.CallByName(TetrisBox1, propertyName, CallType.Set, (object)withBlock.Color);
@@ -114,7 +113,7 @@ namespace TetrisBoxWisej
         private void Form1_Load(object sender, EventArgs e)
         {
             cboGradientDirection.SelectedIndex = 1;
-            foreach (string name in Enum.GetNames(typeof(System.Windows.Forms.Keys)))
+            foreach (string name in Enum.GetNames(typeof(Wisej.Web.Keys)))
             {
                 cboKeysLeft.Items.Add(name);
                 cboKeysRight.Items.Add(name);
@@ -185,14 +184,14 @@ namespace TetrisBoxWisej
 
         private void ManageKeyProperty(ComboBox sender, string propertyName)
         {
-            var names = Enum.GetNames(typeof(System.Windows.Forms.Keys));
-            int[] values = (int[])Enum.GetValues(typeof(System.Windows.Forms.Keys));
+            var names = Enum.GetNames(typeof(Wisej.Web.Keys));
+            int[] values = (int[])Enum.GetValues(typeof(Wisej.Web.Keys));
             for (int index = 0, loopTo = names.Length - 1; index <= loopTo; index++)
             {
                 if (sender.SelectedItem.Equals(names[index]))
                 {
 
-                    Microsoft.VisualBasic.Interaction.CallByName(TetrisBox1, propertyName, CallType.Set, (System.Windows.Forms.Keys)Conversions.ToInteger(values[index]));
+                    Microsoft.VisualBasic.Interaction.CallByName(TetrisBox1, propertyName, CallType.Set, (Wisej.Web.Keys)Conversions.ToInteger(values[index]));
                 }
             }
         }

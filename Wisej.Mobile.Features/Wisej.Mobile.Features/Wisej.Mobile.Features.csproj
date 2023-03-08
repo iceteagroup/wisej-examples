@@ -28,6 +28,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Content Update="DeepLink.json">
+		  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Content>
 		<Content Update="Default.json">
 			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
 		</Content>
@@ -62,13 +65,13 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Wisej-3" Version="3.0.*-*" />
+    <PackageReference Include="Wisej-3" Version="3.2.*-*" />
 	<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-	<PackageReference Include="Wisej-3-Barcode" Version="3.0.*-*" />
-	  <PackageReference Include="Wisej-3-Camera" Version="3.0.*-*" />
-	  <PackageReference Include="Wisej-3-Geolocation" Version="3.0.*-*" />
-	  <PackageReference Include="Wisej-3-MaterialDesign" Version="3.0.*-*" />
-    <PackageReference Include="Wisej-3-MobileIntegration" Version="3.0.*-*" />
+	<PackageReference Include="Wisej-3-Barcode" Version="3.2.*-*" />
+	  <PackageReference Include="Wisej-3-Camera" Version="3.2.*-*" />
+	  <PackageReference Include="Wisej-3-Geolocation" Version="3.2.*-*" />
+	  <PackageReference Include="Wisej-3-MaterialDesign" Version="3.2.*-*" />
+    <PackageReference Include="Wisej-3-MobileIntegration" Version="3.2.*-*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -45,15 +45,15 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Wisej-3" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-ElegantIcons" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-MaterialDesign" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-ModernUI" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-AspNetControl" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-ChartJS" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-FullCalendar" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-JustGage" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-ProgressCircle" Version="3.*-*" />	
+    <PackageReference Include="Wisej-3" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-ElegantIcons" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-MaterialDesign" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-ModernUI" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-AspNetControl" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-ChartJS" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-FullCalendar" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-JustGage" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-ProgressCircle" Version="3.2.*-*" />	
   </ItemGroup>
 
 </Project>

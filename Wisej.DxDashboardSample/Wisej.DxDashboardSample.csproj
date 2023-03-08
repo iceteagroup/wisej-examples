@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	<TargetFrameworks>net48;net7.0</TargetFrameworks>
+	<PlatformTarget>AnyCPU</PlatformTarget>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+	<NoWarn>CA1416</NoWarn>
+	<Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+	<OutputPath>bin\</OutputPath>
+	<StartupObject></StartupObject>
+	<OutputType>Library</OutputType>
+	<RunCommand>$(ProgramFiles)\IIS Express\iisexpress.exe</RunCommand>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'!='net'">
+	<StartupObject>$(RootNamespace).Startup</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
+	<Reference Include="Microsoft.CSharp" />
+	<Reference Include="System.Windows.Forms" />
+	<Reference Include="System.Data.DataSetExtensions" />
+	<Compile Remove="Startup.cs" />
+	<Content Include="Startup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Folder Include="Data\" />
+	<Folder Include="Themes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Content Update="Default.json">
+	  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	</Content>
+	<Content Update="Web.config">
+	  <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	</Content>
+  </ItemGroup>
+  
+  <ItemGroup>
+	<None Remove="Default.html" />
+	<None Remove="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Content Include="Default.html">
+	  <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+	</Content>
+	<Content Include="favicon.ico">
+	  <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+	</Content>
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Wisej-3" Version="3.2.*-*" />
+	  <PackageReference Include="DevExpress.Dashboard.Core" Version="22.1.4" />
+	  <PackageReference Include="Wisej-3-DxDashboard" Version="3.2.*-*" />
+  </ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)'=='net48'">
+		<PackageReference Include="DevExpress.Web.Dashboard" Version="22.1.4" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)'=='net7.0'">
+		<PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="22.1.4" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.0" />
+	</ItemGroup>
+	
+</Project>

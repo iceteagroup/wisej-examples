@@ -1,0 +1,95 @@
+﻿//
+// Premium extension configuration file.
+//
+// Use this file to select where to download the JavaScript and CSS
+// assets for the extension widgets. Select between "cdn", "local" or "embedded".
+//
+// Deploy this file with your application or change the Build Action to "Embedded Resource"
+// to embed it within the assembly.
+//
+// A valid license from DevExpress is required to use this integration.
+//
+
+{
+
+	//
+	// Specifies which set of packages to use from the "sources" map below.
+	//
+	"source": "cdn",
+
+	//
+	//
+	//
+	"theme": "light",
+
+	//
+	// Widget packages.
+	//
+	"sources": {
+		"cdn": {
+			"root": "",
+			"packages": {
+				"jquery.js": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js",
+				"jquery-ui.js": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js",
+				"knockout.js": "https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js",
+				"ace.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/ace.js",
+				"ext-language_tools.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/ext-language_tools.min.js",
+				"theme-dreamweaver.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/theme-dreamweaver.min.js",
+				"theme-ambiance.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/theme-ambiance.min.js",
+				"dx.all.js": "https://cdn3.devexpress.com/jslib/22.1.4/js/dx.all.js",
+				"dx-analytics-core.js": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/js/dx-analytics-core.min.js",
+				"dx-querybuilder.js": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/js/dx-querybuilder.min.js",
+				"dx-dashboard.js": "https://unpkg.com/devexpress-dashboard@22.2.4/dist/js/dx-dashboard.min.js",
+				"dx.theme.css": "https://cdnjs.cloudflare.com/ajax/libs/devextreme/22.2.4/css/dx.%theme%.css",
+				"dx-analytics.common.css": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/css/dx-analytics.common.css",
+				"dx-analytics.light.css": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/css/dx-analytics.%theme%.css",
+				"dx-querybuilder.css": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/css/dx-querybuilder.css",
+				"dx-dashboard.light.css": "https://unpkg.com/devexpress-dashboard@22.2.4/dist/css/dx-dashboard.%theme%.css"
+			}
+		},
+
+		"local": {
+			"root": "DevExpress",
+			"packages": {
+				"jquery.js": "%root%.js.jquery.min.js",
+				"jquery-ui.js": "%root%.js.jquery-ui.min.js",
+				"knockout.js": "%root%.js.knockout-latest.js",
+				"ace.js": "%root%.js.ace-min.js",
+				"ext-language_tools.js": "",
+				"theme-dreamweaver.js": "",
+				"theme-ambiance.js": "",
+				"dx.all.js": "",
+				"dx-analytics-core.js": "",
+				"dx-querybuilder.js": "",
+				"dx-dashboard.js": "",
+				"dx.light.css": "",
+				"dx-analytics.common.css": "",
+				"dx-analytics.light.css": "",
+				"dx-querybuilder.css": "",
+				"dx-dashboard.light.css": ""
+			}
+		},
+
+		"embedded": {
+			"root": "resource.wx/Wisej.Web.Ext.DxDashboard.DevExpress.",
+			"packages": {
+				"jquery.js": "%root%.js.jquery.min.js",
+				"jquery-ui.js": "%root%.js.jquery-ui.min.js",
+				"knockout.js": "%root%.js.knockout-latest.js",
+				"ace.js": "%root%.js.ace-min.js",
+				"ext-language_tools.js": "%root%.js.ext-language_tools.js",
+				"theme-dreamweaver.js": "%root%.js.theme-dreamweaver.js",
+				"theme-ambiance.js": "%root%.js.theme-ambiance.js",
+				"dx.all.js": "%root%.js.dx.all.js",
+				"dx-analytics-core.js": "%root%.js.dx-analytics-core.js",
+				"dx-querybuilder.js": "%root%.js.dx-querybuilder.js",
+				"dx-dashboard.js": "%root%.js.dx-dashboard.js",
+				"dx.theme.css": "%root%.css.dx.%theme%.css",
+				"dx-analytics.common.css": "%root%.css.dx-analytics.common.css",
+				"dx-analytics.theme.css": "%root%.css.dx-analytics.%theme%.css",
+				"dx-querybuilder.css": "%root%.css.dx-querybuilder.css",
+				"dx-dashboard.theme.css": "%root%.dx-dashboard.%theme%.css"
+			}
+		}
+	}
+}

@@ -76,9 +76,9 @@ namespace MDIExample
                 modeless = new Modeless();
                 modeless.Location = new Point(this.Width - modeless.Width-10, this.Height - modeless.Height-10);
                 modeless.TopMost = true;
-            }
-
+            } 
             modeless.Show();
+                        
         }
     }
 }

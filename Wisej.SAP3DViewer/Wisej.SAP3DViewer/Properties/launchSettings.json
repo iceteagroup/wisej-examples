@@ -1,4 +1,12 @@
 {
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:64365/",
+      "sslPort": 0
+    }
+  },
   "profiles": {
     "Wisej.SAP3DViewer": {
       "commandName": "Project",
@@ -6,7 +14,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:56265"
+      "applicationUrl": "http://localhost:5000"
     }
   }
 }

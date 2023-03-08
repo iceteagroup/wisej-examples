@@ -22,8 +22,8 @@
 
   <ItemGroup Condition=" '$(TargetFramework)'=='net48' ">
     <Reference Include="System.Windows.Forms" />
-  	<Compile Remove="Startup.cs"/>
-	  <Content Include="Startup.cs"/>
+  	<Compile Remove="Startup.cs" />
+	  <Content Include="Startup.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,8 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Wisej-3" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-ColumnFilter" Version="3.*-*" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.18" />
+    <PackageReference Include="Wisej-3" Version="3.2.*-*" />
+    <PackageReference Include="Wisej-3-ColumnFilter" Version="3.2.*-*" />
   </ItemGroup>
 
   <ItemGroup>

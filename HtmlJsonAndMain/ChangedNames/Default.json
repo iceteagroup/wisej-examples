@@ -32,5 +32,5 @@
 //                            Custom settings are available using Application.Configuration.Settings.
 {
   "url": "ChangedNames.html",
-  "startup": "ChangedNames.Startup.Main, ChangedNames"
+  "startup": "ChangedNames.Program.Main, ChangedNames"
 }

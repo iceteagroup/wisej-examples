@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using Wisej.Web;
+using Wisej.Web.Ext.MobileIntegration;
 
 namespace Wisej.Mobile.Features.Panels
 {
@@ -25,6 +26,11 @@ namespace Wisej.Mobile.Features.Panels
         private void buttonMaps_Click(object sender, EventArgs e)
         {
             Application.Navigate("http://maps.apple.com/?saddr=Cupertino&daddr=San+Francisco");
+        }
+
+        private void buttonNative_Click(object sender, EventArgs e)
+        {
+            Device.OpenBrowser("https://wisej.com");
         }
     }
 }

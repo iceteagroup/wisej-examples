@@ -41,11 +41,11 @@
   </ItemGroup>
   
   <ItemGroup>
-	<PackageReference Include="Wisej-3-Bubbles" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-CoolClock" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-CountUp" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-jQueryKnob" Version="3.*-*" />
-	<PackageReference Include="Wisej-3-Notification" Version="3.*-*" /> 
+	<PackageReference Include="Wisej-3-Bubbles" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-CoolClock" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-CountUp" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-jQueryKnob" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3-Notification" Version="3.2.*-*" /> 
   </ItemGroup>
   
   <ItemGroup>

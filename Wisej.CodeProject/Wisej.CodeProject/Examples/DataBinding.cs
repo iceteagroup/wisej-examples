@@ -163,7 +163,7 @@ namespace Wisej.CodeProject.Examples
 
 		private void textBox2_ToolClick(object sender, ToolClickEventArgs e)
 		{
-			AlertBox.Show("This tool button doesn't do anything.");
+			AlertBox.Show("This tool button does't do anything.");
 		}
 
 		private void dateTimePicker1_ToolClick(object sender, ToolClickEventArgs e)

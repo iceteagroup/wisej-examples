@@ -31,9 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Wisej-3" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-FullCalendar" Version="3.*-*" />
-    <PackageReference Include="Wisej-3-ModernUI" Version="3.*-*" />
+    <PackageReference Include="Wisej-3" Version="3.2.*-*" />
+    <PackageReference Include="Wisej-3-FullCalendar" Version="3.2.*-*" />
+    <PackageReference Include="Wisej-3-ModernUI" Version="3.2.*-*" />
   </ItemGroup>
 
   <ItemGroup>
