@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFrameworks>net48;net6.0</TargetFrameworks>
+    <TargetFrameworks>net48;net7.0</TargetFrameworks>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
@@ -16,7 +16,7 @@
     <RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
   </PropertyGroup>
 
-    <PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <PropertyGroup Condition="'$(TargetFramework)' == 'net7.0'">
     <StartupObject>$(RootNamespace).Startup</StartupObject>
   </PropertyGroup>
 

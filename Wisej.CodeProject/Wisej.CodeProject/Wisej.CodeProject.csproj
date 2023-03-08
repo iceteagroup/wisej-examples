@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
-		<TargetFrameworks>net48;net6.0</TargetFrameworks>
+		<TargetFrameworks>net48;net7.0</TargetFrameworks>
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	</PropertyGroup>
@@ -15,7 +15,7 @@
 		<RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(TargetFramework)'=='net6.0'">
+	<PropertyGroup Condition="'$(TargetFramework)'=='net7.0'">
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 		<UserSecretsId>f1af2bdc-ec26-434e-b848-c95c8ebd6421</UserSecretsId>
 		<StartupObject>$(RootNamespace).Startup</StartupObject>
@@ -107,7 +107,7 @@
 
   <ItemGroup>
     <Reference Include="Wisej.Framework">
-      <HintPath>..\..\..\..\Development\3.0-EMBEDDED\bin\net6.0\Wisej.Framework.dll</HintPath>
+      <HintPath>..\..\..\..\Development\3.0-EMBEDDED\bin\net7.0\Wisej.Framework.dll</HintPath>
     </Reference>
   </ItemGroup>
 
