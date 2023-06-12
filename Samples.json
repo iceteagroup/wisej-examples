@@ -12,11 +12,36 @@
 	{
 		"name": "ChartJS",
 		"documentation": "https://docs.wisej.com/docs",
+		"path": "ChartJS/ChartJS"
+	},
+	{
+		"name": "ColumnFilter",
+		"documentation": "https://docs.wisej.com/docs",
 		"path": "ColumnFilter/Wisej.ColumnFilterSample"
 	},
 	{
 		"name": "Custom Painting",
 		"documentation": "https://docs.wisej.com/docs",
 		"path": "CustomPainting/CustomPainting"
+	},
+	{
+		"name": "Data Binding",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "DataBinding/DataBinding"
+	},
+	{
+		"name": "DataGridView Summary Rows",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "DataGridViewSummaryRows/WiseJ.DataGridViewSummaryRows"
+	},
+	{
+		"name": "DGVEmbeddedNavigator",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "DGVEmbeddedNavigator/DGVEmbeddedNavigator"
+	},
+	{
+		"name": "Download",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Download/Wisej.Download"
 	}
 ]
