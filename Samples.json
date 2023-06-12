@@ -35,13 +35,28 @@
 		"path": "DataGridViewSummaryRows/WiseJ.DataGridViewSummaryRows"
 	},
 	{
-		"name": "DGVEmbeddedNavigator",
-		"documentation": "https://docs.wisej.com/docs",
-		"path": "DGVEmbeddedNavigator/DGVEmbeddedNavigator"
-	},
-	{
 		"name": "Download",
 		"documentation": "https://docs.wisej.com/docs",
 		"path": "Download/Wisej.Download"
+	},
+	{
+		"name": "Integration 1",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Integration1/Integration1"
+	},
+	{
+		"name": "Integration 2",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Integration2/Integration2"
+	},
+	{
+		"name": "Integration 3",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Integration3/Integration3"
+	},
+	{
+		"name": "Integration 4",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Integration4/Integration4"
 	}
 ]
