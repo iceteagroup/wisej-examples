@@ -40,23 +40,18 @@
 		"path": "Download/Wisej.Download"
 	},
 	{
-		"name": "Integration 1",
+		"name": "UserControl",
 		"documentation": "https://docs.wisej.com/docs",
-		"path": "Integration1/Integration1"
+		"path": "UserControl/UserControl"
 	},
 	{
-		"name": "Integration 2",
+		"name": "UserDesktop",
 		"documentation": "https://docs.wisej.com/docs",
-		"path": "Integration2/Integration2"
+		"path": "UserDesktop/UserDesktop"
 	},
 	{
-		"name": "Integration 3",
+		"name": "UserPaintCells",
 		"documentation": "https://docs.wisej.com/docs",
-		"path": "Integration3/Integration3"
-	},
-	{
-		"name": "Integration 4",
-		"documentation": "https://docs.wisej.com/docs",
-		"path": "Integration4/Integration4"
+		"path": "UserPaintCells/Wisej.DGVUserPaint"
 	}
 ]
