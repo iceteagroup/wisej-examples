@@ -1,0 +1,22 @@
+﻿[
+	{
+		"name": "Background Tasks",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "BackgroundTasks/BackgroundTasks"
+	},
+	{
+		"name": "Buttons",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Buttons/Wisej.Buttons"
+	},
+	{
+		"name": "ChartJS",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "ColumnFilter/Wisej.ColumnFilterSample"
+	},
+	{
+		"name": "Custom Painting",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "CustomPainting/CustomPainting"
+	}
+]
