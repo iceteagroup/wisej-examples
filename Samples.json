@@ -40,6 +40,46 @@
 		"path": "Download/Wisej.Download"
 	},
 	{
+		"name": "Editors Choice",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "EditorsChoice/EditorsChoice"
+	},
+	{
+		"name": "FullCalendar",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "FullCalendar/Wisej.FullCalendar"
+	},
+	{
+		"name": "GoogleMaps",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "GoogleMaps/Wisej.GoogleMaps"
+	},
+	{
+		"name": "Html2Canvas",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Html2Canvas/Html2Canvas"
+	},
+	{
+		"name": "Integration1",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Integration1/Integration1"
+	},
+	{
+		"name": "Integration2",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Integration2/Integration2"
+	},
+	{
+		"name": "Integration3",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Integration3/Integration3"
+	},
+	{
+		"name": "Integration4",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Integration4/Integration4"
+	},
+	{
 		"name": "UserControl",
 		"documentation": "https://docs.wisej.com/docs",
 		"path": "UserControl/UserControl"
