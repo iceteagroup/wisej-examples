@@ -91,14 +91,14 @@
 	</ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="Wisej-3" Version="3.2.*-*" />
-    <PackageReference Include="Wisej-3-CKEditor" Version="3.2.*-*" />
-    <PackageReference Include="Wisej-3-BingWallpaper" Version="3.2.*-*" />
-    <PackageReference Include="Wisej-3-JustGage" Version="3.2.*-*" />
-    <PackageReference Include="Wisej-3-Speech" Version="3.2.*-*" />
-    <PackageReference Include="Wisej-3-CoolClock" Version="3.2.*-*" />
-    <PackageReference Include="Wisej-3-ProgressCircle" Version="3.2.*-*" />
-    <PackageReference Include="Wisej-3-MaterialDesign" Version="3.2.*-*" />
+	<PackageReference Include="Wisej-3" Version="3.5.*-*" />
+    <PackageReference Include="Wisej-3-CKEditor" Version="3.5.*-*" />
+    <PackageReference Include="Wisej-3-BingWallpaper" Version="3.5.*-*" />
+    <PackageReference Include="Wisej-3-JustGage" Version="3.5.*-*" />
+    <PackageReference Include="Wisej-3-Speech" Version="3.5.*-*" />
+    <PackageReference Include="Wisej-3-CoolClock" Version="3.5.*-*" />
+    <PackageReference Include="Wisej-3-ProgressCircle" Version="3.5.*-*" />
+    <PackageReference Include="Wisej-3-MaterialDesign" Version="3.5.*-*" />
   </ItemGroup>
 
   <ItemGroup>
