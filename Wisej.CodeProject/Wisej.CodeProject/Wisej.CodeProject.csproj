@@ -83,11 +83,11 @@
 		<Content Update="Default.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
-		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
-		<PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
-		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
-		<PackageReference Include="System.Data.SQLite.EF6" Version="1.0.115.5" />
-		<PackageReference Include="System.Data.SQLite.Linq" Version="1.0.115.5" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.0-Preview.1" />
+		<PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+		<PackageReference Include="System.Data.SQLite.EF6" Version="1.0.118" />
+		<PackageReference Include="System.Data.SQLite.Linq" Version="1.0.118" />
 	</ItemGroup>
 
   <ItemGroup>
