@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
-		<TargetFrameworks>net48;net7.0</TargetFrameworks>
+		<TargetFrameworks>net48;net8.0</TargetFrameworks>
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
