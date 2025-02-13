@@ -36,7 +36,7 @@
 				"ext-language_tools.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/ext-language_tools.min.js",
 				"theme-dreamweaver.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/theme-dreamweaver.min.js",
 				"theme-ambiance.js": "https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.3/theme-ambiance.min.js",
-				"dx.all.js": "https://cdn3.devexpress.com/jslib/22.1.4/js/dx.all.js",
+				"dx.all.js": "https://cdn3.devexpress.com/jslib/22.2.4/js/dx.all.js",
 				"dx-analytics-core.js": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/js/dx-analytics-core.min.js",
 				"dx-querybuilder.js": "https://unpkg.com/@devexpress/analytics-core@22.2.4/dist/js/dx-querybuilder.min.js",
 				"dx-dashboard.js": "https://unpkg.com/devexpress-dashboard@22.2.4/dist/js/dx-dashboard.min.js",

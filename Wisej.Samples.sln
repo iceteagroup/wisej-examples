@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundTasks", "BackgroundTasks\BackgroundTasks\BackgroundTasks.csproj", "{BA22EE1E-C853-40B1-A5C1-ED2B10300AC8}"
 EndProject
@@ -42,6 +42,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.DataRepeaterDragDrop", "Wisej.DataRepeaterDragDrop\Wisej.DataRepeaterDragDrop\Wisej.DataRepeaterDragDrop.csproj", "{19224B51-B7DD-441C-A6F0-CC6456BFA21B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.CustomCellRenderer", "Wisej.CustomCellRenderer\Wisej.CustomCellRenderer\Wisej.CustomCellRenderer.csproj", "{09C876DF-314D-4CF4-BD13-CB10A4F92078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{C19B540C-76BA-4437-871F-03BB3B1940BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake", "Snake\Snake.csproj", "{172AECF0-2CD4-48D5-AB67-FFA838AC4ABE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,14 @@ Global
 		{09C876DF-314D-4CF4-BD13-CB10A4F92078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09C876DF-314D-4CF4-BD13-CB10A4F92078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09C876DF-314D-4CF4-BD13-CB10A4F92078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19B540C-76BA-4437-871F-03BB3B1940BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19B540C-76BA-4437-871F-03BB3B1940BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19B540C-76BA-4437-871F-03BB3B1940BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19B540C-76BA-4437-871F-03BB3B1940BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{172AECF0-2CD4-48D5-AB67-FFA838AC4ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172AECF0-2CD4-48D5-AB67-FFA838AC4ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172AECF0-2CD4-48D5-AB67-FFA838AC4ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172AECF0-2CD4-48D5-AB67-FFA838AC4ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,6 @@
 ﻿
 using System;
 using System.Data;
-using System.Web.Script.Serialization;
 using System.Collections.Generic;
 using Wisej.Web;
 using System.IO;
@@ -108,8 +107,8 @@ namespace Integration2
                 }
                 list.Add(dict);
             }
-            JavaScriptSerializer serializer = new JavaScriptSerializer();
-            string json = serializer.Serialize(list);
+
+            string json = JSON.Stringify(list);
 
             return json;
         }

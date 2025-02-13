@@ -205,7 +205,6 @@ namespace Snake
 
         private void GameOver(string message, string caption)
         {
-			System.Media.SystemSounds.Exclamation.Play();
 			Ticker.Enabled = false;
 			MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Hand);
 			ResetGame();

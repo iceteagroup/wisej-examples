@@ -39,5 +39,6 @@
 //                             Custom settings are available using Application.Configuration.Settings.
 {
 	"url": "Default.html",
+	"enableWebSocket": false,
 	"startup": "Wisej.DxDashboardSample.Program.Main, Wisej.DxDashboardSample"
 }

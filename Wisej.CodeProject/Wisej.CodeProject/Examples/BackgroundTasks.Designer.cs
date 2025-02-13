@@ -37,7 +37,7 @@
 			// 
 			// button1
 			// 
-			this.button1.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/play-arrow.svg";
+			this.button1.ImageSource = "resource.wx/Wisej.Ext.BootstrapIcons/play.svg";
 			this.button1.Location = new System.Drawing.Point(25, 29);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(164, 50);
@@ -48,7 +48,7 @@
 			// 
 			// button2
 			// 
-			this.button2.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/stop-button.svg";
+			this.button2.ImageSource = "resource.wx/Wisej.Ext.BootstrapIcons/stop.svg";
 			this.button2.Location = new System.Drawing.Point(25, 96);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(164, 50);
@@ -59,7 +59,7 @@
 			// 
 			// progressBar1
 			// 
-			this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(143)))), ((int)(((byte)(0)))));
+			this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(255, 143, 0);
 			this.progressBar1.Location = new System.Drawing.Point(234, 30);
 			this.progressBar1.Name = "progressBar1";
 			this.progressBar1.Size = new System.Drawing.Size(349, 49);
@@ -77,7 +77,6 @@
 			this.progressCircle1.Location = new System.Drawing.Point(234, 241);
 			this.progressCircle1.Name = "progressCircle1";
 			this.progressCircle1.Size = new System.Drawing.Size(349, 233);
-			this.progressCircle1.TabIndex = 3;
 			this.progressCircle1.Value = 20;
 			// 
 			// label1
@@ -94,7 +93,7 @@
 			// 
 			// BackgroundTasks
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(605, 502);
 			this.Controls.Add(this.label1);
@@ -102,7 +101,7 @@
 			this.Controls.Add(this.progressBar1);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
-			this.IconSource = "resource.wx/Wisej.Ext.MaterialDesign/settings-cogwheel-button.svg?color=#FFD700";
+			this.IconSource = "resource.wx/Wisej.Ext.BootstrapIcons/list-task.svg?color=#FFD700";
 			this.Name = "BackgroundTasks";
 			this.Text = "Background Tasks Example";
 			this.ResumeLayout(false);

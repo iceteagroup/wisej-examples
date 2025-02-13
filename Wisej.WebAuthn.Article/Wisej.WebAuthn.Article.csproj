@@ -26,7 +26,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Compile Remove="Startup.cs" />
-    <Content Include="Startup.cs"/>
+    <Content Include="Startup.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,9 +57,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Wisej-3" Version="3.2.*-*" />
-	<PackageReference Include="Wisej-3-WebAuthn" Version="3.2.*-*" />
+    <PackageReference Include="Wisej-3" Version="3.5.*-*" />
     <PackageReference Include="System.Data.SqlClient" Version="4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Extensions\3.2\Wisej.Ext.WebAuthn\Wisej.Ext.WebAuthn.csproj" />
   </ItemGroup>
 
 </Project>

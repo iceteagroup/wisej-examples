@@ -33,6 +33,7 @@
 			Wisej.Web.ComponentTool componentTool3 = new Wisej.Web.ComponentTool();
 			Wisej.Web.ComponentTool componentTool4 = new Wisej.Web.ComponentTool();
 			Wisej.Web.ComponentTool componentTool5 = new Wisej.Web.ComponentTool();
+			Wisej.Web.DataGridViewCellStyle dataGridViewCellStyle1 = new Wisej.Web.DataGridViewCellStyle();
 			Wisej.Web.ComponentTool componentTool1 = new Wisej.Web.ComponentTool();
 			Wisej.Web.ComponentTool componentTool6 = new Wisej.Web.ComponentTool();
 			Wisej.Web.ComponentTool componentTool7 = new Wisej.Web.ComponentTool();
@@ -152,6 +153,8 @@
 			// colBirthdate
 			// 
 			this.colBirthdate.DataPropertyName = "BirthDate";
+			dataGridViewCellStyle1.Format = "D";
+			this.colBirthdate.DefaultCellStyle = dataGridViewCellStyle1;
 			this.colBirthdate.Format = Wisej.Web.DateTimePickerFormat.Long;
 			this.colBirthdate.HeaderText = "Birth Date";
 			this.colBirthdate.Name = "colBirthdate";
@@ -198,7 +201,7 @@
 			// textBox1
 			// 
 			this.textBox1.AutoSize = false;
-			this.textBox1.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "FirstName", true));
+			this.textBox1.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "FirstName", true, Wisej.Web.DataSourceUpdateMode.OnValidation, null, ""));
 			this.textBox1.Dock = Wisej.Web.DockStyle.Fill;
 			this.textBox1.Location = new System.Drawing.Point(8, 58);
 			this.textBox1.Margin = new Wisej.Web.Padding(8);
@@ -234,7 +237,7 @@
 			// textBox2
 			// 
 			this.textBox2.AutoSize = false;
-			this.textBox2.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "LastName", true));
+			this.textBox2.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "LastName", true, Wisej.Web.DataSourceUpdateMode.OnValidation, null, ""));
 			this.textBox2.Dock = Wisej.Web.DockStyle.Fill;
 			this.textBox2.Location = new System.Drawing.Point(228, 58);
 			this.textBox2.Margin = new Wisej.Web.Padding(8);
@@ -263,7 +266,7 @@
 			// dateTimePicker1
 			// 
 			this.dateTimePicker1.AutoSize = false;
-			this.dateTimePicker1.DataBindings.Add(new Wisej.Web.Binding("Value", this.employeesBindingSource, "BirthDate", true));
+			this.dateTimePicker1.DataBindings.Add(new Wisej.Web.Binding("Value", this.employeesBindingSource, "BirthDate", true, Wisej.Web.DataSourceUpdateMode.OnValidation, null, ""));
 			this.dateTimePicker1.Dock = Wisej.Web.DockStyle.Fill;
 			this.dateTimePicker1.Location = new System.Drawing.Point(624, 58);
 			this.dateTimePicker1.Margin = new Wisej.Web.Padding(8);
@@ -291,7 +294,7 @@
 			// comboBox1
 			// 
 			this.comboBox1.AutoSize = false;
-			this.comboBox1.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "Title", true));
+			this.comboBox1.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "Title", true, Wisej.Web.DataSourceUpdateMode.OnValidation, null, ""));
 			this.comboBox1.Dock = Wisej.Web.DockStyle.Fill;
 			this.comboBox1.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBox1.Items.AddRange(new object[] {
@@ -354,7 +357,7 @@
 			// 
 			this.textBox3.AutoSize = false;
 			this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 2);
-			this.textBox3.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "Email", true));
+			this.textBox3.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "Email", true, Wisej.Web.DataSourceUpdateMode.OnValidation, null, ""));
 			this.textBox3.Dock = Wisej.Web.DockStyle.Fill;
 			this.textBox3.Location = new System.Drawing.Point(223, 153);
 			this.textBox3.Name = "textBox3";
@@ -369,14 +372,13 @@
 			// maskedTextBox1
 			// 
 			this.maskedTextBox1.AutoSize = false;
-			this.maskedTextBox1.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "Phone", true));
+			this.maskedTextBox1.DataBindings.Add(new Wisej.Web.Binding("Text", this.employeesBindingSource, "Phone", true, Wisej.Web.DataSourceUpdateMode.OnValidation, null, ""));
 			this.maskedTextBox1.Dock = Wisej.Web.DockStyle.Fill;
 			this.maskedTextBox1.Location = new System.Drawing.Point(3, 153);
 			this.maskedTextBox1.Mask = "(999) 000-0000";
 			this.maskedTextBox1.Name = "maskedTextBox1";
 			this.maskedTextBox1.Size = new System.Drawing.Size(214, 47);
 			this.maskedTextBox1.TabIndex = 9;
-			this.maskedTextBox1.Text = "(   )    -";
 			// 
 			// label6
 			// 
@@ -395,13 +397,12 @@
 			// 
 			// DataBinding
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(913, 610);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.Controls.Add(this.dataGridView1);
-			this.IconSource = "resource.wx/Wisej.Ext.MaterialDesign/server-rack-with-three-levels.svg?color=#BF3" +
-    "F3F";
+			this.IconSource = "resource.wx/Wisej.Ext.BootstrapIcons/server.svg?color=#BF3F3F";
 			this.Name = "DataBinding";
 			this.Text = "DataBinding Example";
 			this.Load += new System.EventHandler(this.DataBinding_Load);

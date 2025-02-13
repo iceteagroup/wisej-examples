@@ -8,7 +8,7 @@ using Wisej.Web;
 
 namespace Wisej.WebAuthn.Article
 {
-	public partial class Window1 : Form
+	public partial class Window1 : Form 
 	{
 		/// <summary>
 		/// Random challenge for uniquely identifying the registration / authentication requests.
@@ -129,12 +129,15 @@ namespace Wisej.WebAuthn.Article
 
 			// use the credential identifier we created earlier to 
 			// let the authenticator know which key should be used for signing.
-			var allowCredentials = new PublicKeyCredentialDescriptor
+			var allowCredentials = new PublicKeyCredentialDescriptor[]
 			{
-				Id = publicKey.CredentialID,
-				Transports = new AuthenticatorTransport[]
+				new PublicKeyCredentialDescriptor 
 				{
-					AuthenticatorTransport.Internal
+					Id = publicKey.CredentialID,
+					Transports = new AuthenticatorTransport[]
+					{
+						AuthenticatorTransport.Internal
+					}
 				}
 			};
 

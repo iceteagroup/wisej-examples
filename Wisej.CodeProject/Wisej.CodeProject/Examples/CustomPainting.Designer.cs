@@ -39,8 +39,6 @@
 			// mandelbrotPanel1
 			// 
 			this.mandelbrotPanel1.Dock = Wisej.Web.DockStyle.Fill;
-			this.mandelbrotPanel1.Focusable = false;
-			this.mandelbrotPanel1.Location = new System.Drawing.Point(0, 0);
 			this.mandelbrotPanel1.Name = "mandelbrotPanel1";
 			this.mandelbrotPanel1.Size = new System.Drawing.Size(369, 373);
 			this.mandelbrotPanel1.TabIndex = 0;
@@ -49,7 +47,7 @@
 			// 
 			this.panel1.CollapseSide = Wisej.Web.HeaderPosition.Left;
 			this.panel1.Controls.Add(this.mandelbrotPanel1);
-			this.panel1.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(63)))), ((int)(((byte)(191)))));
+			this.panel1.HeaderBackColor = System.Drawing.Color.FromArgb(102, 63, 191);
 			this.panel1.HeaderSize = 38;
 			this.panel1.Location = new System.Drawing.Point(24, 33);
 			this.panel1.Name = "panel1";
@@ -63,7 +61,7 @@
 			// 
 			this.panel2.CollapseSide = Wisej.Web.HeaderPosition.Left;
 			this.panel2.Controls.Add(this.canvas1);
-			this.panel2.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(191)))), ((int)(((byte)(63)))));
+			this.panel2.HeaderBackColor = System.Drawing.Color.FromArgb(79, 191, 63);
 			this.panel2.HeaderSize = 38;
 			this.panel2.Location = new System.Drawing.Point(425, 33);
 			this.panel2.Name = "panel2";
@@ -83,13 +81,13 @@
 			// 
 			// CustomPainting
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(821, 477);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = Wisej.Web.FormBorderStyle.Fixed;
-			this.IconSource = "resource.wx/Wisej.Ext.MaterialDesign/painter-palette.svg?color=#00FCFF";
+			this.IconSource = "resource.wx/Wisej.Ext.BootstrapIcons/paint-bucket.svg?color=#00FBFF";
 			this.Name = "CustomPainting";
 			this.Text = "Custom Painting Example";
 			this.panel1.ResumeLayout(false);

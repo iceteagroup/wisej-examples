@@ -7,6 +7,7 @@ namespace Wisej.DxDashboardSample
 {
 	public partial class Page1 : Page
 	{
+		private DashboardConfigurator _configurator;
 		private DashboardHelper _dashboardHelper;
 
 		public Page1()
@@ -18,10 +19,11 @@ namespace Wisej.DxDashboardSample
 		{
 			this.dxDashboard1.Options.endpoint = $"{this.dxDashboard1.GetServiceURL()}";
 
-			this._dashboardHelper = new DashboardHelper(DashboardConfigurator.Default);
+			this._configurator = new DashboardConfigurator();
+			this._dashboardHelper = new DashboardHelper(this._configurator);
 
-			DashboardConfigurator.Default.SetConnectionStringsProvider(new ConfigFileConnectionStringsProvider());
-			DashboardConfigurator.Default.SetDashboardStorage(new DashboardFileStorage(Application.MapPath("Data/Dashboards")));
+			this._configurator.SetConnectionStringsProvider(new ConfigFileConnectionStringsProvider());
+			this._configurator.SetDashboardStorage(new DashboardFileStorage(Application.MapPath("Data/Dashboards")));
 		}
 
 		private void dxDashboard1_WebRequest(object sender, WebRequestEventArgs e)

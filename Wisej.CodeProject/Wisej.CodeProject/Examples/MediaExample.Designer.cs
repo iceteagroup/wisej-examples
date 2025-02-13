@@ -104,13 +104,13 @@
 			// 
 			// button2
 			// 
+			this.button2.Enabled = false;
 			this.button2.ImageSource = "resource.wx/Wisej.Ext.MaterialDesign/stop-button.svg";
 			this.button2.Location = new System.Drawing.Point(16, 81);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(154, 51);
 			this.button2.TabIndex = 2;
 			this.button2.Text = "Stop";
-			this.button2.Enabled = false;
 			this.button2.TextImageRelation = Wisej.Web.TextImageRelation.TextBeforeImage;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
@@ -129,7 +129,6 @@
 			// 
 			this.audio1.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Bottom | Wisej.Web.AnchorStyles.Left) 
             | Wisej.Web.AnchorStyles.Right)));
-			this.audio1.AutoPlay = false;
 			this.audio1.Location = new System.Drawing.Point(16, 205);
 			this.audio1.Name = "audio1";
 			this.audio1.Size = new System.Drawing.Size(383, 74);
@@ -142,6 +141,7 @@
 			// 
 			// video1
 			// 
+			this.video1.AutoPlay = true;
 			this.video1.Dock = Wisej.Web.DockStyle.Fill;
 			this.video1.Location = new System.Drawing.Point(452, 3);
 			this.video1.Name = "video1";
@@ -149,7 +149,6 @@
 			this.video1.SourceURL = "Files/sample-mp4-file.mp4";
 			this.video1.TabIndex = 1;
 			this.video1.Volume = 0.5D;
-			this.video1.AutoPlay = true;
 			// 
 			// pdfViewer1
 			// 
@@ -164,11 +163,11 @@
 			// 
 			// MediaExample
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(953, 653);
 			this.Controls.Add(this.tableLayoutPanel1);
-			this.IconSource = "resource.wx/Wisej.Ext.MaterialDesign/film-roll.svg?color=#7FBF3F";
+			this.IconSource = "resource.wx/Wisej.Ext.BootstrapIcons/camera.svg?color=#7FBF3F";
 			this.Name = "MediaExample";
 			this.Text = "Media Example";
 			this.tableLayoutPanel1.ResumeLayout(false);

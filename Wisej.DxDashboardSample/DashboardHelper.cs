@@ -41,9 +41,10 @@ namespace Wisej.DxDashboardSample
 		public void ProcessRequest(object sender, WebRequestEventArgs e)
 		{
 			var serviceUrl = ((IWisejHandler)sender).GetServiceURL();
-			var payload = e.Request.Url.AbsolutePath.Substring(serviceUrl.Length + 1);
+			var path = e.Request.Url.AbsolutePath;
+			var payload = path.Substring(path.IndexOf("postback.wx/")).Replace(serviceUrl, "");
 			
-			var parts = payload.Split(new string[] { "/" }, System.StringSplitOptions.RemoveEmptyEntries);
+			var parts = payload.Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries);
 			var action = parts.First() ?? "";
 			switch (action)
 			{

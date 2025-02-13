@@ -37,20 +37,19 @@
 			this.justGage1.Dock = Wisej.Web.DockStyle.Fill;
 			this.justGage1.ForeColor = System.Drawing.Color.White;
 			this.justGage1.LabelColor = System.Drawing.Color.GhostWhite;
-			this.justGage1.Location = new System.Drawing.Point(0, 0);
 			this.justGage1.Name = "justGage1";
 			this.justGage1.Size = new System.Drawing.Size(188, 181);
+			this.justGage1.Symbol = "%";
 			this.justGage1.TabIndex = 0;
 			this.justGage1.Text = "CPU%";
-			this.justGage1.Symbol = "%";
 			this.justGage1.Value = 10F;
 			this.justGage1.ValueColor = System.Drawing.Color.Moccasin;
 			// 
 			// GagePopup
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(63)))), ((int)(((byte)(154)))), ((int)(((byte)(191)))));
+			this.BackColor = System.Drawing.Color.FromArgb(157, 0, 0, 0);
 			this.Controls.Add(this.justGage1);
 			this.Name = "GagePopup";
 			this.Size = new System.Drawing.Size(188, 181);
