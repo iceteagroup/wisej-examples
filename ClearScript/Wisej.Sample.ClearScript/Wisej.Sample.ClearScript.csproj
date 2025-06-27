@@ -110,6 +110,7 @@
   <ItemGroup>
     <EmbeddedResource Include="frmCommandLine.resx">
       <DependentUpon>frmCommandLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEvents.resx">
       <DependentUpon>frmEvents.cs</DependentUpon>
@@ -126,10 +127,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-	  <PackageReference Include="Wisej-3" Version="3.5.*-*" />
-    <PackageReference Include="Wisej-3-ClearScript">
-      <Version>3.2.7</Version>
-    </PackageReference>
+    <PackageReference Include="Wisej-4" Version="4.0.*-*" />
+    <PackageReference Include="Wisej-4-ClearScript" Version="4.0.*-*" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

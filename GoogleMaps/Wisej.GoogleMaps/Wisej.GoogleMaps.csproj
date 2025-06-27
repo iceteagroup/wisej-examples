@@ -1,31 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFrameworks>net48;net8.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
-    <OutputPath>bin\</OutputPath>
-    <StartupObject></StartupObject>
-    <OutputType>Library</OutputType>
-    <RunCommand>$(ProgramFiles)\IIS Express\iisexpress.exe</RunCommand>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <RunArguments>/path:"$(MSBuildProjectDirectory)" /port:5000</RunArguments>
-  </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'!='net'">
     <StartupObject>$(RootNamespace).Startup</StartupObject>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))'=='net'">
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Windows.Forms" />
-    <Compile Remove="Startup.cs" />
-    <Content Include="Startup.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Remove="Themes\BootstrapDark-4.theme" />
@@ -45,9 +31,9 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Wisej-3" Version="3.5.*-*" />
-    <PackageReference Include="Wisej-3-BootstrapIcons" Version="3.5.*-*" />
-    <PackageReference Include="Wisej-3-GoogleMaps" Version="3.5.*-*" />
+    <PackageReference Include="Wisej-4" Version="4.0.*-*" />
+    <PackageReference Include="Wisej-4-BootstrapIcons" Version="4.0.*-*" />
+    <PackageReference Include="Wisej-4-GoogleMaps" Version="4.0.*-*" />
   </ItemGroup>
 
 </Project>

@@ -16,7 +16,7 @@ namespace AspNetAuthentication.WisejViews
         {
             Application.BrowserTabActivated += Application_BrowserTabActivated;
 
-            var name = Application.User.Identity.GetUserName();
+            var name = Application.User?.Identity?.GetUserName();
             identity.Text = name;
             isAuthenticated.Text =
                 "You are " + (Application.IsAuthenticated ? string.Empty : "not ") + "authenticated.";
@@ -24,7 +24,7 @@ namespace AspNetAuthentication.WisejViews
 
         private void Application_BrowserTabActivated(object sender, EventArgs e)
         {
-            var name = Application.User.Identity.GetUserName();
+            var name = Application.User?.Identity?.GetUserName();
             this.identity.Text = name;
             this.isAuthenticated.Text =
                 "You are " + (Application.IsAuthenticated ? string.Empty : "not ") + "authenticated.";
@@ -34,7 +34,8 @@ namespace AspNetAuthentication.WisejViews
         {
             if (Application.IsAuthenticated)
             {
-                var name = Application.User.Identity.GetUserName();
+                var name = Application.User?.Identity?.GetUserName();
+
                 AlertBox.Show($"You are authenticated as {name}", alignment: ContentAlignment.MiddleCenter);
             }
             else

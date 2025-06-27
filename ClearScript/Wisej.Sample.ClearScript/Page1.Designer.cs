@@ -73,7 +73,7 @@ namespace Wisej.Sample.ClrScript
             this.lblWisejExtention.Name = "lblWisejExtention";
             this.lblWisejExtention.Size = new System.Drawing.Size(977, 19);
             this.lblWisejExtention.TabIndex = 1;
-            this.lblWisejExtention.Text = "<a href=\"https://github.com/iceteagroup/wisej-extensions/tree/2.2/Wisej.Ext.Clear" +
+            this.lblWisejExtention.Text = "<a href=\"https://github.com/iceteagroup/wisej-extensions/tree/master/Wisej.Ext.Clear" +
     "Script\" target=\"_blank\">Wisej ClearScript Extension</a>";
             // 
             // lblMicrosoftRepo

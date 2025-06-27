@@ -283,43 +283,6 @@ this.init = function() {
 }
 </value>
   </data>
-  <data name="widgetGallery.InitScript" xml:space="preserve">
-    <value>
-
-//@ sourceURL=wisej.web.Widget.startup.js
-
-/**
- * Initializes the widget.
- *
- * This function is called when the InitScript property of
- * wisej.web.Widget changes.
- *
- * 'this' refers to the container which is a wisej.web.Widget instance.
- *
- * 'this.container' refers to the DOM element and can be used to initialize
- * the third party javascript widget.
- *
- */
-this.init = function() {
-
-    var me = this;
-    // your initialization code.
-    
-    $(this.container).dxGallery({
-        
-    dataSource: [
-     "https://static.pexels.com/photos/166451/pexels-photo-166451.jpeg",
-    "https://static.pexels.com/photos/8500/food-dinner-pasta-spaghetti-8500.jpg",
-    "https://static.pexels.com/photos/7765/food.jpg",
-    "https://images.pexels.com/photos/263041/pexels-photo-263041.jpeg?w=1260&amp;h=750&amp;auto=compress&amp;cs=tinysrgb"
-    ],
-    animationDuration: 400,
-    animationEnabled: true
-    })
-
-}
-</value>
-  </data>
   <data name="widgetBarGauge.InitScript" xml:space="preserve">
     <value>
 

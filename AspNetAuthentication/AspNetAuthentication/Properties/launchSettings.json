@@ -1,20 +1,12 @@
 {
-    "iisSettings": {
-        "windowsAuthentication": false,
-        "anonymousAuthentication": true,
-        "iisExpress": {
-            "applicationUrl": "http://localhost:54429",
-            "sslPort": 0
-        }
-    },
-    "profiles": {
-        "AspNetAuthentication": {
-            "commandName": "Project",
-            "launchBrowser": true,
-            "applicationUrl": "http://localhost:5000",
-            "environmentVariables": {
-                "WEBSITE_PATH": "$(MSBuildProjectDirectory)"
-            }
-        }
+  "profiles": {
+    "AspNetAuthentication": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:62329"
     }
+  }
 }

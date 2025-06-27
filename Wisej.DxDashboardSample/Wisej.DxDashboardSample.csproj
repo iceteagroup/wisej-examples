@@ -59,9 +59,9 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Wisej-3" Version="3.5.*-*" />
+	  <PackageReference Include="Wisej-4" Version="4.0.*-*" />
 	  <PackageReference Include="DevExpress.Dashboard.Core" Version="22.1.4" />
-	  <PackageReference Include="Wisej-3-DxDashboard" Version="3.5.*-*" />
+	  <PackageReference Include="Wisej-4-DxDashboard" Version="4.0.*-*" />
   </ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)'=='net48'">
