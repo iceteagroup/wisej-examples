@@ -1,65 +1,61 @@
-<div id="top"></div>
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://wisej.com">
-    <img src="https://wisej.com/wp-content/uploads/2022/05/wisej-dotnet-logotype-main-nav-203-05312022.png" alt="Logo" width="203" height="68">
-  </a>
 
-  <h3 align="center">Wisej.NET Examples</h3>
+<a href="https://learnwisej.com">
+  <img src="https://img.shields.io/badge/LearnWisej-Official%20Wisej.NET%20Learning%20Platform-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="LearnWisej - Official Wisej.NET Learning Platform">
+</a>
 
-  <p align="center">
-    View the entire Wisej.NET Control Suite
-    <br />
-    <a href="https://wisej-demobrowser.azurewebsites.net"><strong>View the Live Demo »</strong></a>
-    <br />
-    <br />
-    <a href="https://wisej.com">Wisej.com</a>
-    ·
-    <a href="https://madewithwisej.com">MadeWithWisej.com</a>
-    ·
-    <a href="https://docs.wisej.com">Wisej.NET Docs</a>
-  </p>
+# Wisej.NET Examples
+
+### This repository is archived and deprecated.
+
+The examples in this repository are kept for historical reference only and are no longer maintained.
+
+Current Wisej.NET samples are available in the **public and free**
+[LearnWisej-Samples](https://github.com/iceteagroup/LearnWisej-Samples) repository and are linked directly from the courses at [LearnWisej.com](https://learnwisej.com).
+
+<br>
+
+<a href="https://github.com/iceteagroup/LearnWisej-Samples">
+  <img src="https://img.shields.io/badge/Browse%20the%20new%20samples-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Browse the new LearnWisej samples on GitHub">
+</a>
+&nbsp;
+<a href="https://learnwisej.com">
+  <img src="https://img.shields.io/badge/Start%20learning-LearnWisej-6F42C1?style=for-the-badge&logo=dotnet&logoColor=white" alt="Start learning at LearnWisej">
+</a>
+
 </div>
-<!-- ABOUT THE PROJECT -->
 
-## About The Project
+---
 
-![Wisej.NET Extensions](https://user-images.githubusercontent.com/21205878/171510449-4a02bf8a-503e-4951-ab56-14bceef5e915.png)
+> [!IMPORTANT]
+> **Looking for current Wisej.NET examples?**  
+> Go to **[iceteagroup/LearnWisej-Samples](https://github.com/iceteagroup/LearnWisej-Samples)**.
 
-This repository contains demonstrations of various Wisej.NET features and concepts.
+## The new LearnWisej samples
 
-## About Wisej.NET
+The new samples repository contains complete, runnable Wisej.NET applications created for the courses and hands-on labs on **[LearnWisej.com](https://learnwisej.com)**.
 
-Wisej.NET provides a platform and set of tools designed to ease the burden of developing, testing, deploying, and maintaining complex business software. It bridges the gap between traditional WinForms-style desktop applications and the web by empowering developers to leverage their existing .NET and C# or VB.NET skills.
+- **Public and free** — no subscription is required to access the source code.
+- **Organized by course and module** — find the sample that matches the lesson you are taking.
+- **Complete Visual Studio solutions** — open, run, inspect, modify, and compare with your own implementation.
+- **Built for current Wisej.NET releases** — the active samples replace the older examples stored here.
+- **Connected to the courses** — LearnWisej courses link directly to the corresponding reference implementations.
 
-Developers are able to use the tools they are familiar with, like a pixel-perfect design surface and drag-and-drop controls with the languages they are comfortable with (C# or VB.NET) to build real-time web applications without having to learn HTML, CSS, or JavaScript. They can stay in their favorite IDE like Visual Studio to take advantage of features like IntelliSense, integrated debugging, design surfaces and source control integration. Front-end developers can leverage their knowledge of web technologies to augment applications and seamlessly integrate third-party packages like HTML5 charting libraries and ASP.NET controls.
+### Learn Wisej.NET
 
-To bridge the gap between legacy desktop applications and modern web applications, Wisej.NET provides several features that create a straightforward path to migrate existing applications or build green field projects without having to learn a new set of technologies. Support for touch and gestures is built into the software with emulation to support the desktop experience, localization is a first-class citizen, and the applications Wisej.NET produces are out-of-the-box responsive. That means they are readily accessible from desktop browsers, mobile smartphones and tablets.
+[LearnWisej](https://learnwisej.com) is the official learning platform for Wisej.NET, with free courses, lessons, labs, quizzes, and hands-on coding exercises covering everything from the fundamentals to advanced production architecture.
 
-[The Easy Button for Enterprise Software >>](https://www.codeproject.com/Articles/1208339/Wisej-The-Easy-Button-for-Enterprise-Software)
+**Start here:**
 
-### Key Benefits
-<b>Fast Development</b>: Create complex cloud applications faster than Blazor, Angular, or other web frameworks.
-<br>
-<b>Flat Learning Curve</b>: C#, VB.NET, WinForms, WPF, Silverlight and ASP.NET developers are productive in no time.
-<br>
-<b>Open and Integrated</b>: Seamlessly integrate any JavaScript widget as a .NET component. Easy Deployment: Cloud, Hosting, On-Premise, Hybrid Desktop or Mobile options available.
+- [LearnWisej.com](https://learnwisej.com)
+- [LearnWisej-Samples on GitHub](https://github.com/iceteagroup/LearnWisej-Samples)
+- [Wisej.NET](https://wisej.com)
+- [Wisej.NET Documentation](https://docs.wisej.com)
 
-### Features
-* WYSIWYG Pixel-Perfect Designer
-* Advanced Theme Builder
-* Integrated Drag & Drop
-* Native SVG Icons
-* Background Tasks
-* Full State Management
-* Modal Workflow
-* Responsive Design
-* No JavaScript, HTML, CSS Required
-* 100+ Controls Available
+---
 
-## Support
-To log issues related to this project, please use the Issues section of this repository.
+## About this repository
 
-You may also fork this project and modify it to fit your needs and if you want to share a change or fix, please create a pull request.
+This repository contains examples created for older versions of Wisej.NET. They may still be useful as historical reference, but they are **deprecated**, are **not maintained**, and should not be used as the starting point for new Wisej.NET projects.
+
+For new development, training, and up-to-date reference implementations, use **[LearnWisej-Samples](https://github.com/iceteagroup/LearnWisej-Samples)**.
